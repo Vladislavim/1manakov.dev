@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en" className={geist.variable}><body>
+    <noscript><style>{'.readiness{display:none}'}</style></noscript>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Person', name: contact.name, url: siteUrl, sameAs: [contact.telegram, contact.github] }).replace(/</g, '\\u003c') }} />
     <SiteShell>{children}</SiteShell>
   </body></html>;

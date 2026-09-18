@@ -20,7 +20,7 @@ export default async function CasePage({ params }: Props) {
   const p = projects[index]; const next = projects[(index + 1) % projects.length];
   return <main id="main" tabIndex={-1} className={`case-page case-${p.slug}`} style={{ '--project-color': p.color, '--project-ink': p.ink } as CSSProperties}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CreativeWork', name: p.name, description: p.summary, url: `${siteUrl}/work/${p.slug}`, creator: { '@type': 'Person', name: 'Vladislav Imanakov' } }).replace(/</g, '\\u003c') }} />
-    <section className="case-hero"><div className="case-topline"><RouteLink href="/" image={p.cover} className="back-link" data-cursor="BACK">← ALL WORK</RouteLink><span>{p.number} / 04 — {p.concept ? 'INDEPENDENT CONCEPT' : p.category.toUpperCase()}</span></div>
+    <section className="case-hero"><div className="case-topline"><RouteLink href="/" image={p.cover} className="back-link" data-cursor="BACK">← ALL WORK</RouteLink><span>{p.number} / {String(projects.length).padStart(2, '0')} — {p.concept ? 'INDEPENDENT CONCEPT' : p.category.toUpperCase()}</span></div>
       <h1>{p.name}</h1><div className="case-summary"><p>{p.summary}</p><div><span className="eyebrow">CONTRIBUTION</span><p>{p.role}</p></div></div>
       <div className="case-hero-image"><ProjectImage src={p.cover} alt={p.images[0].alt} priority sizes="(max-width: 768px) 100vw, 90vw" /></div>
     </section>

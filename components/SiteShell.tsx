@@ -88,7 +88,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     const count = { value: 0 };
     const ready = () => { if (!cancelled) setProgress(Math.round(++count.value / 2 * 100)); };
     const img = new window.Image();
-    img.src = projects[0].cover;
+    img.src = projects[0].images[2].src;
     img.decode().catch(() => {}).then(ready);
     document.fonts.ready.then(ready);
     const finish = () => {
@@ -134,7 +134,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   }, { scope: shell });
 
   return <NavigationContext.Provider value={{ navigate }}><div ref={shell}>
-    <a className="skip-link" href="#main">Skip to content</a>
+    <a className="skip-link" href="#main" tabIndex={0}>Skip to content</a>
     <header className="site-header">
       <RouteLink href="/" className="brand" image={path.startsWith('/work/') ? projects.find(p => path.endsWith(p.slug))?.cover : undefined} aria-label="Imanakov — home">IMANAKOV</RouteLink>
       <nav aria-label="Main navigation"><Link href="/#work">WORK</Link><Link href="/about" aria-current={path === '/about' ? 'page' : undefined}>ABOUT</Link><Link href="/play" aria-current={path === '/play' ? 'page' : undefined}>PLAY</Link></nav>

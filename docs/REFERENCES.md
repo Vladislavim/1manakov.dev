@@ -26,3 +26,9 @@ Fallback inspected: user's `01 Projects and Sites/jack template/src/App.tsx` lin
 - https://nextjs.org/docs/app/getting-started/installation — current stable version verified as 16.3.5.
 - https://gsap.com/resources/React/ — scoped lifecycle cleanup.
 - https://github.com/darkroomengineering/lenis — scrolling integration and native touch fallback.
+
+
+## Two additional cases requested during implementation
+- PDP: user identified the desktop PDP project; `пдп новый сайт` contains its media work. The actual site checkout verified at `Documents/Codex/2026-07-26/new-chat/outputs/pdp-master-final/ooopdp.ru`. Read-only local serving captured `index.html`, `pages/02-services.html`, `pages/06-completed-works.html` at 1440x1000. No PDP files were edited. Site title and description identify construction project management; no business statistics were copied into portfolio claims.
+- Khasaut Tour: user identified `Рабочий стол/эльдар сайт/khasaut-tour`. README, GPT_SITE_CONTEXT and rendered `dist/` identify North Caucasus tours, excursions and a price configurator. Read-only captures of `/`, `/excursions/`, `/prices/` at 1440x1000. Original destination https://khasaut-kmv.ru from README. No source files edited. The user confirmed both sites as additional portfolio cases; no more specific individual role is asserted than Website project.
+- Six total cases: five website projects plus Aurelia (explicit independent concept). New captures stored as optimized WebP; analytics/external requests blocked during local captures.

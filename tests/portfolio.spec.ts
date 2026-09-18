@@ -9,7 +9,7 @@ test('home, case portal, history and navigation', async ({ page }) => {
   await page.getByRole('link', { name: 'WORK', exact: true }).click();
   await expect(page.locator('#work')).toBeInViewport();
   await page.getByRole('button', { name: 'Next project', exact: true }).click();
-  await expect(page.locator('.position-0')).toHaveAttribute('aria-label', 'Open Legacy Rheumatology');
+  await expect(page.locator('.position-0')).toHaveAttribute('data-project', 'legacy-rheumatology');
   await page.locator('.position-0').click();
   await expect(page).toHaveURL(/work\/legacy-rheumatology/);
   await expect(page.getByRole('heading', { name: 'Legacy Rheumatology', exact: true })).toBeVisible();
@@ -50,7 +50,7 @@ test('responsive layouts and screenshots', async ({ page }, testInfo) => {
   for (const [width,height] of sizes) {
     await page.setViewportSize({ width,height });
     await page.goto('/');
-    await page.locator('.hero-wordmark').waitFor();
+    await page.locator('#hero-title').waitFor();
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(800);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
@@ -74,7 +74,7 @@ test('responsive layouts and screenshots', async ({ page }, testInfo) => {
 });
 
 test('direct project routes, metadata and missing page', async ({ page }) => {
-  for (const slug of ['allnrg','legacy-rheumatology','vpn-equipment','aurelia-atelier']) {
+  for (const slug of ['allnrg','legacy-rheumatology','vpn-equipment','pdp','khasaut-tour','aurelia-atelier']) {
     const response = await page.goto(`/work/${slug}`);
     expect(response?.status()).toBe(200);
     await expect(page.locator('h1')).toHaveCount(1);
@@ -85,6 +85,36 @@ test('direct project routes, metadata and missing page', async ({ page }) => {
   const response = await page.goto('/work/missing-project');
   expect(response?.status()).toBe(404);
   await expect(page.getByRole('heading', { name: /Nothing/ })).toBeVisible();
+});
+
+test('hero stays centered through resize, scroll and route return', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForTimeout(900);
+  for (const [width, height] of [[1884,856], [1366,768], [1920,1080], [1440,900]]) {
+    await page.setViewportSize({ width, height });
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+    await page.waitForTimeout(150);
+    const geometry = await page.locator('.hero').evaluate(hero => {
+      const rect = hero.getBoundingClientRect();
+      const title = hero.querySelector('#hero-title')!.getBoundingClientRect();
+      const copy = hero.querySelector('.hero-type-inversion .hero-wordmark')!.getBoundingClientRect();
+      const caption = hero.querySelector('.scene-bottom')!.getBoundingClientRect();
+      const surface = hero.querySelector('.hero-world .project-image')!.getBoundingClientRect();
+      return { center: (title.y + title.height / 2 - rect.y) / rect.height,
+        alignment: Math.abs(title.y - copy.y), overlap: title.bottom > caption.top,
+        covered: surface.left <= rect.left && surface.right >= rect.right };
+    });
+    expect(geometry.center).toBeCloseTo(.49, 2);
+    expect(geometry.alignment).toBeLessThan(1);
+    expect(geometry.overlap).toBeFalsy();
+    expect(geometry.covered).toBeTruthy();
+    await page.locator('#work').scrollIntoViewIfNeeded();
+  }
+  await page.goto('/about');
+  await page.getByRole('link', { name: 'Imanakov — home', exact: true }).click();
+  await page.waitForTimeout(900);
+  const box = await page.locator('#hero-title').boundingBox();
+  expect(box!.y + box!.height / 2).toBeCloseTo(900 * .49, 0);
 });
 
 test('reduced motion, keyboard and native no-JS content', async ({ browser }) => {
@@ -114,11 +144,56 @@ test('deck gesture changes project without accidental navigation', async ({ page
   await page.goto('/#work');
   const card = page.locator('.position-0');
   await expect(card).toBeVisible();
+  await card.scrollIntoViewIfNeeded();
   await page.waitForTimeout(700);
   const box = await card.boundingBox();
   expect(box).not.toBeNull();
   const x = box!.x + box!.width * .5, y = box!.y + box!.height * .5;
   await page.mouse.move(x,y); await page.mouse.down(); await page.mouse.move(x-140,y+2,{ steps:12 }); await page.mouse.up();
   await expect(page).toHaveURL(/\/#work/);
-  await expect(page.locator('.position-0')).toHaveAttribute('aria-label','Open Legacy Rheumatology');
+  await expect(page.locator('.position-0')).toHaveAttribute('data-project','legacy-rheumatology');
+});
+
+test('rapid route activation, resize and failed image recovery', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForTimeout(700);
+  await page.locator('.lens-link').dispatchEvent('click');
+  await page.locator('.lens-link').dispatchEvent('click');
+  await page.setViewportSize({ width: 430, height: 932 });
+  await expect(page).toHaveURL(/work\/allnrg/);
+  await expect(page.locator('.route-portal')).toBeHidden();
+  await expect(page.locator('h1')).toBeVisible();
+  await page.route('**/_next/image?*', route => route.abort());
+  await page.goto('/work/vpn-equipment');
+  await expect(page.locator('.case-hero-image .image-fallback')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'VPN Equipment Rental' })).toBeVisible();
+});
+
+test('native touch lens swipe, tap and vertical scrolling', async ({ browser, browserName }) => {
+  test.skip(browserName !== 'chromium', 'Native touch dispatch uses Chromium CDP.');
+  const context = await browser.newContext({ viewport: { width: 375, height: 812 }, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  const cdp = await context.newCDPSession(page);
+  await page.goto('/');
+  await page.waitForTimeout(800);
+  await page.screenshot({ path: 'qa/screenshots/touch-home-375.png' });
+  const lens = await page.locator('.lens-link').boundingBox();
+  const x = lens!.x + lens!.width / 2, y = lens!.y + lens!.height / 2;
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+  for (let step = 1; step <= 6; step++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x - step * 15, y }] });
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await expect(page.locator('.lens-link')).toHaveAttribute('data-project', 'legacy-rheumatology');
+  await expect(page).toHaveURL('http://127.0.0.1:3000/');
+  await page.waitForTimeout(400);
+  await page.touchscreen.tap(x,y);
+  await expect(page).toHaveURL(/work\/legacy-rheumatology/);
+  await expect(page.locator('.route-portal')).toBeHidden();
+  await page.goto('/#work');
+  await page.waitForTimeout(800);
+  const before = await page.evaluate(() => scrollY);
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x:200, y:500 }] });
+  for (let step = 1; step <= 8; step++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x:200, y:500-step*25 }] });
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(before + 30);
+  await context.close();
 });

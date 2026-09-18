@@ -22,7 +22,9 @@ export function PlayLab({ teaser = false }: { teaser?: boolean }) {
   const animation = useRef<gsap.core.Timeline | null>(null);
   useEffect(() => {
     if (opened !== null) dialog.current?.showModal();
-    return () => { animation.current?.kill(); };
+    const previousOverflow = document.body.style.overflow;
+    if (opened !== null) document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; animation.current?.kill(); };
   }, [opened]);
   function open(index: number) { setActive(index); setValue(50); setPortalOpen(false); setOpened(index); }
   function close() { dialog.current?.close(); setOpened(null); }
@@ -42,7 +44,7 @@ export function PlayLab({ teaser = false }: { teaser?: boolean }) {
       <div className="scene-bottom"><p>PRODUCT<br />DESIGNER <span className="status-dot" /></p>{teaser ? <Link href="/play" className="line-link">A MORE<br />CURIOUS WORLD</Link> : <span className="line-link">OPEN A FOLDER.<br />TRY SOMETHING.</span>}</div>
       <noscript><p className="nojs-message">These five studies explore reveal, perspective, typography, easing and transitions. Enable JavaScript to interact, or <Link href="/#work">explore the projects</Link>.</p></noscript>
     </section>
-    <dialog ref={dialog} className="experiment-dialog" aria-labelledby="experiment-title" onClose={() => setOpened(null)} onClick={e => { if (e.target === dialog.current) close(); }}>
+    <dialog ref={dialog} className="experiment-dialog" data-lenis-prevent aria-labelledby="experiment-title" onClose={() => setOpened(null)} onClick={e => { if (e.target === dialog.current) close(); }}>
       {study && <div className="experiment-content"><div className="experiment-heading"><span className="eyebrow">PLAY / 0{opened! + 1}</span><button className="circle-button" onClick={close} aria-label="Close experiment">×</button></div>
         <h2 id="experiment-title">{study.name}</h2><p>{study.description}</p>
         <div className={`experiment-demo demo-${study.type}`} ref={demo} style={{ '--value': value, '--demo-x': `${value}%` } as CSSProperties}

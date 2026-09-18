@@ -10,3 +10,23 @@
 @media(min-width:1024px){.card-space{left:54%;width:36%;height:59%;top:23%}.project-card{width:78%}.hero-wordmark{font-size:22.2vw}.explore-type{font-size:23.2vw}}
 .hero-world:first-child img{object-position:50% 35%}
 @media(max-width:767px){.folder-0{top:-3%}.folder-2{top:0}.folder-1{top:34%}.folder-4{bottom:-3%}.folder-3{bottom:-3%}}
+
+.hero[data-edge=right] .lens-label{left:auto;right:0;width:155px}
+.hero-select button{opacity:.65}.lens-name{opacity:.68}.touch-hint{opacity:.7}
+@media(min-width:1024px){
+ .hero-wordmark{font-size:21.5vw}
+ .card-space{left:52%;width:36%;height:57%;top:23%}
+ .project-card.position-1,.card-fan:hover .position-1{transform:translate(17%,-2%) rotate(3deg) rotateY(-12deg)}
+ .project-card.position-2,.card-fan:hover .position-2{transform:translate(28%,-3%) rotate(12deg) rotateY(-15deg)}
+ .project-card.position-3,.card-fan:hover .position-3{transform:translate(32%,2%) rotate(18deg) rotateY(-17deg)}
+}
+.deck-controls{background:var(--paper);padding:4px 0 4px 12px;border-radius:40px}
+
+.project-card.position-4,.project-card.position-5{transform:translate(23%,8%) rotate(15deg) scale(.92);opacity:0;pointer-events:none}
+.project-card{transition:transform .65s var(--ease),box-shadow .4s,opacity .35s}
+.hero-underworld{background:transparent}
+.hero-type-inversion{position:absolute;inset:0;z-index:2;pointer-events:none;clip-path:circle(calc(var(--lens-size)/2) at var(--lx) var(--ly))}
+.hero-type-inversion .hero-wordmark{color:#fff}
+.hero-world .project-image{width:100%;height:100%}
+.hero .scene-bottom{background:var(--paper)}
+.scene-index button{opacity:.65}

@@ -1,0 +1,180 @@
+{
+  "accessedAt": "2026-09-19",
+  "method": "Primary or first-party documentation only. Notes support factual claims for the six pilot pages; they do not establish the author's own experience, client results, or rankings.",
+  "pages": [
+    {
+      "slug": "ux-research-interview-checklist",
+      "title": "UX-исследование: методы и интервью для дизайнеров",
+      "sources": [
+        {
+          "title": "Using in-depth interviews",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+          "claimsSupported": ["Интервью помогают понять обстоятельства, текущий опыт и потребности пользователей.", "Перед интервью нужно определить вопросы исследования, рекрутировать реальных или вероятных пользователей, предусмотреть доступность места и решить вопрос записи.", "Гайд допускает гибкий сценарий: уточняющие вопросы и естественное развитие разговора важнее механического чтения анкеты."]
+        },
+        {
+          "title": "Analyse a research session",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+          "claimsSupported": ["Анализ следует начинать вскоре после раунда, отделяя наблюдения от интерпретаций.", "Наблюдения можно группировать по темам или этапам пути, затем формулировать findings и связанные действия."]
+        },
+        {
+          "title": "Getting informed consent for user research",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research",
+          "claimsSupported": ["До заметок или записи нужно получить информированное согласие.", "Использование и хранение исследовательских материалов должно соответствовать согласованной цели и требованиям безопасности."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["GOV.UK guidance is written for public services; the checklist can be adapted to commercial/product work, but it does not prescribe one universal interview sample or script.", "The Service Manual's participant-number examples are guidance, not a statistical guarantee; do not turn them into a claim about required sample size for every project."]
+    },
+    {
+      "slug": "website-prototype-figma",
+      "title": "Прототип сайта в Figma: структура, сценарий и проверка",
+      "sources": [
+        {
+          "title": "Making prototypes",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/design/making-prototypes",
+          "claimsSupported": ["Прототипы нужны, чтобы исследовать, обсуждать и тестировать варианты до разработки.", "Тип прототипа следует выбирать по задаче: эскизы подходят для раннего обсуждения, более реалистичные прототипы — для проверки взаимодействий.", "Прототипный код не следует автоматически переносить в production."]
+        },
+        {
+          "title": "Connect your prototype",
+          "publisher": "Figma Help Center",
+          "url": "https://help.figma.com/hc/en-us/articles/360040315773-Connect-your-prototype",
+          "claimsSupported": ["В Figma взаимодействие состоит из триггера и действия; для переходов между экранами используются hotspot, connection и destination.", "Панель Interaction details позволяет задать trigger, action, destination и animation settings."]
+        },
+        {
+          "title": "Prototype actions",
+          "publisher": "Figma Help Center",
+          "url": "https://help.figma.com/hc/en-us/articles/360040035874-Prototype-actions",
+          "claimsSupported": ["Действие определяет результат события: Navigate to, Back, Scroll to, overlay и другие действия.", "Прототипный сценарий можно описывать через последовательность триггеров, действий и экранов."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["GOV.UK recommends code prototypes for realistic testing in some cases, while Figma documents a visual interaction model; neither source says one tool is always best.", "Figma feature availability and interface labels can change; the page should avoid promising plan-specific features beyond the cited documentation."]
+    },
+    {
+      "slug": "accessible-interface-checklist",
+      "title": "Доступность интерфейса: чеклист для веб-интерфейса",
+      "sources": [
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+          "publisher": "W3C",
+          "url": "https://www.w3.org/TR/WCAG22/",
+          "claimsSupported": ["WCAG 2.2 defines testable success criteria, including 4.5:1 minimum contrast for normal text and 3:1 for large text under SC 1.4.3.", "WCAG 2.2 includes requirements for text resizing, reflow, focus, non-text contrast and other perceivable/operable behavior."]
+        },
+        {
+          "title": "Understanding Success Criterion 2.4.7: Focus Visible",
+          "publisher": "W3C WAI",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible",
+          "claimsSupported": ["Keyboard-operable interfaces need a mode in which the keyboard focus indicator is visible.", "Focus indication should remain visible and is also related to non-text contrast requirements."]
+        },
+        {
+          "title": "Understanding Success Criterion 2.5.8: Target Size (Minimum)",
+          "publisher": "W3C WAI",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+          "claimsSupported": ["For pointer inputs, WCAG 2.2 AA sets a 24 by 24 CSS pixel minimum target size, subject to listed exceptions.", "Adequate spacing can satisfy the criterion for undersized targets in the specified cases."]
+        },
+        {
+          "title": "Accessibility – GOV.UK Design System",
+          "publisher": "GOV.UK Design System",
+          "url": "https://design-system.service.gov.uk/accessibility/",
+          "claimsSupported": ["Using an accessible component library does not automatically make a whole service accessible; additional research, design, development and testing are required."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["WCAG success criteria are conformance requirements, while a practical checklist is an implementation aid; passing a checklist is not proof of full WCAG conformance.", "Target-size and contrast criteria have exceptions and context; do not present the numeric thresholds as universal rules without their conditions."]
+    },
+    {
+      "slug": "interface-motion-feedback",
+      "title": "Анимация интерфейса: состояния, обратная связь и плавные переходы",
+      "sources": [
+        {
+          "title": "Animation from Interactions",
+          "publisher": "W3C WAI",
+          "url": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html",
+          "claimsSupported": ["WCAG 2.3.3 (AAA) says motion animation triggered by interaction should be disableable unless essential to functionality or information.", "Unnecessary motion can cause distraction or vestibular symptoms; reduced-motion support or a user control are identified approaches."]
+        },
+        {
+          "title": "C39: Using the CSS prefers-reduced-motion query to prevent motion",
+          "publisher": "W3C WAI",
+          "url": "https://www.w3.org/WAI/WCAG21/Techniques/css/C39.html",
+          "claimsSupported": ["The prefers-reduced-motion media query is a documented sufficient technique related to SC 2.3.3.", "The technique applies to motion triggered by user interaction and is an example technique rather than the only possible way to conform."]
+        },
+        {
+          "title": "prefers-reduced-motion CSS media feature",
+          "publisher": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/prefers-reduced-motion",
+          "claimsSupported": ["The media query detects a device preference to minimize non-essential motion.", "Large-scale panning or scaling can trigger discomfort for people with vestibular motion disorders."]
+        },
+        {
+          "title": "Using CSS transitions",
+          "publisher": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using",
+          "claimsSupported": ["CSS transitions define which properties change, when they start, how long they last and their easing function.", "Easing functions control the acceleration curve between states."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["WCAG 2.3.3 is Level AAA; treating it as a blanket AA legal requirement would be inaccurate. Other WCAG criteria may still apply to particular animations.", "Neither MDN nor W3C prescribes one duration or easing curve for every interface; timing should be tied to the state change and tested with the product context."]
+    },
+    {
+      "slug": "ui-design-system-starter",
+      "title": "UI-дизайн система: компоненты, токены и правила",
+      "sources": [
+        {
+          "title": "Create and use variants",
+          "publisher": "Figma Help Center",
+          "url": "https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants",
+          "claimsSupported": ["Figma variants group similar components and expose properties such as size, state or color.", "Variants can organize related states and bring component options closer to front-end concepts."]
+        },
+        {
+          "title": "Explore component properties",
+          "publisher": "Figma Help Center",
+          "url": "https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties",
+          "claimsSupported": ["Component properties expose controlled changes such as visibility, instance swaps, text, variants and slots.", "Descriptions and links to documentation can communicate intended usage, states and accessibility/contrast requirements."]
+        },
+        {
+          "title": "Components",
+          "publisher": "GOV.UK Design System",
+          "url": "https://design-system.service.gov.uk/components/",
+          "claimsSupported": ["Components are reusable UI parts; a component library supports consistency and can provide usage guidance and coded examples.", "Reusable components can still be used in different patterns and contexts."]
+        },
+        {
+          "title": "Accessibility – GOV.UK Design System",
+          "publisher": "GOV.UK Design System",
+          "url": "https://design-system.service.gov.uk/accessibility/",
+          "claimsSupported": ["A design system does not make the consuming service automatically accessible; teams must perform additional research, implementation and testing."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["Figma's component properties and variants describe tool features, not a complete governance model for a design system.", "The term 'tokens' is common in design-system practice, but the cited pages do not define a universal token taxonomy; keep any token examples explicitly illustrative."]
+    },
+    {
+      "slug": "website-redesign-audit",
+      "title": "Редизайн сайта: как провести аудит и собрать план улучшений",
+      "sources": [
+        {
+          "title": "How to apply the Service Standard",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/service-assessments/how-to-apply-the-service-standard",
+          "claimsSupported": ["Complex service problems should be approached incrementally: start with something small enough to learn from, test with users and iterate.", "Accessibility and security are requirements that cannot simply be deferred through iteration."]
+        },
+        {
+          "title": "8. Iterate and improve frequently",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently",
+          "claimsSupported": ["A service should retain the capacity to improve throughout its lifetime based on changing user needs, technology or policy.", "Iteration should focus on improvements with the most value rather than treating launch as the end of work."]
+        },
+        {
+          "title": "Usability benchmarking a website or whole service",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/measuring-success/usability-benchmarking-a-website-or-whole-service",
+          "claimsSupported": ["Usability benchmarking combines performance metrics with user-research methods such as usability testing.", "Watching users complete defined tasks can reveal issues where broad metrics alone cannot describe the experience."]
+        },
+        {
+          "title": "Quality assurance: testing your service regularly",
+          "publisher": "GOV.UK Service Manual",
+          "url": "https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly",
+          "claimsSupported": ["Quality assurance should cover usability and technical behavior across devices, stability, security and speed.", "Testing from early phases helps catch issues and supports faster iteration."]
+        }
+      ],
+      "contradictionsOrUncertainty": ["GOV.UK Service Manual is a public-service delivery standard; it supports a redesign process but does not define a universal commercial conversion audit or guarantee business impact.", "Metrics can indicate performance but do not by themselves explain user experience; claims about improvement require before/after evidence from the actual site and defined tasks."]
+    }
+  ]
+}

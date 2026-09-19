@@ -1,0 +1,16 @@
+[
+  {"topic":"product-design","query":"продуктовый дизайн"},
+  {"topic":"ux","query":"ux дизайн"},
+  {"topic":"ui","query":"ui дизайн"},
+  {"topic":"web-design","query":"веб дизайн"},
+  {"topic":"mobile","query":"дизайн мобильных приложений"},
+  {"topic":"design-systems","query":"дизайн система"},
+  {"topic":"redesign","query":"редизайн сайта"},
+  {"topic":"portfolio","query":"кейс дизайнера"},
+  {"topic":"interaction","query":"дизайн взаимодействия"},
+  {"topic":"motion","query":"анимация интерфейса"},
+  {"topic":"ai-design","query":"нейросеть для дизайна"},
+  {"topic":"research","query":"ux исследование"},
+  {"topic":"prototyping","query":"прототип сайта"},
+  {"topic":"accessibility","query":"доступность интерфейса"}
+]

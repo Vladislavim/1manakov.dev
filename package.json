@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
-    "build": "next build",
+    "build": "npm run seo:check && next build",
     "start": "next start --hostname 127.0.0.1",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "playwright test"
+    "test": "playwright test",
+    "seo:research": "node scripts/seo/wordstat.mjs",
+    "seo:check": "node scripts/seo/validate.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

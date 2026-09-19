@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-09-19",
+  "source": "data/seo/research/wordstat-batch.json",
+  "sourceGeneratedAt": "2026-09-18T22:57:32.187Z",
+  "region": "225",
+  "language": "ru",
+  "scope": "SEO scout taxonomy and six-page pilot; no article drafts",
+  "measurement_notes": [
+    "Counts are the Wordstat response counts for the exact returned phrase; a seed totalCount is evidence for the seed phrase, not a forecast for a page.",
+    "Associations were reviewed for noise and are not treated as relevant demand unless an exact relevant phrase also appeared in results.",
+    "One page should own one intent; broad head terms remain taxonomy context and are not a request to create 1000 keyword pages."
+  ],
+  "clusters": [
+    {"id":"product-design","seed":"продуктовый дизайн","frequency":{"seed_count":1885,"evidence":[["продуктовый дизайн курсы",145],["продуктовый дизайн ui ux",89],["продуктовый дизайн примеры",31],["метрики продуктовый дизайн",22]]},"intent":"orientation and product-design practice","overlap_risks":["Overlaps with UX/UI fundamentals and design-system explanations.","Course, university and vacancy phrases indicate career intent and should not be mixed into a service or portfolio page."],"recommended_priority":"backlog"},
+    {"id":"ux","seed":"ux дизайн","frequency":{"seed_count":9299,"evidence":[["основы ux дизайна",535],["ux веб дизайн",482],["ux дизайн сайта",268],["ux проектирование дизайн",118]]},"intent":"UX fundamentals and interface problem-solving","overlap_risks":["Very broad head term overlaps with UI, web design and research; use a narrow task-led page instead."],"recommended_priority":"backlog"},
+    {"id":"ui","seed":"ui дизайн","frequency":{"seed_count":8599,"evidence":[["ui дизайн система",195],["ui дизайн приложения",209],["ui дизайн figma",106],["ui дизайн примеры",105]]},"intent":"visual interface design and UI patterns","overlap_risks":["UI/UX combined phrases occur in both UI and UX clusters; assign them to the page whose primary task is visual UI or end-to-end UX."],"recommended_priority":"backlog"},
+    {"id":"web-design","seed":"веб дизайн","frequency":{"seed_count":26191,"evidence":[["веб сайт дизайн",1729],["веб дизайн и разработка",915],["веб дизайн с нуля",1140],["создания веб дизайна",593]]},"intent":"web-interface design and delivery","overlap_risks":["Largest head term and strongly education-led; a generic web-design page would cannibalize portfolio and redesign pages."],"recommended_priority":"backlog"},
+    {"id":"mobile","seed":"дизайн мобильных приложений","frequency":{"seed_count":1037,"evidence":[["дизайн интерфейсов мобильных приложений",118],["разработка дизайна мобильных приложений",113],["ux дизайн мобильных приложений",76],["дизайн мобильного приложения пример",44]]},"intent":"mobile app interface design","overlap_risks":["Overlaps with UI app design and UX interaction patterns; reserve for mobile-specific constraints and examples."],"recommended_priority":"backlog"},
+    {"id":"design-systems","seed":"дизайн система","frequency":{"seed_count":10167,"evidence":[["проектирование дизайна системы",641],["графические дизайн системы",535],["дизайн информационных систем",843],["ui дизайн система",195]]},"intent":"design-system structure, tokens and reusable components","overlap_risks":["Seed is noisy: electrical-system, information-system and unrelated atlas terms dominate associations. Keep evidence to UI/design-system matches."],"recommended_priority":"pilot"},
+    {"id":"redesign","seed":"редизайн сайта","frequency":{"seed_count":540,"evidence":[["сделать редизайн сайта",41],["редизайн сайта компании",23],["редизайн веб сайта",21],["редизайн сайта с помощью ии",20]]},"intent":"diagnose and improve an existing website","overlap_risks":["Can overlap with generic web-design services; position around audit, before/after decisions and measurable UX improvements."],"recommended_priority":"pilot"},
+    {"id":"portfolio","seed":"кейсы для дизайнеров","frequency":{"seed_count":612,"evidence":[["графический дизайнер кейсы",66],["кейсы для дизайнеров для портфолио",29],["кейсы дизайнера пример",21],["что такое кейс в работе дизайнера",13]]},"intent":"case-study and portfolio presentation","overlap_risks":["Career and portfolio-learning intent differs from client-service intent; keep as a portfolio guide or case index."],"recommended_priority":"backlog"},
+    {"id":"interaction","seed":"взаимодействие дизайн","frequency":{"seed_count":643,"evidence":[["опыт взаимодействия дизайн",130],["проектирование взаимодействия дизайн",111],["дизайн взаимодействия с пользователем",63],["ux дизайн проектирование опыта взаимодействия",41]]},"intent":"interaction design and user flows","overlap_risks":["Close to UX fundamentals and motion; a page should focus on flow/state decisions, while motion owns timing and feedback."],"recommended_priority":"backlog"},
+    {"id":"motion","seed":"анимации интерфейс","frequency":{"seed_count":911,"evidence":[["анимация элементов интерфейса",255],["анимация интерфейса приложения",72],["анимация пользовательского интерфейса",30],["мод на плавные анимации интерфейса",17]]},"intent":"interface motion, feedback and transitions","overlap_risks":["The seed has gaming/mod noise in associations; target interface elements, app states and user feedback only."],"recommended_priority":"pilot"},
+    {"id":"ai-design","seed":"нейросеть для дизайна","frequency":{"seed_count":5510,"evidence":[["нейросеть для создания дизайна",1073],["нейросети для дизайна онлайн",487],["бесплатные нейросети для дизайна онлайн",453],["нейросеть для генерации дизайна",371]]},"intent":"AI-assisted design workflow and tool selection","overlap_risks":["Large interior-design and image-generation noise; avoid a generic AI tools list and anchor any page in interface/prototyping workflow."],"recommended_priority":"backlog"},
+    {"id":"research","seed":"ux исследования","frequency":{"seed_count":1487,"evidence":[["методы ux исследований",99],["пользовательские исследования ux",81],["ux исследование интервью",60],["какие ux исследования",58]]},"intent":"choose and run UX research","overlap_risks":["Medical and generic examination associations are irrelevant; page should own practical UX research methods/interviews."],"recommended_priority":"pilot"},
+    {"id":"prototyping","seed":"прототип сайта","frequency":{"seed_count":1395,"evidence":[["создание прототипов сайтов",127],["прототип сайта в фигме",116],["прототипы дизайна сайта",78],["как сделать прототип сайта",48]]},"intent":"make and validate a website prototype","overlap_risks":["Overlaps with web design and AI prototyping; focus on structure, Figma flow and validation rather than finished visual design."],"recommended_priority":"pilot"},
+    {"id":"accessibility","seed":"доступность интерфейса","frequency":{"seed_count":351,"evidence":[["доступность веб интерфейсов",44],["разработать интерфейс пользователя наиболее распространенные угрозы доступности",13]]},"intent":"accessible interface checklist and implementation","overlap_risks":["Lower measured demand than broad UX/UI; keep it specific and evidence-led instead of inflating with unrelated associations."],"recommended_priority":"pilot"}
+  ],
+  "candidate_pages": [
+    {
+      "id":"ux-research-interview-checklist",
+      "title":"UX-исследование: методы и интервью для дизайнеров",
+      "cluster":"research",
+      "intent":"how-to/checklist",
+      "frequency":{"seed":"ux исследования","seed_count":1487,"query_evidence":[{"match":"методы ux исследований","count":99,"context":"method selection"},{"match":"пользовательские исследования ux","count":81,"context":"user research"},{"match":"ux исследование интервью","count":60,"context":"interview workflow"}]},
+      "overlap_risks":["Keep separate from a general UX definition page and from a case-study page; own the research plan, interview and synthesis checklist."],
+      "recommended_priority":1
+    },
+    {
+      "id":"website-prototype-figma",
+      "title":"Прототип сайта в Figma: структура, сценарий и проверка",
+      "cluster":"prototyping",
+      "intent":"practical tutorial",
+      "frequency":{"seed":"прототип сайта","seed_count":1395,"query_evidence":[{"match":"создание прототипов сайтов","count":127,"context":"creation task"},{"match":"прототип сайта в фигме","count":116,"context":"tool-specific task"},{"match":"как сделать прототип сайта","count":48,"context":"how-to"}]},
+      "overlap_risks":["Do not turn this into a generic website-design or AI-tool page; keep the deliverable a testable prototype."],
+      "recommended_priority":2
+    },
+    {
+      "id":"accessible-interface-checklist",
+      "title":"Доступность интерфейса: чеклист для веб-интерфейса",
+      "cluster":"accessibility",
+      "intent":"implementation checklist",
+      "frequency":{"seed":"доступность интерфейса","seed_count":351,"query_evidence":[{"match":"доступность веб интерфейсов","count":44,"context":"web accessibility"},{"match":"разработать интерфейс пользователя наиболее распространенные угрозы доступности","count":13,"context":"common accessibility risks"}]},
+      "overlap_risks":["Demand is smaller and evidence is sparse; page must be concrete, useful and truthful about standards/testing coverage."],
+      "recommended_priority":3
+    },
+    {
+      "id":"interface-motion-feedback",
+      "title":"Анимация интерфейса: состояния, обратная связь и плавные переходы",
+      "cluster":"motion",
+      "intent":"practical motion guide",
+      "frequency":{"seed":"анимации интерфейс","seed_count":911,"query_evidence":[{"match":"анимация элементов интерфейса","count":255,"context":"element motion"},{"match":"анимация интерфейса приложения","count":72,"context":"app interface"},{"match":"анимация пользовательского интерфейса","count":30,"context":"UI motion"}]},
+      "overlap_risks":["Exclude game-mod meanings from the seed neighborhood; keep motion tied to feedback, transitions and reduced-motion behavior."],
+      "recommended_priority":4
+    },
+    {
+      "id":"ui-design-system-starter",
+      "title":"UI-дизайн система: компоненты, токены и правила",
+      "cluster":"design-systems",
+      "intent":"starter framework/checklist",
+      "frequency":{"seed":"дизайн система","seed_count":10167,"query_evidence":[{"match":"проектирование дизайна системы","count":641,"context":"system design"},{"match":"графические дизайн системы","count":535,"context":"visual system"},{"match":"ui дизайн система","count":195,"context":"UI-specific system"}]},
+      "overlap_risks":["The seed is noisy; title and content must qualify UI/design systems and avoid electrical or information-system meanings."],
+      "recommended_priority":5
+    },
+    {
+      "id":"website-redesign-audit",
+      "title":"Редизайн сайта: как провести аудит и собрать план улучшений",
+      "cluster":"redesign",
+      "intent":"service/process how-to",
+      "frequency":{"seed":"редизайн сайта","seed_count":540,"query_evidence":[{"match":"сделать редизайн сайта","count":41,"context":"action intent"},{"match":"редизайн сайта компании","count":23,"context":"business website"},{"match":"редизайн веб сайта","count":21,"context":"web redesign"}]},
+      "overlap_risks":["Keep the page process-led and diagnostic; avoid competing with portfolio case pages or a generic web-design service page."],
+      "recommended_priority":6
+    }
+  ],
+  "intent": {
+    "pilot_sequence":"research -> prototype -> accessibility -> motion -> design-system -> redesign",
+    "selection_rule":"Choose distinct practical jobs-to-be-done with at least one exact relevant query match beyond the seed; prioritize evidence quality and portfolio fit over seed volume."
+  },
+  "frequency": {
+    "source_field":"data.results[].data.totalCount and data.results[].data.results[].count",
+    "region":"225",
+    "interpretation":"Wordstat counts are directional demand evidence for Russia region 225. They are not traffic forecasts, conversion estimates or current rankings."
+  },
+  "overlap_risks": [
+    "Broad UX, UI and web-design seeds overlap heavily; keep the six pilot pages task-specific.",
+    "Design-system, AI-design and accessibility seeds contain association noise; only relevant exact results support page selection.",
+    "Portfolio pages and educational how-to pages should not compete for the same title or primary intent."
+  ],
+  "recommended_priority": {
+    "pilot":"Build the six candidate pages in listed order after validating internal-link and route strategy.",
+    "backlog":"Retain the remaining eight clusters as topic coverage and future candidates; do not generate pages from seed volume alone."
+  }
+}

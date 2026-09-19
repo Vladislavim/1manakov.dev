@@ -5,6 +5,7 @@ import { contact, siteUrl } from '@/data/projects';
 import '@/styles/globals.css';
 import '@/styles/scenes.css';
 import '@/styles/pages.css';
+import '@/styles/editorial.css';
 
 const geist = localFont({ src: '../public/fonts/Geist.ttf', variable: '--font-geist', display: 'swap', weight: '100 900' });
 export const viewport: Viewport = { themeColor: '#f4f2ed', width: 'device-width', initialScale: 1 };

@@ -12,3 +12,5 @@ playwright-report/
 !.env.example
 .DS_Store
 next-env.d.ts
+data/seo/wordstat/
+data/seo/research/wordstat-batch.json

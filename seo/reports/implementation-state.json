@@ -1,7 +1,7 @@
 {
   "task": "SEO Factory and portfolio interaction upgrades",
   "updatedAt": "2026-09-20",
-  "lastCompletedStage": "20 approved guides; local production SSR, sitemap, schema, CTA and events passed; normal/dry-run/resume and ledger verified.",
+  "lastCompletedStage": "20 approved guides with 11 exercise types; portfolio comparisons, PDP development state and original portrait presentation implemented.",
   "counts": {
     "rawKeywords": 7799,
     "normalizedKeywords": 7717,
@@ -13,16 +13,14 @@
     "pages": 20,
     "indexablePages": 20
   },
-  "remaining": [
-    "User requested more interactive guide content and site-wide detail/overlap review; follows current Git checkpoint."
-  ],
+  "remaining": [],
   "externalFollowup": [
     "Hosting deployment",
     "Record actual deployment date",
     "Connect analytics destination",
     "Import real search metrics after observation windows"
   ],
-  "portfolio": "Case order, hero lens previews, Legacy comparison, VPN angle, next-case previews and LAB migration implemented.",
+  "portfolio": "Six ordered cases, five side-by-side factual comparisons, model-driven PDP external state, About portrait and SEO copy, LAB with touch and keyboard interaction.",
   "constraints": [
     "Solo",
     "No new dependency",

@@ -7,6 +7,8 @@ import { Footer } from '@/components/Footer';
 import { CaseMotion } from '@/components/CaseMotion';
 import { DevicePresentation } from '@/components/DevicePresentation';
 import { CaseEvidence } from '@/components/CaseEvidence';
+import {SeoEvidence} from '@/components/SeoEvidence';
+import {ExternalProject} from '@/components/ExternalProject';
 
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() { return projects.map(p => ({ slug: p.slug })); }
@@ -26,8 +28,8 @@ export default async function CasePage({ params }: Props) {
       <h1>{p.name}</h1><div className="case-summary"><p>{p.summary}</p><div><span className="eyebrow">CONTRIBUTION</span><p>{p.role}</p></div></div>
       <div className="case-hero-image case-device-stage"><DevicePresentation slug={p.slug} src={p.cover} alt={p.images[0].alt} priority /></div>
     </section>
-    <section className="case-story"><span className="eyebrow">THE WEBSITE</span><h2>{p.statement.split('\n').map((line, i) => <span key={line}>{i > 0 && <br />}{line}</span>)}</h2><div><p>{p.details}</p>{p.url && <a className="text-link" href={p.url} target="_blank" rel="noreferrer">VISIT PROJECT ↗</a>}{p.concept && <span className="concept-label">INDEPENDENT INTERFACE CONCEPT</span>}</div></section>
-    <CaseEvidence slug={p.slug}/>
+    <section className="case-story"><span className="eyebrow">THE WEBSITE</span><h2>{p.statement.split('\n').map((line, i) => <span key={line}>{i > 0 && <br />}{line}</span>)}</h2><div><p>{p.details}</p><ExternalProject project={p}/>{p.concept && <span className="concept-label">INDEPENDENT INTERFACE CONCEPT</span>}</div></section>
+    <CaseEvidence slug={p.slug}/>{p.seoResult&&<SeoEvidence result={p.seoResult}/>}
     <RouteLink className="next-project" href={`/work/${next.slug}`} image={next.cover} data-cursor="VIEW"><span className="eyebrow">KEEP EXPLORING / NEXT WORK</span><span className="next-project-title">{next.shortName}<span aria-hidden="true">↗</span></span><span className="next-project-image"><DevicePresentation slug={next.slug} src={next.cover} alt="" compact /></span></RouteLink>
     <Footer /></CaseMotion>
   </main>;

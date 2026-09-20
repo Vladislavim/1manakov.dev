@@ -18,3 +18,7 @@ Run `npm ci`, `npm run dev`; production `npm run build` and `npm start`. Checks:
 - `content/guides/`, `lib/guides.ts`, `app/guides/`: 20 signed Russian guides and safe SSR templates.
 - `scripts/seo/`, `seo/data/`, `seo/reports/`: demand pipeline, evidence, quality gates and experiment ledger; see `docs/SEO-FACTORY.md`.
 - `data/case-evidence.ts`, `DevicePresentation.tsx`: factual owner-supplied before/after device compositions.
+
+- `components/GuideWorkbench.tsx`, `data/guide-tools.ts`, `styles/guide-workbench.css`: 11 interactive exercise types mapped to all 20 guides; local-only inputs and text export.
+- `components/AboutPortrait.tsx`: unchanged supplied transparent portrait, framed by an SVG viewport with CSS monochrome treatment.
+- `components/ExternalProject.tsx`: model-driven live / in-development external website action; internal case stays accessible.

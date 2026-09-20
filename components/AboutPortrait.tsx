@@ -1,0 +1,1 @@
+export function AboutPortrait(){return <figure className="about-portrait"><svg viewBox="540 460 310 528" role="img" aria-labelledby="portrait-title" preserveAspectRatio="xMidYMax meet"><title id="portrait-title">Vladislav Imanakov</title><image href="/images/about/portrait-itmo.png" width="1280" height="988"/></svg></figure>;}

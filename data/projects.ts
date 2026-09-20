@@ -1,7 +1,10 @@
+import {allnrgSeo,type SeoResult} from './allnrg-seo';
 export type Project = {
   slug: string; name: string; shortName: string; category: string; number: string;
   role: string; cover: string; color: string; ink: string; summary: string;
   statement: string; details: string; url?: string; concept?: boolean;
+  externalSiteStatus?: 'live'|'in-development';
+  seoResult?: SeoResult;
   images: { src: string; alt: string; caption: string }[];
 };
 const media = (name: string) => `/images/${name}.webp`;
@@ -9,7 +12,8 @@ const media = (name: string) => `/images/${name}.webp`;
 const projectRecords: Project[] = [
   {
     slug: 'allnrg', name: 'Alliance Energy', shortName: 'Allnrg', number: '01',
-    category: 'Engineering website', role: 'Design · Frontend · Build',
+    category: 'Engineering website', role: 'Design · Development · SEO',
+    seoResult: allnrgSeo,
     cover: media('allnrg_home_mac'), color: '#e4e425', ink: '#171b15',
     summary: 'An engineering business, made visible. A website bringing industrial design, services and projects into one place.',
     statement: 'Structure for\ncomplex work.',
@@ -52,7 +56,7 @@ const projectRecords: Project[] = [
     ],
   },
   {
-    slug: 'pdp', name: 'PDP', shortName: 'PDP', number: '04',
+    slug: 'pdp', name: 'PDP', shortName: 'PDP', number: '04', externalSiteStatus:'in-development',
     category: 'Construction & engineering', role: 'Website project',
     cover: media('pdp-home'), color: '#f15225', ink: '#171a16',
     summary: 'A website for Povolzhskoye Delovoye Partnerstvo (ПДП), bringing construction project management, engineering services and a portfolio of completed work together.',

@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-20T07:22:32.329Z",
+  "checkedAt": "2026-09-20T17:40:57.358Z",
   "results": [
     {
       "slug": "dashboard-hierarchy-examples",
       "status": 200,
       "canonical": "https://1manakov.dev/guides/dashboard-hierarchy-examples",
       "robots": "index, follow",
-      "SSRCharacters": 3955,
+      "SSRCharacters": 4443,
       "issues": []
     },
     {
@@ -14,7 +14,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/design-system-vs-ui-kit",
       "robots": "index, follow",
-      "SSRCharacters": 4286,
+      "SSRCharacters": 4799,
       "issues": []
     },
     {
@@ -22,7 +22,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/empty-state-copy-examples",
       "robots": "index, follow",
-      "SSRCharacters": 4234,
+      "SSRCharacters": 4799,
       "issues": []
     },
     {
@@ -30,7 +30,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/form-error-messages",
       "robots": "index, follow",
-      "SSRCharacters": 4242,
+      "SSRCharacters": 4766,
       "issues": []
     },
     {
@@ -38,7 +38,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/form-validation-timing",
       "robots": "index, follow",
-      "SSRCharacters": 4042,
+      "SSRCharacters": 4477,
       "issues": []
     },
     {
@@ -46,7 +46,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/interface-motion-rules",
       "robots": "index, follow",
-      "SSRCharacters": 3993,
+      "SSRCharacters": 4430,
       "issues": []
     },
     {
@@ -54,7 +54,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/keyboard-navigation-checklist",
       "robots": "index, follow",
-      "SSRCharacters": 4216,
+      "SSRCharacters": 4805,
       "issues": []
     },
     {
@@ -62,7 +62,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/loading-skeleton",
       "robots": "index, follow",
-      "SSRCharacters": 3850,
+      "SSRCharacters": 4229,
       "issues": []
     },
     {
@@ -70,7 +70,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/mobile-navigation-priorities",
       "robots": "index, follow",
-      "SSRCharacters": 3848,
+      "SSRCharacters": 4269,
       "issues": []
     },
     {
@@ -78,7 +78,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/modal-dialog-design",
       "robots": "index, follow",
-      "SSRCharacters": 3843,
+      "SSRCharacters": 4147,
       "issues": []
     },
     {
@@ -86,7 +86,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/order-form-review",
       "robots": "index, follow",
-      "SSRCharacters": 3922,
+      "SSRCharacters": 4499,
       "issues": []
     },
     {
@@ -94,7 +94,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/pagination-or-load-more",
       "robots": "index, follow",
-      "SSRCharacters": 3831,
+      "SSRCharacters": 4298,
       "issues": []
     },
     {
@@ -102,7 +102,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/password-input-design",
       "robots": "index, follow",
-      "SSRCharacters": 3882,
+      "SSRCharacters": 4318,
       "issues": []
     },
     {
@@ -110,7 +110,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/responsive-content-order",
       "robots": "index, follow",
-      "SSRCharacters": 4054,
+      "SSRCharacters": 4500,
       "issues": []
     },
     {
@@ -118,7 +118,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/text-contrast-check",
       "robots": "index, follow",
-      "SSRCharacters": 3973,
+      "SSRCharacters": 4549,
       "issues": []
     },
     {
@@ -126,7 +126,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/usability-test-scenario",
       "robots": "index, follow",
-      "SSRCharacters": 3938,
+      "SSRCharacters": 4575,
       "issues": []
     },
     {
@@ -134,7 +134,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/ux-interview-questions",
       "robots": "index, follow",
-      "SSRCharacters": 3902,
+      "SSRCharacters": 4646,
       "issues": []
     },
     {
@@ -142,7 +142,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/website-navigation-labels",
       "robots": "index, follow",
-      "SSRCharacters": 3998,
+      "SSRCharacters": 4409,
       "issues": []
     },
     {
@@ -150,7 +150,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/website-prototype-scenario",
       "robots": "index, follow",
-      "SSRCharacters": 4193,
+      "SSRCharacters": 4821,
       "issues": []
     },
     {
@@ -158,7 +158,7 @@
       "status": 200,
       "canonical": "https://1manakov.dev/guides/website-redesign-diagnosis",
       "robots": "index, follow",
-      "SSRCharacters": 3940,
+      "SSRCharacters": 4590,
       "issues": []
     }
   ],

@@ -1,0 +1,28 @@
+{
+  "slug": "empty-state-copy-examples",
+  "sources": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/empty-states-pattern/",
+      "title": "Empty states",
+      "publisher": "IBM Carbon Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Различные причины пустого состояния и связь пояснения с доступным следующим действием."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.868Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

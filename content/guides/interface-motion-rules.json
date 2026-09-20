@@ -1,0 +1,99 @@
+{
+  "slug": "interface-motion-rules",
+  "title": "Анимация интерфейсов: где движение помогает, а где мешает",
+  "description": "Как оценить анимацию интерфейса по назначению: обратная связь, связь состояний, прерывание действия и версия с уменьшенным движением.",
+  "h1": "Анимация интерфейсов: где движение помогает, а где мешает",
+  "clusterId": "intent-interface-motion-rules",
+  "intent": "diagnostic",
+  "topic": "interaction",
+  "primaryKeyword": "анимация интерфейсов",
+  "secondaryKeywords": [],
+  "wordstatVolume": 927,
+  "demandEvidence": [
+    {
+      "query": "анимация интерфейсов",
+      "count": 927,
+      "retrievedAt": "2026-09-19T13:59:00.294Z"
+    }
+  ],
+  "directAnswer": "Оставляйте движение, которое объясняет изменение состояния, связь элементов или результат действия. Проверьте повторный клик, отмену и быстрый переход дальше. Для людей, предпочитающих меньше движения, предусмотрите спокойный вариант, сохраняющий информацию и управление.",
+  "userProblem": "Оставляйте движение, которое объясняет изменение состояния, связь элементов или результат действия. Проверьте повторный клик, отмену и быстрый переход дальше. Для людей, предпочитающих меньше движения, предусмотрите спокойный вариант, сохраняющий информацию и управление.",
+  "pageType": "diagnostic",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Движение",
+      "Назначение",
+      "Спокойный вариант"
+    ],
+    "rows": [
+      [
+        "Раскрытие блока",
+        "Связать кнопку и содержимое",
+        "Мгновенное раскрытие"
+      ],
+      [
+        "Переход к объекту",
+        "Показать смену контекста",
+        "Прямая смена страницы"
+      ],
+      [
+        "Декоративный параллакс",
+        "Атмосфера",
+        "Неподвижный фон"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/interface-motion-rules",
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "loading-skeleton",
+    "modal-dialog-design"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html",
+      "title": "Understanding SC 2.3.3: Animation from Interactions",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Возможность отключить несущественную анимацию, запускаемую взаимодействием; критерий имеет уровень AAA."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать движение интерфейса",
+    "text": "Хочу проверить назначение, прерывание и доступность анимаций сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать движение интерфейса",
+    "briefPrompt": "Хочу проверить назначение, прерывание и доступность анимаций сайта."
+  },
+  "review": {
+    "hash": "06fe9d770570f5ce9554cefd3df80de3267ce8e4030b2d0eedc90f7d2f49b4a0",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.126Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

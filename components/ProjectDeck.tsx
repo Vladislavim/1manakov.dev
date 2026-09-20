@@ -3,7 +3,7 @@ import { useRef, useState, type CSSProperties, type PointerEvent } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { projects } from '@/data/projects';
-import { ProjectImage } from './ProjectImage';
+import { DevicePresentation } from './DevicePresentation';
 import { RouteLink } from './SiteShell';
 
 export function ProjectDeck() {
@@ -30,7 +30,8 @@ export function ProjectDeck() {
       start.current.dragging = true;
       suppressClick.current = true;
       if (!e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.setPointerCapture(e.pointerId);
-      gsap.set(fan.current, { x: dx * .3, rotation: dx * .012 });
+      const bounded = Math.max(-120, Math.min(120, dx));
+      gsap.set(fan.current, { x: bounded * .3, rotation: bounded * .012 });
     }
   }
   function end(e: PointerEvent<HTMLDivElement>) {
@@ -39,6 +40,7 @@ export function ProjectDeck() {
     const velocity = dx / Math.max(1, performance.now() - start.current.time);
     if (start.current.dragging && (Math.abs(dx) > 38 || Math.abs(velocity) > .35)) cycle(dx < 0 ? 1 : -1);
     start.current = null;
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
     settle.current?.kill();
     settle.current = gsap.to(fan.current, { x: 0, rotation: 0, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : .5, ease: 'power3.out' });
   }
@@ -47,13 +49,13 @@ export function ProjectDeck() {
     <h2 id="work-title" className="work-title">PRODUCT<br />DESIGNER</h2>
     <div className="card-space"><div className="card-fan" ref={fan} data-cursor="DRAG"
       onPointerDown={e => { if (e.button !== 0) return; start.current = { x: e.clientX, y: e.clientY, time: performance.now(), dragging: false }; suppressClick.current = false; settle.current?.kill(); }}
-      onPointerMove={move} onPointerUp={end} onPointerCancel={() => { start.current = null; gsap.set(fan.current, { x: 0, rotation: 0 }); }}>
+      onPointerMove={move} onPointerUp={end} onPointerCancel={e => { if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId); start.current = null; suppressClick.current = false; gsap.set(fan.current, { x: 0, rotation: 0 }); }}>
       {projects.map((p, i) => {
         const order = (i - active + projects.length) % projects.length;
         return <RouteLink key={p.slug} href={`/work/${p.slug}`} image={p.cover} className={`project-card position-${order}`} style={{ '--card-color': p.color, '--card-ink': p.ink, zIndex: projects.length - order } as CSSProperties} data-cursor={order === 0 ? 'VIEW' : 'DRAG'}
           onFocus={() => setActive(i)} data-project={p.slug}
           onClick={e => { if (suppressClick.current) { e.preventDefault(); suppressClick.current = false; } else if (order !== 0) { e.preventDefault(); setActive(i); } }} onDragStart={e => e.preventDefault()}>
-          <span className="card-number">{p.number} / {String(projects.length).padStart(2, '0')}</span><div className="card-art"><ProjectImage src={p.cover} alt="" sizes="(max-width: 767px) 80vw, 40vw" /></div>
+          <span className="card-number">{p.number} / {String(projects.length).padStart(2, '0')}</span><div className="card-art"><DevicePresentation slug={p.slug} src={p.cover} alt="" compact /></div>
           <span className="card-meta"><span className="card-name">{p.shortName}</span><span className="card-category">{p.category}</span><span className="card-arrow" aria-hidden="true">↗</span></span>
         </RouteLink>;
       })}

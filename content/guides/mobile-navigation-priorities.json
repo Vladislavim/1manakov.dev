@@ -1,0 +1,99 @@
+{
+  "slug": "mobile-navigation-priorities",
+  "title": "Мобильная навигация: что оставить на первом уровне",
+  "description": "Как выбрать основные разделы мобильного интерфейса, отделить разделы от действий и проверить подписи, активное состояние и возврат после перехода.",
+  "h1": "Мобильная навигация: что оставить на первом уровне",
+  "clusterId": "intent-mobile-navigation-priorities",
+  "intent": "diagnostic",
+  "topic": "navigation",
+  "primaryKeyword": "навигация мобильных приложений",
+  "secondaryKeywords": [],
+  "wordstatVolume": 427,
+  "demandEvidence": [
+    {
+      "query": "навигация мобильных приложений",
+      "count": 427,
+      "retrievedAt": "2026-09-19T13:58:29.313Z"
+    }
+  ],
+  "directAnswer": "На первом уровне мобильной навигации оставляйте устойчивые разделы, между которыми человек переключается в ходе работы. Действия вроде «Создать» или «Оплатить» рассматривайте отдельно. Выбор нижней панели или меню зависит от задач, а не от привычного числа иконок.",
+  "userProblem": "На первом уровне мобильной навигации оставляйте устойчивые разделы, между которыми человек переключается в ходе работы. Действия вроде «Создать» или «Оплатить» рассматривайте отдельно. Выбор нижней панели или меню зависит от задач, а не от привычного числа иконок.",
+  "pageType": "diagnostic",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Элемент",
+      "Роль",
+      "Где искать проблему"
+    ],
+    "rows": [
+      [
+        "Каталог",
+        "Раздел",
+        "Название должно предсказывать содержимое"
+      ],
+      [
+        "Создать заявку",
+        "Действие",
+        "Не смешивать с постоянным местоположением"
+      ],
+      [
+        "Профиль",
+        "Раздел",
+        "Проверить фактическую частоту обращения"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/mobile-navigation-priorities",
+  "relatedPages": [
+    "website-navigation-labels",
+    "pagination-or-load-more",
+    "keyboard-navigation-checklist"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/menus/",
+      "title": "Menus Tutorial",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Меню отражает структуру продукта; ясные состояния и доступные цели взаимодействия помогают навигации."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Пересобрать приоритеты навигации",
+    "text": "Хочу проверить первый уровень мобильной навигации и названия разделов. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Пересобрать приоритеты навигации",
+    "briefPrompt": "Хочу проверить первый уровень мобильной навигации и названия разделов."
+  },
+  "review": {
+    "hash": "0aa32b45ff9beb2f679d32b06fbb9a25ee2e2e1d3093ace45c4f3702ebeb7ade",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.132Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

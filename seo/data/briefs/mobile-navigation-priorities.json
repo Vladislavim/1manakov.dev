@@ -1,0 +1,79 @@
+{
+  "slug": "mobile-navigation-priorities",
+  "clusterId": "intent-mobile-navigation-priorities",
+  "parentClusterId": "navigation-informational-mobile",
+  "primaryKeyword": "навигация мобильных приложений",
+  "secondaryKeywords": [],
+  "intent": "diagnostic",
+  "topic": "navigation",
+  "userProblem": "Мобильная навигация: что оставить на первом уровне",
+  "directAnswer": "На первом уровне мобильной навигации оставляйте устойчивые разделы, между которыми человек переключается в ходе работы. Действия вроде «Создать» или «Оплатить» рассматривайте отдельно. Выбор нижней панели или меню зависит от задач, а не от привычного числа иконок.",
+  "title": "Мобильная навигация: что оставить на первом уровне",
+  "description": "Как выбрать основные разделы мобильного интерфейса, отделить разделы от действий и проверить подписи, активное состояние и возврат после перехода.",
+  "h1": "Мобильная навигация: что оставить на первом уровне",
+  "sections": [
+    "Начните со списка задач",
+    "Проверьте предсказуемость подписей",
+    "Сохраните местоположение и возврат",
+    "Выберите форму после проверки"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/menus/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Каталог",
+      "Раздел",
+      "Название должно предсказывать содержимое"
+    ],
+    [
+      "Создать заявку",
+      "Действие",
+      "Не смешивать с постоянным местоположением"
+    ],
+    [
+      "Профиль",
+      "Раздел",
+      "Проверить фактическую частоту обращения"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "website-navigation-labels",
+    "pagination-or-load-more",
+    "keyboard-navigation-checklist"
+  ],
+  "cta": {
+    "headline": "Пересобрать приоритеты навигации",
+    "text": "Хочу проверить первый уровень мобильной навигации и названия разделов. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Пересобрать приоритеты навигации",
+    "briefPrompt": "Хочу проверить первый уровень мобильной навигации и названия разделов."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/mobile-navigation-priorities",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "мобильная навигация",
+      "kind": "top",
+      "count": 427,
+      "retrievedAt": "2026-09-19T13:58:29.313Z"
+    }
+  ],
+  "wordstatVolume": 427,
+  "opportunityScore": 75,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.934Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

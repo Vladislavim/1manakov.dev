@@ -1,0 +1,99 @@
+{
+  "slug": "form-validation-timing",
+  "title": "Валидация формы: когда показывать ошибку",
+  "description": "Выбор момента проверки поля: при вводе, после выхода или отправки. Как не ругать недописанное значение и не оставлять человека без обратной связи.",
+  "h1": "Валидация формы: когда показывать ошибку",
+  "clusterId": "intent-form-validation-timing",
+  "intent": "how-to",
+  "topic": "forms",
+  "primaryKeyword": "валидация формы",
+  "secondaryKeywords": [],
+  "wordstatVolume": 455,
+  "demandEvidence": [
+    {
+      "query": "валидация формы",
+      "count": 455,
+      "retrievedAt": "2026-09-19T13:58:38.145Z"
+    }
+  ],
+  "directAnswer": "Проверяйте обязательные поля при отправке, а сложный формат — после завершения ввода. После уже показанной ошибки можно обновлять результат по мере исправления. Проверка в браузере помогает взаимодействию, но сервер всё равно должен проверять полученные данные.",
+  "userProblem": "Проверяйте обязательные поля при отправке, а сложный формат — после завершения ввода. После уже показанной ошибки можно обновлять результат по мере исправления. Проверка в браузере помогает взаимодействию, но сервер всё равно должен проверять полученные данные.",
+  "pageType": "how-to",
+  "visualValue": "diagram",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Момент",
+      "Польза",
+      "Ограничение"
+    ],
+    "rows": [
+      [
+        "Во время ввода",
+        "Проверка понятного ограничения длины",
+        "Формат может быть ещё не завершён"
+      ],
+      [
+        "После выхода",
+        "Обратная связь до отправки",
+        "Не должна мешать переходу дальше"
+      ],
+      [
+        "После отправки",
+        "Проверяется весь набор",
+        "Нужно сохранить все значения"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/form-validation-timing",
+  "relatedPages": [
+    "form-error-messages",
+    "password-input-design",
+    "order-form-review"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/validation/",
+      "title": "Validating Input",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Проверка обязательных значений и форматов; необходимость серверной проверки."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Настроить сценарий проверки формы",
+    "text": "Нужно выбрать момент валидации полей и поведение повторной отправки. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Настроить сценарий проверки формы",
+    "briefPrompt": "Нужно выбрать момент валидации полей и поведение повторной отправки."
+  },
+  "review": {
+    "hash": "ff8aaa3374ebed899cfd98007eb37894060f490deaa3c30a74f332e24b84863f",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.125Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "order-form-review",
+  "clusterId": "intent-order-form-review",
+  "parentClusterId": "checkout-informational-design",
+  "primaryKeyword": "форма заказа дизайн",
+  "secondaryKeywords": [],
+  "intent": "problem-solving",
+  "topic": "commerce",
+  "userProblem": "Форма заказа: что показать перед подтверждением",
+  "directAnswer": "Перед подтверждением заказа покажите состав, количество, условия получения, контакты и итоговую стоимость с известными доплатами. Дайте изменить сведения без повторного заполнения. Название последней кнопки должно объяснять последствие: отправку заявки, оформление заказа или переход к оплате.",
+  "title": "Форма заказа: что показать перед подтверждением",
+  "description": "Что включить в форму заказа перед подтверждением: состав, условия получения, итог и исправление данных. Проверка возврата и ошибок без потери ввода.",
+  "h1": "Форма заказа: что показать перед подтверждением",
+  "sections": [
+    "Соберите итог из данных сценария",
+    "Дайте исправить конкретный блок",
+    "Объясните результат последней кнопки"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://design-system.service.gov.uk/patterns/check-answers/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "form-error-messages",
+    "form-validation-timing",
+    "password-input-design"
+  ],
+  "cta": {
+    "headline": "Разобрать форму заказа",
+    "text": "Хочу проверить итоговый шаг заказа, исправление данных и подтверждение. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать форму заказа",
+    "briefPrompt": "Хочу проверить итоговый шаг заказа, исправление данных и подтверждение."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/order-form-review",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "форма заказа",
+      "kind": "top",
+      "count": 113,
+      "retrievedAt": "2026-09-19T13:59:12.495Z"
+    }
+  ],
+  "wordstatVolume": 113,
+  "opportunityScore": 57,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.950Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

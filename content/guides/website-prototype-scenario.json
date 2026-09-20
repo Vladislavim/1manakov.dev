@@ -1,0 +1,106 @@
+{
+  "slug": "website-prototype-scenario",
+  "title": "Как создать прототип сайта вокруг проверяемого сценария",
+  "description": "Последовательность подготовки прототипа: выбрать задачу, связать экраны, показать ошибки и проверить путь. Как ограничить детализацию и не рисовать лишние страницы.",
+  "h1": "Как создать прототип сайта вокруг проверяемого сценария",
+  "clusterId": "intent-website-prototype-scenario",
+  "intent": "how-to",
+  "topic": "prototyping",
+  "primaryKeyword": "создание прототипов сайтов",
+  "secondaryKeywords": [],
+  "wordstatVolume": 128,
+  "demandEvidence": [
+    {
+      "query": "создание прототипов сайтов",
+      "count": 128,
+      "retrievedAt": "2026-09-19T13:58:46.960Z"
+    }
+  ],
+  "directAnswer": "Начните прототип сайта с одной задачи пользователя и условия её завершения. Затем свяжите входной экран, выбор, действие и результат. Детализируйте только те элементы, без которых нельзя проверить решение; декоративные переходы можно добавить после проверки сценария.",
+  "userProblem": "Начните прототип сайта с одной задачи пользователя и условия её завершения. Затем свяжите входной экран, выбор, действие и результат. Детализируйте только те элементы, без которых нельзя проверить решение; декоративные переходы можно добавить после проверки сценария.",
+  "pageType": "how-to",
+  "visualValue": "diagram",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Шаг",
+      "Экран",
+      "Что проверяем"
+    ],
+    "rows": [
+      [
+        "Найти услугу",
+        "Каталог",
+        "Понятны ли названия"
+      ],
+      [
+        "Сравнить условия",
+        "Страница услуги",
+        "Хватает ли информации"
+      ],
+      [
+        "Оставить запрос",
+        "Форма",
+        "Понятно ли следующее действие"
+      ],
+      [
+        "Убедиться в результате",
+        "Подтверждение",
+        "Ясно ли, что произойдёт дальше"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/website-prototype-scenario",
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "responsive-content-order",
+    "text-contrast-check"
+  ],
+  "relatedCases": [
+    "pdp"
+  ],
+  "sources": [
+    {
+      "url": "https://www.gov.uk/service-manual/design/making-prototypes",
+      "title": "Making prototypes",
+      "publisher": "GOV.UK Service Manual",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Выбор вида прототипа по задаче; прототип помогает исследовать решения до production-разработки."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": true,
+  "version": 1,
+  "cta": {
+    "headline": "Проверить сценарий до разработки",
+    "text": "Хочу собрать и проверить прототип ключевого сценария сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить сценарий до разработки",
+    "briefPrompt": "Хочу собрать и проверить прототип ключевого сценария сайта."
+  },
+  "review": {
+    "hash": "8d20b3015d507b92022e30ee0730ddd52eb999b304bddfcf28b3ec48c8004297",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.146Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

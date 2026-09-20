@@ -1,0 +1,99 @@
+{
+  "slug": "empty-state-copy-examples",
+  "title": "Тексты пустых состояний: примеры для старта, поиска и ошибки",
+  "description": "Как отличить первый запуск от отсутствия результатов и сбоя загрузки. Примеры заголовков и действий, которые помогают продолжить работу вместо тупика.",
+  "h1": "Тексты пустых состояний: примеры для старта, поиска и ошибки",
+  "clusterId": "intent-empty-state-copy-examples",
+  "intent": "examples",
+  "topic": "interaction",
+  "primaryKeyword": "тексты пустых состояний",
+  "secondaryKeywords": [],
+  "wordstatVolume": 90,
+  "demandEvidence": [
+    {
+      "query": "тексты пустых состояний",
+      "count": 90,
+      "retrievedAt": "2026-09-19T13:58:41.455Z"
+    }
+  ],
+  "directAnswer": "Текст пустого состояния зависит от причины отсутствия данных. При первом запуске помогите создать первый объект; после поиска предложите изменить условия; при сбое объясните, что данные не удалось загрузить. Одно «Здесь пока ничего нет» не подходит для всех трёх ситуаций.",
+  "userProblem": "Текст пустого состояния зависит от причины отсутствия данных. При первом запуске помогите создать первый объект; после поиска предложите изменить условия; при сбое объясните, что данные не удалось загрузить. Одно «Здесь пока ничего нет» не подходит для всех трёх ситуаций.",
+  "pageType": "examples",
+  "visualValue": "before-after",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Причина",
+      "Заголовок",
+      "Действие"
+    ],
+    "rows": [
+      [
+        "Первое использование",
+        "Создайте первый маршрут",
+        "Добавить маршрут"
+      ],
+      [
+        "Фильтры исключили всё",
+        "По этим условиям маршрутов нет",
+        "Сбросить фильтры"
+      ],
+      [
+        "Сбой загрузки",
+        "Не удалось загрузить маршруты",
+        "Повторить загрузку"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/empty-state-copy-examples",
+  "relatedPages": [
+    "loading-skeleton",
+    "modal-dialog-design",
+    "interface-motion-rules"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/empty-states-pattern/",
+      "title": "Empty states",
+      "publisher": "IBM Carbon Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Различные причины пустого состояния и связь пояснения с доступным следующим действием."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": true,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать состояния вашего интерфейса",
+    "text": "Хочу разделить пустые состояния, ошибки и первый запуск в интерфейсе. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать состояния вашего интерфейса",
+    "briefPrompt": "Хочу разделить пустые состояния, ошибки и первый запуск в интерфейсе."
+  },
+  "review": {
+    "hash": "653989bc7cf04eeb7c61730d549a146fe6e230a4fdc2977c3b1fa2792b3f8b56",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.123Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

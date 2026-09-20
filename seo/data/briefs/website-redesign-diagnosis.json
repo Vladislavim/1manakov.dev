@@ -1,0 +1,64 @@
+{
+  "slug": "website-redesign-diagnosis",
+  "clusterId": "intent-website-redesign-diagnosis",
+  "parentClusterId": "redesign-informational-design",
+  "primaryKeyword": "редизайн сайта",
+  "secondaryKeywords": [],
+  "intent": "diagnostic",
+  "topic": "product",
+  "userProblem": "Нужен ли редизайн сайта: диагностика перед новым макетом",
+  "directAnswer": "Начните с конкретного сбоя: люди не находят услугу, не понимают предложение или не могут отправить заявку. Проверьте содержание, структуру и техническое поведение отдельно. Полный редизайн оправдан, когда локальные изменения не устраняют связанные проблемы; новый стиль сам по себе этого не доказывает.",
+  "title": "Нужен ли редизайн сайта: диагностика перед новым макетом",
+  "description": "Как понять, нужен ли сайту редизайн: разделить проблемы предложения, структуры, интерфейса и техники, собрать исходные данные и выбрать объём изменений.",
+  "h1": "Нужен ли редизайн сайта: диагностика перед новым макетом",
+  "sections": [
+    "Опишите проблему без слова «устарел»",
+    "Разделите четыре слоя изменений",
+    "Сохраните точку сравнения"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [
+    "allnrg"
+  ],
+  "relatedPages": [
+    "ux-interview-questions",
+    "usability-test-scenario",
+    "dashboard-hierarchy-examples"
+  ],
+  "cta": {
+    "headline": "Определить объём редизайна",
+    "text": "Хочу понять, какие изменения нужны существующему сайту и с чего начать. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Определить объём редизайна",
+    "briefPrompt": "Хочу понять, какие изменения нужны существующему сайту и с чего начать."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/website-redesign-diagnosis",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "редизайн сайта",
+      "kind": "top",
+      "count": 559,
+      "retrievedAt": "2026-09-19T13:59:01.341Z"
+    }
+  ],
+  "wordstatVolume": 559,
+  "opportunityScore": 76,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.946Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "text-contrast-check",
+  "clusterId": "intent-text-contrast-check",
+  "parentClusterId": "contrast-informational-general",
+  "primaryKeyword": "контрастность текста",
+  "secondaryKeywords": [],
+  "intent": "checklist",
+  "topic": "accessibility",
+  "userProblem": "Как проверить контрастность текста в интерфейсе",
+  "directAnswer": "Проверяйте цвет текста вместе с фактическим фоном каждого состояния. WCAG 2.2 AA задаёт минимум 4,5:1 для обычного текста и 3:1 для крупного, с оговорёнными исключениями. Сначала измерьте пару, затем проверьте её в работающем интерфейсе: на фотографии, при наведении и в сообщении об ошибке.",
+  "title": "Как проверить контрастность текста в интерфейсе",
+  "description": "Практическая проверка контрастности текста: какие цвета измерять, где искать слабые сочетания и почему одного удачного значения в палитре недостаточно.",
+  "h1": "Как проверить контрастность текста в интерфейсе",
+  "sections": [
+    "Измеряйте пару, а не отдельный цвет",
+    "Не пропустите меняющийся фон",
+    "Исправляйте причину слабой иерархии"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "website-prototype-scenario",
+    "responsive-content-order"
+  ],
+  "cta": {
+    "headline": "Проверить читаемость интерфейса",
+    "text": "Хочу проверить контраст текста, подписей и состояний моего интерфейса. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить читаемость интерфейса",
+    "briefPrompt": "Хочу проверить контраст текста, подписей и состояний моего интерфейса."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/text-contrast-check",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "контрастность текста",
+      "kind": "top",
+      "count": 384,
+      "retrievedAt": "2026-09-19T13:59:03.557Z"
+    }
+  ],
+  "wordstatVolume": 384,
+  "opportunityScore": 56,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.947Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

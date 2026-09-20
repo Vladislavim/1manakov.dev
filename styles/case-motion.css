@@ -1,0 +1,6 @@
+.case-motion-root{display:contents}
+.next-project-image{transition:transform .5s var(--ease),opacity .5s}
+@media(hover:hover) and (pointer:fine){.next-project:hover .next-project-image,.next-project:focus-visible .next-project-image{transform:rotate(-3deg) translateY(-2%);opacity:.9}}
+/* The legacy case rule is broad enough to fire on touch and reduced-motion users. */
+@media (hover:none), (pointer:coarse){.next-project:hover .next-project-image{transform:rotate(8deg);opacity:.6}}
+@media(prefers-reduced-motion:reduce){.next-project-image,.next-project:hover .next-project-image,.next-project:focus-visible .next-project-image{transform:rotate(8deg);opacity:.6;transition:none}}

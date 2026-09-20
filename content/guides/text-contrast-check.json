@@ -1,0 +1,99 @@
+{
+  "slug": "text-contrast-check",
+  "title": "Как проверить контрастность текста в интерфейсе",
+  "description": "Практическая проверка контрастности текста: какие цвета измерять, где искать слабые сочетания и почему одного удачного значения в палитре недостаточно.",
+  "h1": "Как проверить контрастность текста в интерфейсе",
+  "clusterId": "intent-text-contrast-check",
+  "intent": "checklist",
+  "topic": "accessibility",
+  "primaryKeyword": "контрастность текста",
+  "secondaryKeywords": [],
+  "wordstatVolume": 384,
+  "demandEvidence": [
+    {
+      "query": "контрастность текста",
+      "count": 384,
+      "retrievedAt": "2026-09-19T13:59:03.557Z"
+    }
+  ],
+  "directAnswer": "Проверяйте цвет текста вместе с фактическим фоном каждого состояния. WCAG 2.2 AA задаёт минимум 4,5:1 для обычного текста и 3:1 для крупного, с оговорёнными исключениями. Сначала измерьте пару, затем проверьте её в работающем интерфейсе: на фотографии, при наведении и в сообщении об ошибке.",
+  "userProblem": "Проверяйте цвет текста вместе с фактическим фоном каждого состояния. WCAG 2.2 AA задаёт минимум 4,5:1 для обычного текста и 3:1 для крупного, с оговорёнными исключениями. Сначала измерьте пару, затем проверьте её в работающем интерфейсе: на фотографии, при наведении и в сообщении об ошибке.",
+  "pageType": "checklist",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Место",
+      "Проверить",
+      "Частая ошибка"
+    ],
+    "rows": [
+      [
+        "Подпись поля",
+        "Реальный цвет на фоне",
+        "Измерен только основной текст"
+      ],
+      [
+        "Текст на фото",
+        "Все доступные участки",
+        "Проверена одна фотография"
+      ],
+      [
+        "Ссылка при наведении",
+        "Изменённую пару цветов",
+        "Хорошее обычное состояние"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/text-contrast-check",
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "website-prototype-scenario",
+    "responsive-content-order"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "title": "Understanding SC 1.4.3: Contrast (Minimum)",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Порог контраста обычного и крупного текста, исключения и необходимость учитывать фон."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Проверить читаемость интерфейса",
+    "text": "Хочу проверить контраст текста, подписей и состояний моего интерфейса. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить читаемость интерфейса",
+    "briefPrompt": "Хочу проверить контраст текста, подписей и состояний моего интерфейса."
+  },
+  "review": {
+    "hash": "05c4b6bae6c014675d8c01d59b6a8c5785ef9284ef96ff8f09ecbe2b3bec9b95",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.140Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

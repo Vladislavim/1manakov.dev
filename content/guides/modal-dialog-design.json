@@ -1,0 +1,99 @@
+{
+  "slug": "modal-dialog-design",
+  "title": "Модальное окно: открытие, фокус и безопасное закрытие",
+  "description": "Проверка модального окна: нужен ли перерыв сценария, куда переводить фокус, как назвать действия и что делать с несохранёнными данными.",
+  "h1": "Модальное окно: открытие, фокус и безопасное закрытие",
+  "clusterId": "intent-modal-dialog-design",
+  "intent": "checklist",
+  "topic": "interaction",
+  "primaryKeyword": "дизайн модальных окон",
+  "secondaryKeywords": [],
+  "wordstatVolume": 32,
+  "demandEvidence": [
+    {
+      "query": "дизайн модальных окон",
+      "count": 32,
+      "retrievedAt": "2026-09-19T13:59:06.855Z"
+    }
+  ],
+  "directAnswer": "Модальное окно подходит для короткой задачи, которую нужно закончить или отменить перед возвращением к странице. При открытии переведите фокус внутрь, удерживайте клавиатурную навигацию в диалоге и обеспечьте понятное закрытие. Длинный самостоятельный процесс стоит проверить как отдельную страницу.",
+  "userProblem": "Модальное окно подходит для короткой задачи, которую нужно закончить или отменить перед возвращением к странице. При открытии переведите фокус внутрь, удерживайте клавиатурную навигацию в диалоге и обеспечьте понятное закрытие. Длинный самостоятельный процесс стоит проверить как отдельную страницу.",
+  "pageType": "checklist",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Ситуация",
+      "Решение",
+      "Проверка"
+    ],
+    "rows": [
+      [
+        "Удалить запись",
+        "Назвать объект и последствия",
+        "Отмена доступна"
+      ],
+      [
+        "Длинные условия",
+        "Отдельная страница",
+        "Не потеряно место"
+      ],
+      [
+        "Изменить значение",
+        "Компактный диалог",
+        "Фокус возвращается"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/modal-dialog-design",
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "loading-skeleton",
+    "interface-motion-rules"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "title": "Dialog (Modal) Pattern",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Начальный фокус, последовательность Tab, Escape и возврат фокуса после закрытия."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать модальные окна",
+    "text": "Хочу проверить открытие, закрытие и сохранение данных в модальном окне. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать модальные окна",
+    "briefPrompt": "Хочу проверить открытие, закрытие и сохранение данных в модальном окне."
+  },
+  "review": {
+    "hash": "2f9bfe051d08af4fead6ea55c17738b3ade0b66236221c69488dc454ddec9ab5",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.133Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

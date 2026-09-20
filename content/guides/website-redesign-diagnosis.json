@@ -1,0 +1,101 @@
+{
+  "slug": "website-redesign-diagnosis",
+  "title": "Нужен ли редизайн сайта: диагностика перед новым макетом",
+  "description": "Как понять, нужен ли сайту редизайн: разделить проблемы предложения, структуры, интерфейса и техники, собрать исходные данные и выбрать объём изменений.",
+  "h1": "Нужен ли редизайн сайта: диагностика перед новым макетом",
+  "clusterId": "intent-website-redesign-diagnosis",
+  "intent": "diagnostic",
+  "topic": "product",
+  "primaryKeyword": "редизайн сайта",
+  "secondaryKeywords": [],
+  "wordstatVolume": 559,
+  "demandEvidence": [
+    {
+      "query": "редизайн сайта",
+      "count": 559,
+      "retrievedAt": "2026-09-19T13:59:01.341Z"
+    }
+  ],
+  "directAnswer": "Начните с конкретного сбоя: люди не находят услугу, не понимают предложение или не могут отправить заявку. Проверьте содержание, структуру и техническое поведение отдельно. Полный редизайн оправдан, когда локальные изменения не устраняют связанные проблемы; новый стиль сам по себе этого не доказывает.",
+  "userProblem": "Начните с конкретного сбоя: люди не находят услугу, не понимают предложение или не могут отправить заявку. Проверьте содержание, структуру и техническое поведение отдельно. Полный редизайн оправдан, когда локальные изменения не устраняют связанные проблемы; новый стиль сам по себе этого не доказывает.",
+  "pageType": "diagnostic",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Симптом",
+      "Проверить",
+      "Объём"
+    ],
+    "rows": [
+      [
+        "Услугу не находят",
+        "Названия и входы",
+        "Структура"
+      ],
+      [
+        "Заявка не уходит",
+        "Ошибки и ответ сервера",
+        "Сценарий формы"
+      ],
+      [
+        "Несвязанные страницы",
+        "Общие правила",
+        "Системный пересмотр"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/website-redesign-diagnosis",
+  "relatedPages": [
+    "ux-interview-questions",
+    "usability-test-scenario",
+    "dashboard-hierarchy-examples"
+  ],
+  "relatedCases": [
+    "allnrg"
+  ],
+  "sources": [
+    {
+      "url": "https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently",
+      "title": "Iterate and improve frequently",
+      "publisher": "GOV.UK Service Manual",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Улучшения сервиса опираются на понимание пользовательских проблем и продолжаются после запуска."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Определить объём редизайна",
+    "text": "Хочу понять, какие изменения нужны существующему сайту и с чего начать. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Определить объём редизайна",
+    "briefPrompt": "Хочу понять, какие изменения нужны существующему сайту и с чего начать."
+  },
+  "review": {
+    "hash": "29965ba76fbc301982ae3e2931ea9fc440b52397c175e637879038767bf96f81",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.147Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "loading-skeleton",
+  "title": "Скелетон или индикатор загрузки: что показывать при ожидании",
+  "description": "Как выбрать между скелетоном, спиннером и явным прогрессом: структура контента, ожидание результата, ошибка загрузки и сохранение места на странице.",
+  "h1": "Скелетон или индикатор загрузки: что показывать при ожидании",
+  "clusterId": "intent-loading-skeleton",
+  "intent": "comparison",
+  "topic": "interaction",
+  "primaryKeyword": "скелетон загрузка",
+  "secondaryKeywords": [],
+  "wordstatVolume": 24,
+  "demandEvidence": [
+    {
+      "query": "скелетон загрузка",
+      "count": 24,
+      "retrievedAt": "2026-09-19T13:58:43.660Z"
+    }
+  ],
+  "directAnswer": "Скелетон полезен, когда известна будущая структура блока, но ещё нет его данных. Индикатор загрузки подходит для компактного действия без новой структуры. Процент показывайте только при достоверном измерении прогресса. Любому варианту нужны состояние ошибки и возможность повторить действие.",
+  "userProblem": "Скелетон полезен, когда известна будущая структура блока, но ещё нет его данных. Индикатор загрузки подходит для компактного действия без новой структуры. Процент показывайте только при достоверном измерении прогресса. Любому варианту нужны состояние ошибки и возможность повторить действие.",
+  "pageType": "comparison",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Ожидание",
+      "Показать",
+      "Не обещать"
+    ],
+    "rows": [
+      [
+        "Каталог",
+        "Контуры карточек",
+        "Число результатов до ответа"
+      ],
+      [
+        "Сохранение",
+        "Локальный статус",
+        "Завершение до ответа сервера"
+      ],
+      [
+        "Передача данных",
+        "Измеренный прогресс",
+        "Процент по таймеру"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/loading-skeleton",
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "modal-dialog-design",
+    "interface-motion-rules"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/loading-pattern/",
+      "title": "Loading patterns",
+      "publisher": "IBM Carbon",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Скелетоны обозначают загружаемый контент в контейнерах; выбор локального или общего индикатора."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Проверить состояния загрузки",
+    "text": "Хочу разобрать ожидание, ошибки и повторные действия в интерфейсе. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить состояния загрузки",
+    "briefPrompt": "Хочу разобрать ожидание, ошибки и повторные действия в интерфейсе."
+  },
+  "review": {
+    "hash": "202c85917cb46981a7b0f398adbe2292fba7adb037977b2c29b26d06f60dcbc6",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.130Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

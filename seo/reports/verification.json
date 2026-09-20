@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-09-20T07:28:06.027Z",
+  "qualityGate": "pass",
+  "feedbackRules": "pass",
+  "syntheticSimilarityDocuments": 5000,
+  "syntheticSimilarityMilliseconds": 1553,
+  "limitation": "Synthetic content-index/similarity check; not a 5000-page production render benchmark."
+}

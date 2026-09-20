@@ -1,0 +1,62 @@
+{
+  "slug": "interface-motion-rules",
+  "clusterId": "intent-interface-motion-rules",
+  "parentClusterId": "motion-informational-design",
+  "primaryKeyword": "анимация интерфейсов",
+  "secondaryKeywords": [],
+  "intent": "diagnostic",
+  "topic": "interaction",
+  "userProblem": "Анимация интерфейсов: где движение помогает, а где мешает",
+  "directAnswer": "Оставляйте движение, которое объясняет изменение состояния, связь элементов или результат действия. Проверьте повторный клик, отмену и быстрый переход дальше. Для людей, предпочитающих меньше движения, предусмотрите спокойный вариант, сохраняющий информацию и управление.",
+  "title": "Анимация интерфейсов: где движение помогает, а где мешает",
+  "description": "Как оценить анимацию интерфейса по назначению: обратная связь, связь состояний, прерывание действия и версия с уменьшенным движением.",
+  "h1": "Анимация интерфейсов: где движение помогает, а где мешает",
+  "sections": [
+    "Назовите, что объясняет движение",
+    "Проверьте прерывание, а не только первый запуск",
+    "Сохраните смысл при уменьшенном движении"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "loading-skeleton",
+    "modal-dialog-design"
+  ],
+  "cta": {
+    "headline": "Разобрать движение интерфейса",
+    "text": "Хочу проверить назначение, прерывание и доступность анимаций сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать движение интерфейса",
+    "briefPrompt": "Хочу проверить назначение, прерывание и доступность анимаций сайта."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/interface-motion-rules",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "анимация интерфейса",
+      "kind": "top",
+      "count": 927,
+      "retrievedAt": "2026-09-19T13:59:00.294Z"
+    }
+  ],
+  "wordstatVolume": 927,
+  "opportunityScore": 73,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.953Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

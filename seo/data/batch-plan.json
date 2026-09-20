@@ -1,0 +1,12 @@
+[
+ {"slug":"modal-dialog-design","keyword":"дизайн модальных окон","topic":"interaction","pageType":"checklist","title":"Модальное окно: открытие, фокус и безопасное закрытие","source":"https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"},
+ {"slug":"loading-skeleton","keyword":"скелетон загрузка","topic":"interaction","pageType":"comparison","title":"Скелетон или индикатор загрузки: что показывать при ожидании","source":"https://carbondesignsystem.com/patterns/loading-pattern/"},
+ {"slug":"ux-interview-questions","keyword":"интервью ux исследования","topic":"research","pageType":"examples","title":"Вопросы для UX-интервью: как узнать о реальном опыте","source":"https://www.gov.uk/service-manual/user-research/using-in-depth-interviews"},
+ {"slug":"usability-test-scenario","keyword":"провести юзабилити тестирование","topic":"research","pageType":"how-to","title":"Как провести юзабилити-тестирование одного сценария","source":"https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing"},
+ {"slug":"website-redesign-diagnosis","keyword":"редизайн сайта","topic":"product","pageType":"diagnostic","title":"Нужен ли редизайн сайта: диагностика перед новым макетом","source":"https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently"},
+ {"slug":"text-contrast-check","keyword":"контрастность текста","topic":"accessibility","pageType":"checklist","title":"Как проверить контрастность текста в интерфейсе","source":"https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"},
+ {"slug":"dashboard-hierarchy-examples","keyword":"примеры дашбордов","topic":"product","pageType":"examples","title":"Примеры дашбордов: от задачи к иерархии данных","source":"https://www.w3.org/WAI/tutorials/images/complex/"},
+ {"slug":"order-form-review","keyword":"форма заказа дизайн","topic":"commerce","pageType":"problem-solving","title":"Форма заказа: что показать перед подтверждением","source":"https://design-system.service.gov.uk/patterns/check-answers/"},
+ {"slug":"responsive-content-order","keyword":"адаптивный дизайн","topic":"product","pageType":"how-to","title":"Адаптивный дизайн: как сохранить порядок и смысл на узком экране","source":"https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"},
+ {"slug":"interface-motion-rules","keyword":"анимация интерфейсов","topic":"interaction","pageType":"diagnostic","title":"Анимация интерфейсов: где движение помогает, а где мешает","source":"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html"}
+]

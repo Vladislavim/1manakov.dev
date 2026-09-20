@@ -1,0 +1,62 @@
+{
+  "framework": "Next.js 16.3.5 / React 19 / TypeScript / App Router",
+  "relevantRoutes": [
+    "/",
+    "/about",
+    "/lab",
+    "/play (308 to /lab)",
+    "/work/[slug]",
+    "/guides",
+    "/guides/[slug]",
+    "/journal (308 to /guides)"
+  ],
+  "metadataFiles": [
+    "app/layout.tsx",
+    "app/work/[slug]/page.tsx"
+  ],
+  "sitemapFiles": [
+    "app/sitemap.xml/route.ts",
+    "app/sitemaps/[id]/route.ts",
+    "lib/seo-sitemap.ts",
+    "app/robots.ts"
+  ],
+  "analyticsFiles": [
+    "components/GuideTracking.tsx",
+    "lib/guide-cta.ts"
+  ],
+  "caseDataFiles": [
+    "data/projects.ts",
+    "data/case-evidence.ts"
+  ],
+  "contactFiles": [
+    "data/projects.ts",
+    "components/Footer.tsx",
+    "app/about/page.tsx"
+  ],
+  "designSystemFiles": [
+    "styles/globals.css",
+    "styles/editorial.css",
+    "public/fonts/Geist.ttf",
+    "docs/DESIGN.md"
+  ],
+  "reusableComponents": [
+    "ProjectImage",
+    "Footer",
+    "ArticleBody",
+    "SiteShell"
+  ],
+  "importantFiles": [
+    "lib/editorial.ts",
+    "scripts/seo/wordstat.mjs",
+    "scripts/seo/validate.mjs",
+    "data/seo/research/topic-map.json"
+  ],
+  "risks": [
+    "Existing journal scaffold has no content; consolidate into guides instead of parallel competing content systems.",
+    "No analytics provider configured: emit documented first-party events without pretending a dashboard integration exists.",
+    "Wordstat broad phrase counts overlap: do not sum as unique people or exact demand.",
+    "No manufactured mobile/SaaS case claims: only six existing factual website cases."
+  ],
+  "auditDate": "2026-09-19",
+  "updatedAt": "2026-09-20"
+}

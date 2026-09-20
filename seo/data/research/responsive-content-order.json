@@ -1,0 +1,28 @@
+{
+  "slug": "responsive-content-order",
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "title": "Understanding SC 1.4.10: Reflow",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Перекомпоновка содержимого без потери информации; исключения для материалов, которым необходимо двумерное расположение."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.940Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

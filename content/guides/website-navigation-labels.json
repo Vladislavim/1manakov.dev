@@ -1,0 +1,101 @@
+{
+  "slug": "website-navigation-labels",
+  "title": "Навигация на сайте: как проверить названия и структуру меню",
+  "description": "Практический разбор меню сайта: группировка по задачам, понятные названия, текущий раздел, вход с внутренних страниц и проверка без подсказок.",
+  "h1": "Навигация на сайте: как проверить названия и структуру меню",
+  "clusterId": "intent-website-navigation-labels",
+  "intent": "how-to",
+  "topic": "navigation",
+  "primaryKeyword": "навигация на сайте",
+  "secondaryKeywords": [],
+  "wordstatVolume": 743,
+  "demandEvidence": [
+    {
+      "query": "навигация на сайте",
+      "count": 743,
+      "retrievedAt": "2026-09-19T13:58:28.219Z"
+    }
+  ],
+  "directAnswer": "Меню сайта должно помогать предсказать, где находится нужная информация. Сгруппируйте страницы по задачам посетителя, назовите группы знакомыми словами и проверьте вход не только с главной. Красивое меню не исправляет структуру, в которой одинаковые вопросы разнесены по случайным разделам.",
+  "userProblem": "Меню сайта должно помогать предсказать, где находится нужная информация. Сгруппируйте страницы по задачам посетителя, назовите группы знакомыми словами и проверьте вход не только с главной. Красивое меню не исправляет структуру, в которой одинаковые вопросы разнесены по случайным разделам.",
+  "pageType": "how-to",
+  "visualValue": "diagram",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Проверка",
+      "Вопрос посетителя",
+      "Признак проблемы"
+    ],
+    "rows": [
+      [
+        "Название",
+        "Что я найду здесь?",
+        "Нужна устная расшифровка"
+      ],
+      [
+        "Группа",
+        "Почему эти страницы вместе?",
+        "Объединение только по внутреннему отделу"
+      ],
+      [
+        "Возврат",
+        "Где я сейчас?",
+        "Не обозначен текущий раздел"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/website-navigation-labels",
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "pagination-or-load-more",
+    "keyboard-navigation-checklist"
+  ],
+  "relatedCases": [
+    "khasaut-tour"
+  ],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/menus/",
+      "title": "Menus Tutorial",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Меню отражает структуру сайта; состояние текущего раздела и клавиатурное управление требуют отдельного внимания."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать меню вашего сайта",
+    "text": "Нужно проверить структуру разделов и названия пунктов меню сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать меню вашего сайта",
+    "briefPrompt": "Нужно проверить структуру разделов и названия пунктов меню сайта."
+  },
+  "review": {
+    "hash": "16c104f7911159eb2c23c2d20f5f2b83a0bfed11c08c7a4b357669327883a740",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.144Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

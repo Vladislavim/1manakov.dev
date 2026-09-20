@@ -1,0 +1,12 @@
+[
+  {
+    "pages": [
+      "form-error-messages",
+      "form-validation-timing"
+    ],
+    "serpOverlap": 0.6,
+    "decision": "retain distinct tasks",
+    "reason": "The first page solves wording and association of an error; the second solves when validation runs and how correction behaves. Separate examples and cross-links prevent competing identical answers.",
+    "reviewedAt": "2026-09-20T06:53:22.981Z"
+  }
+]

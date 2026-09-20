@@ -1,0 +1,79 @@
+{
+  "slug": "pagination-or-load-more",
+  "clusterId": "intent-pagination-or-load-more",
+  "parentClusterId": "pagination-informational-design",
+  "primaryKeyword": "пагинация дизайн",
+  "secondaryKeywords": [],
+  "intent": "comparison",
+  "topic": "navigation",
+  "userProblem": "Пагинация или «Показать ещё»: как выбрать для списка",
+  "directAnswer": "Пагинация подходит, когда важно вернуться к определённой части списка или поделиться её адресом. «Показать ещё» сохраняет непрерывный просмотр, но требует продуманного возврата и управления фокусом. Выбирайте по задаче списка, а не по желанию убрать номера страниц.",
+  "title": "Пагинация или «Показать ещё»: как выбрать для списка",
+  "description": "Сравнение постраничной навигации и дозагрузки: возвращение к месту, сохранение фильтров, доступность и поведение списка после открытия карточки.",
+  "h1": "Пагинация или «Показать ещё»: как выбрать для списка",
+  "sections": [
+    "Определите способ просмотра",
+    "Продумайте возвращение из карточки",
+    "Не теряйте управление",
+    "Сравните решения на одном сценарии"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://design-system.service.gov.uk/components/pagination/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Вернуться к части списка",
+      "Номер и адрес страницы",
+      "Нужно восстановить загруженный объём"
+    ],
+    [
+      "Смотреть подряд",
+      "Требует перехода",
+      "Продолжает текущий список"
+    ],
+    [
+      "Найти футер",
+      "Конец страницы определён",
+      "Не должен бесконечно убегать"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "website-navigation-labels",
+    "keyboard-navigation-checklist"
+  ],
+  "cta": {
+    "headline": "Выбрать навигацию для каталога",
+    "text": "Хочу сравнить пагинацию и дозагрузку для списка на сайте. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Выбрать навигацию для каталога",
+    "briefPrompt": "Хочу сравнить пагинацию и дозагрузку для списка на сайте."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/pagination-or-load-more",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "пагинация",
+      "kind": "top",
+      "count": 21,
+      "retrievedAt": "2026-09-19T13:59:05.780Z"
+    }
+  ],
+  "wordstatVolume": 21,
+  "opportunityScore": 52,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.937Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

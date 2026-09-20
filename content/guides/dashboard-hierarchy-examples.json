@@ -1,0 +1,99 @@
+{
+  "slug": "dashboard-hierarchy-examples",
+  "title": "Примеры дашбордов: от задачи к иерархии данных",
+  "description": "Три учебных примера дашборда: операции, продажи и поддержка. Как выбрать главный вопрос, объяснить метрики и дать путь от сигнала к действию.",
+  "h1": "Примеры дашбордов: от задачи к иерархии данных",
+  "clusterId": "intent-dashboard-hierarchy-examples",
+  "intent": "examples",
+  "topic": "product",
+  "primaryKeyword": "примеры дашбордов",
+  "secondaryKeywords": [],
+  "wordstatVolume": 1669,
+  "demandEvidence": [
+    {
+      "query": "примеры дашбордов",
+      "count": 1669,
+      "retrievedAt": "2026-09-19T13:58:16.157Z"
+    }
+  ],
+  "directAnswer": "Начните дашборд с решения, которое должен принять пользователь. Операционному экрану нужны текущие исключения и следующий шаг, обзору продаж — период и сравнение, поддержке — очередь и срочность. Количество графиков выбирают после этого; больше виджетов не означает больше ясности.",
+  "userProblem": "Начните дашборд с решения, которое должен принять пользователь. Операционному экрану нужны текущие исключения и следующий шаг, обзору продаж — период и сравнение, поддержке — очередь и срочность. Количество графиков выбирают после этого; больше виджетов не означает больше ясности.",
+  "pageType": "examples",
+  "visualValue": "before-after",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Экран",
+      "Первый вопрос",
+      "Следующее действие"
+    ],
+    "rows": [
+      [
+        "Операции",
+        "Где требуется вмешательство?",
+        "Открыть проблемную задачу"
+      ],
+      [
+        "Продажи",
+        "Что изменилось за период?",
+        "Посмотреть состав показателя"
+      ],
+      [
+        "Поддержка",
+        "Какие обращения ждут ответа?",
+        "Перейти к очереди"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/dashboard-hierarchy-examples",
+  "relatedPages": [
+    "ux-interview-questions",
+    "usability-test-scenario",
+    "website-redesign-diagnosis"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "title": "Complex Images",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Для сложных графиков нужен текстовый эквивалент существенной информации; рекомендации по иерархии являются авторскими примерами."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать иерархию дашборда",
+    "text": "Хочу определить основные вопросы и действия для экрана с данными. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать иерархию дашборда",
+    "briefPrompt": "Хочу определить основные вопросы и действия для экрана с данными."
+  },
+  "review": {
+    "hash": "204da91fbec72e3a6454a84a7d3df6ddb9f4f46814aef2cb35fd93f419f5b469",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.118Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

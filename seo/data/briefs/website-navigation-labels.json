@@ -1,0 +1,81 @@
+{
+  "slug": "website-navigation-labels",
+  "clusterId": "intent-website-navigation-labels",
+  "parentClusterId": "navigation-informational-general",
+  "primaryKeyword": "навигация на сайте",
+  "secondaryKeywords": [],
+  "intent": "how-to",
+  "topic": "navigation",
+  "userProblem": "Навигация на сайте: как проверить названия и структуру меню",
+  "directAnswer": "Меню сайта должно помогать предсказать, где находится нужная информация. Сгруппируйте страницы по задачам посетителя, назовите группы знакомыми словами и проверьте вход не только с главной. Красивое меню не исправляет структуру, в которой одинаковые вопросы разнесены по случайным разделам.",
+  "title": "Навигация на сайте: как проверить названия и структуру меню",
+  "description": "Практический разбор меню сайта: группировка по задачам, понятные названия, текущий раздел, вход с внутренних страниц и проверка без подсказок.",
+  "h1": "Навигация на сайте: как проверить названия и структуру меню",
+  "sections": [
+    "Соберите вопросы посетителей",
+    "Назовите группы до оформления",
+    "Проверьте вход из поиска",
+    "Проведите проверку названий"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/menus/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Название",
+      "Что я найду здесь?",
+      "Нужна устная расшифровка"
+    ],
+    [
+      "Группа",
+      "Почему эти страницы вместе?",
+      "Объединение только по внутреннему отделу"
+    ],
+    [
+      "Возврат",
+      "Где я сейчас?",
+      "Не обозначен текущий раздел"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "diagram",
+  "relatedCases": [
+    "khasaut-tour"
+  ],
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "pagination-or-load-more",
+    "keyboard-navigation-checklist"
+  ],
+  "cta": {
+    "headline": "Разобрать меню вашего сайта",
+    "text": "Нужно проверить структуру разделов и названия пунктов меню сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать меню вашего сайта",
+    "briefPrompt": "Нужно проверить структуру разделов и названия пунктов меню сайта."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/website-navigation-labels",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "навигация сайта",
+      "kind": "top",
+      "count": 743,
+      "retrievedAt": "2026-09-19T13:58:28.219Z"
+    }
+  ],
+  "wordstatVolume": 743,
+  "opportunityScore": 71,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.935Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "form-validation-timing",
+  "clusterId": "intent-form-validation-timing",
+  "parentClusterId": "forms-informational-validation",
+  "primaryKeyword": "валидация формы",
+  "secondaryKeywords": [],
+  "intent": "how-to",
+  "topic": "forms",
+  "userProblem": "Валидация формы: когда показывать ошибку",
+  "directAnswer": "Проверяйте обязательные поля при отправке, а сложный формат — после завершения ввода. После уже показанной ошибки можно обновлять результат по мере исправления. Проверка в браузере помогает взаимодействию, но сервер всё равно должен проверять полученные данные.",
+  "title": "Валидация формы: когда показывать ошибку",
+  "description": "Выбор момента проверки поля: при вводе, после выхода или отправки. Как не ругать недописанное значение и не оставлять человека без обратной связи.",
+  "h1": "Валидация формы: когда показывать ошибку",
+  "sections": [
+    "Отделите незавершённый ввод от ошибки",
+    "Опишите последовательность состояний",
+    "Не ограничивайте корректные варианты",
+    "Проверьте повторную попытку"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/validation/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Во время ввода",
+      "Проверка понятного ограничения длины",
+      "Формат может быть ещё не завершён"
+    ],
+    [
+      "После выхода",
+      "Обратная связь до отправки",
+      "Не должна мешать переходу дальше"
+    ],
+    [
+      "После отправки",
+      "Проверяется весь набор",
+      "Нужно сохранить все значения"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "diagram",
+  "relatedCases": [],
+  "relatedPages": [
+    "form-error-messages",
+    "password-input-design",
+    "order-form-review"
+  ],
+  "cta": {
+    "headline": "Настроить сценарий проверки формы",
+    "text": "Нужно выбрать момент валидации полей и поведение повторной отправки. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Настроить сценарий проверки формы",
+    "briefPrompt": "Нужно выбрать момент валидации полей и поведение повторной отправки."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/form-validation-timing",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "валидация формы",
+      "kind": "top",
+      "count": 455,
+      "retrievedAt": "2026-09-19T13:58:38.145Z"
+    }
+  ],
+  "wordstatVolume": 455,
+  "opportunityScore": 70,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.931Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

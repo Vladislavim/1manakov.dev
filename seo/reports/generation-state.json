@@ -1,0 +1,17 @@
+{
+  "source": "seo/data/final-content.json",
+  "slugs": [
+    "modal-dialog-design",
+    "loading-skeleton",
+    "ux-interview-questions",
+    "usability-test-scenario",
+    "website-redesign-diagnosis",
+    "text-contrast-check",
+    "dashboard-hierarchy-examples",
+    "order-form-review",
+    "responsive-content-order",
+    "interface-motion-rules"
+  ],
+  "completedAt": "2026-09-20T07:08:06.121Z",
+  "publication": "draft only; existing files retained unless force-refresh"
+}

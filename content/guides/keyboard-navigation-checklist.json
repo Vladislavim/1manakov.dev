@@ -1,0 +1,99 @@
+{
+  "slug": "keyboard-navigation-checklist",
+  "title": "Навигация клавиатурой: чек-лист проверки сайта без мыши",
+  "description": "Проверка порядка фокуса, кнопок, меню и диалогов: что пройти клавишами Tab, Enter и Escape и как записать найденный дефект для исправления.",
+  "h1": "Навигация клавиатурой: чек-лист проверки сайта без мыши",
+  "clusterId": "intent-keyboard-navigation-checklist",
+  "intent": "checklist",
+  "topic": "accessibility",
+  "primaryKeyword": "навигация клавиатурой",
+  "secondaryKeywords": [],
+  "wordstatVolume": 211,
+  "demandEvidence": [
+    {
+      "query": "навигация клавиатурой",
+      "count": 211,
+      "retrievedAt": "2026-09-19T13:59:04.660Z"
+    }
+  ],
+  "directAnswer": "Пройдите ключевую задачу сайта только клавиатурой. Фокус должен быть видимым, порядок переходов понятным, а каждое действие доступным без мыши. Отдельно проверьте открытие и закрытие диалога: после закрытия человек должен понимать, где продолжает работу.",
+  "userProblem": "Пройдите ключевую задачу сайта только клавиатурой. Фокус должен быть видимым, порядок переходов понятным, а каждое действие доступным без мыши. Отдельно проверьте открытие и закрытие диалога: после закрытия человек должен понимать, где продолжает работу.",
+  "pageType": "checklist",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Проверка",
+      "Ожидание",
+      "Пример дефекта"
+    ],
+    "rows": [
+      [
+        "Tab",
+        "Видимый следующий элемент",
+        "Рамка скрыта стилями"
+      ],
+      [
+        "Shift + Tab",
+        "Предсказуемое возвращение",
+        "Порядок не совпадает с логикой страницы"
+      ],
+      [
+        "Закрытие диалога",
+        "Возврат к продолжению задачи",
+        "Фокус оказался в начале документа"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/keyboard-navigation-checklist",
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "website-navigation-labels",
+    "pagination-or-load-more"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+      "title": "Developing a Keyboard Interface",
+      "publisher": "W3C ARIA APG",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Видимость и предсказуемость фокуса; различие переходов между компонентами и внутри составных компонентов."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": true,
+  "version": 1,
+  "cta": {
+    "headline": "Проверить доступность ключевого пути",
+    "text": "Хочу проверить клавиатурную навигацию в основном сценарии сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить доступность ключевого пути",
+    "briefPrompt": "Хочу проверить клавиатурную навигацию в основном сценарии сайта."
+  },
+  "review": {
+    "hash": "1cb07425db34fda8ccb9bb9cb5784fea3844f187751f54d2ab9f625aaf03ea50",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.128Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

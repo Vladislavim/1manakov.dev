@@ -1,0 +1,28 @@
+{
+  "slug": "usability-test-scenario",
+  "sources": [
+    {
+      "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+      "title": "Using moderated usability testing",
+      "publisher": "GOV.UK Service Manual",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Задачи, наблюдение и нейтральные уточнения при модерируемом тестировании."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.953Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

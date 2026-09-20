@@ -1,0 +1,99 @@
+{
+  "slug": "ux-interview-questions",
+  "title": "Вопросы для UX-интервью: как узнать о реальном опыте",
+  "description": "Примеры вопросов для UX-интервью: последний случай, контекст, обходные пути и ограничения. Как отделять наблюдение от предположения и не подсказывать ответ.",
+  "h1": "Вопросы для UX-интервью: как узнать о реальном опыте",
+  "clusterId": "intent-ux-interview-questions",
+  "intent": "examples",
+  "topic": "research",
+  "primaryKeyword": "интервью ux исследования",
+  "secondaryKeywords": [],
+  "wordstatVolume": 58,
+  "demandEvidence": [
+    {
+      "query": "интервью ux исследования",
+      "count": 58,
+      "retrievedAt": "2026-09-19T13:58:10.531Z"
+    }
+  ],
+  "directAnswer": "Спрашивайте о конкретном недавнем случае: что человек пытался сделать, с чего начал, где остановился и как закончил. Ответ на «Пользовались бы вы новой функцией?» описывает предположение. Рассказ о последнем действии даёт материал для проверки задачи и ограничений.",
+  "userProblem": "Спрашивайте о конкретном недавнем случае: что человек пытался сделать, с чего начал, где остановился и как закончил. Ответ на «Пользовались бы вы новой функцией?» описывает предположение. Рассказ о последнем действии даёт материал для проверки задачи и ограничений.",
+  "pageType": "examples",
+  "visualValue": "before-after",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Вместо",
+      "Спросить",
+      "Что искать"
+    ],
+    "rows": [
+      [
+        "Вам удобно?",
+        "Вспомните последний заказ",
+        "Действия"
+      ],
+      [
+        "Нужна кнопка?",
+        "Как обходите трудность?",
+        "Текущий способ"
+      ],
+      [
+        "Всегда так делаете?",
+        "Когда было иначе?",
+        "Ограничения"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/ux-interview-questions",
+  "relatedPages": [
+    "usability-test-scenario",
+    "website-redesign-diagnosis",
+    "dashboard-hierarchy-examples"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+      "title": "Using in-depth interviews",
+      "publisher": "GOV.UK Service Manual",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Подготовка тем интервью, открытых вопросов и уточнений о контексте использования."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Подготовить вопросы исследования",
+    "text": "Хочу уточнить вопросы интервью для пользовательского сценария. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Подготовить вопросы исследования",
+    "briefPrompt": "Хочу уточнить вопросы интервью для пользовательского сценария."
+  },
+  "review": {
+    "hash": "fb0a6e40209cf7a1a1f242b32ad9c083b90755546e81875e21218a5c6a3a9ff4",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.143Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

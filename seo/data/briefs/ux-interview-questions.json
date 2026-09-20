@@ -1,0 +1,62 @@
+{
+  "slug": "ux-interview-questions",
+  "clusterId": "intent-ux-interview-questions",
+  "parentClusterId": "research-informational-design",
+  "primaryKeyword": "интервью ux исследования",
+  "secondaryKeywords": [],
+  "intent": "examples",
+  "topic": "research",
+  "userProblem": "Вопросы для UX-интервью: как узнать о реальном опыте",
+  "directAnswer": "Спрашивайте о конкретном недавнем случае: что человек пытался сделать, с чего начал, где остановился и как закончил. Ответ на «Пользовались бы вы новой функцией?» описывает предположение. Рассказ о последнем действии даёт материал для проверки задачи и ограничений.",
+  "title": "Вопросы для UX-интервью: как узнать о реальном опыте",
+  "description": "Примеры вопросов для UX-интервью: последний случай, контекст, обходные пути и ограничения. Как отделять наблюдение от предположения и не подсказывать ответ.",
+  "h1": "Вопросы для UX-интервью: как узнать о реальном опыте",
+  "sections": [
+    "Начните с решения, которое предстоит принять",
+    "Попросите восстановить последний случай",
+    "Отделите слова участника от своего вывода"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "before-after",
+  "relatedCases": [],
+  "relatedPages": [
+    "usability-test-scenario",
+    "website-redesign-diagnosis",
+    "dashboard-hierarchy-examples"
+  ],
+  "cta": {
+    "headline": "Подготовить вопросы исследования",
+    "text": "Хочу уточнить вопросы интервью для пользовательского сценария. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Подготовить вопросы исследования",
+    "briefPrompt": "Хочу уточнить вопросы интервью для пользовательского сценария."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/ux-interview-questions",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "ux исследование",
+      "kind": "top",
+      "count": 58,
+      "retrievedAt": "2026-09-19T13:58:10.531Z"
+    }
+  ],
+  "wordstatVolume": 58,
+  "opportunityScore": 59,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.942Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

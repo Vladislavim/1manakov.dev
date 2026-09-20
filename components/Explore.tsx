@@ -2,7 +2,7 @@
 import { useRef, useState, type CSSProperties } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { featuredProjects } from '@/data/projects';
+import { projects as featuredProjects } from '@/data/projects';
 import { RouteLink } from './SiteShell';
 
 export function Explore() {
@@ -12,16 +12,19 @@ export function Explore() {
     const mm = gsap.matchMedia();
     mm.add('(prefers-reduced-motion: no-preference) and (min-width: 768px)', () => {
       gsap.fromTo('.explore-inner', { clipPath: 'circle(12% at 70% 0%)' }, { clipPath: 'circle(145% at 70% 0%)', ease: 'none', scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'top 15%', scrub: true } });
-      gsap.to('.image-letter', { backgroundPosition: '65% 70%', ease: 'none', scrollTrigger: { trigger: root.current, start: 'top center', end: 'bottom center', scrub: true, onUpdate: self => setActive(Math.min(2, Math.floor(self.progress * 3))) } });
+      gsap.to('.image-letter', { backgroundPosition: '55% 45%', ease: 'none', scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
     return () => mm.revert();
   }, { scope: root });
   const p = featuredProjects[active];
-  const style = { '--letter-image': `url("${p.cover}")` } as CSSProperties;
+  function letter(character: string, offset: number) {
+    const project = featuredProjects[(active + offset) % featuredProjects.length];
+    return <RouteLink href={`/work/${project.slug}`} image={project.cover} className="image-letter" data-case={project.slug} data-cursor="VIEW" aria-label={`View ${project.name}`} style={{ '--letter-image': `url("${project.cover}")`, '--letter-color': project.color, '--letter-tint': `${project.color}b3` } as CSSProperties}>{character}</RouteLink>;
+  }
   return <section id="explore" ref={root} className="explore scene" aria-labelledby="explore-title">
     <div className="explore-inner">
       <span className="scene-kicker">A DIFFERENT WAY TO LOOK.</span>
-      <h2 id="explore-title" className="explore-type" aria-label="Design to explore"><span className="type-line" aria-hidden="true"><span className="image-letter" style={{ '--letter-image': `url("${featuredProjects[0].cover}")` } as CSSProperties}>D</span>esi<span className="image-letter" style={style}>g</span>n</span><span className="type-line" aria-hidden="true">to expl<span className="image-letter" style={{ '--letter-image': `url("${featuredProjects[2].cover}")` } as CSSProperties}>o</span>re</span></h2>
+      <h2 id="explore-title" className="explore-type" aria-label="Design to explore"><span className="type-line">{letter('D', 0)}e{letter('s', 3)}i{letter('g', 1)}n</span><span className="type-line">to {letter('e', 4)}xpl{letter('o', 2)}r{letter('e', 5)}</span></h2>
       <div className="scene-index" aria-label="Explore featured work">{featuredProjects.map((project, i) => <button key={project.slug} aria-label={`0${i + 1} — Preview ${project.name}`} aria-pressed={active === i} onClick={() => setActive(i)}>0{i + 1}<span /></button>)}</div>
       <div className="scene-bottom"><p>PRODUCT<br />DESIGNER</p><RouteLink href={`/work/${p.slug}`} image={p.cover} className="line-link" data-cursor="VIEW">{p.shortName} ↗</RouteLink></div>
     </div>

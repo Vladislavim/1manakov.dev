@@ -1,0 +1,32 @@
+{
+  "task": "SEO Factory and portfolio interaction upgrades",
+  "updatedAt": "2026-09-20",
+  "lastCompletedStage": "20 approved guides; local production SSR, sitemap, schema, CTA and events passed; normal/dry-run/resume and ledger verified.",
+  "counts": {
+    "rawKeywords": 7799,
+    "normalizedKeywords": 7717,
+    "candidateKeywords": 2972,
+    "clusters": 190,
+    "serpCandidatesMatched": 140,
+    "strongOpportunities": 76,
+    "goldenPages": 5,
+    "pages": 20,
+    "indexablePages": 20
+  },
+  "remaining": [
+    "User requested more interactive guide content and site-wide detail/overlap review; follows current Git checkpoint."
+  ],
+  "externalFollowup": [
+    "Hosting deployment",
+    "Record actual deployment date",
+    "Connect analytics destination",
+    "Import real search metrics after observation windows"
+  ],
+  "portfolio": "Case order, hero lens previews, Legacy comparison, VPN angle, next-case previews and LAB migration implemented.",
+  "constraints": [
+    "Solo",
+    "No new dependency",
+    "Credentials outside repository",
+    "No invented search or client metrics"
+  ]
+}

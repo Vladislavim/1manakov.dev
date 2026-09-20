@@ -1,0 +1,25 @@
+{
+  "completed": [
+    "collect",
+    "normalize",
+    "cluster",
+    "preliminary-score",
+    "serp",
+    "final-score",
+    "briefs",
+    "selected-serp",
+    "generate-golden",
+    "generate-batch",
+    "generate-final",
+    "audit",
+    "report"
+  ],
+  "inputFingerprint": "ced0eda6aa652307fd59f2eb525d19df99f3b1edb47eaabaa3dcd00793c3d13b",
+  "batchId": "ru-2026-09-19-01",
+  "mode": "draft-generation",
+  "startedAt": "2026-09-20T07:08:03.479Z",
+  "source": "curated-first-batch",
+  "concurrency": 1,
+  "lastCompletedStage": "report",
+  "completedAt": "2026-09-20T07:08:06.442Z"
+}

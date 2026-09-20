@@ -1,0 +1,28 @@
+{
+  "slug": "design-system-vs-ui-kit",
+  "sources": [
+    {
+      "url": "https://design-system.service.gov.uk/",
+      "title": "Styles, components and patterns",
+      "publisher": "GOV.UK Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Пример системы, объединяющей стили, компоненты, паттерны и правила применения."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.861Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

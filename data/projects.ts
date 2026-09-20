@@ -6,7 +6,7 @@ export type Project = {
 };
 const media = (name: string) => `/images/${name}.webp`;
 
-export const projects: Project[] = [
+const projectRecords: Project[] = [
   {
     slug: 'allnrg', name: 'Alliance Energy', shortName: 'Allnrg', number: '01',
     category: 'Engineering website', role: 'Design · Frontend · Build',
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     cover: media('cosmic_atelier_ui_in_browser_frame'), color: '#302d3b', ink: '#f4efe5',
     summary: 'An independent luxury interface concept. A visual exploration of atmosphere, scale and art direction for the web.',
     statement: 'An imagined\ndigital world.',
-    details: 'This is a concept, not a launched client product. The studies explore expressive imagery and interface composition; the images below are concept mockups from the original portfolio.',
+    details: 'This is a concept, not a launched client product. The study explores expressive imagery, atmosphere and interface composition.',
     images: [
       { src: media('cosmic_atelier_ui_in_browser_frame'), alt: 'Aurelia Atelier interface concept in a browser frame', caption: '01 — Interface concept / browser study' },
       { src: media('futuristic_luxury_website_mockup_design'), alt: 'Aurelia Atelier luxury website concept mockup', caption: '02 — Art direction / composition study' },
@@ -93,6 +93,8 @@ export const projects: Project[] = [
     ],
   },
 ];
+const projectOrder = ['allnrg', 'pdp', 'khasaut-tour', 'vpn-equipment', 'legacy-rheumatology', 'aurelia-atelier'];
+export const projects: Project[] = projectOrder.map((slug, index) => ({ ...projectRecords.find(project => project.slug === slug)!, number: String(index + 1).padStart(2, '0') }));
 export const featuredProjects = projects.slice(0, 3);
 export const contact = { name: 'Vladislav Imanakov', email: 'exestination@yandex.ru', telegram: 'https://t.me/vimanakov', github: 'https://github.com/Vladislavim' };
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://imanakov.website';
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://1manakov.dev';

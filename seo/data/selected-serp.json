@@ -1,0 +1,1134 @@
+[
+  {
+    "slug": "dashboard-hierarchy-examples",
+    "query": "примеры дашбордов",
+    "clusterId": "dashboard-examples-general",
+    "checkedAt": "2026-09-19T14:01:20.090Z",
+    "documents": [
+      {
+        "url": "https://datalens.ru/gallery/all",
+        "title": "DataLens Gallery — примеры дашбордов",
+        "snippet": "Шаблоны готовых дашбордов в DataLens для вдохновения и решения бизнес-задач: примеры дашбордов для отдела продаж, маркетинга, финансов, HR, руководителя компании."
+      },
+      {
+        "url": "https://alexkolokolov.com/ru/gallery",
+        "title": "Галерея дашбордов в Power BI",
+        "snippet": "Примеры интерактивных дашбордов для разных отраслей бизнеса: отчеты по стратегическим и оперативным показателям, визуализация KPI. Блог Алексея Колоколова. Галерея ИИ- дашбордов . Примеры дашбордов в Power BI."
+      },
+      {
+        "url": "https://datalens.ru/gallery",
+        "title": "DataLens Gallery — примеры дашбордов",
+        "snippet": "Шаблоны готовых дашбордов в DataLens для вдохновения и решения бизнес-задач: примеры дашбордов для отдела продаж, маркетинга, финансов, HR, руководителя компании. Готовые дашборды для вдохновения и решения бизнес-задач."
+      },
+      {
+        "url": "https://practicum.yandex.ru/blog/chto-takoe-dashbord/",
+        "title": "Дашборд : что это, типы дашбордов - инструменты и правила...",
+        "snippet": "Дашборд простыми словами — это интерактивная аналитическая панель, графический интерфейс. Смысл в том, что на одном экране расположены все ключевые метрики, показатели цели или процессов. С помощью этих метрик можно выявить и проанализировать тренды и изменения. Примеры дашбордов для бизнеса — графики Яндекс Метрики , с помощью которых можно посмотреть, как менялась посещаемость сайта и что на неё влияло."
+      },
+      {
+        "url": "https://secrets.tbank.ru/razvitie/kak-sdelat-dashboard/",
+        "title": "Дашборд : что это, как его сделать, правила и примеры",
+        "snippet": "Как создать дашборд : правила, примеры и инструменты. Ошибки при создании дашбордов . Что такое дашборд . Дашборд , dashboard, — это интерактивная информационная панель, которая собирает данные из разных источников и показывает ключевые метрики на одном экране."
+      },
+      {
+        "url": "https://sky.pro/wiki/analytics/primer-dashborda-dlya-analitiki-vidy-struktura-i-funktsional/",
+        "title": "Пример дашборда для аналитики: виды, структура и функционал",
+        "snippet": "Что такое дашборд : ключевые характеристики и назначение. Дашборд (dashboard) — это визуальный инструмент представления ключевых показателей эффективности (KPI), метрик и данных, необходимых для принятия решений. Пример дашборда — это не просто инструмент для визуализации данных, а стратегический актив, превращающий информацию в конкурентное преимущество."
+      },
+      {
+        "url": "https://hightime.media/dashbordi-po-marketingu/",
+        "title": "25 маркетинговых дашбордов : примеры , типы и как создать",
+        "snippet": "Содержание Примеры дашбордов для бизнеса Дашборды для маркетинга по каналам"
+      },
+      {
+        "url": "https://fanruan.ru/blog/bi-dashboard-galereya-vdokhnovlyayushchie-resheniya-dlya-analitiki",
+        "title": "BI дашборд галерея 2026: 50+ примеров для продаж, финансов",
+        "snippet": "Галерея BI дашбордов : лучшие решения для аналитики, визуализация KPI и примеры для бизнеса. Выберите bi дашборд для эффективного управления. Компании, которые внедряют BI дашборды , получают значительные преимущества: оперативный контроль, прозрачность процессов и экономию средств. Вы сможете выбрать решения, которые подходят для разных бизнес-направлений."
+      },
+      {
+        "url": "https://ppc.world/articles/vse-o-dashbordah-chto-eto-primery-dashbordov/",
+        "title": "Что такое дашборд : примеры и сложности создания дашбордов",
+        "snippet": "Дашборд что это пример . Пример общего дашборда с разбивкой по месяцам. Дашборды можно использовать параллельно с готовыми решениями для аналитики. Такой вариант обязательным не является, но хорош для тех, кто хочет всё и сразу."
+      },
+      {
+        "url": "https://developers.sber.ru/help/business-development/dashboard-in-simple-words",
+        "title": "Дашборд : что это простыми словами, виды и как создать",
+        "snippet": "Дашборд : что это такое простыми словами. Дашборд — это интерактивная панель, на которой ключевые показатели собраны в одном месте: в карточках, графиках, диаграммах, таблицах и фильтрах. Термин пришёл из английского dashboard, что можно перевести как «приборная панель». Примеры дашбордов легко найти в любой отрасли. Интернет-магазин отслеживает заказы, выручку, популярные товары и остатки."
+      }
+    ],
+    "editorialCount": 8,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "design-system-vs-ui-kit",
+    "query": "дизайн система и ui kit разница",
+    "clusterId": "design-systems-comparison-design",
+    "checkedAt": "2026-09-19T14:07:06.162Z",
+    "documents": [
+      {
+        "url": "https://habr.com/ru/companies/rostelecom/articles/684816/",
+        "title": "Дизайн - система не равно UI - kit / Хабр",
+        "snippet": "Разница между дизайн - системой и локальными ui - kit . UI - кит как правило лишен какого-то смыслового кусочка, который присущ дизайн - системе , но он вполне может существовать как отдельный проект. Это может быть локальный ui - kit на реакте или вью, но его придётся развивать и поддерживать в одиночку."
+      },
+      {
+        "url": "https://workspace.ru/blog/ui-kit-i-dizayn-sistema-chem-otlichayutsya-i-zachem-eto-biznesu-a-ne-tolko-dizayneru/",
+        "title": "UI Kit и дизайн - система : чем отличаются и зачем это бизнесу...",
+        "snippet": "Разбираем без дизайнерского жаргона: что такое UI Kit , чем он отличается от дизайн - системы , почему это про деньги и скорость, а не про аккуратность, и когда собирать систему рано. Самая частая путаница: UI Kit и дизайн - систему считают синонимами. Это не так, и разница важна, когда решаешь, во что вкладываться. UI Kit отвечает на вопрос «что». Вот кнопка, вот её цвет, вот размеры. Это библиотека визуальных компонентов. Дизайн - система отвечает ещё и на «когда» и «как»."
+      },
+      {
+        "url": "https://logomachine-school.ru/blog/ui-kit-i-dizajnsistema/",
+        "title": "UI Kit в дизайне : что это, отличие от дизайн - системы",
+        "snippet": "На первый взгляд UI Kit и дизайн - система похожи — и то, и другое содержит кнопки, шрифты, цвета. Но разница становится заметна в работе. Если использовать только UI Kit , без правил, структуры, макет начинает рассыпаться: отступы отличаются , шрифты не сочетаются, компоненты ведут себя по-разному. Просто потому, что UI Kit — это набор деталей, а не целая система ."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=37DLtsCFDpw",
+        "title": "Дизайн - система и UI - кит : в чем же разница ? - YouTube",
+        "snippet": ""
+      },
+      {
+        "url": "https://secrets.tbank.ru/blogi-kompanij/kakoj-kompanii-nuzhna-dizajn-sistema/",
+        "title": "Дизайн - система или UI - кит : что выбрать бизнесу?",
+        "snippet": "Кто такие UI ‑ киты . UI ‑ кит , или User Interface Kit — это набор компонентов, необходимый для сборки однородного продукта. Он может включать в себя модульную сетку, типографику, цвета, интервалы и другие элементы. Например, UI ‑ кит сайта MobileUp состоит из нескольких страниц, повторяющихся компонентов и небольшого количества стилей."
+      },
+      {
+        "url": "https://gde.expert/blog/dizajn-sistema-i-ui-kit",
+        "title": "Дизайн - система и UI - кит : зачем они нужны и когда без них не...",
+        "snippet": "Чем дизайн - система отличается от UI - кита ? UI - кит — набор готовых элементов. Дизайн - система — это кит плюс правила их использования: отступы, цвета, типографика, поведение. Кит — коробка деталей, система — ещё и инструкция по сборке. Зачем вообще нужна дизайн - система ? Она экономит время и деньги при росте и держит продукт цельным."
+      },
+      {
+        "url": "https://www.tgu-dpo.ru/news/2026/06/16/dizayn-sistema-chto-eto/",
+        "title": "Дизайн - система : что это, состав и отличие от UI - кита",
+        "snippet": "Дизайн - система , UI - кит и гайдлайн: в чём разница . Эти три инструмента часто путают, хотя каждый решает отдельную задачу. Часто задаваемые вопросы. Чем дизайн - система отличается от UI - кита ? UI - кит — только набор визуальных элементов: кнопки, иконки, цвета. Дизайн - система включает UI - кит , фреймворк с кодом и гайдлайны с правилами. UI - кит — это «детали», дизайн - система — инструкция сборки и философия всего продукта."
+      },
+      {
+        "url": "https://cmsmagazine.ru/journal/items-how-to-distinguish-a-design-system/",
+        "title": "Как различить дизайн - систему , атомарный... — CMS Magazine",
+        "snippet": "Ключевые отличия дизайн - системы , атомарного дизайна и UI - kit . UI - kit и гайдлайн — это продукты, а дизайн - система и атомарный дизайн — методологии; UI - kit собирается после завершения дизайна проекта; В атомарном дизайне существует страница как высший уровень конкретики, в UI - kit никогда не бывает такого уровня"
+      },
+      {
+        "url": "https://media.contented.ru/opyt/instrukcii/chto-takoe-ui-kit-kak-sozdat-i-zachem-on-dizaineru/",
+        "title": "UI - кит : что это, как создать и применять в работе с примерами",
+        "snippet": "Чем UI - кит отличается от дизайн - системы . Как и где собирают UI - кит . Почему важно использовать UI - кит . Где найти примеры UI - китов . Главное о UI - китах . Чем UI - кит отличается от дизайн - системы . Дизайн - система — это набор правил и инструментов, с помощью которых создают интерфейсы и цифровые продукты."
+      },
+      {
+        "url": "https://nexfield.academy/knowledge/interfaces/layout/create-design-systems/",
+        "title": "Дизайн - система в Figma: как создать? - Nexfield Academy",
+        "snippet": "Чем дизайн - система отличается от UI - кита ? Очень часто, дизайн - системой называют UI - кит , это неправильно! За это отвечает документация и структура дизайн - системы . Как я уже сказал, конкретных правил организации дизайн - систем и прописывания документации нет. Они будут отличаться от дизайн - системы к дизайн - системе . Но есть определенные рекомендации, которые точно сделают вашу дизайн - систему лучше."
+      }
+    ],
+    "editorialCount": 10,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0.1
+  },
+  {
+    "slug": "empty-state-copy-examples",
+    "query": "тексты пустых состояний",
+    "checkedAt": "2026-09-19T19:04:51.826Z",
+    "documents": [
+      {
+        "url": "https://habr.com/ru/companies/ozontech/articles/753022/",
+        "title": "Дорогая, что-то пошло не так. Гид по пустым состояниям ... / Хабр"
+      },
+      {
+        "url": "https://kira-kalimulina.ru/guide",
+        "title": "Гид по пустым состояниям и ошибкам"
+      },
+      {
+        "url": "https://guides.kontur.ru/components/screens/emptystate/",
+        "title": "Пустые состояния — Экраны — Компоненты — Контур.Гайды"
+      },
+      {
+        "url": "https://petr-panda.ru/tekst-pustogo-sostoyaniya/",
+        "title": "Текст пустого состояния : определение и примеры"
+      },
+      {
+        "url": "https://koder.ai/ru/blog/pustye-sostoyaniya-zavershenie-nastrojki",
+        "title": "Дизайн пустых состояний , который повышает... | Koder.ai"
+      },
+      {
+        "url": "https://hirehi.ru/blog/pustye-sostoianiia-empty-states-kak-proektirovat-ekrany-kotorye-pomogaiut",
+        "title": "Empty states: как проектировать пустые состояния ... | HireHi"
+      },
+      {
+        "url": "https://cds.b2b-center.ru/patterns/empty-states",
+        "title": "Пустые состояния – Central Design System"
+      },
+      {
+        "url": "https://learn.microsoft.com/ru-ru/sharepoint/dev/design/empty-states",
+        "title": "Пустые состояния веб-частей | Microsoft Learn"
+      },
+      {
+        "url": "https://t.me/uxnotes/1275",
+        "title": "Telegram: View @uxnotes"
+      },
+      {
+        "url": "https://wybex.ru/glossary/empty-state/",
+        "title": "Пустое состояние (Empty state) — что это и как использовать..."
+      }
+    ]
+  },
+  {
+    "slug": "form-error-messages",
+    "query": "ошибки полей ввода",
+    "checkedAt": "2026-09-19T19:04:52.767Z",
+    "documents": [
+      {
+        "url": "https://guides.kontur.ru/principles/data/validation/",
+        "title": "Валидация — Данные — Принципы — Контур.Гайды"
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/form-validation-techniques",
+        "title": "Техники валидации форм — журнал «Доктайп» | HTML Academy"
+      },
+      {
+        "url": "https://metanit.com/web/javascript/10.6.php",
+        "title": "JavaScript | Validation API. Валидация элементов формы"
+      },
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Forms/Form_validation",
+        "title": "Валидация форм на стороне клиента - Изучение веб-разработки"
+      },
+      {
+        "url": "https://tproger.ru/articles/3-sposoba-validacii-form-ot-prostogo-k-slozhnomu",
+        "title": "Валидация формы — от простых способов к сложным"
+      },
+      {
+        "url": "https://sky.pro/wiki/html/manipulyatsii-s-validatsiey-poley-vvoda-cherez-html-5-i-javascript/",
+        "title": "Манипуляции с валидацией полей ввода через HTML5 и Javascript"
+      },
+      {
+        "url": "https://hirehi.ru/blog/oshibki-v-formakh-kak-proektirovat-validatsiiu-i-podskazki-bez-razdrazheniia",
+        "title": "Ошибки в формах: как проектировать валидацию без... | HireHi"
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/valid-forms",
+        "title": "3 способа валидации форм — журнал «Доктайп» | HTML Academy"
+      },
+      {
+        "url": "https://metanit.com/web/html5/3.13.php",
+        "title": "HTML5 | Валидация форм"
+      },
+      {
+        "url": "https://doka.guide/recipes/validation/",
+        "title": "Мгновенная валидация форм — Рецепты — Дока"
+      }
+    ]
+  },
+  {
+    "slug": "form-validation-timing",
+    "query": "валидация формы",
+    "clusterId": "forms-informational-validation",
+    "checkedAt": "2026-09-19T14:01:51.082Z",
+    "documents": [
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Forms/Form_validation",
+        "title": "Валидация форм на стороне клиента - Изучение веб-разработки",
+        "snippet": "Перед отправкой данных на сервер важно убедиться, что все обязательные поля формы заполнены данными в корректном формате. Это называется валидацией на стороне клиента и помогает убедиться, что данные, введённые в каждый элемент формы , соответствуют требованиям. Данная статья проведёт вас через основные концепци и примеры валидации на стороне клиента."
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/valid-forms",
+        "title": "3 способа валидации форм — журнал «Доктайп» | HTML Academy",
+        "snippet": "Валидация на стороне клиента — это проверка данных до отправки формы . Она помогает пользователю быстро узнать об ошибках при заполнении полей и исправить их. Вы можете проверить поля для ввода логина, пароля, почты, номера телефона и других типов данных, которые должны соответствовать определённым критериям. Атрибуты для валидации формы ."
+      },
+      {
+        "url": "https://tproger.ru/articles/3-sposoba-validacii-form-ot-prostogo-k-slozhnomu",
+        "title": "Валидация формы — от простых способов к сложным",
+        "snippet": "Валидация формы — проверка данных, которые ввёл пользователь. С этой задачей сталкиваются многие начинающие фронтенд-разработчики. В статье мы расскажем о том, как работает валидация и как реализовать её тремя разными способами."
+      },
+      {
+        "url": "https://purpleschool.ru/knowledge-base/vue/forms/validation",
+        "title": "Валидация форм в веб разработке | PurpleSchool",
+        "snippet": "Валидация форм (form- validation ) — это проверка данных, которые пользователь вводит в форму , до того как они будут обработаны или сохранены. Основная цель — не дать в системе появиться некорректным, опасным или просто бессмысленным данным. Смотрите, я покажу вам, как к этому подходить системно, а не через набор разрозненных проверок \"на коленке\". Мы разберем: какие типы валидации бывают"
+      },
+      {
+        "url": "https://metanit.com/web/javascript/10.7.php",
+        "title": "JavaScript | Управление валидацией форм",
+        "snippet": ""
+      },
+      {
+        "url": "https://metanit.com/web/javascript/10.6.php",
+        "title": "JavaScript | Validation API. Валидация элементов формы",
+        "snippet": "HTML5 поддерживает нативную валидацию форм и их элементов. Для этого у полей ввода применяются различные атрибуты, которые настраивают валидацию . В частности, мы можем применять следующие атрибуты Для этого предназначен специальный API - Constraint Validation API. Этот API определяет ряд свойств, которые можно применять к формам или элементам форм и которые позволяют получить состояние валидации элементов"
+      },
+      {
+        "url": "https://wiki.merionet.ru/articles/validaciia-dannyx-kak-proverit-formu-vvoda-v-html-s-pomoshhiu-javascript",
+        "title": "Валидация данных: как проверить форму ввода в HTML...",
+        "snippet": "Валидация на стороне клиента осуществляется с использованием атрибутов HTML5 и JavaScript на стороне клиента. Например, вы могли заметить, что в некоторых формах , как только вы вводите недействительный адрес электронной почты, форма сразу же выдает ошибку «Пожалуйста, введите действительный адрес электронной почты». Этот тип валидации обычно выполняется с помощью JavaScript на стороне клиента."
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/form-validation-techniques",
+        "title": "Техники валидации форм — журнал «Доктайп» | HTML Academy",
+        "snippet": "Это перевод статьи Ире Адеринокун — »Form validation techniques». Ни для кого не секрет, что онлайн- формы могут стать серьёзным испытанием для пользователей. Особенно когда они выглядят как список полей для ввода без каких-либо подсказок. Нужно отображать сообщения об ошибках таким образом, чтобы пользователь не мог отправить некорректно заполненную форму . Пример валидации в реально времени."
+      },
+      {
+        "url": "https://doka.guide/recipes/validation/",
+        "title": "Мгновенная валидация форм — Рецепты — Дока",
+        "snippet": "Валидация форм с помощью HTML не может предоставить того уровня UX (пользовательского опыта), который требуется стандартами веб-разработки. Ему на помощь приходит валидация через JavaScript. Она обеспечивает мгновенную обратную связь при заполнении формы и аккуратно подсказывает, что нужно исправить прежде чем форма отправится."
+      },
+      {
+        "url": "https://getbootstrap.ru/docs/5.3/forms/validation/",
+        "title": "Валидация · Bootstrap v5.3",
+        "snippet": ""
+      }
+    ],
+    "editorialCount": 1,
+    "dominantIntent": "mixed/manual-review",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0.5
+  },
+  {
+    "slug": "interface-motion-rules",
+    "query": "анимация интерфейсов",
+    "clusterId": "motion-informational-design",
+    "checkedAt": "2026-09-19T14:02:56.669Z",
+    "documents": [
+      {
+        "url": "https://coddyschool.com/blog/when-to-use-animation-in-interfaces-ux-ui-guide/",
+        "title": "Когда нужна анимация в интерфейсе : полное руководство по...",
+        "snippet": "Полное руководство по анимации в интерфейсе : 12 принципов UX- анимации , примеры... 01 Что такое анимация в интерфейсе и зачем она нужна 02 Основные функции UI- анимации в пользовательском опыте"
+      },
+      {
+        "url": "https://skillbox.ru/media/design/moushndizayn-v-interfeysakh/",
+        "title": "Моушн-дизайн в интерфейсах : задачи и эффекты UX- анимации",
+        "snippet": "Анимация в UX-дизайне не похожа на анимацию логотипов, рекламы или мультфильмов — она обычно выполняет сугубо прикладные функции, а иногда и вовсе не должна быть заметна. Разберёмся, для каких целей применяется анимация в интерфейсах , в чём её особенности и какие эффекты используют чаще всего. Зачем в интерфейсе анимация ."
+      },
+      {
+        "url": "https://habr.com/ru/companies/raiffeisenbank/articles/548254/",
+        "title": "Гайд по UI анимации . Как начать анимировать интерфейсы / Хабр",
+        "snippet": "Зачем интерфейсам анимация . Интерфейсы перенимают характеристики реального мира. В жизни все взаимосвязано, и один объект влияет на другой: если мы начнем двигать лист бумаги по столу, то увидим траекторию и скорость его движения, так как эти параметры зависят от начального импульса нашей руки."
+      },
+      {
+        "url": "https://habr.com/ru/companies/simbirsoft/articles/974772/",
+        "title": "Анимированный UI: как улучшить взаимодействие... / Хабр",
+        "snippet": "На зрелом уровне анимация становится не надстройкой, а частью архитектуры интерфейса . Она помогает продукту чувствоваться цельным, обеспечивает предсказуемость и ритм, а главное — создаёт ощущение «живого» цифрового опыта. Привет, я Максим, frontend-разработчик в компании SimbirSoft, в этой статье расскажу, как сделать полезный для пользователя UI."
+      },
+      {
+        "url": "https://vc.ru/design/133711-kak-sdelat-ui-animaciyu-estestvennoi-i-priyatnoi-glazu-fizicheskie-zakony-v-animacii-interfeisov-na-praktike",
+        "title": "Как сделать UI- анимацию естественной... — Дизайн на vc.ru",
+        "snippet": "Суть такова, что бездумно приправленный анимацией интерфейс не несет никакой ценности, так как анимация в нем живет своей жизнью, на своей волне и не делает сценарии приложения еще более полезными, удобными, приятными и вкусными. Но если вооружиться научными изысканиями о психологии восприятия, можно подыскать способ сделать анимацию в интерфейсе лучше. Давайте попробуем реализовать идею и начнем по порядку."
+      },
+      {
+        "url": "https://vc.ru/design/1391109-figma-rive-kak-ya-sozdayu-ui-animacii",
+        "title": "Figma + Rive: как я создаю UI анимации — Дизайн на vc.ru",
+        "snippet": ""
+      },
+      {
+        "url": "https://habr.com/ru/companies/ruvds/articles/351054/",
+        "title": "Как сделать хорошую UI- анимацию отличной / Хабр",
+        "snippet": "В материале, перевод которого мы сегодня публикуем, дизайнер Пабло Стэнли предлагает несколько рекомендаций по анимации микровзаимодействий в пользовательском интерфейсе ."
+      },
+      {
+        "url": "https://ux-journal.ru/animatsiya-v-interfejsah-12-printsipov-ux-animatsii.html",
+        "title": "Анимация в интерфейсах : 12 принципов UX- анимации ...",
+        "snippet": "Интро в UI- анимацию Четыре способа улучшить юзабилити с помощью анимации 12 принципов анимации в интерфейсах"
+      },
+      {
+        "url": "https://habr.com/ru/articles/424383/",
+        "title": "Полное руководство по правильному использованию анимации в UX",
+        "snippet": "Предлагаю вашему вниманию перевод очень крутой статьи по анимации интерфейса . The ultimate guide to proper use of animation in UX автора Taras Skytskyi."
+      },
+      {
+        "url": "https://www.uxrock.ru/library/polnoe-rukovodstvo-po-pravilnomu-ispolzovaniyu-animacii-v-ux",
+        "title": "Полное руководство по правильному использованию анимации в UX",
+        "snippet": "Этот тип движения наиболее часто используется в анимации интерфейса . Если вы сомневаетесь, какой тип движения использовать в анимации , используйте стандартную кривую. Согласно рекомендациям Material Design Guidelines, лучше использовать асимметричную кривую, чтобы движение выглядело более естественно и реалистично."
+      }
+    ],
+    "editorialCount": 10,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "keyboard-navigation-checklist",
+    "query": "навигация клавиатурой",
+    "checkedAt": "2026-09-19T19:04:53.816Z",
+    "documents": [
+      {
+        "url": "https://habr.com/ru/companies/netcracker/articles/273071/",
+        "title": "Web без мышки / Хабр"
+      },
+      {
+        "url": "https://www.gbs.spb.ru/ru/pages/tiflotekhnika_i_po/Obzory_vspomogatelnykh_tekhnologij/goriachie_klavishi/",
+        "title": "Горячие клавиши. Проводник Windows: основа работы без мыши"
+      },
+      {
+        "url": "https://kod.ru/windows-hotkeys",
+        "title": "Горячие клавиши Windows: полный гид по сочетаниям"
+      },
+      {
+        "url": "https://lpgenerator.ru/blog/2014/04/22/navigaciya-s-klaviatury-kak-optimizaciya-yuzabiliti-sajta/",
+        "title": "Навигация с клавиатуры как оптимизация юзабилити сайта"
+      },
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Web/Accessibility/Guides/Keyboard-navigable_JavaScript_widgets",
+        "title": "Навигация с клавиатуры в JavaScript - Доступность | MDN"
+      },
+      {
+        "url": "https://support.discord.com/hc/ru/articles/1500000056121-%D0%A7%D0%B0%D1%81%D1%82%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%BE-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B",
+        "title": "Часто задаваемые вопросы о навигации с помощью клавиатуры"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=jmHRLWeugKc",
+        "title": "Веб доступность №5. Управляем фокусом в меню. Навигация по..."
+      },
+      {
+        "url": "https://tobiz.net/support/kak-osvoit-klaviaturnuyu-navigaciyu-na-sayte/",
+        "title": "Эффективная навигация по сайту с помощью клавиатуры"
+      },
+      {
+        "url": "https://learn.microsoft.com/ru-ru/windows/apps/develop/input/keyboard-interactions",
+        "title": "Взаимодействие с клавиатурой - Windows apps | Microsoft Learn"
+      },
+      {
+        "url": "https://help.qlik.com/ru-RU/cloud-services/Subsystems/Hub/Content/Sense_Hub/UserInterface/keyboard-navigation-and-shortcuts.htm",
+        "title": "Навигация с помощью клавиатуры и сочетаний клавиш..."
+      }
+    ]
+  },
+  {
+    "slug": "loading-skeleton",
+    "query": "скелетон загрузка",
+    "checkedAt": "2026-09-19T19:04:54.910Z",
+    "documents": [
+      {
+        "url": "https://habr.com/ru/companies/X5Tech/articles/882228/",
+        "title": "Как проектировать скелетоны / Хабр"
+      },
+      {
+        "url": "https://vc.ru/design/59939-dlya-illyuzii-bystroi-zagruzki-stranic-pravila-sozdaniya-skeletnogo-ekrana-na-saitah-i-v-prilozheniyah",
+        "title": "Для иллюзии быстрой загрузки страниц... — Дизайн на vc.ru"
+      },
+      {
+        "url": "https://chulakov.school/blog/pro-skeleton-kak-sozdat-illyuziyu-bystroy-zagruzki-sayta-i-ili-prilozheniya",
+        "title": "Про скелетон : как создать иллюзию быстрой загрузки сайта и/или..."
+      },
+      {
+        "url": "https://habr.com/ru/companies/lanit/articles/1060814/",
+        "title": "Пошаговая инструкция по внедрению скелетон - загрузки ... / Хабр"
+      },
+      {
+        "url": "https://docs.1c-bitrix.ru/pages/ui/system-skeleton.html",
+        "title": "Скелетон загрузки | BitrixFramework"
+      },
+      {
+        "url": "https://statuser.cloud/blog/skeleton-loading-v-react-bez-tailwind",
+        "title": "Skeleton Loading в React без Tailwind: как сделать... | Statuser"
+      },
+      {
+        "url": "https://proglib.io/p/karkasnye-ekrany-realizaciya-v-react-2020-10-07",
+        "title": "Каркасные экраны: реализация в React | Библиотека программиста"
+      },
+      {
+        "url": "https://habr.com/ru/companies/X5Tech/articles/825044/",
+        "title": "Разбираемся, зачем нужен и как выбрать оптимальный... / Хабр"
+      },
+      {
+        "url": "https://tr-page.yandex.ru/translate?lang=en-ru&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fhow-to-build-skeleton-screens-using-css-for-better-user-experience%2F",
+        "title": "Пример Skeleton Loader – Как создать скелетный экран с помощью..."
+      },
+      {
+        "url": "https://vc.ru/design/745749-ux-pattern-vizualizaciya-zagruzki-dannyh-loader-spin-progress-skeleton-kogda-i-kak-ispolzovat",
+        "title": "UX Паттерн: Визуализация загрузки данных. — Дизайн на vc.ru"
+      }
+    ]
+  },
+  {
+    "slug": "mobile-navigation-priorities",
+    "query": "навигация мобильных приложений",
+    "clusterId": "navigation-informational-mobile",
+    "checkedAt": "2026-09-19T14:01:44.459Z",
+    "documents": [
+      {
+        "url": "https://appcraft.pro/blog/osnovy-navigaczii-dlya-mobilnykh-prilozhenij/",
+        "title": "Навигация в мобильных приложениях : основы UX | AppCraft",
+        "snippet": "Что такое навигация в мобильном приложении . Навигация — это то, как пользователи взаимодействуют с приложением , дизайном и переходят от одного пункта интерфейса к другому. Ее можно сравнить с дорожной системой: в приложении есть десятки магистралей, которые направляют пользователей в нужное им направление."
+      },
+      {
+        "url": "https://habr.com/ru/companies/rshb/articles/584348/",
+        "title": "Flutter: как мы выбирали навигацию для мобильного приложения ?",
+        "snippet": "Мы с командой делаем банковское мобильное приложение для юридических лиц. Это не единственное приложение банка, для создания которого используется Flutter. Фреймворк уже хорошо себя показал ранее, поэтому было принято решение использовать его и для этого проекта. Сразу обозначим результаты, к которым пришли с помощью своего варианта навигации в мобильном приложении"
+      },
+      {
+        "url": "https://inostudio.com/blog/articles-design/kak-navigatsiya-pomogaet-polzovatelyu-orientirovatsya-v-prilozhenii/",
+        "title": "Удобная и понятная навигация в мобильных приложениях : как...",
+        "snippet": "Зачем нужна навигация . При помощи навигации пользователь взаимодействует с мобильным сервисом. Например, когда открывает приложение , переходит с одного экрана на другой, вводит данные, выбирает разделы меню. Элементы навигации работают как разметка на дороге или знаки дорожного движения."
+      },
+      {
+        "url": "https://habr.com/ru/companies/alfa/articles/797957/",
+        "title": "Почему навигация в Google, Booking и Spotify именно такая... / Хабр",
+        "snippet": "Навигация — сердце любого мобильного приложения . От того, насколько она интуитивна, эффективна и удобна для пользователей, зависит успех вашего приложения . Дизайнеру крайне важно понимать, как может работать навигация в приложении , чтобы выбирать лучшее решение для проекта. Всем привет! Меня зовут Ксения Толокнова, я создаю паттерны для приложения Альфа-Бизнес."
+      },
+      {
+        "url": "https://vc.ru/design/989772-navigacionnye-patterny-v-mobilnyh-prilozheniyah-kak-sdelat-pravilnyi-vybor",
+        "title": "Навигационные паттерны в мобильных приложениях .",
+        "snippet": "Навигация - это сердце любого мобильного приложения . Успех приложения может зависеть от того, насколько интуитивно понятна, эффективна и удобна его навигация . Дизайнеру крайне важно понимать, как навигация может функционировать в каждом приложении , чтобы принимать наиболее подходящие решения для конкретной ситуации. В настоящее время это основной метод навигации в мобильных приложениях ."
+      },
+      {
+        "url": "https://habr.com/ru/articles/499586/",
+        "title": "Как продумывать навигацию в мобильных приложениях / Хабр",
+        "snippet": "Для стандартных типовых приложений , или приложений уже собравших свою постоянную активную аудиторию, можно использовать меню без подписей. Рис.3. Скриншот приложения Тикток. В некоторых случаях, самое основное целевое действие принято выделять визуально."
+      },
+      {
+        "url": "https://metanit.com/kotlin/jetpack/17.1.php",
+        "title": "Kotlin и Android | Введение в навигацию",
+        "snippet": "Введение в навигацию в мобильном приложении на Jetpack Compose на языке программирования Kotlin в Android, класс NavController, компонент NavHost, функция composable, обработка маршрутов компонентами."
+      },
+      {
+        "url": "https://habr.com/ru/articles/416025/",
+        "title": "Реализация навигации в Android приложениях с помощью... / Хабр",
+        "snippet": "Архитектурный компонент Navigation позволяет упростить реализацию навигации между экранами назначения (destinations) в вашем приложении . По умолчанию, Navigation поддерживает фрагменты (Fragments) и активности (Activities) в качестве экранов назначения, но вы также можете добавить поддержку новых типов экранов назначения. Набор экранов назначения называется навигационным графом ( navigation graph) приложения ."
+      },
+      {
+        "url": "https://habr.com/ru/companies/productivity_inside/articles/318570/",
+        "title": "Базовые модели мобильной навигации / Хабр",
+        "snippet": "В своей статье Ник Бабич, специалист по разработке мобильных приложений и UX дизайну, рассматривает три базовых модели навигации — меню-гамбургер, Tab bar и управление жестами — и описывает их сильные и слабые стороны."
+      },
+      {
+        "url": "https://habr.com/ru/articles/449776/",
+        "title": "Навигация для Android с использованием Navigation ... / Хабр",
+        "snippet": "Kotlin * Дизайн мобильных приложений * Разработка мобильных приложений * Android *. Попробуем, пользуясь официальным руководством и примерами кода, построить работающую систему навигации для будущего многоэкранного приложения в соответствии со стандартами Navigation Architecture Component. Статья включает следующие разделы"
+      }
+    ],
+    "editorialCount": 5,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "modal-dialog-design",
+    "query": "дизайн модальных окон",
+    "checkedAt": "2026-09-19T19:04:56.066Z",
+    "documents": [
+      {
+        "url": "https://habr.com/ru/articles/693272/",
+        "title": "Лучшие практики модальных окон . Компоненты дизайн ... / Хабр"
+      },
+      {
+        "url": "https://victoryagency.ru/blog/vebdizayn/modalnye-okna-i-dialogi-luchshie-praktiki",
+        "title": "Модальные окна в веб- дизайне : лучшие практики UX/UI"
+      },
+      {
+        "url": "https://habr.com/ru/companies/severstal/articles/1022004/",
+        "title": "Перестаньте мешать пользователям: гайд по дружелюбным... / Хабр"
+      },
+      {
+        "url": "https://guides.kontur.ru/components/popup-elements/modal/",
+        "title": "Модальное окно — Попап-элементы... — Контур.Гайды"
+      },
+      {
+        "url": "https://skillbox.ru/media/code/chto-takoe-modalnye-okna-i-kak-ikh-effektivno-ispolzovat/",
+        "title": "Модальные окна : что о них нужно знать и как... / Skillbox Media"
+      },
+      {
+        "url": "https://www.uxrock.ru/library/kak-ispolzovat-modalnye-okna-bez-ushcherba-dlya-ux",
+        "title": "Как использовать модальные окна без ущерба для UX?"
+      },
+      {
+        "url": "https://dzen.ru/a/YOTsgxg2C22CkYui",
+        "title": "Советы по созданию правильных модальных окон | Дзен"
+      },
+      {
+        "url": "https://infogra.ru/articles/articles-ui/pravilnaya-struktura-modalnogo-okna",
+        "title": "Правильная структура модального окна"
+      },
+      {
+        "url": "https://www.behance.net/search/projects?search=%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5+%D0%BE%D0%BA%D0%BD%D0%BE",
+        "title": "Модальное Окно Projects :: Photos, videos, logos... :: Behance"
+      },
+      {
+        "url": "https://habr.com/ru/articles/519662/",
+        "title": "Делаем модальные окна для сайта. Заботимся об... / Хабр"
+      }
+    ]
+  },
+  {
+    "slug": "order-form-review",
+    "query": "форма заказа дизайн",
+    "clusterId": "checkout-informational-design",
+    "checkedAt": "2026-09-19T14:07:01.608Z",
+    "documents": [
+      {
+        "url": "https://mobirise.com/bootstrap-template/ru/order-form-template.html",
+        "title": "Шаблон формы заказа Bootstrap. Создайте любой шаблон...",
+        "snippet": "Шаблон формы заказа Bootstrap автоматически подстраивается под различные размеры экранов, от настольных компьютеров до мобильных устройств. Это гарантирует удобный пользовательский опыт для всех посетителей, независимо от того, какое устройство они используют. Адаптивный дизайн достигается за счет использования отзывчивой сетки Bootstrap, медиа-запросов и гибких изображений."
+      },
+      {
+        "url": "https://referest.ru/inspiration/web/sections/form",
+        "title": "55 примеров дизайна блока « Форма заявки» на сайте",
+        "snippet": "Скриншоты UI / UX элементов для блока « Форма заявки». Вдохновитесь примерами дизайна для своих сайтов с помощью подборок от Referest. Используйте фильтры по тематике сайта, чтобы найти подходящие референсы."
+      },
+      {
+        "url": "https://ru.pinterest.com/ideas/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD/908912596059/",
+        "title": "Оформление Заказа Дизайн",
+        "snippet": "Ознакомьтесь с наилучшими идеями на тему «Оформление заказа дизайн » от Pinterest. Обретайте вдохновение и экспериментируйте. Оформление заказа | Order form design , Order confirmation page design , Ordering form. Дизайн Формы Заявки."
+      },
+      {
+        "url": "https://boardcrm.io/ru/forms",
+        "title": "Конструктор форм для сбора заявок в BoardCRM",
+        "snippet": "Создавайте простые понятные формы для сбора заказов за считанные минуты. Создать форму . Без дизайнера и программиста. Конструктор форм работает на основе полей сделки. Выберите необходимые поля для заполнения формы , настройте дизайн и сохраните результат."
+      },
+      {
+        "url": "https://ru.qform.io/forms/zakaza",
+        "title": "Форма оформления заказа на сайт | Бесплатно создайте...",
+        "snippet": "Универсальные формы оформления заказа товаров и услуг. Делайте функциональные и гибкие формы заказа через сервис QForm. Настройте поля в удобном конструкторе, подключите необходимые интеграции и используйте форму на сайте или по ссылке без сайта. Адаптивный дизайн . Элементы формы динамически подстраиваются под размеры и ориентацию экранов, оставаясь удобными на любых устройствах."
+      },
+      {
+        "url": "https://mobirise.com/bootstrap-template/ru/checkout-form-template.html",
+        "title": "Шаблон формы оформления заказа Bootstrap. Создайте любой...",
+        "snippet": "шаблона формы оплаты bootstrap, альтернативный дизайн формы завершения заказа bootstrap, код формы подтверждения заказа bootstrap для интернет-магазина. Предоставляет широкие возможности для настройки, позволяя вам согласовать внешний вид формы с вашим брендом. Вы можете изменять цвета, шрифты и другие элементы дизайна , чтобы создать целостный и профессиональный опыт оформления заказа ."
+      },
+      {
+        "url": "https://formdesigner.ru/",
+        "title": "Онлайн конструктор веб- форм , опросов, квизов и калькуляторов...",
+        "snippet": "Создай любую веб- форму за 3 минуты используя конструктор форм FormDesigner. Без программирования. Работает на любых сайтах и CMS. Принимайте онлайн оплату с клиентов, после отправки формы . Внешний вид. Настраивайте разные темы оформления форм , под дизайн вашего сайта. Сохранение UTM меток."
+      },
+      {
+        "url": "https://www.pinterest.com/ideas/%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0-%D0%B2%D0%B5%D0%B1-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD/904167674876/",
+        "title": "Find and save ideas about форма заказа веб дизайн on Pinterest.",
+        "snippet": ""
+      },
+      {
+        "url": "https://www.makeform.ai/ru/tools/ai-online-order-form-generator",
+        "title": "Бесплатный генератор онлайн- формы заказа на базе ИИ",
+        "snippet": "Ручные формы заказов раздражают покупателей и тормозят продажи. Традиционные формы заказов часто универсальны, сложны и склонны к ошибкам, что приводит к потерям продаж и плохому клиентскому опыту. Сложность создания формы . Ручное создание индивидуальных форм заказов требует технических навыков и значительного времени на дизайн и тестирование."
+      },
+      {
+        "url": "https://kwork.ru/land/forma-zakaza-na-lending",
+        "title": "Заказать форму оформления заказа на лендинг за 500 руб.",
+        "snippet": "Заказать форму заказа на лендинг от 500 руб. Kwork - это удобный маркетплейс фриланс-услуг. Адекватные цены, скорость, а главное, 100% гарантия возврата средств! Задача была сделать копию сайта, подредактировать ,изменить дизайн и настроить обратную связь."
+      }
+    ],
+    "editorialCount": 3,
+    "dominantIntent": "mixed/manual-review",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0.2
+  },
+  {
+    "slug": "pagination-or-load-more",
+    "query": "пагинация дизайн",
+    "checkedAt": "2026-09-19T19:04:57.211Z",
+    "documents": [
+      {
+        "url": "https://skillbox.ru/media/design/whats-the-pagination/",
+        "title": "Пагинация или бесконечная прокрутка: что... / Skillbox Media"
+      },
+      {
+        "url": "https://fireart.studio/blog/pagination-design-examples/",
+        "title": "Top 10 Pagination Design Examples and Best Practices | Fireart Studio"
+      },
+      {
+        "url": "https://wybex.ru/glossary/pagination/",
+        "title": "Пагинация ( Pagination ) в UX/UI дизайне : что это, виды и лучшие..."
+      },
+      {
+        "url": "https://seo-kompaniya.ru/blog/kak-sdelat-paginaciiu-na-saite/",
+        "title": "Как сделать пагинацию на сайте: пошаговое руководство для..."
+      },
+      {
+        "url": "https://ixdf.org/literature/topics/pagination",
+        "title": "What is Pagination in UX Design ? — updated 2026 | IxDF"
+      },
+      {
+        "url": "https://frontendin.com/css-pagination-examples/",
+        "title": "50+ Stunning CSS Pagination Examples (+ Code Snippets)"
+      },
+      {
+        "url": "https://www.frontendplanet.com/css-pagination-examples/",
+        "title": "31 CSS Pagination Examples"
+      },
+      {
+        "url": "https://www.insales.ru/blogs/university/chto-takoe-paginaciya-na-sajte",
+        "title": "Пагинация на сайте: что это такое простыми... - база знаний inSales"
+      },
+      {
+        "url": "https://habr.com/ru/articles/537966/",
+        "title": "Дизайн пагинации страниц в API / Хабр"
+      },
+      {
+        "url": "https://skyeng.ru/it-industry/it/chto-takoe-paginaciya-i-kak-ee-ispolzovat/",
+        "title": "Что такое пагинация и как ее использовать?"
+      }
+    ]
+  },
+  {
+    "slug": "password-input-design",
+    "query": "поле ввода пароля",
+    "clusterId": "forms-informational-password",
+    "checkedAt": "2026-09-19T14:01:40.028Z",
+    "documents": [
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/input/password",
+        "title": "<input type=\"password\"> - HTML | MDN",
+        "snippet": "Интерактивный пример. Значения. Использование полей ввода пароля . Валидация. Примеры. Чтобы менеджер паролей пользователя автоматически вводил пароль , укажите атрибут autocomplete . Для паролей должно быть одно из следующих значений"
+      },
+      {
+        "url": "https://purpleschool.ru/knowledge-base/html/form-elements/input-password",
+        "title": "Поле пароля в HTML - input-password | PurpleSchool",
+        "snippet": "Поле пароля в веб-форме на первый взгляд выглядит очень просто – это всего лишь поле ввода , где символы скрываются точками или звёздочками. Плейсхолдеры и подсказки. placeholder – что стоит писать. Плейсхолдер помогает пользователю понять, что нужно ввести : <input type=\"password\" id=\"password\" name=\"password\" placeholder=\" Введите пароль \" <!"
+      },
+      {
+        "url": "https://guides.kontur.ru/components/input-fields/password/",
+        "title": "Поле с паролем — Поля — Компоненты — Контур.Гайды",
+        "snippet": "Однострочное поле для ввода пароля , в котором символы заменяются на точки. Если введённый пароль входит в список популярных паролей , сообщаем об этом пользователю. Индикатор меняет цвет на красный. У подсказки появляется тултип, в котором даны рекомендации по созданию пароля ."
+      },
+      {
+        "url": "https://webref.ru/layout/html5-css3/form/password",
+        "title": "Поле для ввода пароля | WebReference",
+        "snippet": "Поле для ввода пароля — обычное текстовое поле , вводимый текст в котором в зависимости от браузера отображается звёздочками или точками. Такая особенность предназначена для того, чтобы никто не подглядел вводимый пароль . Хотя вводимый текст и не показывается на экране, на сервер введённая информация передаётся в открытом виде без шифрования."
+      },
+      {
+        "url": "https://webref.ru/course/html5-form/password",
+        "title": "Поле для пароля | Уроки | WebReference",
+        "snippet": "Блокирует поле для ввода пароля . size. Ширина поля , которая определяется числом символов моноширинного шрифта. value. Начальный пароль , который выводится в поле , но не отображается как текст. autocomplete. Введённый ранее пароль запоминается браузером и подставляется при следующем вводе ."
+      },
+      {
+        "url": "https://learn.microsoft.com/ru-ru/windows/apps/develop/ui/controls/password-box",
+        "title": "Рекомендации по полям паролей - Windows apps | Microsoft Learn",
+        "snippet": "Поле пароля — это текстовое поле , которое скрывает символы, введенные в него в целях конфиденциальности. Поле пароля выглядит как текстовое поле , за исключением того, что оно отображает символы-заполнители вместо введенного текста. Можно настроить символ заполнителя. Состояние фокуса при вводе текста в поле пароля . По умолчанию поле пароля позволяет пользователю просматривать пароль , удерживая кнопку отображения."
+      },
+      {
+        "url": "https://htmlacademy.ru/courses/46/run/7",
+        "title": "Поле для ввода пароля — Формы. Знакомство — HTML Academy",
+        "snippet": "Одно из полей предназначено для ввода пароля , но сейчас оно является простым текстовым полем . Чтобы сделать его настоящим полем для ввода пароля , в котором текст будет отображаться «звёздочками», нужно просто изменить значение атрибута type на password ."
+      },
+      {
+        "url": "https://skillbox.ru/media/code/teg-input-v-html/",
+        "title": "Тег < input > в HTML / Skillbox Media",
+        "snippet": "Тег <input> используют, чтобы создать поля ввода в HTML-формах. С его помощью можно добавить на страницу текстовое поле , поле для пароля , выбора даты или загрузки файла. <input> показывает пользователю элемент, с помощью которого он может ввести или выбрать данные."
+      },
+      {
+        "url": "https://metanit.com/web/html5/3.4.php",
+        "title": "HTML5 | Текстовые поля",
+        "snippet": "Текстовые поля в HTML5, элементов input type=text, атрибуты текстовых полей , поле ввода пароля . list: устанавливает список подсказок для ввода в поле . maxlength: максимально допустимое количество символов в текстовом поле . pattern: определяет шаблон, которому должен соответствовать вводимый текст."
+      },
+      {
+        "url": "https://learn.microsoft.com/ru-ru/dotnet/desktop/wpf/controls/passwordbox",
+        "title": "Поле для ввода пароля - WPF | Microsoft Learn",
+        "snippet": "Вместо этого элемент управления отображает заполнители (обычно звездочки), чтобы маскировать входные данные и защитить конфиденциальность пользователей. Снимок экрана: несколько текстовых полей ввода , одного из которых используется маска пароля ."
+      }
+    ],
+    "editorialCount": 1,
+    "dominantIntent": "mixed/manual-review",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0.1
+  },
+  {
+    "slug": "responsive-content-order",
+    "query": "адаптивный дизайн",
+    "clusterId": "responsive-informational-design",
+    "checkedAt": "2026-09-19T14:02:57.858Z",
+    "documents": [
+      {
+        "url": "https://media.contented.ru/glossary/adaptivnyj-veb-dizajn/",
+        "title": "Адаптивный дизайн - что это такое простыми словами",
+        "snippet": "Недостатки адаптивного дизайна . Что такое адаптивный веб- дизайн . Страница с адаптивным дизайном выглядит по-разному на компьютере, планшете и смартфоне. Каждая версия учитывает особенности устройства."
+      },
+      {
+        "url": "https://www.etxt.ru/subscribes/adaptivniy-dizayn-sayta/",
+        "title": "Адаптивный дизайн : как он должен выглядеть",
+        "snippet": "Что такое адаптивный дизайн и в чем его преимущества? Адаптивная вёрстка — это подход к разработке веб-интерфейсов, благодаря которому сайты корректно и удобно отображаются на разных устройствах (с разными разрешениями экранов). В условиях высокой конкуренции сайты борются за внимание пользователей и за их время."
+      },
+      {
+        "url": "https://practicum.yandex.ru/blog/kak-adaptirovat-sayt-pod-mobilnye-ustroystva/",
+        "title": "Адаптивная вёрстка сайта: что это, преимущества - как...",
+        "snippet": "Адаптивная вёрстка сайта — это способ обеспечить оптимальное отображение интерфейсов на устройствах с разным разрешением экранов. Вёрсткой занимается фронтенд-разработчик . Адаптивный дизайн предусматривает, что пользователь будет взаимодействовать с кнопками, текстом, изображениями через разные устройства. Думает об удобстве пользователя в этом случае уже дизайнер. У адаптивного дизайна длинная история."
+      },
+      {
+        "url": "https://sky.pro/wiki/html/adaptivnyj-veb-dizajn-osnovy-i-primery/",
+        "title": "Адаптивный веб- дизайн : как создавать сайты для любых устройств",
+        "snippet": "Когда 77% пользователей просматривают сайты на смартфонах, а средний пользователь владеет 3-4 устройствами с разными экранами — адаптивный веб- дизайн становится не опцией, а необходимостью. Пока конкуренты теряют посетителей из-за \"ломающихся\" интерфейсов, умные компании увеличивают конверсию на 200% благодаря адаптивным решениям."
+      },
+      {
+        "url": "https://skillbox.ru/media/design/adaptivnyy-dizayn-responsiv-i-mobilnaya-versiya/",
+        "title": "Адаптивный дизайн и респонсив: различия... / Skillbox Media",
+        "snippet": "Адаптивный дизайн , респонсив и мобильная версия: зачем это нужно и в чём различия. Что такое адаптивный дизайн ? Это способ корректно отображать интерфейс сайта на любых устройствах. Дизайнер отрисовывает отдельные макеты веб-страниц для смартфонов, планшетов и компьютеров."
+      },
+      {
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D0%B5%D0%B1-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD",
+        "title": "Адаптивный веб- дизайн — Википедия",
+        "snippet": "Адаптивный веб- дизайн (англ. responsive web design ) — дизайн веб-страниц, обеспечивающий правильное отображение сайта на различных устройствах, подключённых к интернету, и динамически подстраивающийся под заданные размеры окна браузера."
+      },
+      {
+        "url": "https://habr.com/ru/companies/beget/articles/899732/",
+        "title": "Отзывчивый дизайн для веб-приложений: как обеспечить... / Хабр",
+        "snippet": "Но масштаб изменился, и сейчас отзывчивый дизайн это требование, которое реализуется на уровне языков и браузеров. В итоге, освоение принципов адаптивного дизайна и базовых технологий открывает перед нами новые горизонты в разработке веб‑приложений. Мы не только создаём удобные интерфейсы для пользователей, но и строим более эффективное взаимодействие внутри команды."
+      },
+      {
+        "url": "https://www.unisender.com/ru/glossary/shto-takoe-adaptivnyy-veb-dizayn/",
+        "title": "Адаптивный веб- дизайн : основные принципы | Unisender",
+        "snippet": "Среди аналогов компании чаще выбирают адаптивный дизайн . Он идеален по соотношению цены и качества. Сайт быстро грузится и хорошо работает на всех устройствах. Как адаптировать дизайн : основные принципы. Чтобы сайт был удобным для пользователей вне зависимости от размера экрана и типа устройства, придерживайтесь нескольких основных принципов."
+      },
+      {
+        "url": "https://media.contented.ru/opyt/instrukcii/kak-sdelat-adaptivnyi-maket-poshagovoe-rukovodstvo/",
+        "title": "Как сделать адаптивный макет сайта: пошаговое руководство",
+        "snippet": "Как проверить, что все сделано верно. Главное о том, как сделать мобильный адаптив. Зачем нужен адаптив. Адаптивный дизайн — важнейшая часть любого современного сайта, потому что более 60% пользователей заходят в интернет с мобильных устройств. Адаптивными сайтами и интерфейсами удобно пользоваться: они быстрее загружаются, появляются раньше в поисковой выдаче и приносят бизнесу больше прибыли."
+      },
+      {
+        "url": "https://b2b.yandex.ru/adv/edu/materials/adaptaciya-sayta",
+        "title": "Адаптивная верстка сайта: что это такое и как адаптировать сайт...",
+        "snippet": "Что такое адаптивный сайт. Адаптивность — способность контента и блоков сайта реагировать на изменение области просмотра. При адаптивной вёрстке дизайн страниц автоматически подстраивается под размер, разрешение и ориентацию экрана."
+      }
+    ],
+    "editorialCount": 10,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "text-contrast-check",
+    "query": "контрастность текста",
+    "clusterId": "contrast-informational-general",
+    "checkedAt": "2026-09-19T14:07:08.286Z",
+    "documents": [
+      {
+        "url": "https://coddy.tech/tools/ru/contrast-checker",
+        "title": "Проверка контраста WCAG - AA и AAA | Coddy",
+        "snippet": "Бесплатная проверка цветового контраста WCAG. Тестируйте любые сочетания текста и фона, смотрите оценки AA и AAA и исправляйте провальные пары в один клик. Что такое проверка контраста WCAG? *Проверка контраста * - то, чем дизайнеры и разработчики пользуются перед публикацией экрана. Она считает **коэффициент контраста ** между двумя цветами - текстом и фоном за ним - по формуле Web Content Accessibility Guidelines (WCAG)."
+      },
+      {
+        "url": "https://get-color.ru/contrast/checker/",
+        "title": "Проверить текст на контрастность онлайн",
+        "snippet": "Проверьте контрастность текста и других элементов между разными цветами в соответствии со стандартами WCAG. Тест на контрастность поможет подобрать правильное сочетание фона и текста ."
+      },
+      {
+        "url": "https://rechecker.ru/services/color-contrast",
+        "title": "Color Contrast Checker — проверка контраста цветов... | reChecker",
+        "snippet": "Проверьте контрастность текста и фона по WCAG 2.1. Узнайте соответствие уровням AA и AAA для обычного и крупного текста . Color Contrast Checker проверяет соотношение контраста между цветом текста и фона по требованиям WCAG 2.1. Введите цвета — получите коэффициент контраста и рекомендации по уровням AA и AAA. 01. Расчёт коэффициента контраста ."
+      },
+      {
+        "url": "https://coolors.co/contrast-checker",
+        "title": "Calculate the contrast ratio of text and background colors.",
+        "snippet": "Large text . How does it work? This tool follows the Web Content Accessibility Guidelines (WCAG), which are a series of recommendations for making the web more accessible. Regarding colors, the standard defines two levels of contrast ratio: AA (minimum contrast) and AAA (enhanced contrast). The level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text (at least 18pt) or bold text ."
+      },
+      {
+        "url": "https://timbrica.com/ru/color-accessibility-checker",
+        "title": "Проверка контрастности цветов | Timbrica",
+        "snippet": "Бесплатный инструмент проверки контрастности по WCAG 2.1 для тестирования любых цветовых комбинаций на соответствие стандартам доступности. Проверка читаемости текста на уровнях AA и AAA — незаменим для инклюзивного веб-дизайна. Что такое контрастность WCAG? Руководство по доступности веб-контента (WCAG) определяет минимальные коэффициенты контрастности между текстом и фоном."
+      },
+      {
+        "url": "https://toolfox.ru/tools/wcag-contrast-checker",
+        "title": "Проверка контраста цветов WCAG онлайн — калькулятор...",
+        "snippet": "Пример текста для проверки контрастности . Так будет выглядеть текст на выбранном фоне. Проверьте, насколько легко его читать. Проверка контраста WCAG — доступность цветов онлайн. Что такое WCAG. Зачем проверять контраст . Пример из жизни. Знаете ли вы? Требования WCAG к контрасту . Важно знать. Как использовать. Часто задаваемые вопросы."
+      },
+      {
+        "url": "https://products.aspose.app/html/ru/contrast-checker",
+        "title": "Проверка цветового контраста - Проверьте контраст между...",
+        "snippet": "Коэффициент цветового контраста измеряет разницу в яркости между двумя цветами, гарантируя, что текст и элементы пользовательского интерфейса будут выделяться на их фоне. Коэффициенты контрастности могут находиться в диапазоне от 1 до 21."
+      },
+      {
+        "url": "https://nexfield.academy/resources/services/contrast-checker/",
+        "title": "Сервис проверки контраста цветов - Nexfield Academy",
+        "snippet": "Уровень ААА требует коэффициента контрастности не менее 7:1 для обычного текста и 4,5:1 для крупного текста или жирного текста . Коэффициент контрастности цветов важен для того, чтобы текст был доступен и удобен для чтения всем. Поэтому очень важно сделать контент удобным, дружелюбным и доступным для всех пользователей."
+      },
+      {
+        "url": "https://raskruty.ru/tools/kontrast/",
+        "title": "Проверка контраста цветов онлайн (WCAG): доступность текста",
+        "snippet": "Проверка контраста цветов (WCAG). Контраст между текстом и фоном влияет на читаемость и доступность сайта, а удобство — это ещё и поведенческий фактор. Выберите цвет текста и фона — посчитаем коэффициент контрастности и проверим соответствие стандарту WCAG (уровни AA и AAA). Всё считается в браузере."
+      },
+      {
+        "url": "https://color.adobe.com/create/color-contrast-analyzer",
+        "title": "Color Contrast Checker (AA/AAA) | Adobe Express",
+        "snippet": ""
+      }
+    ],
+    "editorialCount": 0,
+    "dominantIntent": "mixed/manual-review",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "usability-test-scenario",
+    "query": "провести юзабилити тестирование",
+    "checkedAt": "2026-09-19T19:04:58.287Z",
+    "documents": [
+      {
+        "url": "https://practicum.yandex.ru/blog/kak-provodit-yuzability-testirovanie/",
+        "title": "Юзабилити - тестирование : что это, виды, этапы - как проводить ..."
+      },
+      {
+        "url": "https://media.contented.ru/opyt/instrukcii/kak-provodit-yuzability-testirovanie/",
+        "title": "Юзабилити - тестирование : что это и как провести , руководство"
+      },
+      {
+        "url": "https://habr.com/ru/companies/lamoda/articles/673884/",
+        "title": "Как провести юзабилити - тестирование с респондентом... / Хабр"
+      },
+      {
+        "url": "https://marquiz.ru/blog/kak-provodit-yuzabiliti-testirovanie/",
+        "title": "Что такое юзабилити - тестирование и как его провести"
+      },
+      {
+        "url": "https://usabilitylab.ru/blog/kak-provesti-yuzabiliti-testirovanie-poshagovyj-gajd/",
+        "title": "Как провести юзабилити - тестирование : пошаговый гайд 2026"
+      },
+      {
+        "url": "https://marketolog.mts.ru/blog/kak-provesti-yuzabiliti-testirovanie",
+        "title": "Юзабилити тестирование : Этапы, Примеры, Чек-лист и Методы..."
+      },
+      {
+        "url": "https://smink.ru/blog/sozdanie-sayta/chek-list-yuzabiliti-testa-polnoe-rukovodstvo-po-proverke-sayta/",
+        "title": "Чек-лист юзабилити - теста : пошаговая инструкция и шаблон"
+      },
+      {
+        "url": "https://rootsproduct.ru/article/usability-testing-guide",
+        "title": "Когда проводить usability - тесты и как их правильно организовать"
+      },
+      {
+        "url": "https://www.nic.ru/info/blog/usability-site-testing/",
+        "title": "Как организовать юзабилити - тестирование сайта"
+      },
+      {
+        "url": "https://usabilitylab.ru/blog/yuzabiliti-testirovanie-kak-podgotovitsya-i-provesti/",
+        "title": "Юзабилити - тестирование : как подготовиться и провести"
+      }
+    ]
+  },
+  {
+    "slug": "ux-interview-questions",
+    "query": "интервью ux исследования",
+    "checkedAt": "2026-09-19T19:04:59.369Z",
+    "documents": [
+      {
+        "url": "https://www.reg.ru/blog/kak-provodit-kachestvennye-issledovaniya/",
+        "title": "Как проводить качественные исследования : интервью ..."
+      },
+      {
+        "url": "https://usabilitylab.ru/blog/kak-zadavat-voprosy-v-ux-intervyu/",
+        "title": "Как задавать вопросы в UX - интервью для выявления истинных..."
+      },
+      {
+        "url": "https://vc.ru/marketing/1409691-intervyu-v-perepiske-chat-based-interview-kak-provodit-ux-issledovanie-v-chate",
+        "title": "Интервью в переписке (chat-based interview)... — Маркетинг на vc.ru"
+      },
+      {
+        "url": "https://askusers.ru/blog/pervody/kak-provodit-effektivnye-intervyu-s-polzovatelyami-dlya-ux-issledovaniy/",
+        "title": "Интервью с пользователями для UX - исследований : пошаговое..."
+      },
+      {
+        "url": "https://vc.ru/design/865260-ux-issledovaniya-s-pomoshyu-intervyu",
+        "title": "UX - исследования с помощью интервью — Дизайн на vc.ru"
+      },
+      {
+        "url": "https://school.usabilitylab.ru/theory/kak-provesti-polzovatelskoe-intervyu-chast-1/",
+        "title": "Полный гайд: Как провести пользовательское интервью ..."
+      },
+      {
+        "url": "https://habr.com/ru/companies/agima/articles/717042/",
+        "title": "Как проводить качественные исследования : интервью ... / Хабр"
+      },
+      {
+        "url": "https://vc.ru/design/685410-kak-provesti-ux-intervyu-i-ne-umeret-chek-list-iz-nashih-fakapov",
+        "title": "Как провести UX интервью и не умереть... — Дизайн на vc.ru"
+      },
+      {
+        "url": "https://tldv.io/blog/ux-research-interview-questions-users/",
+        "title": "UX Research Interview Questions To Give You ALL The Answers"
+      },
+      {
+        "url": "https://habr.com/ru/articles/582340/",
+        "title": "Чек-лист подготовки к UX - интервью / Хабр"
+      }
+    ]
+  },
+  {
+    "slug": "website-navigation-labels",
+    "query": "навигация на сайте",
+    "clusterId": "navigation-informational-general",
+    "checkedAt": "2026-09-19T14:02:40.171Z",
+    "documents": [
+      {
+        "url": "https://tilda.education/articles-navigation",
+        "title": "Навигация по сайту — примеры как сделать навигацию удобной",
+        "snippet": "Мы рассмотрим 13 способов улучшения навигации на сайте с помощью простых инструментов за минимальное количество времени. В Тильде есть много готовых блоков с элементами навигации , из которых можно выбрать наиболее подходящий для вашего проекта вариант."
+      },
+      {
+        "url": "https://www.reg.ru/blog/kak-sdelat-udobnuyu-i-ponyatnuyu-navigaciyu-po-sajtu/",
+        "title": "Как сделать удобную и понятную навигацию по сайту",
+        "snippet": "Основные принципы навигации на сайте . Элементы и структура навигации по сайту . Основное меню навигации по сайту (или меню в «шапке») ― это главный навигационный элемент, который располагается вверху каждой страницы. Здесь размещают ссылки на самые важные разделы: «Главная», «О компании», «Услуги/Каталог», «Блог», «Контакты». «Подвал» (или футер) ― это блок в самом низу сайта ."
+      },
+      {
+        "url": "https://eurobyte.ru/articles/osnovy-udobnoj-navigaczii-na-sajte/",
+        "title": "Навигация веб- сайта : принципы, элементы и типы | Евробайт",
+        "snippet": "Принципы удобной навигации на сайте . Удобная навигация на сайте – практически основополагающий шаг в успешном взаимодействии с целевой аудиторией. Простая и логичная, она делает пребывание на онлайн-проекте комфортным. В связи с этим расскажем об основных принципах формирования удобной среды в этом направлении."
+      },
+      {
+        "url": "https://gendalf.ru/news/marketing/gde-zdes-knopka-kak-sdelat-navigatsiyu-s/",
+        "title": "Навигация на странице сайта и элементы навигации на сайте ...",
+        "snippet": "Рассмотрим элементы навигации на сайте , их влияние на SEO, а также разберем, зачем нужно меню навигации на сайтах и как панель навигации на сайте улучшает юзабилити и взаимодействие с пользователем. Нужна консультация."
+      },
+      {
+        "url": "https://marketolog.mts.ru/blog/bolshoi-gaid-po-navigatsii-uznali-u-ekspertov-kak-sdelat-sait-udobnee",
+        "title": "Создание Эффективной Навигации Сайта : Лучшие Практики...",
+        "snippet": "Навигация на сайте выполняет ту же роль, что и указатели на улице или в торговых центрах. Она помогает пользователям перемещаться по страницам ресурса, показывает, где посетители сайта находятся в данный момент. Кроме того, качественная навигация улучшает SEO-показатели, а ещё влияет на продажи, так как помогает клиентам совершить целевое действие — оформить заказ или заполнить форму заявки."
+      },
+      {
+        "url": "https://www.unisender.com/ru/blog/kak-uluchshit-navigaciyu-na-sajte/",
+        "title": "Навигация по сайту : на что влияет и как улучшить",
+        "snippet": "Продумайте поиск на сайте . Добавьте всплывающие окна и интерактивные сообщения. Чек-лист хорошей навигации сайта . Грамотно организованная навигация ускоряет процесс индексации страниц, что положительно сказывается на позициях сайта в поисковой выдаче. Кроме того, она помогает поисковым роботам лучше понимать содержание сайта и эффективно распределять вес между его страницами, что играет ключевую роль для SEO."
+      },
+      {
+        "url": "https://www.rush-analytics.ru/blog/udobnaya-navigacziya-na-sajte",
+        "title": "Что такое навигация на сайте , как улучшить навигацию на ...",
+        "snippet": "На что влияет навигация сайта . Удобная навигация оказывает значительное влияние на несколько ключевых аспектов работы ресурса. Прежде всего, она напрямую влияет на пользовательский опыт (UX). Когда пользователи могут легко найти то, что ищут, не тратя лишнего времени на блуждание по сайту , их удовлетворенность повышается."
+      },
+      {
+        "url": "https://vc.ru/seo/2213950-navigatsiya-na-sayte-chek-list-dlya-optimizatsii",
+        "title": "Навигация по сайту Чек-лист для... — SEO на vc.ru",
+        "snippet": "Навигация на сайте — это фундамент, на котором держится весь пользовательский опыт и, косвенно, SEO. Я не говорю о красивой анимации или модных трендах. Я говорю о том, чтобы пользователь, даже если он впервые зашёл на ваш сайт , не потерялся. Чтобы он знал, где находится, как вернуться и куда идти дальше — без поиска, криков и паники."
+      },
+      {
+        "url": "https://seointellect.ru/media/navigaciya-sajta/",
+        "title": "Навигация сайта - что это и как использовать: лайфхаки...",
+        "snippet": "Навигация по сайту представляет собой совокупность приемов, методов и специальных элементов, которые при комплексном взаимодействии позволяют пользователям быстро переходить от одной страницы к другой. Напрямую влияет как на успешное продвижение веб-проекта, так и уровень конверсий. Необходимость в навигации ."
+      },
+      {
+        "url": "https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=34&LESSON_ID=10269&LESSON_PATH=3905.4460.10227.10269",
+        "title": "Средства навигации на сайте",
+        "snippet": "В \"1С-Битрикс: Управление сайтом \" к средствам навигации относятся: меню, навигационная цепочка, карта сайта . Меню — один из ключевых элементов дизайна любого сайта , ведь именно от его интуитивной понятности и красоты зависит, быстро ли найдет посетитель нужный раздел и захочет ли он вернуться. Карта сайта представляет собой список страниц сайта , аналогично книжному оглавлению."
+      }
+    ],
+    "editorialCount": 6,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0.4
+  },
+  {
+    "slug": "website-prototype-scenario",
+    "query": "создание прототипов сайтов",
+    "clusterId": "prototyping-how-to-general",
+    "checkedAt": "2026-09-19T14:01:23.377Z",
+    "documents": [
+      {
+        "url": "https://practicum.yandex.ru/blog/prototip-sajta-chto-eto-i-dlya-chego-nuzhen/",
+        "title": "Прототип сайта - что такое и как создать , виды и примеры...",
+        "snippet": "Что такое прототип сайта и как создать его самостоятельно. Рассказываем о видах прототипов , этапах работы над ними и подходящих сервисах, в которых можно это сделать. Как сделать прототип сайта . Сервисы для прототипирования . Рекомендации по созданию прототипов ."
+      },
+      {
+        "url": "https://lpmotor.ru/articles/kak-sdelat-prototip-sajta-2603",
+        "title": "Как сделать прототип сайта с нуля: инструменты, этапы и выбор...",
+        "snippet": "Пошагово разбираем, как создать прототип сайта : от структуры и каркаса до выбора платформы, методологии и передачи макета в дизайн и разработку. Как создать сайт с нуля самостоятельно: полная пошаговая инструкция 2026 года. Этапы создания сайта : полное руководство по процессу разработки от А до Я. Какие разделы и страницы должны быть на сайте ."
+      },
+      {
+        "url": "https://media.contented.ru/opyt/instrukcii/chto-takoe-prototip-sajta-i-kak-sozdat-ego-samostoyatelno/",
+        "title": "Как создать прототип сайта : этапы и список программ",
+        "snippet": "Создание сайта обычно начинается с прототипа — черновой версии финального проекта. Есть разные пути, как его можно сделать: на бумаге, в графическом редакторе или в веб-программе. У каждого способа свои тонкости, поэтому в этой статье разберем, зачем нужен прототип сайта и какие у него особенности."
+      },
+      {
+        "url": "https://b2b.yandex.ru/adv/edu/materials/prototipy-saytov",
+        "title": "Прототипы сайтов : что это такое и как выглядит, примеры...",
+        "snippet": "Прототипы сайтов : зачем нужны и как их создавать . Прототипы сайтов — это инструмент веб-разработки, который помогает дизайнерам создать визуальное представление сайта до его запуска. В этом материале разберём, для чего он нужен и как эффективно использовать прототипы для тестирования дизайна, функциональности и пользовательского опыта."
+      },
+      {
+        "url": "https://habr.com/ru/companies/aiken/articles/129653/",
+        "title": "16 инструментов для создания прототипов / Хабр",
+        "snippet": "Вот несколько ключевых причин, определяющих, почему перед созданием сайта желательно (обязательно) нужно сначала сделать его прототип прототип довольно легко создать , позволяя плавно и эффективно осуществлять процесс планирования. этот процесс снижает вероятность увеличения объема работы по разработке дизайна. это дает дизайнеру четкое представление о том, что нужно сделать."
+      },
+      {
+        "url": "https://netology.ru/blog/luchshie-servisy-dlya-prototipov",
+        "title": "10 сервисов для создания интерактивных прототипов : от Figma...",
+        "snippet": "Marvel — онлайн-платформа для создания интерактивных прототипов и презентаций, а также базового UX-тестирования. Подходит для начинающих дизайнеров, предпринимателей и команд, которым нужно быстро визуализировать идею без сложных настроек. У Marvel есть готовые шаблоны экранов, анимации, встроенный юзабилити-тест."
+      },
+      {
+        "url": "https://kokoc.com/blog/prototipirovanie-sajta/",
+        "title": "Прототипирование сайта : что это + примеры, этапы, инструменты",
+        "snippet": "Создание прототипов страхует обе стороны от потери времени и непредвиденных расходов, сберегая ваши деньги. В этой статье подробно расскажем, что такое прототипирование сайта , для чего нужно внедрять этот процесс в бизнес и как выстроить работу. Делимся проверенными инструментами, чтобы вы знали, где сделать прототип сайта , а также ресурсами для прокачки насмотренности."
+      },
+      {
+        "url": "https://structura.app/",
+        "title": "онлайн конструктор прототипов , схем и макетов для вашего сайта",
+        "snippet": ""
+      },
+      {
+        "url": "https://reklama.tochka.com/blog/prototipy-sajtov-zachem-nuzhny-kak-sozdavat",
+        "title": "Прототипы сайтов : зачем они нужны и как их создавать",
+        "snippet": "Тогда стоит разобраться в создании прототипов — визуализации идеи будущего сайта . Эскиз облегчит задачу дизайнерам и разработчикам и поможет сэкономить время и деньги. В этой статье мы расскажем, что такое прототип сайта , каким он может быть, зачем нужен и как его создать ."
+      },
+      {
+        "url": "https://www.unisender.com/ru/blog/kak-sdelat-prototip-budushchego-sajta-esli-vy-ne-dizajner/",
+        "title": "Как сделать прототип сайта или лендинга",
+        "snippet": "Когда нужно делать прототип . Как сделать прототип лендинга в Google Документах. 5 сервисов для создания прототипов . Когда серьёзные компании создают сайты или мобильные приложения, они начинают работу с прототипа . Это своего рода дорожная карта, которая помогает сориентироваться в структуре и содержании будущего продукта. Прототип может сделать кто угодно, для этого необязательно быть дизайнером."
+      }
+    ],
+    "editorialCount": 7,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  },
+  {
+    "slug": "website-redesign-diagnosis",
+    "query": "редизайн сайта",
+    "clusterId": "redesign-informational-design",
+    "checkedAt": "2026-09-19T14:01:43.315Z",
+    "documents": [
+      {
+        "url": "https://ivit.pro/internet-marketing/redizayn-saytov/",
+        "title": "Заказать редизайн сайта под ключ в Москве — без потери... | ivit.pro",
+        "snippet": "Выполняя редизайн веб сайта мы обеспечиваем: 1. Тщательное тестирование перед запуском. Проверяем сайт на разных устройствах и в основных браузерах, прогоняем ключевые пользовательские сценарии: заявки, корзина, личный кабинет, формы, интеграции. 2. Безопасная публикация (релиз). Перед развёртыванием нового дизайна делаем архив/резервную копию старого сайта ."
+      },
+      {
+        "url": "https://mobileup.ru/blog/redizayn-sayta",
+        "title": "Редизайн сайта : когда нужен, этапы и стоимость редизайна",
+        "snippet": "Редизайн сайта — это комплексное обновление веб-ресурса. Оно может включать изменение визуального оформления, структуры и навигации, а в некоторых случаях — функциональности и технической составляющей. Процесс иногда воспринимают как косметические правки или добавление нового контента, но на практике редизайн часто выходит за рамки декоративных изменений."
+      },
+      {
+        "url": "https://www.avito.ru/moskva/predlozheniya_uslug?q=%D1%80%D0%B5%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD+%D1%81%D0%B0%D0%B9%D1%82%D0%B0",
+        "title": "редизайн сайта в Москве - цены и отзывы | Услуги на Авито",
+        "snippet": "642 объявления об услугах по редизайн сайта в Москве. На Авито вы можете заказать услуги редизайн сайта и других специалистов по низким ценам. А также посмотреть отзывы и фотографии работ, договориться о цене и объеме услуг. Выбирайте среди предложений компаний и частных объявлений о редизайн сайта на Авито."
+      },
+      {
+        "url": "https://practicum.yandex.ru/blog/redizayn-sayta-i-kak-ego-provesti/",
+        "title": "Редизайн сайта : что это, зачем нужен - виды, этапы, как сделать...",
+        "snippet": "Рассказываем, как сделать редизайн сайта , и даём рекомендации по успешному обновлению облика веб-ресурсов. Перечислим самые частые ошибки, которые допускают при редизайне сайта . 1. Редизайн ради редизайна ."
+      },
+      {
+        "url": "https://workspace.ru/blog/chto-takoe-redizajn-sajta-i-zachem-on-nuzhen/",
+        "title": "Редизайн сайта — что это такое и зачем нужен редизайн",
+        "snippet": "Редизайн — это не только про картинки на сайте , шрифты и цвета, хоть это и очень важно. Редизайн это обновление, переработка и актуализация сайта в целом, в том числе доработка структуры, юзабилити, а иногда функционала и контента. Разберемся, в каких случаях редизайн необходим, посмотрим, как он делает сайты более удобными и современными — или, напротив, неудобными и раздражающими пользователей."
+      },
+      {
+        "url": "https://adlook.me/blog/articles/redizajn-sajta/",
+        "title": "Редизайн сайта в 2026 году: что это, сколько стоит, зачем нужен...",
+        "snippet": "Редизайн сайта : что это и сколько стоит в [year] году. На ресурсе web.archive.org хранятся архивные копии сайтов за разные годы. Вы можете ввести в поиск любой существующий (или существовавший ранее) домен и узнать его историю. К примеру, для домена www.kinopoisk.ru мы нашли более 69 тысяч копий, сохраненных после 6 декабря 2003 года."
+      },
+      {
+        "url": "https://www.castcom.ru/services/razrabotka-sajtov/redesign/",
+        "title": "Редизайн сайтов в Москве | Заказать редизайн сайта в CASTCOM",
+        "snippet": "Агентство CASTCOM выполнит редизайн сайта — качественное обновление внешнего вида с технической переработкой структуры каталога и страниц. Конечно, набор задач определяется с учётом ваших пожеланий и особенностей проекта. На начальном этапе проводится анализ и на его основе определяется цена и продолжительность работы. Наш предварительный анализ позволяет точно определить, что нужно вашему сайту"
+      },
+      {
+        "url": "https://blagoit.com/creating/redizayn-sayta/",
+        "title": "Редизайн сайта под ключ с сохранением SEO | BlagoIT",
+        "snippet": "· интеграции нового дизайна с уже существующим функционалом; · перенос контента, настройка SEO, чистка мусора. Зачем нужно обновлять дизайн сайта ? Редизайн сайта — это не каприз. Это вопрос выживания в конкурентной ленте браузера."
+      },
+      {
+        "url": "https://blog.sibirix.ru/redesign-myths-and-reality/",
+        "title": "Редизайн сайта : мифы, реальность и скрытые затраты",
+        "snippet": "Если мы все-таки хотим использовать старый код при редизайне , на этом сложности не заканчиваются. Допустим, мы перерисовали дизайн , структура сайта при этом кардинально не изменилась, но дополнения все равно есть: добавились новые фишки, кое-где — новая бизнес-логика, чтобы соответствовать рынку и вечно растущим потребностям пользователей."
+      },
+      {
+        "url": "https://xleb.studio/web-design/redesign/",
+        "title": "Редизайн сайтов — обновим и улучшим ваш сайт ... | Xleb",
+        "snippet": "Редизайн — это не создание сайта с нуля, а его стратегическая модернизация. Мы берем ваш существующий ресурс, анализируем его сильные и слабые стороны и комплексно его перерабатываем. Цель — не просто обновить картинку, а улучшить ключевые показатели: повысить конверсию, сделать сайт удобнее для пользователей и привести его в соответствие с современными технологиями и задачами вашего бизнеса..."
+      }
+    ],
+    "editorialCount": 10,
+    "dominantIntent": "editorial/mixed",
+    "assessmentLimit": "SERP titles/snippets establish expectations only; H1/depth require sampled page inspection, snippets not factual sources",
+    "mergeInto": null,
+    "serpOverlap": 0
+  }
+]

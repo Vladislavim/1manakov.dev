@@ -1,0 +1,79 @@
+{
+  "slug": "form-error-messages",
+  "clusterId": "intent-form-error-messages",
+  "parentClusterId": "forms-problem-solving-validation",
+  "primaryKeyword": "ошибки полей ввода",
+  "secondaryKeywords": [],
+  "intent": "problem-solving",
+  "topic": "forms",
+  "userProblem": "Ошибки полей ввода: как объяснить проблему и сохранить данные",
+  "directAnswer": "Сообщение об ошибке должно назвать проблемное поле и объяснить следующее действие. Показывайте его рядом с полем, сохраняйте введённые данные и отличайте неверный формат от технического сбоя. Красная рамка без текста оставляет человеку задачу угадать причину.",
+  "title": "Ошибки полей ввода: как объяснить проблему и сохранить данные",
+  "description": "Как написать сообщение об ошибке в форме: отделить неверный ввод от сбоя сервиса, показать способ исправления и сохранить уже заполненные поля.",
+  "h1": "Ошибки полей ввода: как объяснить проблему и сохранить данные",
+  "sections": [
+    "Начните с причины, а не с цвета",
+    "Сохраните контекст исправления",
+    "Не проверяйте недописанную мысль",
+    "Проверьте весь путь"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Не хватает символа @",
+      "Некорректно",
+      "Введите почту с @, например name@example.com"
+    ],
+    [
+      "Сервис не ответил",
+      "Ошибка данных",
+      "Не удалось отправить. Введённое сохранено — попробуйте ещё раз"
+    ],
+    [
+      "Обязательное поле пустое",
+      "Error 400",
+      "Укажите имя для обращения"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "interactive",
+  "relatedCases": [],
+  "relatedPages": [
+    "form-validation-timing",
+    "password-input-design",
+    "order-form-review"
+  ],
+  "cta": {
+    "headline": "Разобрать ошибки вашей формы",
+    "text": "Хочу проверить сообщения об ошибках и сценарий повторной отправки формы. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать ошибки вашей формы",
+    "briefPrompt": "Хочу проверить сообщения об ошибках и сценарий повторной отправки формы."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/form-error-messages",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "поля ввода",
+      "kind": "top",
+      "count": 482,
+      "retrievedAt": "2026-09-19T13:59:09.117Z"
+    }
+  ],
+  "wordstatVolume": 482,
+  "opportunityScore": 88,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.918Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

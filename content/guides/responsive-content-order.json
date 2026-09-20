@@ -1,0 +1,99 @@
+{
+  "slug": "responsive-content-order",
+  "title": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране",
+  "description": "Как адаптировать страницу к узкому экрану: порядок блоков, перенос текста, таблицы, увеличение масштаба и доступность действий без горизонтальной прокрутки.",
+  "h1": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране",
+  "clusterId": "intent-responsive-content-order",
+  "intent": "how-to",
+  "topic": "product",
+  "primaryKeyword": "адаптивный дизайн",
+  "secondaryKeywords": [],
+  "wordstatVolume": 805,
+  "demandEvidence": [
+    {
+      "query": "адаптивный дизайн",
+      "count": 805,
+      "retrievedAt": "2026-09-19T13:58:56.928Z"
+    }
+  ],
+  "directAnswer": "В адаптивном дизайне сначала сохраните порядок чтения и доступность действий, затем меняйте число колонок. Проверьте длинные подписи, увеличение текста и узкую ширину. Таблица может требовать локальной горизонтальной прокрутки, но это не повод растягивать всю страницу за пределы экрана.",
+  "userProblem": "В адаптивном дизайне сначала сохраните порядок чтения и доступность действий, затем меняйте число колонок. Проверьте длинные подписи, увеличение текста и узкую ширину. Таблица может требовать локальной горизонтальной прокрутки, но это не повод растягивать всю страницу за пределы экрана.",
+  "pageType": "how-to",
+  "visualValue": "diagram",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Элемент",
+      "Адаптация",
+      "Проверка"
+    ],
+    "rows": [
+      [
+        "Колонки",
+        "Последовательное чтение",
+        "Смысл не зависит от позиции"
+      ],
+      [
+        "Таблица",
+        "Локальная прокрутка",
+        "Страница не растягивается"
+      ],
+      [
+        "Действия",
+        "Перенос и достаточное место",
+        "Подпись не обрезана"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/responsive-content-order",
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "website-prototype-scenario",
+    "text-contrast-check"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "title": "Understanding SC 1.4.10: Reflow",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Перекомпоновка содержимого без потери информации; исключения для материалов, которым необходимо двумерное расположение."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Проверить адаптивную страницу",
+    "text": "Хочу проверить порядок контента и доступность действий на узком экране. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить адаптивную страницу",
+    "briefPrompt": "Хочу проверить порядок контента и доступность действий на узком экране."
+  },
+  "review": {
+    "hash": "78452fe1568b270684fe5b8318982a150ba37a3de4ee4db9add9b875e54a7476",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.139Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

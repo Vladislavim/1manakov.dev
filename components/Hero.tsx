@@ -2,7 +2,7 @@
 import { useRef, useState, type PointerEvent } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { featuredProjects } from '@/data/projects';
+import { projects as featuredProjects } from '@/data/projects';
 import { ProjectImage } from './ProjectImage';
 import { RouteLink } from './SiteShell';
 
@@ -22,7 +22,6 @@ export function Hero() {
     mm.add('(prefers-reduced-motion: no-preference)', () => {
       // CSS owns centering; entrance and scroll must not rewrite its transform.
       gsap.from('.hero-wordmark', { opacity: 0, duration: .7, ease: 'power3.out' });
-      gsap.from('.lens-link, .hero-caption', { opacity: 0, duration: .55, delay: .22 });
     });
     mm.add('(pointer: fine)', () => {
       const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -44,7 +43,7 @@ export function Hero() {
       const y = Math.max(box.height * .38, Math.min(box.height * .59, e.clientY - box.top));
       if (root.current) root.current.dataset.edge = x / box.width > .72 ? 'right' : 'center';
       moveLens.current?.(x, y);
-      const next = Math.min(2, Math.floor((e.clientX - box.left) / box.width * 3));
+      const next = Math.max(0, Math.min(featuredProjects.length - 1, Math.floor((e.clientX - box.left) / box.width * featuredProjects.length)));
       if (current.current !== next) select(next);
     }
   }
@@ -54,11 +53,11 @@ export function Hero() {
     const dy = e.clientY - gesture.current.y;
     if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy) * 1.3 && !gesture.current.moved) {
       gesture.current.moved = true; suppressClick.current = true;
-      select((current.current + (dx < 0 ? 1 : 2)) % 3);
+      select((current.current + (dx < 0 ? 1 : featuredProjects.length - 1)) % featuredProjects.length);
     }
   }
   return <section className="hero scene" ref={root} onPointerMove={pointerMove} aria-labelledby="hero-title">
-    <div className="hero-underworld" aria-hidden="true">{featuredProjects.map((p, i) => <div key={p.slug} className={`hero-world ${i === active ? 'is-active' : ''}`}><ProjectImage src={i === 0 ? p.images[2].src : p.cover} alt="" sizes="100vw" priority={i === 0} /></div>)}</div>
+    <div className="hero-underworld" aria-hidden="true">{featuredProjects.map((p, i) => <div key={p.slug} data-case={p.slug} className={`hero-world ${i === active ? 'is-active' : ''}`}><ProjectImage src={p.cover} alt="" sizes="(max-width: 767px) 420px, 700px" priority={i === 0} eager unoptimized /></div>)}</div>
     <h1 id="hero-title" className="hero-wordmark">IMANAKOV</h1>
 
     <div className="hero-type-inversion" aria-hidden="true"><span className="hero-wordmark">IMANAKOV</span></div>
@@ -75,7 +74,7 @@ export function Hero() {
       onClick={e => { if (suppressClick.current) { e.preventDefault(); suppressClick.current = false; } }}>
       <span className="lens-plus" aria-hidden="true">↗</span><span className="lens-label">EXPLORE<br />PROJECTS <span className="lens-name">{project.shortName} — 0{active + 1}</span></span>
     </RouteLink>
-    <div className="scene-bottom hero-caption"><p>PRODUCT<br />DESIGNER</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link">SCROLL</a></div>
+    <div className="scene-bottom hero-caption"><p>PRODUCT<br />DESIGNER</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link home-scroll-cue-target">SCROLL</a></div>
     <p className="touch-hint">SWIPE THE LENS · TAP TO EXPLORE</p>
   </section>;
 }

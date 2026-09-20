@@ -1,0 +1,62 @@
+{
+  "slug": "usability-test-scenario",
+  "clusterId": "intent-usability-test-scenario",
+  "parentClusterId": "research-informational-process",
+  "primaryKeyword": "провести юзабилити тестирование",
+  "secondaryKeywords": [],
+  "intent": "how-to",
+  "topic": "research",
+  "userProblem": "Как провести юзабилити-тестирование одного сценария",
+  "directAnswer": "Выберите один рабочий сценарий, задайте участнику цель без названий кнопок и наблюдайте за действиями. Заранее определите, что считается завершением и где потребовалась помощь. После теста связывайте замечания с конкретными препятствиями, а не с оценкой «нравится / не нравится».",
+  "title": "Как провести юзабилити-тестирование одного сценария",
+  "description": "План юзабилити-теста: задача без подсказки, признаки завершения, наблюдения, помощь модератора и повторная проверка конкретных исправлений.",
+  "h1": "Как провести юзабилити-тестирование одного сценария",
+  "sections": [
+    "Сформулируйте задачу без маршрута",
+    "Наблюдайте, не объясняя интерфейс",
+    "Превратите наблюдение в проверяемое изменение"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "diagram",
+  "relatedCases": [],
+  "relatedPages": [
+    "ux-interview-questions",
+    "website-redesign-diagnosis",
+    "dashboard-hierarchy-examples"
+  ],
+  "cta": {
+    "headline": "Подготовить проверку сценария",
+    "text": "Хочу проверить ключевой сценарий сайта на прототипе или рабочей версии. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Подготовить проверку сценария",
+    "briefPrompt": "Хочу проверить ключевой сценарий сайта на прототипе или рабочей версии."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/usability-test-scenario",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "юзабилити тестирование",
+      "kind": "top",
+      "count": 53,
+      "retrievedAt": "2026-09-19T13:59:13.643Z"
+    }
+  ],
+  "wordstatVolume": 53,
+  "opportunityScore": 52,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.944Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

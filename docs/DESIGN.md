@@ -21,6 +21,14 @@ Micro 180–260ms, entrances 450–700ms, portal ~900ms. Controlled inertia, not
 
 Desktop references guide composition, mobile has separate sizing and a visible touch control. Check 320–1920px, portrait/landscape, keyboard, reduced motion, no-JS, direct case URLs, history and rapid navigation.
 
+## September 19 interaction refinement
+
+Preserve the five-scene composition and the stable CSS-centered hero. A black arrow with a crisp white outline remains the actual pointer hotspot; only a compact contextual badge follows on desktop. Touch gets no custom cursor. Navigation feedback is restrained, not a universal lift.
+
+Home choreography links the existing scenes without extra pinned dwell time: the lens and hero imagery recede as the dark circular opening expands; the dark typography gives way to the physical card collection; the collection settles before the blue environment reveals its folders; contact resolves quietly. Use separate wrappers or separate properties so scroll does not fight entrance, gesture or CSS centering transforms. Native touch and reduced-motion preserve all content and controls without the desktop choreography.
+
+A small progress rail identifies five scenes without replacing the scrollbar. The first scroll cue fades after meaningful movement, with no loop. About/Play use a brief warm veil transition; project routes retain image portals. Cases use small image-reveal and caption sequencing effects that preserve readability. Validate 2560px as well as existing sizes. All new interaction logic must clean up on route change and interruption.
+
 ## Content boundary
 Live imanakov.website showed Jino's suspended-hosting page on 2026-09-18. Factual fallback is the user's local `jack template/src/App.tsx` plus its `public/assets/cases/` imagery (May 2026 snapshot). Three featured built projects: Alliance Energy, Legacy Rheumatology, VPN Equipment Rental. Aurelia Atelier is explicitly an interface concept. No claim about present deployment, metrics, research, tenure, client endorsement, or awards. Case descriptions explain only visible artifacts. Preserve original URLs but do not imply current availability. Contact comes from that same source.
 

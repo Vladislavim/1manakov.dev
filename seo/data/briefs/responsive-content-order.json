@@ -1,0 +1,62 @@
+{
+  "slug": "responsive-content-order",
+  "clusterId": "intent-responsive-content-order",
+  "parentClusterId": "responsive-informational-design",
+  "primaryKeyword": "адаптивный дизайн",
+  "secondaryKeywords": [],
+  "intent": "how-to",
+  "topic": "product",
+  "userProblem": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране",
+  "directAnswer": "В адаптивном дизайне сначала сохраните порядок чтения и доступность действий, затем меняйте число колонок. Проверьте длинные подписи, увеличение текста и узкую ширину. Таблица может требовать локальной горизонтальной прокрутки, но это не повод растягивать всю страницу за пределы экрана.",
+  "title": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране",
+  "description": "Как адаптировать страницу к узкому экрану: порядок блоков, перенос текста, таблицы, увеличение масштаба и доступность действий без горизонтальной прокрутки.",
+  "h1": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране",
+  "sections": [
+    "Начните с порядка чтения",
+    "Проверьте содержимое, которое растёт",
+    "Испытайте действия в реальном окне"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "diagram",
+  "relatedCases": [],
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "website-prototype-scenario",
+    "text-contrast-check"
+  ],
+  "cta": {
+    "headline": "Проверить адаптивную страницу",
+    "text": "Хочу проверить порядок контента и доступность действий на узком экране. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить адаптивную страницу",
+    "briefPrompt": "Хочу проверить порядок контента и доступность действий на узком экране."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/responsive-content-order",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "адаптивный дизайн",
+      "kind": "top",
+      "count": 805,
+      "retrievedAt": "2026-09-19T13:58:56.928Z"
+    }
+  ],
+  "wordstatVolume": 805,
+  "opportunityScore": 73,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.952Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

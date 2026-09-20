@@ -1,0 +1,28 @@
+{
+  "slug": "interface-motion-rules",
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html",
+      "title": "Understanding SC 2.3.3: Animation from Interactions",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Возможность отключить несущественную анимацию, запускаемую взаимодействием; критерий имеет уровень AAA."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.887Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "form-error-messages": "Текст сообщения стоит проверять вместе с тем, [когда запускается валидация](/guides/form-validation-timing).",
+  "form-validation-timing": "После выбора момента проверки подготовьте [понятное сообщение об ошибке](/guides/form-error-messages).",
+  "password-input-design": "Для неверного пароля отдельно продумайте [формулировку и расположение ошибки](/guides/form-error-messages).",
+  "order-form-review": "Если ошибка обнаруживается при подтверждении, проверьте [момент валидации полей](/guides/form-validation-timing).",
+  "mobile-navigation-priorities": "При выборе названий разделов пригодится [проверка навигационных подписей](/guides/website-navigation-labels).",
+  "website-navigation-labels": "После проверки структуры пройдите тот же путь [без мыши](/guides/keyboard-navigation-checklist).",
+  "pagination-or-load-more": "Выбранный механизм списка нужно проверить и в [сценарии клавиатурной навигации](/guides/keyboard-navigation-checklist).",
+  "keyboard-navigation-checklist": "Отдельный сложный случай — [управление модальным окном](/guides/modal-dialog-design).",
+  "design-system-vs-ui-kit": "Правила компонента можно проверить в [прототипе конкретного сценария](/guides/website-prototype-scenario).",
+  "website-prototype-scenario": "Для следующей проверки подготовьте [задачу юзабилити-теста](/guides/usability-test-scenario).",
+  "responsive-content-order": "Помимо порядка чтения проверьте [контрастность подписей](/guides/text-contrast-check).",
+  "text-contrast-check": "Следующий отдельный проход — [проверка управления клавиатурой](/guides/keyboard-navigation-checklist).",
+  "empty-state-copy-examples": "Отсутствие данных после ожидания требует отличать пустой результат от [состояния загрузки](/guides/loading-skeleton).",
+  "loading-skeleton": "После завершения запроса может понадобиться [текст пустого состояния](/guides/empty-state-copy-examples).",
+  "modal-dialog-design": "Поведение при открытии окна также стоит проверить в [режиме уменьшенного движения](/guides/interface-motion-rules).",
+  "interface-motion-rules": "Проверьте эти правила на [открытии и закрытии модального окна](/guides/modal-dialog-design).",
+  "ux-interview-questions": "Чтобы проверить уже предложенное решение, подготовьте [наблюдение за задачей в интерфейсе](/guides/usability-test-scenario).",
+  "usability-test-scenario": "Если пока неизвестно, какую задачу проверять, начните с [вопросов о реальном опыте](/guides/ux-interview-questions).",
+  "website-redesign-diagnosis": "Выбранную группу изменений можно оценить через [проверку одного сценария](/guides/usability-test-scenario).",
+  "dashboard-hierarchy-examples": "Выяснить, какие решения люди принимают по данным, помогут [вопросы UX-интервью](/guides/ux-interview-questions)."
+}

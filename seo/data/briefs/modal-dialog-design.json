@@ -1,0 +1,62 @@
+{
+  "slug": "modal-dialog-design",
+  "clusterId": "intent-modal-dialog-design",
+  "parentClusterId": "modal-informational-design",
+  "primaryKeyword": "дизайн модальных окон",
+  "secondaryKeywords": [],
+  "intent": "checklist",
+  "topic": "interaction",
+  "userProblem": "Модальное окно: открытие, фокус и безопасное закрытие",
+  "directAnswer": "Модальное окно подходит для короткой задачи, которую нужно закончить или отменить перед возвращением к странице. При открытии переведите фокус внутрь, удерживайте клавиатурную навигацию в диалоге и обеспечьте понятное закрытие. Длинный самостоятельный процесс стоит проверить как отдельную страницу.",
+  "title": "Модальное окно: открытие, фокус и безопасное закрытие",
+  "description": "Проверка модального окна: нужен ли перерыв сценария, куда переводить фокус, как назвать действия и что делать с несохранёнными данными.",
+  "h1": "Модальное окно: открытие, фокус и безопасное закрытие",
+  "sections": [
+    "Сначала проверьте необходимость окна",
+    "Пройдите весь путь клавиатурой",
+    "Назовите действие и его последствия"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "loading-skeleton",
+    "interface-motion-rules"
+  ],
+  "cta": {
+    "headline": "Разобрать модальные окна",
+    "text": "Хочу проверить открытие, закрытие и сохранение данных в модальном окне. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать модальные окна",
+    "briefPrompt": "Хочу проверить открытие, закрытие и сохранение данных в модальном окне."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/modal-dialog-design",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "модальное окно",
+      "kind": "top",
+      "count": 32,
+      "retrievedAt": "2026-09-19T13:59:06.855Z"
+    }
+  ],
+  "wordstatVolume": 32,
+  "opportunityScore": 51,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.939Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

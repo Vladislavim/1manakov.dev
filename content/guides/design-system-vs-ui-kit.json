@@ -1,0 +1,99 @@
+{
+  "slug": "design-system-vs-ui-kit",
+  "title": "Дизайн-система и UI kit: разница на примере одной кнопки",
+  "description": "Когда достаточно набора компонентов, а когда нужны правила поведения, документация и ответственность за изменения. Сравнение без покупки лишнего процесса.",
+  "h1": "Дизайн-система и UI kit: разница на примере одной кнопки",
+  "clusterId": "intent-design-system-vs-ui-kit",
+  "intent": "comparison",
+  "topic": "systems",
+  "primaryKeyword": "дизайн система и ui kit разница",
+  "secondaryKeywords": [],
+  "wordstatVolume": 14,
+  "demandEvidence": [
+    {
+      "query": "дизайн система и ui kit разница",
+      "count": 14,
+      "retrievedAt": "2026-09-19T13:58:45.885Z"
+    }
+  ],
+  "directAnswer": "UI kit помогает повторно использовать готовые элементы интерфейса. Дизайн-система дополнительно объясняет, когда применять эти элементы, как они ведут себя и кто отвечает за изменения. Если дизайнерская кнопка и кнопка в коде расходятся, одной аккуратной библиотеки макетов недостаточно.",
+  "userProblem": "UI kit помогает повторно использовать готовые элементы интерфейса. Дизайн-система дополнительно объясняет, когда применять эти элементы, как они ведут себя и кто отвечает за изменения. Если дизайнерская кнопка и кнопка в коде расходятся, одной аккуратной библиотеки макетов недостаточно.",
+  "pageType": "comparison",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Вопрос",
+      "UI kit",
+      "Дизайн-система"
+    ],
+    "rows": [
+      [
+        "Как выглядит кнопка?",
+        "Вариант в библиотеке",
+        "Вариант и связанные токены"
+      ],
+      [
+        "Когда её использовать?",
+        "Может не описываться",
+        "Правило выбора и ограничения"
+      ],
+      [
+        "Что меняется в продукте?",
+        "Обновляется макет",
+        "Согласуются дизайн, код и версия"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/design-system-vs-ui-kit",
+  "relatedPages": [
+    "website-prototype-scenario",
+    "responsive-content-order",
+    "text-contrast-check"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://design-system.service.gov.uk/",
+      "title": "Styles, components and patterns",
+      "publisher": "GOV.UK Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Пример системы, объединяющей стили, компоненты, паттерны и правила применения."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": true,
+  "version": 1,
+  "cta": {
+    "headline": "Определить минимальный набор правил",
+    "text": "Хочу понять, где нашему интерфейсу достаточно UI kit, а где нужны общие правила компонентов. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Определить минимальный набор правил",
+    "briefPrompt": "Хочу понять, где нашему интерфейсу достаточно UI kit, а где нужны общие правила компонентов."
+  },
+  "review": {
+    "hash": "eff3aeace108be377af013ce5542ea54444ebbf220c547c67ddafd974049aa57",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.121Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

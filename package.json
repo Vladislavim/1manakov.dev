@@ -10,7 +10,21 @@
     "typecheck": "tsc --noEmit",
     "test": "playwright test",
     "seo:research": "node scripts/seo/wordstat.mjs",
-    "seo:check": "node scripts/seo/validate.mjs"
+    "seo:check": "node scripts/seo/validate.mjs && node scripts/seo/audit-guides.mjs",
+    "seo:collect": "node scripts/seo/collect.mjs",
+    "seo:normalize": "node scripts/seo/demand.mjs normalize",
+    "seo:cluster": "node scripts/seo/demand.mjs cluster",
+    "seo:serp": "node scripts/seo/demand.mjs serp",
+    "seo:score": "node scripts/seo/demand.mjs score",
+    "seo:generate": "node scripts/seo/publish-content.mjs",
+    "seo:audit": "node scripts/seo/audit-guides.mjs",
+    "seo:briefs": "node scripts/seo/briefs.mjs",
+    "seo:report": "node scripts/seo/report.mjs",
+    "seo:factory": "node scripts/seo/factory.mjs",
+    "seo:ledger": "node scripts/seo/ledger.mjs",
+    "seo:verify": "node scripts/seo/verify.mjs",
+    "seo:qa": "node scripts/seo/qa-pages.mjs",
+    "lab:qa": "node scripts/qa-lab.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

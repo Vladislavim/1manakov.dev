@@ -1,0 +1,79 @@
+{
+  "slug": "keyboard-navigation-checklist",
+  "clusterId": "intent-keyboard-navigation-checklist",
+  "parentClusterId": "keyboard-informational-a11y",
+  "primaryKeyword": "навигация клавиатурой",
+  "secondaryKeywords": [],
+  "intent": "checklist",
+  "topic": "accessibility",
+  "userProblem": "Навигация клавиатурой: чек-лист проверки сайта без мыши",
+  "directAnswer": "Пройдите ключевую задачу сайта только клавиатурой. Фокус должен быть видимым, порядок переходов понятным, а каждое действие доступным без мыши. Отдельно проверьте открытие и закрытие диалога: после закрытия человек должен понимать, где продолжает работу.",
+  "title": "Навигация клавиатурой: чек-лист проверки сайта без мыши",
+  "description": "Проверка порядка фокуса, кнопок, меню и диалогов: что пройти клавишами Tab, Enter и Escape и как записать найденный дефект для исправления.",
+  "h1": "Навигация клавиатурой: чек-лист проверки сайта без мыши",
+  "sections": [
+    "Подготовьте конкретную задачу",
+    "Проверьте обычные элементы",
+    "Отдельно пройдите составные компоненты",
+    "Запишите воспроизводимый дефект"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Tab",
+      "Видимый следующий элемент",
+      "Рамка скрыта стилями"
+    ],
+    [
+      "Shift + Tab",
+      "Предсказуемое возвращение",
+      "Порядок не совпадает с логикой страницы"
+    ],
+    [
+      "Закрытие диалога",
+      "Возврат к продолжению задачи",
+      "Фокус оказался в начале документа"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "website-navigation-labels",
+    "pagination-or-load-more"
+  ],
+  "cta": {
+    "headline": "Проверить доступность ключевого пути",
+    "text": "Хочу проверить клавиатурную навигацию в основном сценарии сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить доступность ключевого пути",
+    "briefPrompt": "Хочу проверить клавиатурную навигацию в основном сценарии сайта."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/keyboard-navigation-checklist",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "навигация клавиатурой",
+      "kind": "top",
+      "count": 211,
+      "retrievedAt": "2026-09-19T13:59:04.660Z"
+    }
+  ],
+  "wordstatVolume": 211,
+  "opportunityScore": 55,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.927Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

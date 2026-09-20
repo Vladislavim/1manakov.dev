@@ -1,0 +1,62 @@
+{
+  "slug": "loading-skeleton",
+  "clusterId": "intent-loading-skeleton",
+  "parentClusterId": "loading-informational-general",
+  "primaryKeyword": "скелетон загрузка",
+  "secondaryKeywords": [],
+  "intent": "comparison",
+  "topic": "interaction",
+  "userProblem": "Скелетон или индикатор загрузки: что показывать при ожидании",
+  "directAnswer": "Скелетон полезен, когда известна будущая структура блока, но ещё нет его данных. Индикатор загрузки подходит для компактного действия без новой структуры. Процент показывайте только при достоверном измерении прогресса. Любому варианту нужны состояние ошибки и возможность повторить действие.",
+  "title": "Скелетон или индикатор загрузки: что показывать при ожидании",
+  "description": "Как выбрать между скелетоном, спиннером и явным прогрессом: структура контента, ожидание результата, ошибка загрузки и сохранение места на странице.",
+  "h1": "Скелетон или индикатор загрузки: что показывать при ожидании",
+  "sections": [
+    "Что человек ждёт в этом месте",
+    "Где скелетон действительно помогает",
+    "Когда ожидание перестало быть нормальным"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/loading-pattern/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "empty-state-copy-examples",
+    "modal-dialog-design",
+    "interface-motion-rules"
+  ],
+  "cta": {
+    "headline": "Проверить состояния загрузки",
+    "text": "Хочу разобрать ожидание, ошибки и повторные действия в интерфейсе. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить состояния загрузки",
+    "briefPrompt": "Хочу разобрать ожидание, ошибки и повторные действия в интерфейсе."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/loading-skeleton",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "скелетон загрузка",
+      "kind": "top",
+      "count": 24,
+      "retrievedAt": "2026-09-19T13:58:43.660Z"
+    }
+  ],
+  "wordstatVolume": 24,
+  "opportunityScore": 52,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.941Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

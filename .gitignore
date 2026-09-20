@@ -14,3 +14,8 @@ playwright-report/
 next-env.d.ts
 data/seo/wordstat/
 data/seo/research/wordstat-batch.json
+seo/data/raw/
+seo/data/collection.json
+seo/cache/
+case_before_after_sources/
+old ver vs new for cases info/

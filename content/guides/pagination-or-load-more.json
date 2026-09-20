@@ -1,0 +1,99 @@
+{
+  "slug": "pagination-or-load-more",
+  "title": "Пагинация или «Показать ещё»: как выбрать для списка",
+  "description": "Сравнение постраничной навигации и дозагрузки: возвращение к месту, сохранение фильтров, доступность и поведение списка после открытия карточки.",
+  "h1": "Пагинация или «Показать ещё»: как выбрать для списка",
+  "clusterId": "intent-pagination-or-load-more",
+  "intent": "comparison",
+  "topic": "navigation",
+  "primaryKeyword": "пагинация дизайн",
+  "secondaryKeywords": [],
+  "wordstatVolume": 21,
+  "demandEvidence": [
+    {
+      "query": "пагинация дизайн",
+      "count": 21,
+      "retrievedAt": "2026-09-19T13:59:05.780Z"
+    }
+  ],
+  "directAnswer": "Пагинация подходит, когда важно вернуться к определённой части списка или поделиться её адресом. «Показать ещё» сохраняет непрерывный просмотр, но требует продуманного возврата и управления фокусом. Выбирайте по задаче списка, а не по желанию убрать номера страниц.",
+  "userProblem": "Пагинация подходит, когда важно вернуться к определённой части списка или поделиться её адресом. «Показать ещё» сохраняет непрерывный просмотр, но требует продуманного возврата и управления фокусом. Выбирайте по задаче списка, а не по желанию убрать номера страниц.",
+  "pageType": "comparison",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Задача",
+      "Пагинация",
+      "Показать ещё"
+    ],
+    "rows": [
+      [
+        "Вернуться к части списка",
+        "Номер и адрес страницы",
+        "Нужно восстановить загруженный объём"
+      ],
+      [
+        "Смотреть подряд",
+        "Требует перехода",
+        "Продолжает текущий список"
+      ],
+      [
+        "Найти футер",
+        "Конец страницы определён",
+        "Не должен бесконечно убегать"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/pagination-or-load-more",
+  "relatedPages": [
+    "mobile-navigation-priorities",
+    "website-navigation-labels",
+    "keyboard-navigation-checklist"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://design-system.service.gov.uk/components/pagination/",
+      "title": "Pagination",
+      "publisher": "GOV.UK Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Разделять список стоит ради производительности или удобства; пошаговая форма не является пагинируемым каталогом."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Выбрать навигацию для каталога",
+    "text": "Хочу сравнить пагинацию и дозагрузку для списка на сайте. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Выбрать навигацию для каталога",
+    "briefPrompt": "Хочу сравнить пагинацию и дозагрузку для списка на сайте."
+  },
+  "review": {
+    "hash": "00ddf23aed953badf9d6098f4b558c17458a5a1ab6728d99e24037eb34d5b515",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.136Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

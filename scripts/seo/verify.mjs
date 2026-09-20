@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {performance} from 'node:perf_hooks';
+import {getGuides,guideHash,guideProblems,requiredGuideChecks} from '../../lib/guides.ts';
+import {similarPages,classifyMetrics} from './checks.mjs';
+import {writeJSON} from './api.mjs';
+const sample=structuredClone(getGuides()[0]);sample.status='indexable';sample.indexable=true;sample.qualityScore=90;sample.review={hash:guideHash(sample),checks:requiredGuideChecks};assert.deepEqual(guideProblems(sample),[]);
+sample.body+=' Edited';assert(guideProblems(sample).some(e=>e.includes('stale')));
+sample.indexable=false;sample.status='draft';assert(!guideProblems(sample).some(e=>e.includes('stale')));
+assert.equal(similarPages([{slug:'a',body:sample.body},{slug:'b',body:sample.body}])[0].overlap,1);
+assert.equal(classifyMetrics(null).status,'UNMEASURED');assert.equal(classifyMetrics({impressions:100,contacts:1}).status,'WINNER');assert.equal(classifyMetrics({impressions:100,clicks:2}).status,'PROMISING');assert.equal(classifyMetrics({impressions:0,daysSincePublication:31}).status,'STAGNANT');assert.equal(classifyMetrics({impressions:0,daysSincePublication:65,indexationStatus:'not-indexed'}).status,'FAIL');
+const started=performance.now();const synthetic=Array.from({length:5000},(_,i)=>({slug:`fixture-${i}`,body:Array.from({length:280},(_,j)=>`word${i}x${j}`).join(' ')}));assert.equal(similarPages(synthetic).length,0);const elapsed=performance.now()-started;
+await writeJSON('seo/reports/verification.json',{checkedAt:new Date().toISOString(),qualityGate:'pass',feedbackRules:'pass',syntheticSimilarityDocuments:5000,syntheticSimilarityMilliseconds:Math.round(elapsed),limitation:'Synthetic content-index/similarity check; not a 5000-page production render benchmark.'});console.log('Quality gate and metrics rules passed; 5000-document similarity check:',Math.round(elapsed),'ms');

@@ -1,0 +1,21 @@
+{
+  "completed": [
+    "collect",
+    "normalize",
+    "cluster",
+    "preliminary-score",
+    "serp",
+    "final-score",
+    "briefs",
+    "selected-serp",
+    "report"
+  ],
+  "inputFingerprint": "ced0eda6aa652307fd59f2eb525d19df99f3b1edb47eaabaa3dcd00793c3d13b",
+  "batchId": "ru-2026-09-19-01",
+  "mode": "dry-run",
+  "startedAt": "2026-09-20T07:09:05.017Z",
+  "source": "curated-first-batch",
+  "concurrency": 1,
+  "lastCompletedStage": "report",
+  "completedAt": "2026-09-20T07:26:08.986Z"
+}

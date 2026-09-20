@@ -1,0 +1,55 @@
+.signature-portal{background:transparent!important;pointer-events:auto}
+.portal-mask-defs{position:absolute;width:100%;height:100%;pointer-events:none}
+.portal-outgoing{position:absolute;inset:0;overflow:hidden;mask:url(#imanakov-portal-mask);-webkit-mask:url(#imanakov-portal-mask)}
+.portal-outgoing-surface{min-height:100%;background:var(--paper);color:var(--ink);isolation:isolate;pointer-events:none}
+.portal-outgoing-surface .site-header{position:fixed}
+.case-device-stage{height:auto!important;aspect-ratio:auto!important;padding:5% 5% 7%;overflow:visible!important;background:color-mix(in srgb,var(--project-color) 24%,var(--paper))}
+.device-presentation{width:100%;perspective:1400px}
+.device-prepared>img{display:block;width:100%;height:auto;object-fit:contain}
+.case-device-stage:has(.device-prepared){padding:1% 0 3%;background:transparent}
+.case-device-stage>.device-prepared{max-width:1100px;margin:auto}
+.evidence-pair img[src*="devices"],.evidence-pair img[srcset*="devices"]{border:0}
+.case-pdp .evidence-pair figure:last-child img{border-radius:8px}
+.device-display{overflow:hidden;border:1px solid #ffffff40;box-shadow:0 24px 45px -30px #0009;border-radius:10px;background:#161817}
+.device-screen{position:relative;aspect-ratio:16/10;overflow:hidden}
+.device-screen .project-image{width:100%;height:100%;transform:none}
+.device-screen img{object-fit:cover;object-position:50% 0}
+.device-browser .device-screen img{height:104%!important;top:-3%!important}
+.device-toolbar{height:28px;display:flex;align-items:center;gap:5px;padding:0 12px;color:#b9bcba;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+.device-toolbar i{width:5px;height:5px;border-radius:50%;background:#747a76}
+.device-toolbar span{margin:auto;transform:translateX(-15px)}
+.device-laptop{padding:0 4%}
+.device-laptop .device-display{padding:9px 9px 13px;border-radius:14px 14px 5px 5px;border-color:#4b4e4c}
+.device-base{height:12px;margin:0 -4%;background:linear-gradient(#d2d5d4,#818783);border-radius:0 0 50% 50%;box-shadow:0 18px 28px -10px #0005;position:relative}
+.device-base:before{content:'';position:absolute;top:0;left:43%;width:14%;height:4px;background:#767d79;border-radius:0 0 8px 8px}
+.device-raw .device-display{border:0;border-radius:0;box-shadow:none}
+.card-art:has(.device-presentation){display:flex;align-items:center;padding:0 6%;overflow:visible;perspective:1200px}
+.card-art .device-presentation{transform:rotateY(-4deg) rotateX(3deg);transition:transform .4s var(--ease)}
+.card-art .device-screen .project-image{transform:none}
+.next-project-image .device-presentation{height:auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-card.position-0:hover .device-presentation{transform:rotateY(0deg) rotateX(0deg) translateY(-3px)}}
+@media(pointer:coarse),(prefers-reduced-motion:reduce){.card-art .device-presentation{transform:none;transition:none}}
+.case-evidence{padding:110px var(--gutter);background:var(--paper);color:var(--ink)}
+.evidence-intro{display:grid;grid-template-columns:1fr 1fr;gap:30px 8%;margin-bottom:65px}
+.evidence-intro>.eyebrow{grid-column:1/-1}
+.evidence-intro h2{font-size:clamp(48px,6.5vw,100px);font-weight:500;letter-spacing:-.065em;line-height:.98}
+.evidence-intro>p{font-size:clamp(17px,1.6vw,24px);line-height:1.55;align-self:end;max-width:640px}
+.evidence-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.evidence-pair figcaption{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.06em;border-top:1px solid #aaa;padding:15px 0}
+.evidence-pair img{width:100%;height:auto;display:block;border:1px solid #0001}
+.evidence-sequence .evidence-pair{grid-template-columns:1fr}
+.evidence-sequence .evidence-pair figure:first-child{width:75%}
+.evidence-sequence .evidence-pair figure:last-child{width:88%;margin-left:auto;margin-top:35px}
+.evidence-changes{display:grid;grid-template-columns:.8fr 1fr 1fr 1fr;gap:30px;margin-top:65px;padding-top:25px;border-top:1px solid #aaa}
+.evidence-changes h3{font-size:24px;font-weight:500}
+.evidence-changes h4{font-size:22px;font-weight:500;margin:18px 0 12px;letter-spacing:-.03em}
+.evidence-changes p{font-size:15px;line-height:1.6;color:#494d49}
+.evidence-source{font-size:11px;line-height:1.6;max-width:900px;margin-top:45px;color:#636863}
+@media(max-width:767px){.case-evidence{padding:70px var(--gutter)}.evidence-intro{grid-template-columns:1fr;gap:25px;margin-bottom:35px}.evidence-intro>.eyebrow{grid-column:auto}.evidence-pair,.evidence-changes{grid-template-columns:1fr}.evidence-sequence .evidence-pair figure:first-child,.evidence-sequence .evidence-pair figure:last-child{width:100%;margin:0}.device-laptop .device-display{padding:4px 4px 6px;border-radius:7px 7px 3px 3px}.device-base{height:6px}.device-toolbar{height:18px;font-size:7px}.case-device-stage{padding:6% 2%}.evidence-changes{gap:25px;margin-top:35px}}
+.case-vpn-equipment .evidence-pair figure:first-child img{transform:rotate(-4deg) scale(.96);transform-origin:center}
+.next-project-image{width:32%;right:24%;top:9%;height:auto;transform:none;opacity:1}
+.next-project:hover .next-project-image{transform:translateY(-5px) scale(1.025);opacity:1}
+@media(max-width:767px){.next-project-image{position:relative;display:block;width:78%;right:auto;top:auto;margin:20px 0 0 5%;height:auto}.next-project:hover .next-project-image{transform:none}}
+
+.device-fallback{position:relative;aspect-ratio:4/3;min-height:200px}
+@media(max-width:767px){.case-legacy-rheumatology .case-hero h1{font-size:14vw}}

@@ -1,0 +1,85 @@
+[
+  {
+    "url": "https://www.w3.org/WAI/tutorials/forms/validation/",
+    "path": "seo/cache/sources/batch-0.txt",
+    "characters": 11580,
+    "ok": true
+  },
+  {
+    "url": "https://design-system.service.gov.uk/components/password-input/",
+    "path": "seo/cache/sources/batch-1.txt",
+    "characters": 23700,
+    "ok": true
+  },
+  {
+    "url": "https://www.w3.org/WAI/tutorials/menus/",
+    "path": "seo/cache/sources/batch-2.txt",
+    "characters": 5037,
+    "ok": true
+  },
+  {
+    "url": "https://design-system.service.gov.uk/components/pagination/",
+    "path": "seo/cache/sources/batch-3.txt",
+    "characters": 37127,
+    "ok": true
+  },
+  {
+    "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+    "path": "seo/cache/sources/batch-4.txt",
+    "characters": 7790,
+    "ok": true
+  },
+  {
+    "url": "https://carbondesignsystem.com/patterns/loading-pattern/",
+    "path": "seo/cache/sources/batch-5.txt",
+    "characters": 6131,
+    "ok": true
+  },
+  {
+    "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+    "path": "seo/cache/sources/batch-6.txt",
+    "characters": 8632,
+    "ok": true
+  },
+  {
+    "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "path": "seo/cache/sources/batch-7.txt",
+    "characters": 11261,
+    "ok": true
+  },
+  {
+    "url": "https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently",
+    "path": "seo/cache/sources/batch-8.txt",
+    "characters": 5323,
+    "ok": true
+  },
+  {
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "path": "seo/cache/sources/batch-9.txt",
+    "characters": 30859,
+    "ok": true
+  },
+  {
+    "url": "https://carbondesignsystem.com/data-visualization/overview/",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://design-system.service.gov.uk/patterns/check-answers/",
+    "path": "seo/cache/sources/batch-11.txt",
+    "characters": 17616,
+    "ok": true
+  },
+  {
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+    "path": "seo/cache/sources/batch-12.txt",
+    "characters": 40489,
+    "ok": true
+  },
+  {
+    "url": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html",
+    "path": "seo/cache/sources/batch-13.txt",
+    "characters": 7160,
+    "ok": true
+  }
+]

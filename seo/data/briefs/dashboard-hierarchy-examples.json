@@ -1,0 +1,62 @@
+{
+  "slug": "dashboard-hierarchy-examples",
+  "clusterId": "intent-dashboard-hierarchy-examples",
+  "parentClusterId": "dashboard-examples-general",
+  "primaryKeyword": "примеры дашбордов",
+  "secondaryKeywords": [],
+  "intent": "examples",
+  "topic": "product",
+  "userProblem": "Примеры дашбордов: от задачи к иерархии данных",
+  "directAnswer": "Начните дашборд с решения, которое должен принять пользователь. Операционному экрану нужны текущие исключения и следующий шаг, обзору продаж — период и сравнение, поддержке — очередь и срочность. Количество графиков выбирают после этого; больше виджетов не означает больше ясности.",
+  "title": "Примеры дашбордов: от задачи к иерархии данных",
+  "description": "Три учебных примера дашборда: операции, продажи и поддержка. Как выбрать главный вопрос, объяснить метрики и дать путь от сигнала к действию.",
+  "h1": "Примеры дашбордов: от задачи к иерархии данных",
+  "sections": [
+    "Операционный экран: сначала исключения",
+    "Обзор продаж: сравнение с известными условиями",
+    "Поддержка: очередь ведёт к действию"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "before-after",
+  "relatedCases": [],
+  "relatedPages": [
+    "ux-interview-questions",
+    "usability-test-scenario",
+    "website-redesign-diagnosis"
+  ],
+  "cta": {
+    "headline": "Разобрать иерархию дашборда",
+    "text": "Хочу определить основные вопросы и действия для экрана с данными. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать иерархию дашборда",
+    "briefPrompt": "Хочу определить основные вопросы и действия для экрана с данными."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/dashboard-hierarchy-examples",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "дашборд",
+      "kind": "top",
+      "count": 1669,
+      "retrievedAt": "2026-09-19T13:58:16.157Z"
+    }
+  ],
+  "wordstatVolume": 1669,
+  "opportunityScore": 80,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.949Z",
+  "provenance": "Pre-writing plan; research and editorial gates still required"
+}

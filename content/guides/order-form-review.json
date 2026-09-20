@@ -1,0 +1,99 @@
+{
+  "slug": "order-form-review",
+  "title": "Форма заказа: что показать перед подтверждением",
+  "description": "Что включить в форму заказа перед подтверждением: состав, условия получения, итог и исправление данных. Проверка возврата и ошибок без потери ввода.",
+  "h1": "Форма заказа: что показать перед подтверждением",
+  "clusterId": "intent-order-form-review",
+  "intent": "problem-solving",
+  "topic": "commerce",
+  "primaryKeyword": "форма заказа дизайн",
+  "secondaryKeywords": [],
+  "wordstatVolume": 113,
+  "demandEvidence": [
+    {
+      "query": "форма заказа дизайн",
+      "count": 113,
+      "retrievedAt": "2026-09-19T13:59:12.495Z"
+    }
+  ],
+  "directAnswer": "Перед подтверждением заказа покажите состав, количество, условия получения, контакты и итоговую стоимость с известными доплатами. Дайте изменить сведения без повторного заполнения. Название последней кнопки должно объяснять последствие: отправку заявки, оформление заказа или переход к оплате.",
+  "userProblem": "Перед подтверждением заказа покажите состав, количество, условия получения, контакты и итоговую стоимость с известными доплатами. Дайте изменить сведения без повторного заполнения. Название последней кнопки должно объяснять последствие: отправку заявки, оформление заказа или переход к оплате.",
+  "pageType": "problem-solving",
+  "visualValue": "static-ui-example",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Блок",
+      "Пользователь проверяет",
+      "Действие"
+    ],
+    "rows": [
+      [
+        "Состав",
+        "Что и сколько заказано",
+        "Изменить количество"
+      ],
+      [
+        "Получение",
+        "Адрес, способ и срок",
+        "Исправить условия"
+      ],
+      [
+        "Подтверждение",
+        "Сумму и последствия",
+        "Выполнить названное действие"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/order-form-review",
+  "relatedPages": [
+    "form-error-messages",
+    "form-validation-timing",
+    "password-input-design"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://design-system.service.gov.uk/patterns/check-answers/",
+      "title": "Check answers",
+      "publisher": "GOV.UK Design System",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Проверка введённых ответов перед отправкой и возвращение к редактированию; применение к заказу является авторским примером."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать форму заказа",
+    "text": "Хочу проверить итоговый шаг заказа, исправление данных и подтверждение. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать форму заказа",
+    "briefPrompt": "Хочу проверить итоговый шаг заказа, исправление данных и подтверждение."
+  },
+  "review": {
+    "hash": "2b6b8184543856d38d4893642a9e9535ddc0560fa84fa31f731ece8c5aa7d261",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.135Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

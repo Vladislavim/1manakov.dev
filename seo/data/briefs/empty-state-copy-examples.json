@@ -1,0 +1,79 @@
+{
+  "slug": "empty-state-copy-examples",
+  "clusterId": "intent-empty-state-copy-examples",
+  "parentClusterId": "empty-informational-general",
+  "primaryKeyword": "тексты пустых состояний",
+  "secondaryKeywords": [],
+  "intent": "examples",
+  "topic": "interaction",
+  "userProblem": "Тексты пустых состояний: примеры для старта, поиска и ошибки",
+  "directAnswer": "Текст пустого состояния зависит от причины отсутствия данных. При первом запуске помогите создать первый объект; после поиска предложите изменить условия; при сбое объясните, что данные не удалось загрузить. Одно «Здесь пока ничего нет» не подходит для всех трёх ситуаций.",
+  "title": "Тексты пустых состояний: примеры для старта, поиска и ошибки",
+  "description": "Как отличить первый запуск от отсутствия результатов и сбоя загрузки. Примеры заголовков и действий, которые помогают продолжить работу вместо тупика.",
+  "h1": "Тексты пустых состояний: примеры для старта, поиска и ошибки",
+  "sections": [
+    "Начните с причины пустоты",
+    "Первый запуск: покажите первый результат",
+    "Нет результатов: сохраните возможность исправить запрос",
+    "Ошибка: не обвиняйте пользователя"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/empty-states-pattern/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Первое использование",
+      "Создайте первый маршрут",
+      "Добавить маршрут"
+    ],
+    [
+      "Фильтры исключили всё",
+      "По этим условиям маршрутов нет",
+      "Сбросить фильтры"
+    ],
+    [
+      "Сбой загрузки",
+      "Не удалось загрузить маршруты",
+      "Повторить загрузку"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "before-after",
+  "relatedCases": [],
+  "relatedPages": [
+    "loading-skeleton",
+    "modal-dialog-design",
+    "interface-motion-rules"
+  ],
+  "cta": {
+    "headline": "Разобрать состояния вашего интерфейса",
+    "text": "Хочу разделить пустые состояния, ошибки и первый запуск в интерфейсе. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать состояния вашего интерфейса",
+    "briefPrompt": "Хочу разделить пустые состояния, ошибки и первый запуск в интерфейсе."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/empty-state-copy-examples",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "пустые состояния",
+      "kind": "top",
+      "count": 90,
+      "retrievedAt": "2026-09-19T13:58:41.455Z"
+    }
+  ],
+  "wordstatVolume": 90,
+  "opportunityScore": 75,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.929Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

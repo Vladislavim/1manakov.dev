@@ -1,0 +1,9 @@
+{
+  "raw": 7799,
+  "normalized": 7717,
+  "candidates": 2972,
+  "notes": [
+    "Frequencies are overlapping broad match phrase counts, never unique demand totals.",
+    "Conservative lexical and concept synonym normalization; original queries and evidence preserved."
+  ]
+}

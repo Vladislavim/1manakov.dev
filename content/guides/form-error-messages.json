@@ -1,0 +1,99 @@
+{
+  "slug": "form-error-messages",
+  "title": "Ошибки полей ввода: как объяснить проблему и сохранить данные",
+  "description": "Как написать сообщение об ошибке в форме: отделить неверный ввод от сбоя сервиса, показать способ исправления и сохранить уже заполненные поля.",
+  "h1": "Ошибки полей ввода: как объяснить проблему и сохранить данные",
+  "clusterId": "intent-form-error-messages",
+  "intent": "problem-solving",
+  "topic": "forms",
+  "primaryKeyword": "ошибки полей ввода",
+  "secondaryKeywords": [],
+  "wordstatVolume": 482,
+  "demandEvidence": [
+    {
+      "query": "ошибки полей ввода",
+      "count": 482,
+      "retrievedAt": "2026-09-19T13:59:09.117Z"
+    }
+  ],
+  "directAnswer": "Сообщение об ошибке должно назвать проблемное поле и объяснить следующее действие. Показывайте его рядом с полем, сохраняйте введённые данные и отличайте неверный формат от технического сбоя. Красная рамка без текста оставляет человеку задачу угадать причину.",
+  "userProblem": "Сообщение об ошибке должно назвать проблемное поле и объяснить следующее действие. Показывайте его рядом с полем, сохраняйте введённые данные и отличайте неверный формат от технического сбоя. Красная рамка без текста оставляет человеку задачу угадать причину.",
+  "pageType": "problem-solving",
+  "visualValue": "interactive",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Ситуация",
+      "Слабая формулировка",
+      "Полезный вариант"
+    ],
+    "rows": [
+      [
+        "Не хватает символа @",
+        "Некорректно",
+        "Введите почту с @, например name@example.com"
+      ],
+      [
+        "Сервис не ответил",
+        "Ошибка данных",
+        "Не удалось отправить. Введённое сохранено — попробуйте ещё раз"
+      ],
+      [
+        "Обязательное поле пустое",
+        "Error 400",
+        "Укажите имя для обращения"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/form-error-messages",
+  "relatedPages": [
+    "form-validation-timing",
+    "password-input-design",
+    "order-form-review"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "title": "User Notifications in Forms",
+      "publisher": "W3C WAI",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Обратная связь возле поля и после отправки; понятное объяснение исправления."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": true,
+  "version": 1,
+  "cta": {
+    "headline": "Разобрать ошибки вашей формы",
+    "text": "Хочу проверить сообщения об ошибках и сценарий повторной отправки формы. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Разобрать ошибки вашей формы",
+    "briefPrompt": "Хочу проверить сообщения об ошибках и сценарий повторной отправки формы."
+  },
+  "review": {
+    "hash": "ccaaafa36c43fe44544975e8975bf409de77e5e064a0ad93a90236c3e64719c2",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.124Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

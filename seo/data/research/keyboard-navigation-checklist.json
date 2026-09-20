@@ -1,0 +1,28 @@
+{
+  "slug": "keyboard-navigation-checklist",
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+      "title": "Developing a Keyboard Interface",
+      "publisher": "W3C ARIA APG",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Видимость и предсказуемость фокуса; различие переходов между компонентами и внутри составных компонентов."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.893Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

@@ -7,9 +7,10 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { projects } from '@/data/projects';
+import { captureOutgoing, portalPath } from '@/lib/portal-transition';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-type Navigation = { navigate: (href: string, image?: string) => void };
+type Navigation = { navigate: (href: string, image?: string, origin?: {x:number;y:number}) => void };
 const NavigationContext = createContext<Navigation | null>(null);
 
 export function RouteLink({ href, children, image, className, ...props }: {
@@ -19,7 +20,9 @@ export function RouteLink({ href, children, image, className, ...props }: {
   function click(event: MouseEvent<HTMLAnchorElement>) {
     props.onClick?.(event);
     if (event.defaultPrevented || !context || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-    if (image) { event.preventDefault(); context.navigate(href, image); }
+    event.preventDefault();
+    const box=event.currentTarget.getBoundingClientRect();
+    context.navigate(href, image, {x:event.detail?event.clientX:box.left+box.width/2,y:event.detail?event.clientY:box.top+box.height/2});
   }
   return <Link {...props} href={href} className={className} onClick={click}>{children}</Link>;
 }
@@ -29,59 +32,117 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const router = useRouter();
   const shell = useRef<HTMLDivElement>(null);
   const portal = useRef<HTMLDivElement>(null);
+  const outgoing = useRef<HTMLDivElement>(null);
+  const aperture = useRef<SVGPathElement>(null);
+  const origin = useRef({x:0,y:0});
+  const veil = useRef<HTMLDivElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
   const loader = useRef<HTMLDivElement>(null);
   const locked = useRef(false);
   const destination = useRef('');
-  const scrollPositions = useRef(new Map<string, number>());
+  const hrefHash = useRef('');
   const previousPath = useRef(path);
   const timeout = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const revealFrame = useRef<number | undefined>(undefined);
   const timeline = useRef<gsap.core.Timeline | null>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const [progress, setProgress] = useState(0);
 
   const release = useCallback(() => {
+    if (revealFrame.current !== undefined) cancelAnimationFrame(revealFrame.current);
     if (timeout.current) clearTimeout(timeout.current);
     if (portal.current) gsap.set(portal.current, { autoAlpha: 0 });
+    outgoing.current?.replaceChildren();
+    aperture.current?.setAttribute('d','M0,0 Z');
+    if (veil.current) gsap.set(veil.current, { autoAlpha: 0 });
     locked.current = false;
+    hrefHash.current = '';
     lenisRef.current?.start();
   }, []);
 
-  const navigate = useCallback((href: string, image?: string) => {
-    if (locked.current || href === path) return;
-    scrollPositions.current.set(path, window.scrollY);
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { router.push(href); return; }
+  const navigate = useCallback((href: string, image?: string, point?: {x:number;y:number}) => {
+    const targetPath = href.split('#')[0];
+    const hash = href.split('#')[1] || '';
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (locked.current) return;
+    if (targetPath === path) {
+      const target = hash ? document.getElementById(hash) : 0;
+      if (lenisRef.current) {
+        // Native anchor/focus scrolling can precede Lenis' next frame.
+        // Synchronize its position before asking it to return to zero.
+        lenisRef.current.scrollTo(window.scrollY, { immediate: true, force: true });
+        lenisRef.current.scrollTo(target || 0, { immediate: reduced, force: true });
+      }
+      else if (target instanceof HTMLElement) target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+      else window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+      if (hash) window.history.pushState({ ...window.history.state }, '', href);
+      return;
+    }
+    hrefHash.current = hash;
+    if (reduced) { router.push(href); return; }
+    if (!image) {
+      const layer = veil.current;
+      if (!layer) { router.push(href); return; }
+      locked.current = true;
+      destination.current = targetPath;
+      lenisRef.current?.stop();
+      gsap.set(layer, { autoAlpha: 1, opacity: 0 });
+      timeline.current?.kill();
+      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .16, ease: 'power2.out' }).call(() => router.push(href, { scroll: !href.includes('#') }));
+      timeout.current = setTimeout(release, 5000);
+      return;
+    }
     const layer = portal.current;
     if (!layer) { router.push(href); return; }
     locked.current = true;
-    destination.current = href.split('#')[0];
+    destination.current = targetPath;
     lenisRef.current?.stop();
-    const opening = layer.querySelector<HTMLElement>('.portal-opening')!;
-    opening.style.backgroundImage = `url("${image || projects[0].cover}")`;
+    origin.current=matchMedia('(pointer:coarse)').matches?{x:innerWidth*.5,y:innerHeight*.45}:(point||{x:innerWidth*.7,y:innerHeight*.49});
+    if(outgoing.current)captureOutgoing(outgoing.current);
+    aperture.current?.setAttribute('d','M0,0 Z');
     gsap.set(layer, { autoAlpha: 1 });
-    gsap.set(opening, { clipPath: 'polygon(49% 0,51% 0,54% 100%,46% 100%)', scale: 1.12 });
     timeline.current?.kill();
-    timeline.current = gsap.timeline().fromTo(layer, { opacity: 0 }, { opacity: 1, duration: .2 })
-      .to(opening, { clipPath: 'polygon(36% 0,72% 0,80% 100%,29% 100%)', scale: 1, duration: .32, ease: 'power3.inOut' }, .08)
-      .call(() => router.push(href, { scroll: false }));
+    router.push(href, { scroll: false });
     timeout.current = setTimeout(release, 5000);
   }, [path, router, release]);
 
   useEffect(() => {
     if (previousPath.current === path) return;
     previousPath.current = path;
-    if (locked.current && destination.current === path && portal.current) {
-      const saved = path === '/' ? (scrollPositions.current.get('/') ?? 0) : 0;
-      window.scrollTo(0, saved);
-      requestAnimationFrame(() => {
+    if (revealFrame.current !== undefined) cancelAnimationFrame(revealFrame.current);
+    if (locked.current && destination.current === path) {
+      const saved = 0;
+      if (lenisRef.current) lenisRef.current.scrollTo(saved, { immediate: true, force: true });
+      else window.scrollTo(0, saved);
+      revealFrame.current = requestAnimationFrame(() => {
         document.querySelector<HTMLElement>('main')?.focus({ preventScroll: true });
-        timeline.current = gsap.timeline({ onComplete: release })
-          .to('.portal-opening', { clipPath: 'polygon(0% 0,100% 0,100% 100%,0% 100%)', duration: .3, ease: 'power3.inOut' })
-          .to(portal.current, { opacity: 0, duration: .2 });
+        if (hrefHash.current) {
+          const target = document.getElementById(hrefHash.current);
+          if (target && lenisRef.current) lenisRef.current.scrollTo(target, { immediate: true, force: true });
+          else target?.scrollIntoView({ behavior: 'auto' });
+        }
+        if (portal.current?.style.visibility === 'visible' || portal.current?.style.opacity === '1') {
+          const {x,y}=origin.current;
+          const mobile=matchMedia('(pointer:coarse)').matches;
+          timeline.current = gsap.timeline({ onComplete: release })
+            .set(aperture.current,{attr:{d:portalPath(x,y,110,110)}})
+            .to(aperture.current,{attr:{d:portalPath(x,y,78,90)},duration:.12,ease:'power2.in'})
+            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:.2,ease:'power3.inOut'})
+            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.58,ease:'power3.inOut'});
+        } else {
+          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .18 });
+        }
       });
     } else if (locked.current) { timeline.current?.kill(); release(); }
     ScrollTrigger.refresh();
+    return () => { if (revealFrame.current !== undefined) cancelAnimationFrame(revealFrame.current); };
   }, [path, release]);
+
+  useEffect(() => {
+    const history = () => { if (locked.current) { timeline.current?.kill(); release(); } };
+    window.addEventListener('popstate', history);
+    return () => window.removeEventListener('popstate', history);
+  }, [release]);
 
   useEffect(() => {
     let cancelled = false;
@@ -119,16 +180,15 @@ export function SiteShell({ children }: { children: ReactNode }) {
         const target = e.target as HTMLElement;
         const active = target.closest<HTMLElement>('[data-cursor]');
         dot.dataset.active = active ? 'true' : 'false';
-        dot.dataset.hidden = target.closest('.hero') ? 'true' : 'false';
-        dot.textContent = active?.dataset.cursor || '';
+        dot.dataset.hidden = 'false';
+        const label = active?.dataset.cursor || '';
+        dot.querySelector('span')!.textContent = label === 'DRAG' ? '↔' : label === 'BACK' ? '←' : label;
         dot.style.opacity = '1';
       };
       const leave = () => { dot.style.opacity = '0'; };
       window.addEventListener('pointermove', move, { passive: true });
       document.addEventListener('pointerleave', leave);
-      const history = () => { if (locked.current) { timeline.current?.kill(); release(); } };
-      window.addEventListener('popstate', history);
-      return () => { lenis.destroy(); lenisRef.current = null; gsap.ticker.remove(update); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pointermove', move); document.removeEventListener('pointerleave', leave); window.removeEventListener('popstate', history); x.tween.kill(); y.tween.kill(); };
+      return () => { lenis.destroy(); lenisRef.current = null; gsap.ticker.remove(update); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pointermove', move); document.removeEventListener('pointerleave', leave); x.tween.kill(); y.tween.kill(); };
     });
     return () => mm.revert();
   }, { scope: shell });
@@ -137,11 +197,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <a className="skip-link" href="#main" tabIndex={0}>Skip to content</a>
     <header className="site-header">
       <RouteLink href="/" className="brand" image={path.startsWith('/work/') ? projects.find(p => path.endsWith(p.slug))?.cover : undefined} aria-label="Imanakov — home">IMANAKOV</RouteLink>
-      <nav aria-label="Main navigation"><Link href="/#work">WORK</Link><Link href="/about" aria-current={path === '/about' ? 'page' : undefined}>ABOUT</Link><Link href="/play" aria-current={path === '/play' ? 'page' : undefined}>PLAY</Link></nav>
+      <nav aria-label="Main navigation"><RouteLink href="/#work">WORK</RouteLink><RouteLink href="/about" aria-current={path === '/about' ? 'page' : undefined}>ABOUT</RouteLink><RouteLink href="/lab" aria-current={path === '/lab' ? 'page' : undefined}>LAB</RouteLink></nav>
     </header>
     {children}
     <div className="readiness" ref={loader} aria-hidden="true"><span>IMANAKOV</span><span>{String(progress).padStart(2, '0')}</span></div>
-    <div className="custom-cursor" ref={cursor} aria-hidden="true" />
-    <div className="route-portal" ref={portal} aria-hidden="true"><div className="portal-copy">Enter<br />the<br />work</div><div className="portal-opening" /><span className="portal-plus">+</span><span className="portal-caption">A closer look.</span></div>
+    <div className="custom-cursor" ref={cursor} aria-hidden="true"><span /></div>
+    <div className="route-veil" ref={veil} aria-hidden="true" />
+    <div className="route-portal signature-portal" ref={portal} aria-hidden="true"><svg className="portal-mask-defs"><defs><mask id="imanakov-portal-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect width="100%" height="100%" fill="white"/><path ref={aperture} fill="black" d="M0,0 Z"/></mask></defs></svg><div className="portal-outgoing" ref={outgoing}/></div>
   </div></NavigationContext.Provider>;
 }

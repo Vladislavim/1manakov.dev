@@ -1,0 +1,99 @@
+{
+  "slug": "usability-test-scenario",
+  "title": "Как провести юзабилити-тестирование одного сценария",
+  "description": "План юзабилити-теста: задача без подсказки, признаки завершения, наблюдения, помощь модератора и повторная проверка конкретных исправлений.",
+  "h1": "Как провести юзабилити-тестирование одного сценария",
+  "clusterId": "intent-usability-test-scenario",
+  "intent": "how-to",
+  "topic": "research",
+  "primaryKeyword": "провести юзабилити тестирование",
+  "secondaryKeywords": [],
+  "wordstatVolume": 53,
+  "demandEvidence": [
+    {
+      "query": "провести юзабилити тестирование",
+      "count": 53,
+      "retrievedAt": "2026-09-19T13:59:13.643Z"
+    }
+  ],
+  "directAnswer": "Выберите один рабочий сценарий, задайте участнику цель без названий кнопок и наблюдайте за действиями. Заранее определите, что считается завершением и где потребовалась помощь. После теста связывайте замечания с конкретными препятствиями, а не с оценкой «нравится / не нравится».",
+  "userProblem": "Выберите один рабочий сценарий, задайте участнику цель без названий кнопок и наблюдайте за действиями. Заранее определите, что считается завершением и где потребовалась помощь. После теста связывайте замечания с конкретными препятствиями, а не с оценкой «нравится / не нравится».",
+  "pageType": "how-to",
+  "visualValue": "diagram",
+  "visual": {
+    "title": "Решение на конкретном примере",
+    "columns": [
+      "Этап",
+      "Артефакт",
+      "Проверка"
+    ],
+    "rows": [
+      [
+        "Подготовка",
+        "Сценарий",
+        "Нет подсказки маршрута"
+      ],
+      [
+        "Наблюдение",
+        "Шаги и ошибки",
+        "Помощь отмечена"
+      ],
+      [
+        "Разбор",
+        "Следующее изменение",
+        "Связано с наблюдением"
+      ]
+    ],
+    "caption": "Авторский учебный пример. Формулировки адаптируйте к данным и ограничениям своего продукта."
+  },
+  "publishedAt": "2026-09-19",
+  "updatedAt": "2026-09-19",
+  "reviewedAt": "2026-09-19",
+  "author": "Владислав Иманаков",
+  "status": "indexable",
+  "indexable": true,
+  "canonical": "/guides/usability-test-scenario",
+  "relatedPages": [
+    "ux-interview-questions",
+    "website-redesign-diagnosis",
+    "dashboard-hierarchy-examples"
+  ],
+  "relatedCases": [],
+  "sources": [
+    {
+      "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+      "title": "Using moderated usability testing",
+      "publisher": "GOV.UK Service Manual",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Задачи, наблюдение и нейтральные уточнения при модерируемом тестировании."
+      ]
+    }
+  ],
+  "qualityScore": 90,
+  "batchId": "ru-2026-09-19-01",
+  "golden": false,
+  "version": 1,
+  "cta": {
+    "headline": "Подготовить проверку сценария",
+    "text": "Хочу проверить ключевой сценарий сайта на прототипе или рабочей версии. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Подготовить проверку сценария",
+    "briefPrompt": "Хочу проверить ключевой сценарий сайта на прототипе или рабочей версии."
+  },
+  "review": {
+    "hash": "fd19ec49afbe697150c45ff3790bb2479384a13c281864af6caef54067ee8b56",
+    "reviewer": "Solo editorial review — AI-assisted",
+    "checkedAt": "2026-09-20T06:53:23.141Z",
+    "checks": [
+      "intent",
+      "unique-value",
+      "similarity",
+      "facts",
+      "metadata",
+      "links",
+      "editorial",
+      "sources"
+    ],
+    "notes": "Original answer-first explanation, source support, demand provenance, visual example and publication links checked. No measured client outcomes claimed."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "reviewedAt": "2026-09-20",
+  "method": "AI-assisted review of saved SERP titles/snippets and top-two HTML structural samples. Protected/encoded pages are not treated as complete readable audits.",
+  "pages": [
+    {
+      "slug": "form-error-messages",
+      "decision": "retain narrowed intent",
+      "notes": "Editorial intent: actionable error wording and field association; original interactive example."
+    },
+    {
+      "slug": "design-system-vs-ui-kit",
+      "decision": "retain narrowed intent",
+      "notes": "Comparison intent: system responsibilities versus reusable visual components; decision table."
+    },
+    {
+      "slug": "website-prototype-scenario",
+      "decision": "retain narrowed intent",
+      "notes": "How-to: testable prototype scope; excludes tool rankings and generic prototype definitions."
+    },
+    {
+      "slug": "keyboard-navigation-checklist",
+      "decision": "retain narrowed intent",
+      "notes": "Mixed SERP includes operating-system shortcuts. This page explicitly covers website keyboard testing; broad volume is not exact audience demand."
+    },
+    {
+      "slug": "empty-state-copy-examples",
+      "decision": "retain narrowed intent",
+      "notes": "Examples intent: original empty-state copy with specific next actions, not screenshots borrowed from competitors."
+    },
+    {
+      "slug": "form-validation-timing",
+      "decision": "retain narrowed intent",
+      "notes": "Overlap with error messages retained intentionally: timing and recovery versus wording and association. Separate examples and reciprocal links."
+    },
+    {
+      "slug": "password-input-design",
+      "decision": "retain narrowed intent",
+      "notes": "Mixed technical/UX intent. Page covers product decisions and accessible disclosure, not an HTML implementation tutorial."
+    },
+    {
+      "slug": "mobile-navigation-priorities",
+      "decision": "retain narrowed intent",
+      "notes": "Informational mobile navigation: task priority and visible destinations; not a device-settings guide."
+    },
+    {
+      "slug": "website-navigation-labels",
+      "decision": "retain narrowed intent",
+      "notes": "Practical information architecture: concrete labels and comprehension; no unsupported measured conversion uplift."
+    },
+    {
+      "slug": "pagination-or-load-more",
+      "decision": "retain narrowed intent",
+      "notes": "Comparison intent: orientation, task and return-state tradeoffs; no universal winner."
+    },
+    {
+      "slug": "modal-dialog-design",
+      "decision": "retain narrowed intent",
+      "notes": "Practical modal decisions: interruptibility, focus return, confirmation; not a component library catalogue."
+    },
+    {
+      "slug": "loading-skeleton",
+      "decision": "retain narrowed intent",
+      "notes": "Informational loading states: when structure is known and what to show; original decision rules."
+    },
+    {
+      "slug": "ux-interview-questions",
+      "decision": "retain narrowed intent",
+      "notes": "Interview planning and behavioral prompts; no invented participant findings."
+    },
+    {
+      "slug": "usability-test-scenario",
+      "decision": "retain narrowed intent",
+      "notes": "How-to task writing and moderation; original test scenario, not reported client research."
+    },
+    {
+      "slug": "website-redesign-diagnosis",
+      "decision": "retain narrowed intent",
+      "notes": "Mixed commercial/editorial intent. Diagnosis page separates evidence of problems from visual preferences; links only a real portfolio case."
+    },
+    {
+      "slug": "text-contrast-check",
+      "decision": "retain narrowed intent",
+      "notes": "Accessibility testing intent: WCAG thresholds from primary source, explicit limits and exceptions."
+    },
+    {
+      "slug": "dashboard-hierarchy-examples",
+      "decision": "retain narrowed intent",
+      "notes": "SERP includes galleries. Page provides three original hierarchy examples and selection rules, not a claimed exhaustive inspiration collection."
+    },
+    {
+      "slug": "order-form-review",
+      "decision": "retain narrowed intent",
+      "notes": "Mixed templates/checkout intent: page narrows to a form review and field necessity, not downloadable design templates."
+    },
+    {
+      "slug": "responsive-content-order",
+      "decision": "retain narrowed intent",
+      "notes": "Responsive content ordering: reading order and semantic structure; not device size listings."
+    },
+    {
+      "slug": "interface-motion-rules",
+      "decision": "retain narrowed intent",
+      "notes": "Motion accessibility and interaction purpose: direct state feedback and reduced motion, not animation trends."
+    }
+  ]
+}

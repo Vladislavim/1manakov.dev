@@ -1,0 +1,86 @@
+{
+  "slug": "website-prototype-scenario",
+  "clusterId": "intent-website-prototype-scenario",
+  "parentClusterId": "prototyping-how-to-general",
+  "primaryKeyword": "создание прототипов сайтов",
+  "secondaryKeywords": [],
+  "intent": "how-to",
+  "topic": "prototyping",
+  "userProblem": "Как создать прототип сайта вокруг проверяемого сценария",
+  "directAnswer": "Начните прототип сайта с одной задачи пользователя и условия её завершения. Затем свяжите входной экран, выбор, действие и результат. Детализируйте только те элементы, без которых нельзя проверить решение; декоративные переходы можно добавить после проверки сценария.",
+  "title": "Как создать прототип сайта вокруг проверяемого сценария",
+  "description": "Последовательность подготовки прототипа: выбрать задачу, связать экраны, показать ошибки и проверить путь. Как ограничить детализацию и не рисовать лишние страницы.",
+  "h1": "Как создать прототип сайта вокруг проверяемого сценария",
+  "sections": [
+    "Сформулируйте проверяемый вопрос",
+    "Свяжите экраны содержанием",
+    "Выберите нужную точность",
+    "Проведите короткую проверку"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://www.gov.uk/service-manual/design/making-prototypes",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Найти услугу",
+      "Каталог",
+      "Понятны ли названия"
+    ],
+    [
+      "Сравнить условия",
+      "Страница услуги",
+      "Хватает ли информации"
+    ],
+    [
+      "Оставить запрос",
+      "Форма",
+      "Понятно ли следующее действие"
+    ],
+    [
+      "Убедиться в результате",
+      "Подтверждение",
+      "Ясно ли, что произойдёт дальше"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "diagram",
+  "relatedCases": [
+    "pdp"
+  ],
+  "relatedPages": [
+    "design-system-vs-ui-kit",
+    "responsive-content-order",
+    "text-contrast-check"
+  ],
+  "cta": {
+    "headline": "Проверить сценарий до разработки",
+    "text": "Хочу собрать и проверить прототип ключевого сценария сайта. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Проверить сценарий до разработки",
+    "briefPrompt": "Хочу собрать и проверить прототип ключевого сценария сайта."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/website-prototype-scenario",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "прототип сайта",
+      "kind": "top",
+      "count": 128,
+      "retrievedAt": "2026-09-19T13:58:46.960Z"
+    }
+  ],
+  "wordstatVolume": 128,
+  "opportunityScore": 80,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.925Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

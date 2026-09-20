@@ -1,0 +1,28 @@
+{
+  "slug": "loading-skeleton",
+  "sources": [
+    {
+      "url": "https://carbondesignsystem.com/patterns/loading-pattern/",
+      "title": "Loading patterns",
+      "publisher": "IBM Carbon",
+      "accessedAt": "2026-09-19",
+      "supports": [
+        "Скелетоны обозначают загружаемый контент в контейнерах; выбор локального или общего индикатора."
+      ]
+    }
+  ],
+  "claimBoundary": "Primary source supports the specified claims. Worked examples and decision rules are original design recommendations, not measured client results.",
+  "editorialReview": {
+    "reviewer": "AI-assisted solo review",
+    "styleSource": "https://truespaceai.ru/human/",
+    "checkedAt": "2026-09-20T06:53:22.899Z",
+    "checks": [
+      "concrete answer",
+      "no invented metrics",
+      "scope and exceptions",
+      "source claim boundary",
+      "specific example",
+      "no promotional footer"
+    ]
+  }
+}

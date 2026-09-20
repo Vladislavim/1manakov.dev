@@ -1,0 +1,1072 @@
+[
+  {
+    "slug": "dashboard-hierarchy-examples",
+    "query": "примеры дашбордов",
+    "samples": [
+      {
+        "url": "https://datalens.ru/gallery/all",
+        "status": "unavailable",
+        "checkedAt": "2026-09-19T19:12:32.121Z"
+      },
+      {
+        "url": "https://alexkolokolov.com/ru/gallery",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:33.482Z",
+        "h1": [
+          "Галерея дашбордов"
+        ],
+        "h2": [
+          "Интерактивные отчеты для разных отраслей бизнеса"
+        ],
+        "approximateWords": 437,
+        "tables": 0,
+        "lists": 11,
+        "images": 34,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "design-system-vs-ui-kit",
+    "query": "дизайн система и ui kit разница",
+    "samples": [
+      {
+        "url": "https://habr.com/ru/companies/rostelecom/articles/684816/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:34.961Z",
+        "h1": [
+          "Дизайн-система не равно UI-kit"
+        ],
+        "h2": [
+          "Хайп прошёл",
+          "Система",
+          "Деньги",
+          "Что дальше",
+          "Кратко",
+          "Windows 11 принудительно включит защиту ядра. Убьет ли это fps",
+          "Публикации",
+          "Информация"
+        ],
+        "approximateWords": 1202,
+        "tables": 0,
+        "lists": 9,
+        "images": 21,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://workspace.ru/blog/ui-kit-i-dizayn-sistema-chem-otlichayutsya-i-zachem-eto-biznesu-a-ne-tolko-dizayneru/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:36.490Z",
+        "h1": [
+          "UI Kit и дизайн-система: чем отличаются и зачем это бизнесу, а не только дизайнеру"
+        ],
+        "h2": [
+          "Что такое UI Kit простыми словами",
+          "UI Kit — это не дизайн-система",
+          "Зачем это бизнесу, а не дизайнеру",
+          "Мост между дизайном и разработкой",
+          "Когда система нужна, а когда рано",
+          "Наш опыт: одна система на шесть брендов",
+          "Типичные ошибки",
+          "Коротко",
+          "Лучшие статьи"
+        ],
+        "approximateWords": 1742,
+        "tables": 0,
+        "lists": 17,
+        "images": 21,
+        "video": false,
+        "forms": 1,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "empty-state-copy-examples",
+    "query": "тексты пустых состояний",
+    "samples": [
+      {
+        "url": "https://habr.com/ru/companies/ozontech/articles/753022/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:37.425Z",
+        "h1": [
+          "Дорогая, что-то пошло не так. Гид по пустым состояниям и ошибкам + шаблоны на все случаи"
+        ],
+        "h2": [
+          "Пустые состояния",
+          "Ошибки",
+          "Как в Ozon проверяют тексты пустых состояний и ошибок",
+          "Универсальный шаблон для написания пустых состояний и ошибок",
+          "Windows 11 принудительно включит защиту ядра. Убьет ли это fps",
+          "Публикации",
+          "Информация"
+        ],
+        "approximateWords": 3058,
+        "tables": 1,
+        "lists": 27,
+        "images": 39,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://kira-kalimulina.ru/guide",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:38.713Z",
+        "h1": [
+          "Гид по пустым состояниям и ошибкам"
+        ],
+        "h2": [
+          "Привет, я Кира Калимулина",
+          "Как я готовила гид",
+          "У меня получился убойный продукт — гид по пустым состояниям и ошибкам",
+          "В процессе я долго мучалась с кейсом «что-то пошло не так»",
+          "В итоге я пришла к выводу, что это нормальный текст",
+          "Универсальный шаблон текстов",
+          "Гид стал популярным",
+          "Выступила на митапе Тинькофф",
+          "Пусть всем будет проще писать тексты для приложений!",
+          "Кира Калимулина"
+        ],
+        "approximateWords": 796,
+        "tables": 0,
+        "lists": 0,
+        "images": 39,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "form-error-messages",
+    "query": "ошибки полей ввода",
+    "samples": [
+      {
+        "url": "https://guides.kontur.ru/principles/data/validation/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:39.938Z",
+        "h1": [
+          "Валидация"
+        ],
+        "h2": [
+          "Принципы",
+          "Виды валидации",
+          "Валидация при потере фокуса",
+          "Валидация при отправке формы",
+          "Блокирование кнопки отправки",
+          "Сообщения об ошибках",
+          "Тултипы",
+          "Красные тексты на странице",
+          "Валидация зависимых полей",
+          "Пример",
+          "Предупреждения"
+        ],
+        "approximateWords": 1352,
+        "tables": 1,
+        "lists": 8,
+        "images": 27,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/form-validation-techniques",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:41.321Z",
+        "h1": [
+          "Техники валидации форм"
+        ],
+        "h2": [
+          "Используем CSS",
+          "Используем JavaScript"
+        ],
+        "approximateWords": 1743,
+        "tables": 0,
+        "lists": 20,
+        "images": 9,
+        "video": false,
+        "forms": 4,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "form-validation-timing",
+    "query": "валидация формы",
+    "samples": [
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Forms/Form_validation",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:42.590Z",
+        "h1": [
+          "Валидация форм на стороне клиента"
+        ],
+        "h2": [
+          "In this article",
+          "Что такое валидация формы?",
+          "Типы валидации на стороне клиента",
+          "Использование встроенной валидации форм",
+          "Примеры встроенной валидации форм",
+          "Валидация форм с помощью JavaScript",
+          "Проверьте свои навыки!",
+          "Заключение",
+          "In this module",
+          "Help improve MDN"
+        ],
+        "approximateWords": 6189,
+        "tables": 1,
+        "lists": 79,
+        "images": 1,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://htmlacademy.ru/blog/js/valid-forms",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:43.032Z",
+        "h1": [
+          "3 способа валидации форм"
+        ],
+        "h2": [
+          "Валидация на стороне клиента",
+          "Валидация на стороне сервера",
+          "Материалы по теме"
+        ],
+        "approximateWords": 1145,
+        "tables": 0,
+        "lists": 21,
+        "images": 4,
+        "video": false,
+        "forms": 4,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "interface-motion-rules",
+    "query": "анимация интерфейсов",
+    "samples": [
+      {
+        "url": "https://coddyschool.com/blog/when-to-use-animation-in-interfaces-ux-ui-guide/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:44.495Z",
+        "h1": [
+          "Когда нужна анимация в интерфейсе: полное руководство по UX/UI дизайну"
+        ],
+        "h2": [
+          "Что такое анимация в интерфейсе и зачем она нужна",
+          "Основные функции UI-анимации в пользовательском опыте",
+          "12 принципов UX-анимации для дизайнеров",
+          "Когда анимация действительно необходима",
+          "Когда от анимации лучше отказаться",
+          "Правила тайминга и скорости анимации",
+          "Кривые анимации: Easing и их применение",
+          "Типы интерфейсной анимации и микровзаимодействия",
+          "Практические примеры использования",
+          "Инструменты для создания UX-анимации",
+          "Частые ошибки при создании анимации",
+          "Часто задаваемые вопросы"
+        ],
+        "approximateWords": 6625,
+        "tables": 1,
+        "lists": 111,
+        "images": 122,
+        "video": false,
+        "forms": 12,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://skillbox.ru/media/design/moushndizayn-v-interfeysakh/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:45.993Z",
+        "h1": [
+          "Моушн-дизайн в интерфейсах: зачем нужна UX-анимация и какие эффекты в ней используют"
+        ],
+        "h2": [
+          "Редакции",
+          "Онлайн-курсы",
+          "Зачем в интерфейсе анимация",
+          "Примеры эффектов анимации",
+          "Что ещё важно",
+          "Курс",
+          "Новости",
+          "Спасибо за подписку! Забирайте 5 бесплатных курсов:",
+          "У нас есть классные рассылки!"
+        ],
+        "approximateWords": 1649,
+        "tables": 0,
+        "lists": 13,
+        "images": 54,
+        "video": false,
+        "forms": 1,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "keyboard-navigation-checklist",
+    "query": "навигация клавиатурой",
+    "samples": [
+      {
+        "url": "https://habr.com/ru/companies/netcracker/articles/273071/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:46.723Z",
+        "h1": [
+          "Web без мышки"
+        ],
+        "h2": [
+          "Windows 11 принудительно включит защиту ядра. Убьет ли это fps",
+          "Публикации",
+          "Информация"
+        ],
+        "approximateWords": 1617,
+        "tables": 0,
+        "lists": 16,
+        "images": 15,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://www.gbs.spb.ru/ru/pages/tiflotekhnika_i_po/Obzory_vspomogatelnykh_tekhnologij/goriachie_klavishi/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:46.954Z",
+        "h1": [
+          "Горячие клавиши. Проводник Windows: основа работы без мыши"
+        ],
+        "h2": [
+          "Партнеры",
+          "Библиотека в соцсетях",
+          "Информация"
+        ],
+        "approximateWords": 1535,
+        "tables": 0,
+        "lists": 17,
+        "images": 5,
+        "video": false,
+        "forms": 1,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "loading-skeleton",
+    "query": "скелетон загрузка",
+    "samples": [
+      {
+        "url": "https://habr.com/ru/companies/X5Tech/articles/882228/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:47.777Z",
+        "h1": [
+          "Как проектировать скелетоны"
+        ],
+        "h2": [
+          "Введение",
+          "Что такое скелетоны",
+          "Скелетоны, структура и разработка",
+          "Итак, нюансы",
+          "А теперь подробнее",
+          "Повторяющиеся элементы",
+          "Лайфхак с экономией времени",
+          "План разработки скелетонов",
+          "Приятного скелетирования ❤️",
+          "Windows 11 принудительно включит защиту ядра. Убьет ли это fps",
+          "Публикации",
+          "Информация"
+        ],
+        "approximateWords": 2194,
+        "tables": 0,
+        "lists": 10,
+        "images": 28,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://vc.ru/design/59939-dlya-illyuzii-bystroi-zagruzki-stranic-pravila-sozdaniya-skeletnogo-ekrana-na-saitah-i-v-prilozheniyah",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:49.119Z",
+        "h1": [
+          "Для иллюзии быстрой загрузки страниц: правила создания скелетного экрана на сайтах и в приложениях"
+        ],
+        "h2": [
+          "Вкратце о результатах моего исследования",
+          "Обзор скелетных экранов",
+          "Эксплицитные парадигмы загрузки",
+          "Что такое скелетный экран",
+          "Примеры скелетных экранов",
+          "Facebook",
+          "LinkedIn",
+          "Google Drive",
+          "YouTube",
+          "Общие черты",
+          "Исследование",
+          "Предыдущие исследования"
+        ],
+        "approximateWords": 2637,
+        "tables": 0,
+        "lists": 7,
+        "images": 27,
+        "video": true,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "mobile-navigation-priorities",
+    "query": "навигация мобильных приложений",
+    "samples": [
+      {
+        "url": "https://appcraft.pro/blog/osnovy-navigaczii-dlya-mobilnykh-prilozhenij/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:50.362Z",
+        "h1": [
+          "Как создать удобную навигацию в мобильных приложениях"
+        ],
+        "h2": [
+          "Что такое навигация в мобильном приложении",
+          "Какой должна быть мобильная навигация",
+          "Компоненты пользовательского интерфейса для мобильных приложений"
+        ],
+        "approximateWords": 1292,
+        "tables": 0,
+        "lists": 6,
+        "images": 8,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://habr.com/ru/companies/rshb/articles/584348/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:51.239Z",
+        "h1": [
+          "Flutter: как мы выбирали навигацию для мобильного приложения?"
+        ],
+        "h2": [
+          "С чего все началось?",
+          "Navigator — быстрый старт",
+          "Можно ли расширить Navigator?",
+          "Navigator &amp; Deeplinking",
+          "Знакомимся с Router (Navigator 2.0)",
+          "Router — просто о сложном",
+          "Router и полная декларативность = утопия",
+          "Библиотеки спасают Router!",
+          "И напоследок...",
+          "Windows 11 принудительно включит защиту ядра. Убьет ли это fps",
+          "Публикации",
+          "Информация"
+        ],
+        "approximateWords": 2619,
+        "tables": 0,
+        "lists": 16,
+        "images": 20,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "modal-dialog-design",
+    "query": "дизайн модальных окон",
+    "samples": [
+      {
+        "url": "https://habr.com/ru/articles/693272/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:51.972Z",
+        "h1": [
+          "Лучшие практики модальных окон. Компоненты дизайн системы"
+        ],
+        "h2": [
+          "Всем привет",
+          "Описание",
+          "Использование",
+          "Анатомия",
+          "Размеры и отступы",
+          "Расположение",
+          "Появление окна",
+          "Поведение при прокрутке",
+          "Прокрутка без прилипания элементов",
+          "Прокрутка с прилипанием элементов",
+          "Прилипание по условию",
+          "Переключение объектов"
+        ],
+        "approximateWords": 2711,
+        "tables": 2,
+        "lists": 8,
+        "images": 14,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://victoryagency.ru/blog/vebdizayn/modalnye-okna-i-dialogi-luchshie-praktiki",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:53.564Z",
+        "h1": [
+          "Модальные окна и диалоги: лучшие практики"
+        ],
+        "h2": [
+          "Анатомия модального окна",
+          "Преимущества и недостатки модальных окон",
+          "Когда и как использовать модальные окна",
+          "UX/UI аспекты модальных окон",
+          "Модальное окно vs Попап: ключевые различия",
+          "Заключение",
+          "Часто задаваемые вопросы по агентству",
+          "Сильные идеи, проверенные практикой",
+          "Конкуренты не спят, пора действовать"
+        ],
+        "approximateWords": 2040,
+        "tables": 0,
+        "lists": 11,
+        "images": 15,
+        "video": true,
+        "forms": 6,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "order-form-review",
+    "query": "форма заказа дизайн",
+    "samples": [
+      {
+        "url": "https://mobirise.com/bootstrap-template/ru/order-form-template.html",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:56.022Z",
+        "h1": [
+          "Загрузите шаблон формы заказа Bootstrap. Создано с помощью ИИ."
+        ],
+        "h2": [
+          "Веб-дизайны Bootstrap, страницы, примеры, HTML CSS коды",
+          "Бесплатные примеры и коды Bootstrap",
+          "Учебник по дизайну с использованием Bootstrap"
+        ],
+        "approximateWords": 3237,
+        "tables": 0,
+        "lists": 7,
+        "images": 78,
+        "video": true,
+        "forms": 2,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://referest.ru/inspiration/web/sections/form",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:57.104Z",
+        "h1": [
+          "Примеры блока «Форма» для вдохновения"
+        ],
+        "h2": [
+          "Список референсов",
+          "Рекомендуем подборки"
+        ],
+        "approximateWords": 267,
+        "tables": 0,
+        "lists": 8,
+        "images": 14,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "pagination-or-load-more",
+    "query": "пагинация дизайн",
+    "samples": [
+      {
+        "url": "https://skillbox.ru/media/design/whats-the-pagination/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:57.938Z",
+        "h1": [
+          "Бесконечная прокрутка, пагинация и &laquo;‎Показать ещё&raquo;. Что и когда лучше использовать"
+        ],
+        "h2": [
+          "Редакции",
+          "Онлайн-курсы",
+          "Курс",
+          "Спасибо за подписку! Забирайте 5 бесплатных курсов:",
+          "У нас есть классные рассылки!"
+        ],
+        "approximateWords": 1448,
+        "tables": 0,
+        "lists": 22,
+        "images": 48,
+        "video": false,
+        "forms": 1,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://fireart.studio/blog/pagination-design-examples/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:12:59.244Z",
+        "h1": [
+          "Pagination Design Examples"
+        ],
+        "h2": [
+          "What is limitless scrolling, and how can you use it?",
+          "What is pagination in web design, and where to put it to use?",
+          "Top 10 pagination design examples",
+          "Best practices for designing pagination in web",
+          "Want to create your website design? &mdash; Feel free to contact us",
+          "Conclusion"
+        ],
+        "approximateWords": 2050,
+        "tables": 0,
+        "lists": 28,
+        "images": 70,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "password-input-design",
+    "query": "поле ввода пароля",
+    "samples": [
+      {
+        "url": "https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/input/password",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:00.820Z",
+        "h1": [
+          "&lt;input type=\"password\"&gt;"
+        ],
+        "h2": [
+          "In this article",
+          "Интерактивный пример",
+          "Значения",
+          "Использование полей ввода пароля",
+          "Валидация",
+          "Примеры",
+          "Спецификации",
+          "Совместимость с браузерами",
+          "Help improve MDN"
+        ],
+        "approximateWords": 1956,
+        "tables": 2,
+        "lists": 42,
+        "images": 0,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://purpleschool.ru/knowledge-base/html/form-elements/input-password",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:02.345Z",
+        "h1": [
+          "Поле пароля в HTML - input-password"
+        ],
+        "h2": [
+          "Введение",
+          "Курс HTML и CSS с нуля",
+          "Базовый синтаксис input type=&quot;password&quot;",
+          "Обязательные и рекомендуемые атрибуты",
+          "Контроль длины и сложности пароля",
+          "Автозаполнение и менеджеры паролей",
+          "Плейсхолдеры и подсказки",
+          "Кнопка «Показать / скрыть пароль»",
+          "Доступность и работа с клавиатурой",
+          "Безопасность паролей в контексте HTML",
+          "Интеграция с JavaScript-валидацией",
+          "Особенности на мобильных устройствах"
+        ],
+        "approximateWords": 3682,
+        "tables": 0,
+        "lists": 29,
+        "images": 87,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "responsive-content-order",
+    "query": "адаптивный дизайн",
+    "samples": [
+      {
+        "url": "https://media.contented.ru/glossary/adaptivnyj-veb-dizajn/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:04.002Z",
+        "h1": [
+          "Адаптивная верстка"
+        ],
+        "h2": [
+          "Что такое адаптивный веб-дизайн",
+          "Для чего нужен адаптивный дизайн",
+          "Адаптивный дизайн, респонсив и мобильная версия сайта: в чем разница",
+          "Что входит в адаптивный дизайн",
+          "Преимущества адаптивного дизайна",
+          "Недостатки адаптивного дизайна",
+          "Всего комментариев: --><!--"
+        ],
+        "approximateWords": 1220,
+        "tables": 0,
+        "lists": 25,
+        "images": 28,
+        "video": false,
+        "forms": 2,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://www.etxt.ru/subscribes/adaptivniy-dizayn-sayta/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:05.136Z",
+        "h1": [
+          "���������� ������ �����"
+        ],
+        "h2": [
+          "��� ����� ���������� ������ � � ��� ��� ������������?",
+          "��� ������ ���������� ������?",
+          "����������� ������� ����� ��� ������ �������",
+          "�������� ����������� �������",
+          "����� ���������� ������ ������������?",
+          "��� ������ ����� ������������ ����������� ���������� �������",
+          "��� ������� ���������� ���-������: ������",
+          "���������������� ������",
+          "������������ ������ � ��� �����������",
+          "����������"
+        ],
+        "approximateWords": 2474,
+        "tables": 0,
+        "lists": 34,
+        "images": 18,
+        "video": false,
+        "forms": 3,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "text-contrast-check",
+    "query": "контрастность текста",
+    "samples": [
+      {
+        "url": "https://coddy.tech/tools/ru/contrast-checker",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:06.619Z",
+        "h1": [
+          "Проверка контраста WCAG"
+        ],
+        "h2": [
+          "Готовы по-настоящему научиться программировать?",
+          "Что такое проверка контраста WCAG?",
+          "Что вы поймёте, проверяя контраст",
+          "Как проверить контраст по шагам",
+          "Цели WCAG одним взглядом",
+          "Примеры контраста для пробы",
+          "Частые ошибки с контрастом",
+          "FAQ - Контраст WCAG",
+          "Узнать больше",
+          "Другие инструменты разработчика",
+          "Учитесь программировать с Coddy"
+        ],
+        "approximateWords": 1789,
+        "tables": 1,
+        "lists": 4,
+        "images": 56,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://get-color.ru/contrast/checker/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:07.693Z",
+        "h1": [],
+        "h2": [],
+        "approximateWords": 1,
+        "tables": 0,
+        "lists": 0,
+        "images": 0,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "usability-test-scenario",
+    "query": "провести юзабилити тестирование",
+    "samples": [
+      {
+        "url": "https://practicum.yandex.ru/blog/kak-provodit-yuzability-testirovanie/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:08.117Z",
+        "h1": [
+          "Как подготовить и провести юзабилити-тестирование"
+        ],
+        "h2": [
+          "Что такое юзабилити-тестирование и зачем нужно тестировать продукты",
+          "Виды юзабилити-тестирования",
+          "Основные этапы",
+          "Советы по проведению юзабилити-тестирования",
+          "Инструменты для тестирования",
+          "Совет эксперта",
+          "Подпишитесь на наш ежемесячный дайджест статей — а мы подарим вам полезную книгу про обучение!"
+        ],
+        "approximateWords": 1791,
+        "tables": 1,
+        "lists": 7,
+        "images": 32,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://media.contented.ru/opyt/instrukcii/kak-provodit-yuzability-testirovanie/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:08.675Z",
+        "h1": [
+          "Как проводить юзабилити-тестирование"
+        ],
+        "h2": [
+          "Что такое юзабилити-тестирование",
+          "Виды и методы юзабилити-тестирования",
+          "Как проводить юзабилити-тестирование в лаборатории",
+          "Как подготовить задание для теста",
+          "Метрики юзабилити",
+          "Наблюдение",
+          "Анализ результатов юзабилити-тестов",
+          "Онлайн-сервисы для анализа юзабилити",
+          "Итоги",
+          "Всего комментариев: --><!--"
+        ],
+        "approximateWords": 3137,
+        "tables": 0,
+        "lists": 26,
+        "images": 35,
+        "video": false,
+        "forms": 3,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "ux-interview-questions",
+    "query": "интервью ux исследования",
+    "samples": [
+      {
+        "url": "https://www.reg.ru/blog/kak-provodit-kachestvennye-issledovaniya/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:09.575Z",
+        "h1": [],
+        "h2": [],
+        "approximateWords": 1,
+        "tables": 0,
+        "lists": 0,
+        "images": 1,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://usabilitylab.ru/blog/kak-zadavat-voprosy-v-ux-intervyu/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:10.686Z",
+        "h1": [
+          "Как задавать вопросы в UX-интервью для выявления истинных потребностей пользователей"
+        ],
+        "h2": [
+          "Введение",
+          "Кейс: от “снимаем жилье” до “сводит с ума”",
+          "Ключевые принципы техники",
+          "Главный мотивационный вопрос",
+          "Цель: дойти до эмоционального уровня",
+          "Подходит ли это для UX-исследований?",
+          "Практические советы для UX-исследователей",
+          "Почему это критически важно",
+          "Заключение",
+          "Основы UX",
+          "Читайте также"
+        ],
+        "approximateWords": 1716,
+        "tables": 0,
+        "lists": 20,
+        "images": 2,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "website-navigation-labels",
+    "query": "навигация на сайте",
+    "samples": [
+      {
+        "url": "https://tilda.education/articles-navigation",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:12.513Z",
+        "h1": [
+          "Как сделать навигацию на сайте удобной"
+        ],
+        "h2": [
+          "Сделать меню навигации для сайта лаконичным",
+          "Поставить ссылку на главную страницу на логотип",
+          "Сделать меню на одностраничном сайте",
+          "Зафиксировать меню",
+          "Выделить активный пункт меню для постраничной навигации",
+          "Добавить индикаторы (точки) для определения местоположения",
+          "Показать процесс загрузки и прокрутки страницы",
+          "Выделить кнопку с более важным действием",
+          "Скрыть часть контента",
+          "Добавить кнопку навигации «Наверх»",
+          "Проследить, чтобы в конце страницы не было «тупика»",
+          "Задать понятный URL адрес страницы"
+        ],
+        "approximateWords": 2064,
+        "tables": 0,
+        "lists": 14,
+        "images": 44,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://www.reg.ru/blog/kak-sdelat-udobnuyu-i-ponyatnuyu-navigaciyu-po-sajtu/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:12.673Z",
+        "h1": [],
+        "h2": [],
+        "approximateWords": 1,
+        "tables": 0,
+        "lists": 0,
+        "images": 1,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "website-prototype-scenario",
+    "query": "создание прототипов сайтов",
+    "samples": [
+      {
+        "url": "https://practicum.yandex.ru/blog/prototip-sajta-chto-eto-i-dlya-chego-nuzhen/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:13.113Z",
+        "h1": [
+          "Что такое прототип сайта и как создать его самостоятельно"
+        ],
+        "h2": [
+          "Что такое прототип сайта",
+          "Виды и примеры прототипов сайта",
+          "Как сделать прототип сайта",
+          "Сервисы для прототипирования",
+          "Рекомендации по созданию прототипов",
+          "Подпишитесь на наш ежемесячный дайджест статей — а мы подарим вам полезную книгу про обучение!"
+        ],
+        "approximateWords": 1705,
+        "tables": 0,
+        "lists": 9,
+        "images": 38,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://lpmotor.ru/articles/kak-sdelat-prototip-sajta-2603",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:14.625Z",
+        "h1": [
+          "Как сделать прототип сайта: Полное руководство по выбору платформы и методологии"
+        ],
+        "h2": [
+          "Что такое прототип сайта и зачем он нужен?",
+          "ТОП-3 платформы для прототипирования: объективное сравнение 2026",
+          "Пошаговая инструкция: от идеи до кликабельного прототипа",
+          "Как выбрать инструмент: решение для вашего конкретного кейса",
+          "Ошибки новичков и как их избежать",
+          "FAQ: Частые вопросы о создании прототипов",
+          "Заключение",
+          "Читайте также",
+          "Конструктор сайтов, магазинов, чат-ботов, автоворонок, приложений с помощью ИИ"
+        ],
+        "approximateWords": 3021,
+        "tables": 5,
+        "lists": 1,
+        "images": 64,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  },
+  {
+    "slug": "website-redesign-diagnosis",
+    "query": "редизайн сайта",
+    "samples": [
+      {
+        "url": "https://ivit.pro/internet-marketing/redizayn-saytov/",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:16.829Z",
+        "h1": [
+          "Редизайн сайтов под ключ"
+        ],
+        "h2": [
+          "Профессиональный редизайн сайта - это",
+          "Что включает редизайн сайта",
+          "Вы можете нам доверять",
+          "Кейсы",
+          "Работаем с любыми сайтами и CMS",
+          "Сертификаты и лицензии",
+          "Как проверить эффективность нашей работы?",
+          "Нас выбрали",
+          "Цены на редизайн сайтов",
+          "Гарантируем безопасность и надежность",
+          "Отзывы"
+        ],
+        "approximateWords": 3491,
+        "tables": 0,
+        "lists": 31,
+        "images": 106,
+        "video": false,
+        "forms": 3,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      },
+      {
+        "url": "https://mobileup.ru/blog/redizayn-sayta",
+        "status": 200,
+        "checkedAt": "2026-09-19T19:13:18.378Z",
+        "h1": [
+          "Редизайн сайта: когда начинать и что учитывать"
+        ],
+        "h2": [
+          "Редизайн сайта: когда начинать и&amp;nbsp;что учитывать",
+          "Что такое редизайн сайта",
+          "В чём разница между обновлением сайта, редизайном и ребрендингом",
+          "Когда нужен редизайн сайта",
+          "Виды редизайна",
+          "Как сделать редизайн сайта",
+          "Сколько стоит редизайн сайта",
+          "Сколько времени занимает редизайн сайта",
+          "Пример редизайна сайта",
+          "Заключение",
+          "Сотрудничество",
+          "Контакты"
+        ],
+        "approximateWords": 3461,
+        "tables": 0,
+        "lists": 18,
+        "images": 5,
+        "video": false,
+        "forms": 0,
+        "limitation": "HTML sample only; counts include navigation and do not prove content quality. Redirects are recorded as unavailable."
+      }
+    ]
+  }
+]

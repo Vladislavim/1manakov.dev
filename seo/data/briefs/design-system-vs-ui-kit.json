@@ -1,0 +1,79 @@
+{
+  "slug": "design-system-vs-ui-kit",
+  "clusterId": "intent-design-system-vs-ui-kit",
+  "parentClusterId": "design-systems-comparison-design",
+  "primaryKeyword": "дизайн система и ui kit разница",
+  "secondaryKeywords": [],
+  "intent": "comparison",
+  "topic": "systems",
+  "userProblem": "Дизайн-система и UI kit: разница на примере одной кнопки",
+  "directAnswer": "UI kit помогает повторно использовать готовые элементы интерфейса. Дизайн-система дополнительно объясняет, когда применять эти элементы, как они ведут себя и кто отвечает за изменения. Если дизайнерская кнопка и кнопка в коде расходятся, одной аккуратной библиотеки макетов недостаточно.",
+  "title": "Дизайн-система и UI kit: разница на примере одной кнопки",
+  "description": "Когда достаточно набора компонентов, а когда нужны правила поведения, документация и ответственность за изменения. Сравнение без покупки лишнего процесса.",
+  "h1": "Дизайн-система и UI kit: разница на примере одной кнопки",
+  "sections": [
+    "Посмотрите на одну кнопку",
+    "Что действительно нужно маленькому сайту",
+    "Когда правил становится недостаточно",
+    "Как выбрать следующий шаг"
+  ],
+  "researchNeeded": [
+    {
+      "url": "https://design-system.service.gov.uk/",
+      "task": "Read primary source; distinguish supported requirements from original design recommendations."
+    }
+  ],
+  "examples": [
+    [
+      "Как выглядит кнопка?",
+      "Вариант в библиотеке",
+      "Вариант и связанные токены"
+    ],
+    [
+      "Когда её использовать?",
+      "Может не описываться",
+      "Правило выбора и ограничения"
+    ],
+    [
+      "Что меняется в продукте?",
+      "Обновляется макет",
+      "Согласуются дизайн, код и версия"
+    ]
+  ],
+  "visualIdeas": [
+    "Concrete interface decision with alternatives and consequences"
+  ],
+  "visualValue": "static-ui-example",
+  "relatedCases": [],
+  "relatedPages": [
+    "website-prototype-scenario",
+    "responsive-content-order",
+    "text-contrast-check"
+  ],
+  "cta": {
+    "headline": "Определить минимальный набор правил",
+    "text": "Хочу понять, где нашему интерфейсу достаточно UI kit, а где нужны общие правила компонентов. Пришлите ссылку или экран и опишите ограничения проекта.",
+    "buttonLabel": "Определить минимальный набор правил",
+    "briefPrompt": "Хочу понять, где нашему интерфейсу достаточно UI kit, а где нужны общие правила компонентов."
+  },
+  "schema": [
+    "Article",
+    "BreadcrumbList"
+  ],
+  "indexable": false,
+  "canonical": "/guides/design-system-vs-ui-kit",
+  "qualityScore": 0,
+  "demandEvidence": [
+    {
+      "seed": "дизайн система",
+      "kind": "top",
+      "count": 14,
+      "retrievedAt": "2026-09-19T13:58:45.885Z"
+    }
+  ],
+  "wordstatVolume": 14,
+  "opportunityScore": 57,
+  "status": "brief",
+  "createdAt": "2026-09-19T19:04:17.924Z",
+  "provenance": "Retrospective brief from existing authored draft; not represented as pre-writing research"
+}

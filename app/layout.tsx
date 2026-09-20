@@ -14,6 +14,7 @@ import '@/styles/guides.css';
 import '@/styles/lab.css';
 import '@/styles/guide-workbench.css';
 import '@/styles/seo-evidence.css';
+import '@/styles/seo-services.css';
 
 const geist = localFont({ src: '../public/fonts/Geist.ttf', variable: '--font-geist', display: 'swap', weight: '100 900' });
 export const viewport: Viewport = { themeColor: '#f4f2ed', width: 'device-width', initialScale: 1 };

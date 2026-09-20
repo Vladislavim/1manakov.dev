@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-const scenes = ['HERO', 'LOOK', 'WORK', 'LAB', 'CONTACT'];
+const scenes = ['HERO', 'LOOK', 'WORK', 'SEO', 'LAB', 'CONTACT'];
 
 export function HomeChoreography({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);

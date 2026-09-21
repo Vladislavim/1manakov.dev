@@ -19,7 +19,7 @@ Original assets retained. Search Console symbol is framed through an SVG viewpor
 ## Homepage evidence
 
 Owner-supplied Yandex Metrica PDF: `public/images/evidence/allnrg/metrica-nov-2025-mar-2026.pdf`.
-Counter 103632796, period 01.11.2025–31.03.2026: 563 organic search visits / 2,285 total visits = 24.6389%, rounded to 25%. This is traffic share, not growth. The homepage links the original PDF and states the denominator, rounding and period. The separate June–August case metrics remain unchanged.
+Counter 103632796, period 01.11.2025–31.03.2026: 563 organic search visits / 2,285 total visits = 24.6389%, rounded to 25%. This is traffic share, not growth. The homepage links the original PDF and states the denominator, rounding and period. The internal case uses this report as its primary evidence, displaying the exact 24.6% alongside the rounded 25%. June–August metrics remain as smaller secondary evidence.
 
 ## Verification
 

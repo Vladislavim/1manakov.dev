@@ -16,13 +16,13 @@ export function SeoServices(){
   mm.add('(prefers-reduced-motion: no-preference)',()=>{
    const host=root.current!;
    let visible=false,entered=false;
-   const floats=seoTools.map((tool,i)=>gsap.to(host.querySelector(`[data-seo-logo="${tool.id}"] .seo-flow-mark`),{y:tool.amplitude,x:i%2?2:-2,duration:3.4+i*.17,repeat:-1,yoyo:true,ease:'sine.inOut',paused:true}));
+   const floats=seoTools.map((tool,i)=>gsap.to(host.querySelector(`[data-seo-logo="${tool.id}"] .seo-flow-mark`),{y:tool.amplitude,x:i%2?2:-2,duration:5.2+i*.23,repeat:-1,yoyo:true,ease:'sine.inOut',paused:true}));
    const sync=()=>floats.forEach(t=>{if(visible&&entered&&!document.hidden)t.resume();else t.pause();});
    const intro=gsap.timeline({paused:true,onComplete:()=>{entered=true;sync();}});
-   intro.fromTo(host.querySelectorAll('.seo-flow-lines .flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,stagger:.07,ease:'power2.inOut'},0);
-   seoTools.forEach(tool=>intro.fromTo(host.querySelector(`[data-seo-logo="${tool.id}"]`),{opacity:0,x:-10,y:8},{opacity:1,x:0,y:0,duration:.55,ease:'power2.out'},.3+tool.delay));
-   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.4},.9)
-    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta'),{opacity:0,y:12},{opacity:1,y:0,duration:.5,stagger:.12,ease:'power3.out'},.85);
+   intro.fromTo(host.querySelectorAll('.seo-flow-lines .flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.8,stagger:.12,ease:'power2.inOut'},0);
+   seoTools.forEach(tool=>intro.fromTo(host.querySelector(`[data-seo-logo="${tool.id}"]`),{opacity:0,x:-10,y:8},{opacity:1,x:0,y:0,duration:1.05,ease:'power2.out'},.5+tool.delay*1.6));
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.7},1.55)
+    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta'),{opacity:0,y:12},{opacity:1,y:0,duration:.9,stagger:.18,ease:'power3.out'},1.35);
    ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>intro.play()});
    ScrollTrigger.create({trigger:host,start:'top bottom',end:'bottom top',onToggle:self=>{visible=self.isActive;sync();}});
    document.addEventListener('visibilitychange',sync);

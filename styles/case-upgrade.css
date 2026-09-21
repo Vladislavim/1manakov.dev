@@ -57,3 +57,9 @@
 @media(max-width:1023px){.about-intro{grid-template-columns:.25fr .72fr 1.2fr;gap:4%;margin-top:70px}.about-mark{margin-top:25px}.about-intro-copy .large-copy{font-size:28px}}
 @media(max-width:900px){.evidence-pair{grid-template-columns:1fr;gap:35px}.evidence-pair figure>a{aspect-ratio:auto}.evidence-pair figure>a img{height:auto;max-height:none}.evidence-pair figcaption{font-size:10px}}
 @media(max-width:767px){.about-intro{grid-template-columns:1fr 1.8fr;gap:16px 25px;align-items:center;margin-top:55px}.about-mark{font-size:120px;align-self:center;margin-top:0}.about-portrait{max-width:240px;justify-self:start}.about-portrait svg{max-height:300px}.about-intro-copy{grid-column:1/-1}.about-intro-copy .large-copy{font-size:27px}.about-intro-copy .body-copy{font-size:16px;margin-top:24px}.external-project-pending{max-width:100%}}
+/* Let each project device bridge the paper hero and its own color field. */
+.case-page{--device-overlap:clamp(44px,6vw,110px)}
+.case-page .case-hero{position:relative;z-index:1;padding-bottom:0;margin-bottom:calc(-1 * var(--device-overlap));background:transparent}
+.case-page .case-hero-image.case-device-stage{position:relative;padding-bottom:0;max-height:none}
+.case-page .case-story{position:relative;padding-top:calc(100px + var(--device-overlap))}
+@media(max-width:767px){.case-page{--device-overlap:clamp(24px,7vw,48px)}.case-page .case-story{padding-top:calc(50px + var(--device-overlap))}}

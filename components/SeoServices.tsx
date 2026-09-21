@@ -43,11 +43,11 @@ export function SeoServices(){
    const render=(_time:number,delta:number)=>{
     const dt=Math.min(delta,50)/1000;
     if(entered)time+=dt;
-    const ease=1-Math.exp(-dt*8);
+    const ease=1-Math.exp(-dt*6);
     nodes.forEach((n,i)=>{
      n.hoverX+=(n.targetX-n.hoverX)*ease;n.hoverY+=(n.targetY-n.hoverY)*ease;
      // Different periods and phases prevent a synchronized bobbing effect.
-     const ramp=Math.min(time/1.5,1);
+     const ramp=Math.sin(Math.min(time/2.4,1)*Math.PI/2)**2;
      const angle=i*2.399963;
      const spread=30+(i%4)*18;
      const clusterX=width*.44+Math.cos(angle)*spread;
@@ -67,11 +67,11 @@ export function SeoServices(){
     else if(!active&&running){gsap.ticker.remove(render);running=false;if(!entered)intro.pause();}
    };
    // Gather -> arrange -> connect -> explain. Each phase finishes before the next.
-   intro.fromTo(host.querySelectorAll('[data-seo-logo]'),{opacity:0},{opacity:1,duration:.55,stagger:.025,ease:'power2.out'},0);
-   nodes.forEach(n=>intro.to(n,{gather:0,duration:1.45,ease:'power3.inOut'},1.1+n.tool.delay*.8));
-   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.25,stagger:.025,ease:'power2.inOut'},3.1);
-   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.35},4.65)
-    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:12},{opacity:1,y:0,duration:.75,stagger:.16,ease:'power3.out'},5.1);
+   intro.fromTo(host.querySelectorAll('[data-seo-logo]'),{opacity:0},{opacity:1,duration:.8,stagger:.02,ease:'power2.out'},0);
+   nodes.forEach(n=>intro.to(n,{gather:0,duration:2.1,ease:'sine.inOut'},1.2+n.tool.delay*.45));
+   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:2,stagger:0,ease:'none'},3.65);
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.45,ease:'none'},5.65)
+    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:8},{opacity:1,y:0,duration:1.05,stagger:.16,ease:'sine.out'},6.2);
    render(0,0);
    let triggered=false;
    ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>{triggered=true;visible=true;sync();}});

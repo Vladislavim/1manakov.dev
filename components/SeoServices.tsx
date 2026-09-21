@@ -1,21 +1,43 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import {useRef,type CSSProperties} from 'react';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {contact} from '@/data/projects';
+import {seoTools,seoFlowPaths,seoProof} from '@/data/seo-ecosystem';
 
-const services=[
- ['Комплексный аудит','Проверяю техническое состояние, структуру, контент, скорость и пользовательские сценарии. Собираю проблемы в понятный план: что исправить сейчас, что сделать следующим.','Результат: аудит с приоритетами и планом исправлений.'],
- ['Семантическое ядро','Собираю запросы через Яндекс Wordstat, очищаю и группирую по смыслу и намерению пользователя. Распределяю кластеры по страницам, нахожу темы для новых посадочных.','Результат: семантика, кластеры и карта страниц.'],
- ['Индексация и работоспособность','Проверяю ответы сервера, редиректы, битые ссылки, robots.txt, sitemap и canonical. Сверяю доступность страниц для поиска через Search Console и Яндекс Вебмастер, проверяю формы и ключевые действия.','Результат: список ошибок, исправления и повторная проверка.'],
- ['Внешние площадки','Подбираю подходящие каталоги, карты и отраслевые площадки. Создаю и оформляю карточки компании, привожу контакты и ссылки к единому виду. Подтверждение владельца — с вашим участием.','Результат: оформленные профили и реестр размещений.'],
- ['Аналитика и измерение','Подключаю или проверяю Метрику, цели и события. Разделяю источники трафика, визиты и обращения, чтобы оценивать изменения по данным.','Результат: проверенные события и понятная точка отсчёта.'],
- ['Персональные данные / РКН','Проверяю формы, согласия, политику обработки данных, сторонние сервисы и сведения об операторе. Выявляю потенциальные риски нарушений и исправляю техническую часть сайта; правовые вопросы выношу на согласование с юристом.','Результат: карта рисков и устранение найденных технических проблем.'],
-];
-const tools=[['google.png','Google','/guides/website-redesign-diagnosis'],['wordstat.png','Wordstat','#seo-service-1'],['yandex.svg','Яндекс','#seo-service-2'],['metrika.png','Метрика','#seo-service-4'],['gsc.svg','Search Console','#seo-service-2'],['frog.png','Screaming Frog','#seo-service-0'],['rkn.png','РКН','#seo-service-5']];
-export function SeoServices(){return <section id="seo" className="seo-services" aria-labelledby="seo-services-title">
- <header className="seo-services-top"><span>BEYOND THE INTERFACE</span><span>SEO & WEBSITE HEALTH / 02</span></header>
- <div className="seo-services-stage"><div className="seo-services-intro"><h2 id="seo-services-title">Made to<br/>be found<span>.</span></h2><p lang="ru">Сайт, который не просто выглядит.<br/>Работает. Находится. Измеряется.</p><a className="seo-audit-link" href={`mailto:${contact.email}?subject=${encodeURIComponent('SEO-аудит сайта')}`} lang="ru">Обсудить аудит <span aria-hidden="true">↗</span></a></div>
- <div className="seo-tools-field"><span className="seo-orbit-word" aria-hidden="true">SEO</span><ul aria-label="Инструменты и направления работы">{tools.map(([src,name,href],i)=><li key={src} className={`seo-tool seo-tool-${i}`}><a href={href} aria-label={`${name} — подробнее`}><span className="seo-logo-disc">{src==='gsc.svg'?<svg viewBox="0 0 40 40" role="img" aria-label="Search Console"><image href="/images/seo-tools/gsc.svg" width="278" height="40"/></svg>:<Image src={`/images/seo-tools/${src}`} alt={name} width={120} height={120} unoptimized/>}</span><span className="seo-logo-name">{name}</span></a></li>)}</ul><span className="seo-field-caption">A CONNECTED APPROACH ↗</span></div></div>
- <div className="seo-services-divider"><span>ОТ АУДИТА ДО ИСПРАВЛЕНИЙ</span><span>06 НАПРАВЛЕНИЙ</span></div>
- <div className="seo-service-grid" lang="ru">{services.map(([title,body],i)=><article id={`seo-service-${i}`} key={title}><span className="seo-service-index">0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
- <footer className="seo-services-bottom"><span>DESIGN. DEVELOPMENT. DISCOVERABILITY.</span><Link href="/work/allnrg"><span>ALLIANCE ENERGY / VERIFIED RESULT</span><strong>169 organic search visits ↗</strong></Link></footer>
- </section>;}
+gsap.registerPlugin(useGSAP,ScrollTrigger);
+export function SeoServices(){
+ const root=useRef<HTMLElement>(null);
+ useGSAP(()=>{
+  const mm=gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference)',()=>{
+   const host=root.current!;
+   let visible=false,entered=false;
+   const floats=seoTools.map((tool,i)=>gsap.to(host.querySelector(`[data-seo-logo="${tool.id}"] .seo-flow-mark`),{y:tool.amplitude,x:i%2?2:-2,duration:3.4+i*.17,repeat:-1,yoyo:true,ease:'sine.inOut',paused:true}));
+   const sync=()=>floats.forEach(t=>{if(visible&&entered&&!document.hidden)t.resume();else t.pause();});
+   const intro=gsap.timeline({paused:true,onComplete:()=>{entered=true;sync();}});
+   intro.fromTo(host.querySelectorAll('.seo-flow-lines .flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,stagger:.07,ease:'power2.inOut'},0);
+   seoTools.forEach(tool=>intro.fromTo(host.querySelector(`[data-seo-logo="${tool.id}"]`),{opacity:0,x:-10,y:8},{opacity:1,x:0,y:0,duration:.55,ease:'power2.out'},.3+tool.delay));
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.4},.9)
+    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta'),{opacity:0,y:12},{opacity:1,y:0,duration:.5,stagger:.12,ease:'power3.out'},.85);
+   ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>intro.play()});
+   ScrollTrigger.create({trigger:host,start:'top bottom',end:'bottom top',onToggle:self=>{visible=self.isActive;sync();}});
+   document.addEventListener('visibilitychange',sync);
+   return()=>{document.removeEventListener('visibilitychange',sync);floats.forEach(t=>t.kill());};
+  });
+  return()=>mm.revert();
+ },{scope:root});
+ return <section ref={root} id="seo" className="seo-services seo-flow-scene" aria-labelledby="seo-services-title">
+  <div className="seo-flow-stage">
+   <div className="seo-flow-ecosystem">
+    <svg className="seo-flow-lines" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">{seoFlowPaths.map((d,i)=><path className="flow-line" key={i} d={d} pathLength="1"/>)}<path className="flow-arrow" d="M910 300H985m-10-9 10 9-10 9" pathLength="1"/></svg>
+    <ul aria-label="Search and analytics tools">{seoTools.map(tool=><li key={tool.id} data-seo-logo={tool.id} data-path-group={tool.group} style={{'--tool-x':`${tool.x}%`,'--tool-y':`${tool.y}%`} as CSSProperties}><div className="seo-flow-mark"><span className={`seo-flow-logo logo-${tool.id}`} aria-hidden="true">{tool.id==='gsc'?<svg viewBox="0 0 40 40"><image href="/images/seo-tools/gsc.svg" width="278" height="40"/></svg>:<Image src={`/images/seo-tools/${tool.asset}`} alt="" width={140} height={70} unoptimized/>}</span><span className="seo-flow-tool-name">{tool.label}</span></div></li>)}</ul>
+   </div>
+   <div className="seo-flow-result"><h2 id="seo-services-title" className="seo-flow-heading">Made to be found.</h2><p className="seo-flow-proof"><strong>{seoProof.share}%</strong><span>ORGANIC</span></p><Link className="seo-flow-client" href="/work/allnrg">Alliance Energy</Link><a className="seo-flow-cta" href={`mailto:${contact.email}?subject=${encodeURIComponent('Website audit')}`}>Discuss audit <span aria-hidden="true">↗</span></a><a className="seo-flow-source" href={seoProof.source} target="_blank" rel="noreferrer">{seoProof.organicVisits} / {seoProof.visits.toLocaleString('en-US')} visits · rounded to {seoProof.share}%<br/>{seoProof.period} · Metrica source ↗</a></div>
+  </div>
+  <footer className="seo-flow-bottom"><span>SEO<br/>DEVELOPER</span><span className="seo-flow-scroll"><i aria-hidden="true"/>SCROLL</span></footer>
+ </section>;
+}

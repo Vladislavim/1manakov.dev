@@ -18,7 +18,8 @@ export function SeoServices(){
    tool,mark:host.querySelector<HTMLElement>(`[data-seo-logo="${tool.id}"] .seo-flow-mark`)!,
    logo:host.querySelector<HTMLElement>(`[data-seo-logo="${tool.id}"] .seo-flow-logo`)!,
    path:host.querySelector<SVGPathElement>(`[data-seo-line="${tool.id}"]`)!,
-   baseX:0,baseY:0,x:0,y:0,hoverX:0,hoverY:0,targetX:0,targetY:0,settle:0,
+   label:host.querySelector<HTMLElement>(`[data-seo-logo="${tool.id}"] .seo-flow-tool-name`)!,
+   baseX:0,baseY:0,x:0,y:0,hoverX:0,hoverY:0,targetX:0,targetY:0,gather:1,
   }));
   let width=1,height=1;
   function draw(){
@@ -47,9 +48,15 @@ export function SeoServices(){
      n.hoverX+=(n.targetX-n.hoverX)*ease;n.hoverY+=(n.targetY-n.hoverY)*ease;
      // Different periods and phases prevent a synchronized bobbing effect.
      const ramp=Math.min(time/1.5,1);
-     n.x=n.hoverX+Math.sin(time/(2.8+i*.11)+i*1.7)*n.tool.amplitude*.65*ramp;
-     n.y=n.settle+n.hoverY+Math.sin(time/(3.5+i*.13)+i*2.1)*n.tool.amplitude*ramp;
+     const angle=i*2.399963;
+     const spread=30+(i%4)*18;
+     const clusterX=width*.44+Math.cos(angle)*spread;
+     const clusterY=height*.46+Math.sin(angle)*spread;
+     n.x=(clusterX-n.baseX)*n.gather+n.hoverX+Math.sin(time/(2.8+i*.11)+i*1.7)*n.tool.amplitude*.65*ramp;
+     n.y=(clusterY-n.baseY)*n.gather+n.hoverY+Math.sin(time/(3.5+i*.13)+i*2.1)*n.tool.amplitude*ramp;
      n.mark.style.transform=`translate3d(${n.x}px,${n.y}px,0)`;
+     n.label.style.opacity=String(1-n.gather);
+     n.logo.style.rotate=`${((i%5)-2)*9*n.gather}deg`;
     });
     draw();
    };
@@ -59,13 +66,13 @@ export function SeoServices(){
     if(active&&!running){gsap.ticker.add(render);running=true;if(!entered)intro.resume();}
     else if(!active&&running){gsap.ticker.remove(render);running=false;if(!entered)intro.pause();}
    };
-   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.25,stagger:.025,ease:'power2.inOut'},0);
-   nodes.forEach(n=>{
-    intro.fromTo(host.querySelector(`[data-seo-logo="${n.tool.id}"]`),{opacity:0},{opacity:1,duration:.65,ease:'power2.out'},1.9+n.tool.delay*3.2);
-    intro.fromTo(n,{settle:8},{settle:0,duration:.65,ease:'power2.out'},1.9+n.tool.delay*3.2);
-   });
-   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.35},1.5)
-    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:12},{opacity:1,y:0,duration:.75,stagger:.16,ease:'power3.out'},4.4);
+   // Gather -> arrange -> connect -> explain. Each phase finishes before the next.
+   intro.fromTo(host.querySelectorAll('[data-seo-logo]'),{opacity:0},{opacity:1,duration:.55,stagger:.025,ease:'power2.out'},0);
+   nodes.forEach(n=>intro.to(n,{gather:0,duration:1.45,ease:'power3.inOut'},1.1+n.tool.delay*.8));
+   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.25,stagger:.025,ease:'power2.inOut'},3.1);
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.35},4.65)
+    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:12},{opacity:1,y:0,duration:.75,stagger:.16,ease:'power3.out'},5.1);
+   render(0,0);
    let triggered=false;
    ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>{triggered=true;visible=true;sync();}});
    ScrollTrigger.create({trigger:host,start:'top bottom',end:'bottom top',onToggle:self=>{visible=self.isActive&&triggered;sync();}});
@@ -81,7 +88,7 @@ export function SeoServices(){
    document.addEventListener('visibilitychange',visibility);
    return()=>{
     gsap.ticker.remove(render);ecosystem.removeEventListener('pointermove',move);ecosystem.removeEventListener('pointerleave',reset);document.removeEventListener('visibilitychange',visibility);
-    nodes.forEach(n=>{n.x=0;n.y=0;n.mark.style.removeProperty('transform');});draw();
+    nodes.forEach(n=>{n.x=0;n.y=0;n.mark.style.removeProperty('transform');n.logo.style.removeProperty('rotate');n.label.style.removeProperty('opacity');});draw();
    };
   });
   return()=>{resize.disconnect();mm.revert();};

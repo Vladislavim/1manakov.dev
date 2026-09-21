@@ -17,10 +17,3 @@ export const seoTools = [
   {id:'pagespeed',asset:'pagespeed.png',label:'PageSpeed Insights',x:48,y:91,delay:.5,amplitude:3,group:4},
   {id:'analytics',asset:'analytics.svg',label:'Analytics 4',x:66,y:84,delay:.55,amplitude:4,group:4},
 ];
-export const seoFlowPaths = [
- 'M-30 40 C190 0 150 170 330 190 S610 300 910 300',
- 'M-30 160 C150 120 170 330 360 300 S680 300 910 300',
- 'M350 110 C530 110 550 320 730 300 S840 300 910 300',
- 'M-30 485 C160 510 180 300 420 300 S720 300 910 300',
- 'M-30 590 C210 620 300 320 560 355 S720 300 910 300',
-];

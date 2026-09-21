@@ -59,13 +59,13 @@ export function SeoServices(){
     if(active&&!running){gsap.ticker.add(render);running=true;if(!entered)intro.resume();}
     else if(!active&&running){gsap.ticker.remove(render);running=false;if(!entered)intro.pause();}
    };
-   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.8,stagger:.035,ease:'power2.inOut'},0);
+   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.25,stagger:.025,ease:'power2.inOut'},0);
    nodes.forEach(n=>{
-    intro.fromTo(host.querySelector(`[data-seo-logo="${n.tool.id}"]`),{opacity:0},{opacity:1,duration:1.05,ease:'power2.out'},.5+n.tool.delay*1.6);
-    intro.fromTo(n,{settle:8},{settle:0,duration:1.05,ease:'power2.out'},.5+n.tool.delay*1.6);
+    intro.fromTo(host.querySelector(`[data-seo-logo="${n.tool.id}"]`),{opacity:0},{opacity:1,duration:.65,ease:'power2.out'},1.9+n.tool.delay*3.2);
+    intro.fromTo(n,{settle:8},{settle:0,duration:.65,ease:'power2.out'},1.9+n.tool.delay*3.2);
    });
-   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.7},1.55)
-    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta'),{opacity:0,y:12},{opacity:1,y:0,duration:.9,stagger:.18,ease:'power3.out'},1.35);
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.35},1.5)
+    .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:12},{opacity:1,y:0,duration:.75,stagger:.16,ease:'power3.out'},4.4);
    let triggered=false;
    ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>{triggered=true;visible=true;sync();}});
    ScrollTrigger.create({trigger:host,start:'top bottom',end:'bottom top',onToggle:self=>{visible=self.isActive&&triggered;sync();}});

@@ -30,7 +30,7 @@ export default async function CasePage({ params }: Props) {
     </section>
     <section className="case-story"><span className="eyebrow">THE WEBSITE</span><h2>{p.statement.split('\n').map((line, i) => <span key={line}>{i > 0 && <br />}{line}</span>)}</h2><div><p>{p.details}</p><ExternalProject project={p}/>{p.concept && <span className="concept-label">INDEPENDENT INTERFACE CONCEPT</span>}</div></section>
     <CaseEvidence slug={p.slug}/>{p.seoResult&&<SeoEvidence result={p.seoResult}/>}
-    <RouteLink className="next-project" href={`/work/${next.slug}`} image={next.cover} data-cursor="VIEW"><span className="eyebrow">KEEP EXPLORING / NEXT WORK</span><span className="next-project-title">{next.shortName}<span aria-hidden="true">↗</span></span><span className="next-project-image"><DevicePresentation slug={next.slug} src={next.cover} alt="" compact /></span></RouteLink>
+    <RouteLink className="next-project" href={`/work/${next.slug}`} image={next.cover} data-cursor="VIEW"><span className="eyebrow">KEEP EXPLORING / NEXT WORK</span><span className="next-project-title"><span className="next-project-name">{next.shortName}</span><span aria-hidden="true">↗</span></span><span className="next-project-image"><DevicePresentation slug={next.slug} src={next.cover} alt="" compact /></span></RouteLink>
     <Footer /></CaseMotion>
   </main>;
 }

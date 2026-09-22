@@ -51,3 +51,18 @@ test('reduced motion and no-JS keep all scene content visible',async({browser})=
     await context.close();
   }
 });
+
+
+test('ordinary guide links use the shared transition and recover through history', async ({ page }) => {
+  await page.goto('/guides');
+  const link = page.locator('main a[href^="/guides/"]:not([data-route-transition])').first();
+  const href = await link.getAttribute('href');
+  await link.click();
+  await expect(page.locator('.route-veil')).toBeVisible();
+  await expect(page).toHaveURL(new RegExp(`${href}$`));
+  await expect(page.locator('.route-veil')).toBeHidden();
+  await expect(page.locator('main h1')).toBeVisible();
+  await page.goBack();
+  await expect(page).toHaveURL(/\/guides$/);
+  await expect(page.locator('.route-veil')).toBeHidden();
+});

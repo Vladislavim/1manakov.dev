@@ -11,7 +11,10 @@ export function captureOutgoing(container:HTMLElement){
  const surface=document.createElement('div');
  surface.className='portal-outgoing-surface';
  const main=document.querySelector('main');
- if(main){const clone=main.cloneNode(true) as HTMLElement;clone.style.marginTop=`-${window.scrollY}px`;surface.append(clone);}
+ if(main){const clone=main.cloneNode(true) as HTMLElement;clone.style.marginTop=`-${window.scrollY}px`;// cloneNode does not copy Canvas pixels (portrait, interactive diagrams).
+ const originals=main.querySelectorAll('canvas');
+ clone.querySelectorAll('canvas').forEach((canvas,i)=>{const source=originals[i];if(source){canvas.width=source.width;canvas.height=source.height;canvas.getContext('2d')?.drawImage(source,0,0);}});
+ surface.append(clone);}
  const header=document.querySelector('.site-header');
  if(header)surface.append(header.cloneNode(true));
  surface.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));

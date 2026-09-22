@@ -24,7 +24,7 @@ export function RouteLink({ href, children, image, className, ...props }: {
     const box=event.currentTarget.getBoundingClientRect();
     context.navigate(href, image, {x:event.detail?event.clientX:box.left+box.width/2,y:event.detail?event.clientY:box.top+box.height/2});
   }
-  return <Link {...props} href={href} className={className} onClick={click}>{children}</Link>;
+  return <Link {...props} data-route-transition="true" href={href} className={className} onClick={click}>{children}</Link>;
 }
 
 export function SiteShell({ children }: { children: ReactNode }) {
@@ -79,6 +79,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       return;
     }
     hrefHash.current = hash;
+    router.prefetch(href);
     if (reduced) { router.push(href); return; }
     if (!image) {
       const layer = veil.current;
@@ -88,7 +89,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       lenisRef.current?.stop();
       gsap.set(layer, { autoAlpha: 1, opacity: 0 });
       timeline.current?.kill();
-      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .16, ease: 'power2.out' }).call(() => router.push(href, { scroll: !href.includes('#') }));
+      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .28, ease: 'sine.inOut' }).call(() => router.push(href, { scroll: !href.includes('#') }));
       timeout.current = setTimeout(release, 5000);
       return;
     }
@@ -125,12 +126,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
           const {x,y}=origin.current;
           const mobile=matchMedia('(pointer:coarse)').matches;
           timeline.current = gsap.timeline({ onComplete: release })
-            .set(aperture.current,{attr:{d:portalPath(x,y,110,110)}})
-            .to(aperture.current,{attr:{d:portalPath(x,y,78,90)},duration:.12,ease:'power2.in'})
-            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:.2,ease:'power3.inOut'})
-            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.58,ease:'power3.inOut'});
+            .set(aperture.current,{attr:{d:portalPath(x,y,2,2)}})
+            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:mobile?.22:.32,ease:'sine.in'})
+            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.72,ease:'power2.out'});
         } else {
-          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .18 });
+          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .42, ease: 'sine.out' });
         }
       });
     } else if (locked.current) { timeline.current?.kill(); release(); }
@@ -193,7 +193,16 @@ export function SiteShell({ children }: { children: ReactNode }) {
     return () => mm.revert();
   }, { scope: shell });
 
-  return <NavigationContext.Provider value={{ navigate }}><div ref={shell}>
+  function routeClick(event: MouseEvent<HTMLDivElement>) {
+    if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const anchor=(event.target as HTMLElement).closest<HTMLAnchorElement>('a[href]');
+    if(!anchor||anchor.hasAttribute('data-route-transition')||anchor.target||anchor.hasAttribute('download'))return;
+    const url=new URL(anchor.href,window.location.href);
+    if(url.origin!==window.location.origin||url.pathname===path||/\.[a-z0-9]+$/i.test(url.pathname))return;
+    event.preventDefault();navigate(url.pathname+url.search+url.hash);
+  }
+
+  return <NavigationContext.Provider value={{ navigate }}><div ref={shell} onClickCapture={routeClick}>
     <a className="skip-link" href="#main" tabIndex={0}>Skip to content</a>
     <header className="site-header">
       <RouteLink href="/" className="brand" image={path.startsWith('/work/') ? projects.find(p => path.endsWith(p.slug))?.cover : undefined} aria-label="Imanakov — home">IMANAKOV</RouteLink>

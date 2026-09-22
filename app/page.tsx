@@ -1,3 +1,4 @@
+import {defaultDescription,pageMetadata} from '@/lib/metadata';
 import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
 import { Explore } from '@/components/Explore';
@@ -6,7 +7,7 @@ import {SeoServices} from '@/components/SeoServices';
 import { Lab } from '@/components/Lab';
 import { Footer } from '@/components/Footer';
 import { HomeChoreography } from '@/components/HomeChoreography';
-export const metadata: Metadata = { alternates: { canonical: '/' } };
+export const metadata: Metadata = { ...pageMetadata({title:'Website design, frontend & SEO',description:defaultDescription,path:'/'}), title:{absolute:'IMANAKOV — Website design, frontend & SEO'} };
 export default function Home() {
   return <main id="main" tabIndex={-1}><HomeChoreography>
     <div data-home-scene="hero"><Hero /></div>

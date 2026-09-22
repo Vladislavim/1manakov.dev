@@ -24,7 +24,8 @@
     "seo:ledger": "node scripts/seo/ledger.mjs",
     "seo:verify": "node scripts/seo/verify.mjs",
     "seo:qa": "node scripts/seo/qa-pages.mjs",
-    "lab:qa": "node scripts/qa-lab.mjs"
+    "lab:qa": "node scripts/qa-lab.mjs",
+    "seo:technical": "node scripts/seo/technical-qa.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

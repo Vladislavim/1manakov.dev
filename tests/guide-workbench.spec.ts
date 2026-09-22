@@ -1,5 +1,38 @@
 import {test,expect} from '@playwright/test';
 
+test('guide demonstrations change real UI and export observations',async({page})=>{
+ await page.goto('/guides/pagination-or-load-more');
+ const example=page.locator('.guide-live-example');
+ await example.getByRole('navigation').getByRole('button',{name:'2',exact:true}).click();
+ await example.getByRole('button',{name:/Подбор курса/}).click();
+ await expect(example.getByRole('heading',{name:'Подбор курса'})).toBeVisible();
+ await example.getByRole('button',{name:'← К результатам'}).click();
+ await expect(example.getByRole('status')).toContainText('Страница 2 из 3');
+ await page.getByRole('button',{name:'Исследовать подборку'}).click();
+ await example.getByRole('button',{name:'Показать ещё 3 проекта'}).click();
+ await expect(example.locator('.guide-demo-results button')).toHaveCount(6);
+ await page.goto('/guides/dashboard-hierarchy-examples');
+ await page.getByRole('button',{name:'Отметить обработанной'}).click();
+ await expect(page.locator('.guide-dashboard-panel').first()).toContainText('Очередь обработана');
+ await page.getByRole('button',{name:'Сравнить периоды'}).click();
+ await expect(page.locator('.guide-dashboard-panel').first()).toContainText('СОПОСТАВИМЫЕ ДАННЫЕ');
+ await page.goto('/guides/design-system-vs-ui-kit');
+ await page.getByLabel('Токен accent').fill('#123456');
+ await expect(page.locator('.guide-token-preview>div').nth(1)).toHaveCSS('border-color','rgb(18, 52, 86)');
+ await page.getByLabel('Второй компонент использует токен').uncheck();
+ await expect(page.locator('.guide-token-preview>div').nth(1)).not.toHaveCSS('border-color','rgb(18, 52, 86)');
+ await page.goto('/guides/keyboard-navigation-checklist');
+ await page.locator('.workbench-observation textarea').first().fill('В меню фокус не виден на третьей ссылке');
+ await expect(page.locator('.workbench-result')).toContainText('1 наблюдений');
+ const download=page.waitForEvent('download');
+ await page.getByRole('button',{name:'Скачать .txt'}).click();
+ expect((await download).suggestedFilename()).toBe('design-notes.txt');
+ await page.goto('/guides/empty-state-copy-examples');
+ await page.locator('.workbench-preview').getByRole('button',{name:'Посмотреть проекты'}).click();
+ await page.getByRole('button',{name:'Сайт мастерской · Сохранить'}).click();
+ await expect(page.locator('.workbench-preview')).toContainText('Сохранён проект: Сайт мастерской');
+});
+
 test('guide tools calculate actual contrast and preserve editable output',async({page})=>{
  await page.goto('/guides/text-contrast-check');const box=page.locator('.guide-workbench');await box.locator('input[type=color]').nth(0).fill('#000000');await box.locator('input[type=color]').nth(1).fill('#ffffff');await expect(box.getByRole('status')).toContainText('21.00:1');await box.locator('input[type=color]').nth(1).fill('#000000');await expect(box.getByRole('status')).toContainText('1.00:1 — не проходит');
  await page.goto('/guides/website-prototype-scenario');await page.getByLabel('Что нужно сделать').fill('записаться на экскурсию');await expect(page.locator('.workbench-output')).toContainText('записаться на экскурсию');const download=page.waitForEvent('download');await page.getByRole('button',{name:'Скачать .txt'}).click();expect((await download).suggestedFilename()).toBe('design-notes.txt');

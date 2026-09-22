@@ -1,0 +1,296 @@
+{
+  "checkedAt": "2026-09-22T19:46:56.626Z",
+  "base": "http://127.0.0.1:3000",
+  "canonicalOrigin": "https://imanakov.dev",
+  "pageCount": 41,
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "IMANAKOV — Website design, frontend & SEO",
+      "description": "Vladislav Imanakov — website and interface design, frontend development, technical SEO and measurement. Selected projects and practical design guides.",
+      "issues": []
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "title": "About Vladislav Imanakov — IMANAKOV",
+      "description": "Vladislav Imanakov — web design, interface design, frontend development and SEO. From the first idea to the final interaction.",
+      "issues": []
+    },
+    {
+      "path": "/lab",
+      "status": 200,
+      "title": "Lab — Interaction studies — IMANAKOV",
+      "description": "Five tactile studies in motion and interaction: cursor reveal, card physics, type morph, portal and grid shift.",
+      "issues": []
+    },
+    {
+      "path": "/work/allnrg",
+      "status": 200,
+      "title": "Alliance Energy — IMANAKOV",
+      "description": "An engineering business, made visible. A website bringing industrial design, services and projects into one place.",
+      "issues": []
+    },
+    {
+      "path": "/work/pdp",
+      "status": 200,
+      "title": "PDP — IMANAKOV",
+      "description": "A website for Povolzhskoye Delovoye Partnerstvo (ПДП), bringing construction project management, engineering services and a portfolio of completed work together.",
+      "issues": []
+    },
+    {
+      "path": "/work/khasaut-tour",
+      "status": 200,
+      "title": "Khasaut Tour — IMANAKOV",
+      "description": "A website for a North Caucasus tour team. Excursions and jeep tours from Kislovodsk and the Caucasian Mineral Waters region, brought together in an atmospheric travel experience.",
+      "issues": []
+    },
+    {
+      "path": "/work/vpn-equipment",
+      "status": 200,
+      "title": "VPN Equipment Rental — IMANAKOV",
+      "description": "An equipment business with several directions. A website connecting machinery, rental, sales and modular buildings.",
+      "issues": []
+    },
+    {
+      "path": "/work/legacy-rheumatology",
+      "status": 200,
+      "title": "Legacy Rheumatology — IMANAKOV",
+      "description": "A digital presence for rheumatology care. Editorial typography, warm photography and a calm framework for medical information.",
+      "issues": []
+    },
+    {
+      "path": "/work/aurelia-atelier",
+      "status": 200,
+      "title": "Aurelia Atelier — IMANAKOV",
+      "description": "An independent luxury interface concept. A visual exploration of atmosphere, scale and art direction for the web.",
+      "issues": []
+    },
+    {
+      "path": "/guides",
+      "status": 200,
+      "title": "Практика дизайна интерфейсов — IMANAKOV",
+      "description": "Прикладные разборы форм, навигации, доступности и структуры сайта с примерами и проверками.",
+      "issues": []
+    },
+    {
+      "path": "/guides/editorial-policy",
+      "status": 200,
+      "title": "Как подготовлены материалы — IMANAKOV",
+      "description": "Источники, авторство, проверка и ограничения практических материалов об интерфейсах.",
+      "issues": []
+    },
+    {
+      "path": "/guides/page/2",
+      "status": 200,
+      "title": "Практика дизайна интерфейсов: страница 2 — IMANAKOV",
+      "description": "Страница 2. Прикладные разборы форм, навигации, доступности и структуры сайта с примерами и проверками.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/product",
+      "status": 200,
+      "title": "Структура продукта — IMANAKOV",
+      "description": "Адаптивный интерфейс, структура дашборда и диагностика редизайна. Практические разборы с примерами, упражнениями и проверками.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/systems",
+      "status": 200,
+      "title": "Дизайн-системы — IMANAKOV",
+      "description": "Дизайн-система и UI-kit: различия, задачи и границы применения. Практические материалы о согласованном интерфейсе продукта.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/interaction",
+      "status": 200,
+      "title": "Состояния и обратная связь — IMANAKOV",
+      "description": "Загрузка, пустые состояния и модальные окна: как интерфейс сообщает о своём состоянии. Примеры, упражнения и чек-листы проверки.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/forms",
+      "status": 200,
+      "title": "Формы и ввод — IMANAKOV",
+      "description": "Практика проектирования форм: подписи полей, сообщения об ошибках, пароли и проверка ввода. Примеры интерфейсов и интерактивные упражнения.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/accessibility",
+      "status": 200,
+      "title": "Доступность — IMANAKOV",
+      "description": "Контраст, клавиатурная навигация и доступность интерфейсов. Проверки, которые можно повторить на своём сайте, с примерами и ограничениями.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/navigation",
+      "status": 200,
+      "title": "Навигация — IMANAKOV",
+      "description": "Структура меню, мобильная навигация и выбор пагинации. Практические разборы с примерами и проверками для вашего сайта.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/commerce",
+      "status": 200,
+      "title": "Покупка и заказ — IMANAKOV",
+      "description": "Форма заказа и путь к покупке: состав данных, подтверждение и обратная связь. Практические разборы интерфейсов оформления заказа.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/research",
+      "status": 200,
+      "title": "Исследования — IMANAKOV",
+      "description": "UX-интервью и проверка интерфейса с пользователями: вопросы, сценарии и интерпретация наблюдений. Практические инструкции и упражнения.",
+      "issues": []
+    },
+    {
+      "path": "/guides/topic/prototyping",
+      "status": 200,
+      "title": "Прототипы — IMANAKOV",
+      "description": "Как проверить сценарий сайта до разработки: прототипы, переходы и критерии проверки. Практика с примерами и упражнениями.",
+      "issues": []
+    },
+    {
+      "path": "/guides/dashboard-hierarchy-examples",
+      "status": 200,
+      "title": "Примеры дашбордов: от задачи к иерархии данных — IMANAKOV",
+      "description": "Три учебных примера дашборда: операции, продажи и поддержка. Как выбрать главный вопрос, объяснить метрики и дать путь от сигнала к действию.",
+      "issues": []
+    },
+    {
+      "path": "/guides/design-system-vs-ui-kit",
+      "status": 200,
+      "title": "Дизайн-система и UI kit: разница на примере одной кнопки — IMANAKOV",
+      "description": "Когда достаточно набора компонентов, а когда нужны правила поведения, документация и ответственность за изменения. Сравнение без покупки лишнего процесса.",
+      "issues": []
+    },
+    {
+      "path": "/guides/empty-state-copy-examples",
+      "status": 200,
+      "title": "Тексты пустых состояний: примеры для старта, поиска и ошибки — IMANAKOV",
+      "description": "Как отличить первый запуск от отсутствия результатов и сбоя загрузки. Примеры заголовков и действий, которые помогают продолжить работу вместо тупика.",
+      "issues": []
+    },
+    {
+      "path": "/guides/form-error-messages",
+      "status": 200,
+      "title": "Ошибки полей ввода: как объяснить проблему и сохранить данные — IMANAKOV",
+      "description": "Как написать сообщение об ошибке в форме: отделить неверный ввод от сбоя сервиса, показать способ исправления и сохранить уже заполненные поля.",
+      "issues": []
+    },
+    {
+      "path": "/guides/form-validation-timing",
+      "status": 200,
+      "title": "Валидация формы: когда показывать ошибку — IMANAKOV",
+      "description": "Выбор момента проверки поля: при вводе, после выхода или отправки. Как не ругать недописанное значение и не оставлять человека без обратной связи.",
+      "issues": []
+    },
+    {
+      "path": "/guides/interface-motion-rules",
+      "status": 200,
+      "title": "Анимация интерфейсов: где движение помогает, а где мешает — IMANAKOV",
+      "description": "Как оценить анимацию интерфейса по назначению: обратная связь, связь состояний, прерывание действия и версия с уменьшенным движением.",
+      "issues": []
+    },
+    {
+      "path": "/guides/keyboard-navigation-checklist",
+      "status": 200,
+      "title": "Навигация клавиатурой: чек-лист проверки сайта без мыши — IMANAKOV",
+      "description": "Проверка порядка фокуса, кнопок, меню и диалогов: что пройти клавишами Tab, Enter и Escape и как записать найденный дефект для исправления.",
+      "issues": []
+    },
+    {
+      "path": "/guides/loading-skeleton",
+      "status": 200,
+      "title": "Скелетон или индикатор загрузки: что показывать при ожидании — IMANAKOV",
+      "description": "Как выбрать между скелетоном, спиннером и явным прогрессом: структура контента, ожидание результата, ошибка загрузки и сохранение места на странице.",
+      "issues": []
+    },
+    {
+      "path": "/guides/mobile-navigation-priorities",
+      "status": 200,
+      "title": "Мобильная навигация: что оставить на первом уровне — IMANAKOV",
+      "description": "Как выбрать основные разделы мобильного интерфейса, отделить разделы от действий и проверить подписи, активное состояние и возврат после перехода.",
+      "issues": []
+    },
+    {
+      "path": "/guides/modal-dialog-design",
+      "status": 200,
+      "title": "Модальное окно: открытие, фокус и безопасное закрытие — IMANAKOV",
+      "description": "Проверка модального окна: нужен ли перерыв сценария, куда переводить фокус, как назвать действия и что делать с несохранёнными данными.",
+      "issues": []
+    },
+    {
+      "path": "/guides/order-form-review",
+      "status": 200,
+      "title": "Форма заказа: что показать перед подтверждением — IMANAKOV",
+      "description": "Что включить в форму заказа перед подтверждением: состав, условия получения, итог и исправление данных. Проверка возврата и ошибок без потери ввода.",
+      "issues": []
+    },
+    {
+      "path": "/guides/pagination-or-load-more",
+      "status": 200,
+      "title": "Пагинация или «Показать ещё»: как выбрать для списка — IMANAKOV",
+      "description": "Сравнение постраничной навигации и дозагрузки: возвращение к месту, сохранение фильтров, доступность и поведение списка после открытия карточки.",
+      "issues": []
+    },
+    {
+      "path": "/guides/password-input-design",
+      "status": 200,
+      "title": "Поле ввода пароля: показать, вставить и исправить — IMANAKOV",
+      "description": "Как спроектировать ввод пароля: переключение видимости, понятные требования, работа с менеджером паролей и сохранение контекста после ошибки.",
+      "issues": []
+    },
+    {
+      "path": "/guides/responsive-content-order",
+      "status": 200,
+      "title": "Адаптивный дизайн: как сохранить порядок и смысл на узком экране — IMANAKOV",
+      "description": "Как адаптировать страницу к узкому экрану: порядок блоков, перенос текста, таблицы, увеличение масштаба и доступность действий без горизонтальной прокрутки.",
+      "issues": []
+    },
+    {
+      "path": "/guides/text-contrast-check",
+      "status": 200,
+      "title": "Как проверить контрастность текста в интерфейсе — IMANAKOV",
+      "description": "Практическая проверка контрастности текста: какие цвета измерять, где искать слабые сочетания и почему одного удачного значения в палитре недостаточно.",
+      "issues": []
+    },
+    {
+      "path": "/guides/usability-test-scenario",
+      "status": 200,
+      "title": "Как провести юзабилити-тестирование одного сценария — IMANAKOV",
+      "description": "План юзабилити-теста: задача без подсказки, признаки завершения, наблюдения, помощь модератора и повторная проверка конкретных исправлений.",
+      "issues": []
+    },
+    {
+      "path": "/guides/ux-interview-questions",
+      "status": 200,
+      "title": "Вопросы для UX-интервью: как узнать о реальном опыте — IMANAKOV",
+      "description": "Примеры вопросов для UX-интервью: последний случай, контекст, обходные пути и ограничения. Как отделять наблюдение от предположения и не подсказывать ответ.",
+      "issues": []
+    },
+    {
+      "path": "/guides/website-navigation-labels",
+      "status": 200,
+      "title": "Навигация на сайте: как проверить названия и структуру меню — IMANAKOV",
+      "description": "Практический разбор меню сайта: группировка по задачам, понятные названия, текущий раздел, вход с внутренних страниц и проверка без подсказок.",
+      "issues": []
+    },
+    {
+      "path": "/guides/website-prototype-scenario",
+      "status": 200,
+      "title": "Как создать прототип сайта вокруг проверяемого сценария — IMANAKOV",
+      "description": "Последовательность подготовки прототипа: выбрать задачу, связать экраны, показать ошибки и проверить путь. Как ограничить детализацию и не рисовать лишние страницы.",
+      "issues": []
+    },
+    {
+      "path": "/guides/website-redesign-diagnosis",
+      "status": 200,
+      "title": "Нужен ли редизайн сайта: диагностика перед новым макетом — IMANAKOV",
+      "description": "Как понять, нужен ли сайту редизайн: разделить проблемы предложения, структуры, интерфейса и техники, собрать исходные данные и выбрать объём изменений.",
+      "issues": []
+    }
+  ],
+  "errors": []
+}

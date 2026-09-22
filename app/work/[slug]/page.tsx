@@ -1,3 +1,4 @@
+import {pageMetadata,personId} from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import { notFound } from 'next/navigation';
@@ -15,7 +16,7 @@ export function generateStaticParams() { return projects.map(p => ({ slug: p.slu
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params; const p = projects.find(p => p.slug === slug);
   if (!p) return {};
-  return { title: p.name, description: p.summary, alternates: { canonical: `/work/${p.slug}` }, openGraph: { title: `${p.name} — IMANAKOV`, description: p.summary, images: [{ url: p.cover }], url: `/work/${p.slug}` } };
+  return pageMetadata({title:p.name,description:p.summary,path:`/work/${p.slug}`,image:p.cover});
 }
 export default async function CasePage({ params }: Props) {
   const { slug } = await params;
@@ -23,7 +24,7 @@ export default async function CasePage({ params }: Props) {
   if (index < 0) notFound();
   const p = projects[index]; const next = projects[(index + 1) % projects.length];
   return <main id="main" tabIndex={-1} className={`case-page case-${p.slug}`} style={{ '--project-color': p.color, '--project-ink': p.ink } as CSSProperties}>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CreativeWork', name: p.name, description: p.summary, url: `${siteUrl}/work/${p.slug}`, creator: { '@type': 'Person', name: 'Vladislav Imanakov' } }).replace(/</g, '\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CreativeWork', name: p.name, description: p.summary, image: `${siteUrl}${p.cover}`, inLanguage: 'en', url: `${siteUrl}/work/${p.slug}`, creator: { '@type': 'Person', '@id': personId, name: 'Vladislav Imanakov' } }).replace(/</g, '\\u003c') }} />
     <CaseMotion><section className="case-hero"><div className="case-topline"><RouteLink href="/#work" image={p.cover} className="back-link" data-cursor="BACK">← ALL WORK</RouteLink><span>{p.number} / {String(projects.length).padStart(2, '0')} — {p.concept ? 'INDEPENDENT CONCEPT' : p.category.toUpperCase()}</span></div>
       <h1>{p.name}</h1><div className="case-summary"><p>{p.summary}</p><div><span className="eyebrow">CONTRIBUTION</span><p>{p.role}</p></div></div>
       <div className="case-hero-image case-device-stage"><DevicePresentation slug={p.slug} src={p.cover} alt={p.images[0].alt} priority /></div>

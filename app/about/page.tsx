@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/lib/metadata';
 import {WebsiteSystem} from '@/components/WebsiteSystem';
 import '@/styles/website-system.css';
 import type { Metadata } from 'next';
@@ -6,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { contact } from '@/data/projects';
 import { CaseMotion } from '@/components/CaseMotion';
 import {AboutPortrait} from '@/components/AboutPortrait';
-export const metadata: Metadata = { title: 'About', description: 'Vladislav Imanakov — web design, interface design, frontend development and SEO. From the first idea to the final interaction.', alternates: { canonical: '/about' } };
+export const metadata: Metadata = pageMetadata({title:'About Vladislav Imanakov',description:'Vladislav Imanakov — web design, interface design, frontend development and SEO. From the first idea to the final interaction.',path:'/about'});
 export default function AboutPage() {
   return <main id="main" tabIndex={-1}>
     <CaseMotion><section className="about-page"><div className="about-top" data-case-reveal><span className="eyebrow">A LITTLE CONTEXT.</span><span className="eyebrow">DESIGN + FRONTEND + SEO</span></div>

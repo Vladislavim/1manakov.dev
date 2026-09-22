@@ -101,4 +101,4 @@ const projectOrder = ['allnrg', 'pdp', 'khasaut-tour', 'vpn-equipment', 'legacy-
 export const projects: Project[] = projectOrder.map((slug, index) => ({ ...projectRecords.find(project => project.slug === slug)!, number: String(index + 1).padStart(2, '0') }));
 export const featuredProjects = projects.slice(0, 3);
 export const contact = { name: 'Vladislav Imanakov', email: 'exestination@yandex.ru', telegram: 'https://t.me/vimanakov', github: 'https://github.com/Vladislavim' };
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://1manakov.dev';
+export const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://imanakov.dev').origin;

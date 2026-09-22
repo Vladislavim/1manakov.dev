@@ -1,6 +1,6 @@
 # SEO Factory
 
-Русский язык, Россия (регион 225). Публикации: `/guides`; `/journal` перенаправляет на `/guides`. Основной домен задаётся `NEXT_PUBLIC_SITE_URL`, по умолчанию `https://1manakov.dev`.
+Русский язык, Россия (регион 225). Публикации: `/guides`; `/journal` перенаправляет на `/guides`. Основной домен задаётся `NEXT_PUBLIC_SITE_URL`, по умолчанию `https://imanakov.dev`.
 
 ## Текущий выпуск
 
@@ -51,4 +51,4 @@ Dry-run пишет исследования и отчёты, но не конт�
 
 Правила 30/60/90 дней в `checks.mjs` — эвристики, не доказательство причинности. Дата фактического деплоя должна быть зафиксирована отдельно от готовности в репозитории. Не использовать дату подготовки как доказательство нахождения в индексе.
 
-Клиент отправляет шесть событий `imanakov:analytics` и, если уже настроен, `dataLayer`: page view, CTA view/click, contact click, case click, related page click. В payload есть slug, clusterId, intent, topic, keyword и CTA placement/type. Внешний счётчик не подключён. Mailto переносит контекст страницы, но реальную отправку письма нельзя считать подтверждённой по клику.
+Клиент отправляет шесть событий `imanakov:analytics` и, если уже настроен, `dataLayer`: page view, CTA view/click, contact click, case click, related page click. В payload есть slug, clusterId, intent, topic, keyword и CTA placement/type. Подготовлен опциональный адаптер Метрики (SiteAnalytics): включается переменными окружения только после настройки нового домена; по умолчанию выключен. Mailto переносит контекст страницы, но реальную отправку письма нельзя считать подтверждённой по клику.

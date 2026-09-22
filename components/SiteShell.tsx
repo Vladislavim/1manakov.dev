@@ -89,7 +89,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       lenisRef.current?.stop();
       gsap.set(layer, { autoAlpha: 1, opacity: 0 });
       timeline.current?.kill();
-      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .28, ease: 'sine.inOut' }).call(() => router.push(href, { scroll: !href.includes('#') }));
+      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .16, ease: 'power2.out' }).call(() => router.push(href, { scroll: !href.includes('#') }));
       timeout.current = setTimeout(release, 5000);
       return;
     }
@@ -126,11 +126,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
           const {x,y}=origin.current;
           const mobile=matchMedia('(pointer:coarse)').matches;
           timeline.current = gsap.timeline({ onComplete: release })
-            .set(aperture.current,{attr:{d:portalPath(x,y,2,2)}})
-            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:mobile?.22:.32,ease:'sine.in'})
-            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.72,ease:'power2.out'});
+            .set(aperture.current,{attr:{d:portalPath(x,y,110,110)}})
+            .to(aperture.current,{attr:{d:portalPath(x,y,78,90)},duration:.12,ease:'power2.in'})
+            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:.2,ease:'power3.inOut'})
+            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.58,ease:'power3.inOut'});
         } else {
-          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .42, ease: 'sine.out' });
+          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .18 });
         }
       });
     } else if (locked.current) { timeline.current?.kill(); release(); }

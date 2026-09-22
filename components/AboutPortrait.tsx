@@ -23,5 +23,5 @@ export function AboutPortrait(){
    }}
   };image.src='/images/about/portrait-itmo.png';return()=>{disposed=true;};
  },[]);
- return <figure className="about-portrait portrait-halftone" tabIndex={0} aria-label="Vladislav Imanakov. Halftone from the original photograph; focus or hover to reveal the photo."><svg viewBox="540 460 310 528" role="img" aria-labelledby="portrait-title" preserveAspectRatio="xMidYMid meet"><title id="portrait-title">Vladislav Imanakov — original photograph</title><image href="/images/about/portrait-itmo.png" width="1280" height="988"/></svg><canvas ref={canvas} aria-hidden="true"/><figcaption>ORIGINAL / HALFTONE</figcaption></figure>;
+ return <figure className="about-portrait portrait-halftone" tabIndex={0} aria-label="Vladislav Imanakov. Halftone from the original photograph; focus or hover to reveal the photo."><svg viewBox="540 460 310 528" role="img" aria-labelledby="portrait-title" preserveAspectRatio="xMidYMid meet"><title id="portrait-title">Vladislav Imanakov — original photograph</title><image href="/images/about/portrait-itmo.png" width="1280" height="988"/></svg><canvas ref={canvas} aria-hidden="true"/></figure>;
 }

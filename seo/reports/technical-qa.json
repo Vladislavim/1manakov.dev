@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-09-22T19:46:56.626Z",
+  "checkedAt": "2026-09-22T20:01:39.246Z",
   "base": "http://127.0.0.1:3000",
   "canonicalOrigin": "https://imanakov.dev",
-  "pageCount": 41,
+  "pageCount": 44,
   "pages": [
     {
       "path": "/",
@@ -23,6 +23,27 @@
       "status": 200,
       "title": "Lab — Interaction studies — IMANAKOV",
       "description": "Five tactile studies in motion and interaction: cursor reveal, card physics, type morph, portal and grid shift.",
+      "issues": []
+    },
+    {
+      "path": "/for-business/traffic-without-enquiries",
+      "status": 200,
+      "title": "Посещения есть, а заявок мало: что проверить до редизайна — IMANAKOV",
+      "description": "Как владельцу бизнеса отделить ошибки измерения, нецелевой трафик и проблемы сайта. Порядок проверки без обещаний волшебной конверсии.",
+      "issues": []
+    },
+    {
+      "path": "/for-business/redesign-without-losing-search",
+      "status": 200,
+      "title": "Редизайн без потери важных страниц: что включить в задание — IMANAKOV",
+      "description": "Что передать разработчику перед редизайном: список адресов, карта редиректов, правила индексации и критерии приёмки после запуска.",
+      "issues": []
+    },
+    {
+      "path": "/for-business/website-project-acceptance",
+      "status": 200,
+      "title": "Как принять сайт у подрядчика: проверяйте результат, а не список технологий — IMANAKOV",
+      "description": "Практический порядок приёмки сайта для заказчика: сценарии, мобильная версия, отправка обращений, SEO, доступы и сопровождение.",
       "issues": []
     },
     {

@@ -1,3 +1,4 @@
+import '@/styles/client-offers.css';
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import { defaultDescription, pageMetadata, personId, websiteId } from '@/lib/metadata';

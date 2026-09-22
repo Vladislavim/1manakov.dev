@@ -1,3 +1,4 @@
+import {ClientOffers} from '@/components/ClientOffers';
 import {defaultDescription,pageMetadata} from '@/lib/metadata';
 import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
@@ -15,6 +16,6 @@ export default function Home() {
     <div data-home-scene="work"><ProjectDeck /></div>
     <div data-home-scene="seo"><SeoServices /></div>
     <div data-home-scene="play"><Lab teaser /></div>
-    <div data-home-scene="contact"><Footer /></div>
+    <div data-home-scene="contact"><ClientOffers /><Footer /></div>
   </HomeChoreography></main>;
 }

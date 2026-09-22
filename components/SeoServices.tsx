@@ -69,8 +69,8 @@ export function SeoServices(){
    // Gather -> arrange -> connect -> explain. Each phase finishes before the next.
    intro.fromTo(host.querySelectorAll('[data-seo-logo]'),{opacity:0},{opacity:1,duration:.8,stagger:.02,ease:'power2.out'},0);
    nodes.forEach(n=>intro.to(n,{gather:0,duration:2.1,ease:'sine.inOut'},1.2+n.tool.delay*.45));
-   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:2,stagger:0,ease:'none'},3.65);
-   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.45,ease:'none'},5.65)
+   intro.fromTo(host.querySelectorAll('.flow-line'),{strokeDasharray:1,strokeDashoffset:1},{autoRound:false,strokeDashoffset:0,duration:2,stagger:0,ease:'none'},3.65);
+   intro.fromTo(host.querySelector('.flow-arrow'),{strokeDasharray:1,strokeDashoffset:1},{autoRound:false,strokeDashoffset:0,duration:.45,ease:'none'},5.65)
     .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:8},{opacity:1,y:0,duration:1.05,stagger:.16,ease:'sine.out'},6.2);
    render(0,0);
    let triggered=false;

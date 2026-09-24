@@ -1,0 +1,6 @@
+'use client';
+import {useState} from 'react';
+export function GuideCtaBuilder(){
+ const [headline,setHeadline]=useState('Узнайте, какие данные нужны для расчёта'),[button,setButton]=useState('Открыть список параметров'),[next,setNext]=useState('Покажем список. Контактные данные для просмотра не нужны.'),[opened,setOpened]=useState(false);
+ return <div className="guide-cta-builder"><h3>Примерьте свой текст на кнопку</h3><div className="workbench-two"><div className="workbench-fields"><label>Что получит человек<input value={headline} maxLength={120} onChange={e=>setHeadline(e.target.value)}/></label><label>Подпись кнопки<input value={button} maxLength={60} onChange={e=>setButton(e.target.value)}/></label><label>Что произойдёт дальше<textarea value={next} maxLength={240} onChange={e=>setNext(e.target.value)}/></label></div><div className="workbench-preview"><span className="eyebrow">УЧЕБНОЕ ПРЕВЬЮ</span><h3>{headline}</h3><p>{next}</p><button onClick={()=>setOpened(v=>!v)} aria-expanded={opened}>{button||'Добавьте подпись'}</button>{opened&&<p role="status">Теперь проверьте свой настоящий переход: выполняет ли он обещание «{button}»? Эта кнопка открывает только учебное пояснение.</p>}</div></div></div>;
+}

@@ -25,3 +25,4 @@ body:has(.guide-example-dialog[open]){overflow:hidden}
 @media(max-width:600px){.guide-dashboard,.guide-token-preview{grid-template-columns:1fr}.guide-dashboard-panel:first-child{grid-column:auto}.guide-demo-results button{padding:14px!important;font-size:13px;gap:10px}.guide-live-example{padding:16px}}
 .guide-cta-builder .workbench-fields { grid-template-columns: 1fr; align-content: start; }
 .guide-cta-builder .workbench-fields label { align-content: start; }
+.practice-contact{margin-top:28px;padding-top:24px;border-top:1px solid #2223}.practice-contact a{display:inline-block;border-bottom:1px solid currentColor;padding-bottom:7px;font-size:20px}.practice-contact p{font-size:13px;color:#596056;line-height:1.6}

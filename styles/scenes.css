@@ -36,7 +36,8 @@
 .hero-world[data-case=pdp] img{object-position:50% 20%}
 .hero-world[data-case=khasaut-tour] img{object-position:50% 25%}
 .explore-type{font-size:20.2vw;top:49%;transform:translateY(-50%)}
-.image-letter{display:inline-block;background-image:linear-gradient(var(--letter-tint),var(--letter-tint)),var(--letter-image);background-color:var(--letter-color);background-position:50% 35%;background-blend-mode:screen,normal;text-decoration:none;transition:filter .25s,background-size .5s;background-size:auto 155%;-webkit-text-fill-color:transparent}
+.image-letter{display:inline-block;background:none;color:var(--letter-color);-webkit-text-fill-color:currentColor;text-decoration:none;transition:filter .25s}
+.image-letter{padding-bottom:.2em;margin-bottom:-.2em}
 .image-letter:focus-visible{outline:2px solid var(--paper);outline-offset:5px}
 @media(hover:hover){.image-letter:hover{filter:brightness(1.2);background-size:auto 175%}}
 .explore .scene-index{top:18%;gap:0}
@@ -49,3 +50,6 @@
  .explore .scene-index button{font-size:12px;gap:0}
  .explore .scene-index button span{display:none}
 }
+.hero-caption .hero-service-note{position:static;max-width:420px;font-size:clamp(12px,1.1vw,17px);line-height:1.55;flex:0 1 420px;margin:0}
+.hero-caption{gap:24px}.hero-caption .hero-select{flex-shrink:0}.hero-caption>.line-link{flex-shrink:0}
+@media(max-width:767px){.hero-caption{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}.hero-caption .hero-service-note{max-width:270px;font-size:12px}.hero-caption .hero-select{bottom:calc(100% + 22px)}.hero .touch-hint{display:none}}

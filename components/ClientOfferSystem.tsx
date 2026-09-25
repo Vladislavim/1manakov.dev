@@ -4,6 +4,9 @@ import {useRef,useState} from 'react';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {contact} from '@/data/projects';
+const mailSubjects=['Нужен аудит сайта','Нужна доработка сайта','Нужно создать сайт'];
+const mailLink=(i:number)=>`mailto:${contact.email}?subject=${encodeURIComponent(mailSubjects[i])}&body=${encodeURIComponent('Здравствуйте, Владислав!\n\n'+mailSubjects[i]+'.\n\nМоя задача: \nСсылка на сайт (если есть): \n')}`;
 
 type Offer={name:string;subtitle:string;text:string;items:string[];result:string};
 const situations=['Сайт есть. Что мешает?','Проблема ясна. Что дальше?','Нужен новый сайт. С чего начать?'];
@@ -25,7 +28,7 @@ export function ClientOfferSystem({offers}:{offers:Offer[]}){
   const mm=gsap.matchMedia();
   mm.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)',()=>{
    const states=nodes.map(n=>({...n,vx:0,vy:0,tx:0,ty:0}));
-   let visible=false,time=0,ready=false;
+   let visible=false,time=0,ready=false,route=selected.current,travel=0,signalOpacity=0;
    const tick=(_:number,delta:number)=>{
     const dt=Math.min(delta,32)/1000;time+=dt;
     states.forEach((s,i)=>{
@@ -35,25 +38,46 @@ export function ClientOfferSystem({offers}:{offers:Offer[]}){
     });
     paths.forEach((p,i)=>p.setAttribute('d',connection(i,states)));
     if(!ready)return;
-    const phase=time%6,leg=phase<1.7?0:3,progress=leg===0?phase/1.7:(phase-2)/1.7;
-    if(progress>=0&&progress<=1){const path=paths[selected.current+leg],point=path.getPointAtLength(path.getTotalLength()*progress);dot.setAttribute('cx',`${point.x}`);dot.setAttribute('cy',`${point.y}`);dot.style.opacity='.65';}else dot.style.opacity='0';
+    const switching=route!==selected.current;
+    if(switching){signalOpacity=Math.max(0,signalOpacity-dt*4);if(signalOpacity===0){route=selected.current;travel=0;}}
+    else travel=(travel+dt)%7.2;
+    const phase=travel,leg=phase<2.4?0:3;
+    const progress=leg===0?phase/2.4:(phase-3.2)/2.4;
+    const onLine=progress>=0&&progress<=1;
+    const target=onLine?Math.min(1,progress*10,(1-progress)*10)*.75:0;
+    if(!switching)signalOpacity+=(target-signalOpacity)*Math.min(1,dt*8);
+    if(onLine){const path=paths[route+leg],point=path.getPointAtLength(path.getTotalLength()*progress);dot.setAttribute('cx',`${point.x}`);dot.setAttribute('cy',`${point.y}`);}
+    dot.style.opacity=`${signalOpacity}`;
+    elements.forEach((el,i)=>{const energized=!switching&&(i===6?phase>=2.1&&phase<3.5:i===route?phase<2.4:i===route+3?phase>=5.2&&phase<6.6:false);el.classList.toggle('is-flowing',energized);});
    };
    const sync=()=>{gsap.ticker.remove(tick);if(visible&&!document.hidden)gsap.ticker.add(tick);};
    const intro=gsap.timeline({scrollTrigger:{trigger:stage,start:'top 80%',once:true},onComplete:()=>{ready=true;time=0;}});
-   intro.fromTo(paths,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.5,ease:'none'}).fromTo(elements,{opacity:0},{opacity:1,duration:.8,stagger:.05,ease:'sine.out'},.5);
-   ScrollTrigger.create({trigger:stage,start:'top bottom',end:'bottom top',onToggle:s=>{visible=s.isActive;sync();}});
+   intro.fromTo(elements.slice(0,3),{opacity:0},{opacity:1,duration:.8,ease:'sine.out'})
+    .fromTo(paths.slice(0,3),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.4,ease:'none'},.3)
+    .fromTo(elements[6],{opacity:0},{opacity:1,duration:.8,ease:'sine.out'},1.2)
+    .fromTo(paths.slice(3),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.4,ease:'none'},1.7)
+    .fromTo(elements.slice(3,6),{opacity:0},{opacity:1,duration:.8,ease:'sine.out'},2.6);
+   const visibility=ScrollTrigger.create({trigger:stage,start:'top bottom',end:'bottom top',onToggle:s=>{visible=s.isActive;sync();}});
+   visible=visibility.isActive;sync();
    const move=(e:PointerEvent)=>{if(e.pointerType==='touch'||!matchMedia('(hover:hover) and (pointer:fine)').matches)return;const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*1200,y=(e.clientY-r.top)/r.height*500;states.forEach((s,i)=>{const dx=x-nodes[i].x,dy=y-nodes[i].y,k=Math.max(0,1-Math.hypot(dx,dy)/180)*.045;s.tx=dx*k;s.ty=dy*k;});};
    const reset=()=>states.forEach(s=>{s.tx=0;s.ty=0;});
    stage.addEventListener('pointermove',move);stage.addEventListener('pointerleave',reset);document.addEventListener('visibilitychange',sync);
-   return()=>{gsap.ticker.remove(tick);stage.removeEventListener('pointermove',move);stage.removeEventListener('pointerleave',reset);document.removeEventListener('visibilitychange',sync);elements.forEach(e=>e.style.removeProperty('transform'));paths.forEach((p,i)=>p.setAttribute('d',connection(i,nodes)));dot.style.opacity='0';};
+   return()=>{gsap.ticker.remove(tick);stage.removeEventListener('pointermove',move);stage.removeEventListener('pointerleave',reset);document.removeEventListener('visibilitychange',sync);elements.forEach(e=>{e.style.removeProperty('transform');e.classList.remove('is-flowing');});paths.forEach((p,i)=>p.setAttribute('d',connection(i,nodes)));dot.style.opacity='0';};
   });
   return()=>mm.revert();
  },{scope:root});
  return <div className="offer-system" ref={root}>
   <div className="offer-network" aria-label="Выберите ситуацию и направление работы">
    <svg viewBox="0 0 1200 500" aria-hidden="true">{nodes.slice(0,6).map((_,i)=><path key={i} className={`offer-wire ${i%3===active?'is-active':''}`} d={connection(i,nodes)} pathLength="1"/>)}<circle className="offer-signal" r="3" opacity="0"/></svg>
-   {nodes.map((n,i)=>{const index=i%3;return i===6?<div key={i} className="offer-node offer-hub" style={{left:`${(n.x-n.w/2)/12}%`,top:`${(n.y-n.h/2)/5}%`,width:`${n.w/12}%`,height:`${n.h/5}%`}}><span>ВАШ САЙТ</span><small>Задача → решение<br/>→ результат</small></div>:<button key={i} type="button" className={`offer-node ${i>2?'offer-destination':'offer-situation'} ${index===active?'is-active':''}`} style={{left:`${(n.x-n.w/2)/12}%`,top:`${(n.y-n.h/2)/5}%`,width:`${n.w/12}%`,height:`${n.h/5}%`}} aria-pressed={index===active} onClick={()=>choose(index)} onFocus={()=>choose(index)} onPointerEnter={e=>{if(e.pointerType==='mouse')choose(index);}}><small>0{index+1}{i>2?' / РЕШЕНИЕ':' / СИТУАЦИЯ'}</small><span>{i>2?offers[index].name:situations[index]}</span>{i>2&&<b aria-hidden="true">↗</b>}</button>;})}
+   {nodes.map((n,i)=>{const index=i%3;return i===6?<div key={i} className="offer-node offer-hub" style={{left:`${(n.x-n.w/2)/12}%`,top:`${(n.y-n.h/2)/5}%`,width:`${n.w/12}%`,height:`${n.h/5}%`}}><span>ВАШ САЙТ</span><small>Задача → решение<br/>→ результат</small></div>:<a key={i} href={mailLink(index)} title={`Написать письмо: ${mailSubjects[index]}`} className={`offer-node ${i>2?'offer-destination':'offer-situation'} ${index===active?'is-active':''}`} style={{left:`${(n.x-n.w/2)/12}%`,top:`${(n.y-n.h/2)/5}%`,width:`${n.w/12}%`,height:`${n.h/5}%`}} onFocus={()=>choose(index)} onPointerEnter={e=>{if(e.pointerType==='mouse')choose(index);}}><small>0{index+1}{i>2?' / РЕШЕНИЕ':' / СИТУАЦИЯ'}</small><span>{i>2?offers[index].name:situations[index]}</span><em className="offer-mail-hint">Написать письмо ↗</em></a>;})}
   </div>
-  <div className="offer-mobile-routes" aria-label="Выберите направление работы">{offers.map((o,i)=><button type="button" key={o.name} aria-pressed={active===i} onClick={()=>choose(i)}><small>0{i+1} / {situations[i]}</small><span>{o.name}<b aria-hidden="true">↗</b></span></button>)}</div>
+  <div className="offer-mobile-routes" aria-label="Выберите направление работы">{offers.map((o,i)=><a key={o.name} href={mailLink(i)}><small>0{i+1} / {situations[i]}</small><span>{o.name}<b aria-hidden="true">↗</b></span><em>Написать письмо ↗</em></a>)}</div>
+  <div className="offer-disclosures">
+   <details><summary>Что вы получите после аудита <span>+</span></summary><p>Конкретные замечания, их приоритет и способ проверки исправлений. Для каждой проблемы — что происходит, почему это важно и что изменить.</p></details>
+   <details><summary>Как строится работа <span>+</span></summary><p>Сначала разбираем задачу, исходную ситуацию и ограничения. До начала согласуем объём, стоимость, сроки и критерии готовности. Затем вносим изменения и показываем промежуточный результат. В конце проверяем основные сценарии и передаём результат и необходимые доступы.</p></details>
+   <details><summary>Можно доработать без полного редизайна? <span>+</span></summary><p>Да, если существующая основа позволяет решить задачу точечно. Сначала нужно посмотреть сайт: иногда достаточно исправить форму, мобильную версию или структуру страниц.</p></details>
+   <details><summary>Что нужно для оценки стоимости? <span>+</span></summary><p>Ссылка на сайт, описание задачи и желаемый срок. Для нового сайта — что вы предлагаете, кому и какие действия посетителя важны. Если есть материалы или технические ограничения, приложите их.</p></details>
+   <details><summary>Что останется у меня после сдачи? <span>+</span></summary><p>Согласованный результат: для аудита — замечания и порядок исправлений; для разработки — сайт и необходимые для управления доступы. Состав исходников, документации и дальнейшей поддержки фиксируем до начала.</p></details>
+  </div>
  </div>;
 }

@@ -5,11 +5,11 @@ import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {contact} from '@/data/projects';
-const mailSubjects=['Нужен аудит сайта','Нужна доработка сайта','Нужно создать сайт'];
+const mailSubjects=['Нужен аудит узких мест','Нужна реанимация сайта','Нужен запуск боевого актива'];
 const mailLink=(i:number)=>`mailto:${contact.email}?subject=${encodeURIComponent(mailSubjects[i])}&body=${encodeURIComponent('Здравствуйте, Владислав!\n\n'+mailSubjects[i]+'.\n\nМоя задача: \nСсылка на сайт (если есть): \n')}`;
 
 type Offer={name:string;subtitle:string;text:string;items:string[];result:string};
-const situations=['Сайт есть. Что мешает?','Проблема ясна. Что дальше?','Нужен новый сайт. С чего начать?'];
+const situations=['Трафик есть, а заявок нет','Сайт застрял и теряет лиды','Запуск нового актива с нуля'];
 const nodes=[...Array.from({length:3},(_,i)=>({x:170,y:95+i*155,w:300,h:100})),...Array.from({length:3},(_,i)=>({x:1030,y:95+i*155,w:300,h:100})),{x:600,y:250,w:184,h:184}];
 function connection(i:number,p:{x:number;y:number}[]){
  const left=i<3,n=p[i],hub=p[6],sx=left?n.x+150:hub.x+92,sy=left?n.y:hub.y,ex=left?hub.x-92:n.x-150,ey=left?hub.y:n.y;
@@ -51,15 +51,18 @@ export function ClientOfferSystem({offers}:{offers:Offer[]}){
     elements.forEach((el,i)=>{const energized=!switching&&(i===6?phase>=2.1&&phase<3.5:i===route?phase<2.4:i===route+3?phase>=5.2&&phase<6.6:false);el.classList.toggle('is-flowing',energized);});
    };
    const sync=()=>{gsap.ticker.remove(tick);if(visible&&!document.hidden)gsap.ticker.add(tick);};
-   const intro=gsap.timeline({scrollTrigger:{trigger:stage,start:'top 80%',once:true},onComplete:()=>{ready=true;time=0;}});
+   const intro=gsap.timeline({
+    scrollTrigger:{trigger:stage,start:'center 65%',once:true},
+    onComplete:()=>{ready=true;time=0;}
+   });
    gsap.set(elements,{autoAlpha:0});
    gsap.set(paths,{strokeDasharray:'1 1',strokeDashoffset:1});
-   intro.to(elements[6],{autoAlpha:1,duration:1.1,ease:'sine.inOut'});
+   intro.to(elements[6],{autoAlpha:1,duration:.9,ease:'sine.inOut'});
    for(let i=0;i<3;i++){
-    intro.to(elements[i],{autoAlpha:1,duration:.85,ease:'sine.inOut'},'+=.12')
-     .to(elements[i+3],{autoAlpha:1,duration:.85,ease:'sine.inOut'})
-     .to(paths[i],{strokeDashoffset:0,autoRound:false,duration:1.25,ease:'none'})
-     .to(paths[i+3],{strokeDashoffset:0,autoRound:false,duration:1.25,ease:'none'});
+    intro.to(elements[i],{autoAlpha:1,duration:.75,ease:'sine.inOut'},'+=.25')
+     .to(elements[i+3],{autoAlpha:1,duration:.75,ease:'sine.inOut'},'+=.15')
+     .to(paths[i],{strokeDashoffset:0,autoRound:false,duration:1.3,ease:'power1.inOut'},'+=.12')
+     .to(paths[i+3],{strokeDashoffset:0,autoRound:false,duration:1.3,ease:'power1.inOut'},'-=.45');
    }
    const visibility=ScrollTrigger.create({trigger:stage,start:'top bottom',end:'bottom top',onToggle:s=>{visible=s.isActive;sync();}});
    visible=visibility.isActive;sync();

@@ -51,5 +51,7 @@
  .explore .scene-index button span{display:none}
 }
 .hero-caption .hero-service-note{position:static;max-width:420px;font-size:clamp(12px,1.1vw,17px);line-height:1.55;flex:0 1 420px;margin:0}
-.hero-caption{gap:24px}.hero-caption .hero-select{flex-shrink:0}.hero-caption>.line-link{flex-shrink:0}
 @media(max-width:767px){.hero-caption{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}.hero-caption .hero-service-note{max-width:270px;font-size:12px}.hero-caption .hero-select{bottom:calc(100% + 22px)}.hero .touch-hint{display:none}}
+.type-char{display:inline-block;will-change:transform,opacity}
+.type-space{display:inline-block;width:.28em}
+

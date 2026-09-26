@@ -46,7 +46,7 @@ export function ProjectDeck() {
     settle.current = gsap.to(fan.current, { x: 0, rotation: 0, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : .5, ease: 'power3.out' });
   }
   return <section id="work" className="work scene" ref={root} aria-labelledby="work-title">
-    <span className="scene-kicker">ИЗБРАННЫЕ РАБОТЫ / 01—{String(projects.length).padStart(2, '0')}</span>
+    <span className="scene-kicker">В ПРОДАКШЕНЕ И В ПОИСКОВОЙ ВЫДАЧЕ</span>
     <h2 id="work-title" className="work-title">PRODUCT<br />DESIGNER</h2>
     <div className="card-space"><div className="card-fan" ref={fan} data-cursor="DRAG"
       onPointerDown={e => { if (e.button !== 0) return; start.current = { x: e.clientX, y: e.clientY, time: performance.now(), dragging: false }; suppressClick.current = false; settle.current?.kill(); }}

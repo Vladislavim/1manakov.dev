@@ -157,7 +157,7 @@ export function Hero() {
 
     </RouteLink>
 
-    <div className="scene-bottom hero-caption"><p className="hero-service-note" lang="ru">От ТЗ до первого клиента под ключ.<br/>Подберем решение под ваш бюджет.</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link home-scroll-cue-target">SCROLL</a></div>
+    <div className="scene-bottom hero-caption"><p className="hero-service-note" lang="ru">Хирургия интерфейсов и тяжелый фронтенд.<br/>Срезаю лишние клики между рекламой и кассой.</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link home-scroll-cue-target">SCROLL</a></div>
     <p className="touch-hint">SWIPE THE LENS · TAP TO EXPLORE</p>
 
   </section>;

@@ -1,3 +1,95 @@
-@media (pointer:fine) and (prefers-reduced-motion:no-preference){body{cursor:url('/cursor-arrow.svg') 4 4,default}a,button,input,[role='button']{cursor:url('/cursor-arrow.svg') 4 4,pointer}}
-.custom-cursor,.custom-cursor[data-active=true],.custom-cursor[data-hidden=true]{position:fixed;z-index:120;top:0;left:0;width:1px;height:1px;margin:0;border:0;border-radius:0;pointer-events:none;opacity:0;visibility:visible;display:block;background:none;mix-blend-mode:normal;box-shadow:none;transition:opacity .16s ease;will-change:transform}.custom-cursor span{position:absolute;left:13px;top:9px;display:grid;place-items:center;min-width:34px;height:18px;padding:0 6px;border:1px solid #fff;background:#0c0d0d;color:#f4f2ed;font:10px/1 var(--font-geist),sans-serif;letter-spacing:.04em;white-space:nowrap;opacity:0;transform:translateY(3px);transition:opacity .16s ease,transform .16s ease}.custom-cursor[data-active=true] span{opacity:1;transform:none}.route-veil{position:fixed;inset:0;z-index:89;background:#e9e5dd;visibility:hidden;opacity:0;pointer-events:all}
-@media (pointer:coarse),(prefers-reduced-motion:reduce){body{cursor:auto}a,button,input,[role='button']{cursor:pointer}.custom-cursor,.custom-cursor[data-active=true],.custom-cursor[data-hidden=true]{display:none!important}}
+/* Custom Cursor: Forbid native cursor on EVERYTHING except text inputs and exit modal */
+*, *::before, *::after, html, body, a, button, [role='button'], input[type=button], input[type=submit] {
+  cursor: none !important;
+}
+
+input:not([type=button]):not([type=submit]), textarea, select, [contenteditable=true] {
+  cursor: text !important;
+}
+
+.exit-offer, .exit-offer * {
+  cursor: auto !important;
+}
+.exit-offer a, .exit-offer button {
+  cursor: pointer !important;
+}
+.exit-offer input, .exit-offer textarea {
+  cursor: text !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  visibility: visible;
+  display: block;
+  will-change: transform;
+  transition: opacity .15s ease;
+}
+
+.custom-cursor .cursor-arrow-svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+  transform: translate(-4px, -3.5px);
+  filter: drop-shadow(0 2px 7px rgba(0,0,0,0.4));
+  transition: transform .12s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-cursor[data-link=true] .cursor-arrow-svg {
+  transform: translate(-4px, -3.5px) scale(1.18);
+  filter: drop-shadow(0 3px 10px rgba(0,0,0,0.55));
+}
+
+.custom-cursor span {
+  position: absolute;
+  left: 24px;
+  top: 18px;
+  display: grid;
+  place-items: center;
+  min-width: 38px;
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid #f4f2ed;
+  border-radius: 4px;
+  background: #0c0d0d;
+  color: #f4f2ed;
+  font: 11px/1 var(--font-geist), sans-serif;
+  letter-spacing: .06em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .16s ease, transform .16s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.custom-cursor[data-active=true] span {
+  opacity: 1;
+  transform: none;
+}
+
+.route-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 89;
+  background: #e9e5dd;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: all;
+}
+
+/* Touch devices: disable custom cursor, restore normal touch behavior */
+@media (hover: none) and (pointer: coarse) {
+  *, *::before, *::after, html, body {
+    cursor: auto !important;
+  }
+  a, button, input, [role='button'] {
+    cursor: pointer !important;
+  }
+  .custom-cursor {
+    display: none !important;
+  }
+}

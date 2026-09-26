@@ -219,23 +219,36 @@ export function SiteShell({ children }: { children: ReactNode }) {
       gsap.ticker.add(update);
       const visibility = () => { if (document.hidden) gsap.ticker.remove(update); else gsap.ticker.add(update); };
       document.addEventListener('visibilitychange', visibility);
-      const dot = cursor.current!;
-      const x = gsap.quickTo(dot, 'x', { duration: .16, ease: 'power3.out' });
-      const y = gsap.quickTo(dot, 'y', { duration: .16, ease: 'power3.out' });
+      return () => { lenis.destroy(); lenisRef.current = null; gsap.ticker.remove(update); document.removeEventListener('visibilitychange', visibility); };
+    });
+    mm.add('(pointer: fine)', () => {
+      const dot = cursor.current;
+      if (!dot) return;
+      const x = gsap.quickTo(dot, 'x', { duration: .04, ease: 'power2.out' });
+      const y = gsap.quickTo(dot, 'y', { duration: .04, ease: 'power2.out' });
       const move = (e: PointerEvent) => {
+        if (e.pointerType === 'touch') return;
         x(e.clientX); y(e.clientY);
         const target = e.target as HTMLElement;
+        const isInput = Boolean(target.closest('input:not([type=button]):not([type=submit]), textarea, select, [contenteditable=true], .exit-offer'));
+        if (isInput) {
+          dot.style.opacity = '0';
+          return;
+        }
         const active = target.closest<HTMLElement>('[data-cursor]');
+        const isLink = Boolean(target.closest('a, button, [role=button], .image-letter'));
         dot.dataset.active = active ? 'true' : 'false';
+        dot.dataset.link = isLink ? 'true' : 'false';
         dot.dataset.hidden = 'false';
         const label = active?.dataset.cursor || '';
-        dot.querySelector('span')!.textContent = label === 'DRAG' ? '↔' : label === 'BACK' ? '←' : label;
+        const badge = dot.querySelector('span');
+        if (badge) badge.textContent = label === 'DRAG' ? '↔' : label === 'BACK' ? '←' : label;
         dot.style.opacity = '1';
       };
       const leave = () => { dot.style.opacity = '0'; };
       window.addEventListener('pointermove', move, { passive: true });
       document.addEventListener('pointerleave', leave);
-      return () => { lenis.destroy(); lenisRef.current = null; gsap.ticker.remove(update); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pointermove', move); document.removeEventListener('pointerleave', leave); x.tween.kill(); y.tween.kill(); };
+      return () => { window.removeEventListener('pointermove', move); document.removeEventListener('pointerleave', leave); x.tween.kill(); y.tween.kill(); };
     });
     return () => mm.revert();
   }, { scope: shell });
@@ -257,7 +270,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
     </header>
     {children}
     <div className="readiness" ref={loader} aria-hidden="true"><span>IMANAKOV</span><span>{String(progress).padStart(2, '0')}</span></div>
-    <div className="custom-cursor" ref={cursor} aria-hidden="true"><span /></div>
+    <div className="custom-cursor" ref={cursor} aria-hidden="true">
+      <svg className="cursor-arrow-svg" width="36" height="36" viewBox="0 0 34 34" fill="none">
+        <path d="M4 3.5v25.2l7.1-7.1 4.9 8.1 2.7-1.6-4.9-8.1h10.1L4 3.5Z" fill="#0c0d0d" stroke="#f4f2ed" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      <span />
+    </div>
     <div className="route-veil" ref={veil} aria-hidden="true" />
     <div className="route-portal signature-portal" ref={portal} aria-hidden="true"><svg className="portal-mask-defs"><defs><mask id="imanakov-portal-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect width="100%" height="100%" fill="white"/><path ref={aperture} fill="black" d="M0,0 Z"/></mask></defs></svg><div className="portal-outgoing" ref={outgoing}/></div>
   </div></NavigationContext.Provider>;

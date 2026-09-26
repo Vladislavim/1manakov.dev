@@ -1,0 +1,12 @@
+'use client';
+import {useState} from 'react';
+import Link from 'next/link';
+const options=[
+ {label:'Кнопка недостаточно яркая',answer:'В этой ситуации кнопка уже нажата. Смена её цвета не объяснит человеку, принято ли обращение.'},
+ {label:'Непонятно, отправилась ли заявка',answer:'Именно. Поля очистились, но подтверждения нет. Человек не знает, дошло ли сообщение, и может отправить его повторно или уйти.'},
+ {label:'В форме мало полей',answer:'Дополнительные поля не подтвердят отправку. Здесь нужно показать результат действия и сохранить данные при ошибке.'},
+];
+export function DiscoveryExercise(){
+ const [choice,setChoice]=useState<number|null>(null),[fixed,setFixed]=useState(false);
+ return <section className="discovery-exercise" lang="ru" aria-labelledby="discovery-title"><div className="discovery-intro"><span className="eyebrow">ОДНА ДЕТАЛЬ / ОДНО РЕШЕНИЕ</span><h2 id="discovery-title">Что здесь<br/>мешает человеку?</h2><p>Представьте: вы заполнили форму и нажали «Отправить». Поля очистились. Посмотрите, чего не хватает.</p><span className="discovery-caption">Учебный пример — без отправки данных.</span></div><div className="discovery-play"><div className="discovery-preview"><div className="discovery-preview-head"><span>Обратная связь</span><span>01 / ФОРМА</span></div><div className="discovery-fake-field">Ваше имя</div><div className="discovery-fake-field">Email</div><span className="discovery-fake-button">Отправить ↗</span><div className="discovery-feedback" aria-live="polite">{fixed?<><strong>Сообщение отправлено.</strong><p>Когда подготовим ответ, напишем на указанный email.</p></>:<span>После нажатия: форма снова пустая.</span>}</div></div><div className="discovery-options" aria-label="Выберите проблему">{options.map((o,i)=><button key={o.label} aria-pressed={choice===i} onClick={()=>{setChoice(i);setFixed(false);}}><span>0{i+1}</span>{o.label}<span aria-hidden="true">↗</span></button>)}</div>{choice!==null&&<div className="discovery-answer" aria-live="polite"><p>{options[choice].answer}</p><button className="discovery-text-link" onClick={()=>setFixed(v=>!v)}>{fixed?'Посмотреть исходный вариант':'Показать решение'} ↗</button>{fixed&&<p className="discovery-caption">В настоящем интерфейсе такое подтверждение показывается только после успешного ответа сервера. При ошибке введённые данные сохраняются.</p>}<Link href="/guides/form-error-messages" className="discovery-guide">Проверить обратную связь на своём сайте <span>↗</span></Link></div>}</div></section>;
+}

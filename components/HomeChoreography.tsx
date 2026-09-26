@@ -37,8 +37,6 @@ export function HomeChoreography({ children }: { children: ReactNode }) {
       if (hero && explore) gsap.to(hero.querySelectorAll('.hero-underworld, .lens-link, .hero-caption'), { opacity: 0.68, ease: 'none', scrollTrigger: { trigger: explore, start: 'top bottom', end: 'top 35%', scrub: true } });
       if (explore && work) {
         gsap.fromTo(explore.querySelector('.explore-inner'), { opacity: 1 }, { opacity: 0.18, ease: 'none', scrollTrigger: { trigger: work, start: 'top 90%', end: 'top 35%', scrub: true } });
-        // Keep the CSS centering transform intact throughout scroll and resize.
-        gsap.fromTo(explore.querySelector('.explore-type'), { opacity: 1 }, { opacity: 0.35, ease: 'power2.in', scrollTrigger: { trigger: work, start: 'top 88%', end: 'top 38%', scrub: true } });
       }
       if (work) gsap.fromTo(work.querySelector('.card-space'), { opacity: 0.72, scale: 0.97, y: 40 }, { opacity: 1, scale: 1, y: 0, ease: 'power2.out', scrollTrigger: { trigger: work, start: 'top 92%', end: 'top 42%', scrub: true } });
       if (play) gsap.fromTo(play.querySelector('.play-folders-reveal'), { opacity: 0.35, y: 18 }, { opacity: 1, y: 0, ease: 'power2.out', scrollTrigger: { trigger: play, start: 'top 88%', end: 'top 38%', scrub: true } });

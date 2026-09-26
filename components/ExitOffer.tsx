@@ -27,13 +27,13 @@ export function ExitOffer(){
  function close(){dialog.current?.close();previous.current?.focus({preventScroll:true});}
  return <dialog ref={dialog} className="exit-offer" aria-labelledby="offer-dialog-title" lang="ru" data-lenis-prevent onCancel={close} onClick={e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();}}}>
 <button className="exit-offer-close" onClick={close} aria-label="Закрыть предложение" autoFocus>×</button>
-<span className="eyebrow">НОВЫМ КЛИЕНТАМ</span>
-<h2 id="offer-dialog-title"><strong>{expired?'Спасибо':'−10%'}</strong><span>{expired?'за интерес к проекту':'на первый заказ'}</span></h2>
-<p className="offer-short-copy">Сайт, SEO или аудит.</p>
-<div className="offer-growth"><h3>Найду 3 зоны роста бесплатно</h3><p>Пришлите сайт и задачу. Посмотрю одну страницу и подскажу, что стоит улучшить.</p></div>
-<a className="exit-offer-submit" href={contact.telegram} target="_blank" rel="noreferrer" data-seo-event="seo_cta_click" data-cta-type="telegram" data-placement="exit-offer">Найти точки роста моего сайта <span aria-hidden="true">↗</span></a>
+<span className="eyebrow">ЭКСПРЕСС-ДИАГНОСТИКА</span>
+<h2 id="offer-dialog-title"><strong>Аудит</strong><span>узких мест сайта</span></h2>
+<p className="offer-short-copy">Архитектура, мобильный UX и SEO.</p>
+<div className="offer-growth"><h3>Вскрою 3 критических затыка</h3><p>Пришлите ссылку на сайт и задачу. Разберу одну страницу и покажу, где вы теряете мобильный трафик и заявки.</p></div>
+<a className="exit-offer-submit" href={contact.telegram} target="_blank" rel="noreferrer" data-seo-event="seo_cta_click" data-cta-type="telegram" data-placement="exit-offer">Отправить сайт на диагностику <span aria-hidden="true">↗</span></a>
 <p className="offer-channel-note">В Telegram, напрямую со мной.</p>
-<p className="offer-validity">{expired?'Срок скидки истёк. Бесплатный разбор доступен.':`Скидка при обращении до ${deadline?new Date(deadline).toLocaleString('ru-RU',{day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'}):'—'}.`}</p>
-<div className="offer-bottom"><a href={`mailto:${contact.email}?subject=${encodeURIComponent('Хочу найти 3 зоны роста сайта')}`} data-seo-event="seo_cta_click" data-cta-type="email" data-placement="exit-offer">Удобнее почтой ↗</a><details><summary>Условия</summary><p>Скидка 10% на мои услуги для новых клиентов при обращении в течение 24 часов после первого показа. Объём и стоимость согласуем до начала. Рекламный бюджет, хостинг и сторонние сервисы не входят. Бесплатный разбор включает три рекомендации по одной странице. Подробный аудит и внедрение оцениваются отдельно.</p></details></div>
+<p className="offer-validity">Разбор в течение 24 часов без воды и шаблонных отчётов.</p>
+<div className="offer-bottom"><a href={`mailto:${contact.email}?subject=${encodeURIComponent('Хочу аудит узких мест сайта')}`} data-seo-event="seo_cta_click" data-cta-type="email" data-placement="exit-offer">Удобнее почтой ↗</a><details><summary>Формат</summary><p>Экспресс-разбор включает видео- или текстовый разбор одной ключевой страницы: мобильная верстка, ошибки пути пользователя к целевому действию и базовые технические препятствия для поисковиков. Без навязывания лишних работ.</p></details></div>
 </dialog>;
 }

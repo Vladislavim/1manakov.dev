@@ -1,0 +1,30 @@
+/* Keep the keyboard shortcut out of both the viewport and section captures. */
+.skip-link:not(:focus-visible){clip-path:inset(50%);width:1px;height:1px;overflow:hidden;padding:0;white-space:nowrap}
+.skip-link:focus-visible{top:15px}
+@media(max-width:767px){
+  .home-progress{display:none}
+  .site-header a{min-height:44px;display:inline-flex;align-items:center}
+  .site-header nav a{min-width:44px;justify-content:center}
+  .guide-workbench input:not([type=checkbox]):not([type=radio]):not([type=color]),
+  .guide-workbench textarea,.guide-workbench select{font-size:16px!important}
+  .footer-bottom a{display:inline-flex;align-items:center;min-height:44px}
+  .exit-offer .offer-bottom>a,.exit-offer .offer-bottom summary{min-height:44px;display:inline-flex;align-items:center}
+  .seo-source-content header button{min-height:44px}
+}
+@media(max-width:767px){
+ .hero{--lens-size:clamp(165px,46vw,195px)}
+ .hero .lens-link{top:var(--ly)}
+ .hero .lens-label{left:30%;width:145px;font-size:13px}
+ .seo-flow-scene .seo-flow-stage{display:flex;flex-direction:column;gap:22px}
+ .seo-flow-scene .seo-flow-ecosystem{order:0;width:100%;height:490px;margin:0}
+ .seo-flow-scene .seo-flow-result{order:1;width:100%;padding:0 0 22px}
+ .seo-flow-ecosystem li:nth-child(3n+1){left:16%}
+ .seo-flow-ecosystem li:nth-child(3n+2){left:50%}
+ .seo-flow-ecosystem li:nth-child(3n){left:84%}
+ .seo-flow-ecosystem li:nth-child(-n+3){top:10%}
+ .seo-flow-ecosystem li:nth-child(n+4):nth-child(-n+6){top:28%}
+ .seo-flow-ecosystem li:nth-child(n+7):nth-child(-n+9){top:46%}
+ .seo-flow-ecosystem li:nth-child(n+10){top:64%}
+ .journal-topics{gap:4px 16px}
+ .journal-topics a{display:inline-flex;align-items:center;min-height:44px}
+}

@@ -26,12 +26,13 @@ export function SeoServices(){
    nodes.forEach(n=>{
     const x=(n.baseX+n.x)/width*1000,y=(n.baseY+n.y)/height*620;
     // A dedicated cubic curve starts at the moving mark and shares a fixed outlet.
-    n.path.setAttribute('d',`M${x} ${y} C${x+(910-x)*.42} ${y} 790 300 910 300`);
+    n.path.setAttribute('d',matchMedia('(max-width: 767px)').matches ? `M${x} ${y} C${x} ${y+90} 500 480 500 540` : `M${x} ${y} C${x+(910-x)*.42} ${y} 790 300 910 300`);
    });
   }
   function measure(){
    const bounds=ecosystem.getBoundingClientRect();width=bounds.width||1;height=bounds.height||1;
    nodes.forEach(n=>{const r=n.logo.getBoundingClientRect();n.baseX=r.left+r.width/2-bounds.left-n.x;n.baseY=r.top+r.height/2-bounds.top-n.y;});
+   host.querySelector('.flow-arrow')?.setAttribute('d',matchMedia('(max-width: 767px)').matches?'M500 540V605m-18-15 18 15 18-15':'M910 300H985m-10-9 10 9-10 9');
    draw();
   }
   measure();
@@ -74,8 +75,12 @@ export function SeoServices(){
     .fromTo(host.querySelectorAll('.seo-flow-heading,.seo-flow-proof,.seo-flow-client,.seo-flow-cta,.seo-flow-source'),{opacity:0,y:8},{opacity:1,y:0,duration:1.05,stagger:.16,ease:'sine.out'},6.2);
    render(0,0);
    let triggered=false;
-   ScrollTrigger.create({trigger:host,start:'top 70%',once:true,onEnter:()=>{triggered=true;visible=true;sync();}});
-   ScrollTrigger.create({trigger:host,start:'top bottom',end:'bottom top',onToggle:self=>{visible=self.isActive&&triggered;sync();}});
+   // Observe the actual viewport: surrounding animated scenes can shift GSAP's cached offsets.
+   const observer=new IntersectionObserver(([entry])=>{
+    if(entry.isIntersecting)triggered=true;
+    visible=entry.isIntersecting&&triggered;sync();
+   },{rootMargin:'0px 0px -10% 0px',threshold:0});
+   observer.observe(host);
    const reset=()=>nodes.forEach(n=>{n.targetX=0;n.targetY=0;});
    const move=(event:PointerEvent)=>{
     if(!fine.matches||event.pointerType==='touch'||!entered)return;
@@ -87,7 +92,7 @@ export function SeoServices(){
    const visibility=()=>{if(document.hidden)reset();sync();};
    document.addEventListener('visibilitychange',visibility);
    return()=>{
-    gsap.ticker.remove(render);ecosystem.removeEventListener('pointermove',move);ecosystem.removeEventListener('pointerleave',reset);document.removeEventListener('visibilitychange',visibility);
+    observer.disconnect();gsap.ticker.remove(render);ecosystem.removeEventListener('pointermove',move);ecosystem.removeEventListener('pointerleave',reset);document.removeEventListener('visibilitychange',visibility);
     nodes.forEach(n=>{n.x=0;n.y=0;n.mark.style.removeProperty('transform');n.logo.style.removeProperty('rotate');n.label.style.removeProperty('opacity');});draw();
    };
   });
@@ -99,7 +104,7 @@ export function SeoServices(){
     <svg className="seo-flow-lines" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">{seoTools.map(tool=><path className="flow-line" data-seo-line={tool.id} key={tool.id} d={`M${tool.x*10} ${tool.y*6.2} C600 ${tool.y*6.2} 790 300 910 300`} pathLength="1"/>)}<path className="flow-arrow" d="M910 300H985m-10-9 10 9-10 9" pathLength="1"/></svg>
     <ul aria-label="Search and analytics tools">{seoTools.map(tool=><li key={tool.id} data-seo-logo={tool.id} data-path-group={tool.group} style={{'--tool-x':`${tool.x}%`,'--tool-y':`${tool.y}%`} as CSSProperties}><div className="seo-flow-mark"><span className={`seo-flow-logo logo-${tool.id}`} aria-hidden="true">{tool.id==='gsc'?<svg viewBox="0 0 40 40"><image href="/images/seo-tools/gsc.svg" width="278" height="40"/></svg>:<Image src={`/images/seo-tools/${tool.asset}`} alt="" width={140} height={70} unoptimized/>}</span><span className="seo-flow-tool-name">{tool.label}</span></div></li>)}</ul>
    </div>
-   <div className="seo-flow-result"><h2 id="seo-services-title" className="seo-flow-heading">Made to be found.</h2><p className="seo-flow-proof"><strong>{seoProof.share}%</strong><span>ORGANIC</span></p><Link className="seo-flow-client" href="/work/allnrg">Alliance Energy</Link><a className="seo-flow-cta" href={`mailto:${contact.email}?subject=${encodeURIComponent('Website audit')}`}>Discuss audit <span aria-hidden="true">↗</span></a><a className="seo-flow-source" href={seoProof.source} target="_blank" rel="noreferrer">{seoProof.organicVisits} / {seoProof.visits.toLocaleString('en-US')} visits · rounded to {seoProof.share}%<br/>{seoProof.period} · Metrica source ↗</a></div>
+   <div className="seo-flow-result"><h2 id="seo-services-title" className="seo-flow-heading">Made to be found.</h2><p className="seo-flow-proof"><strong>{seoProof.share}%</strong><span>ORGANIC</span></p><Link className="seo-flow-client" href="/work/allnrg">Alliance Energy</Link><a className="seo-flow-cta" href={`mailto:${contact.email}?subject=${encodeURIComponent('Аудит сайта')}`}>Обсудить аудит <span aria-hidden="true">↗</span></a><a className="seo-flow-source" href={seoProof.source} target="_blank" rel="noreferrer">{seoProof.organicVisits} / {seoProof.visits.toLocaleString('en-US')} визитов · округлено до {seoProof.share}%<br/>{seoProof.period} · Отчёт Метрики ↗</a></div>
   </div>
   <footer className="seo-flow-bottom"><span>SEO<br/>DEVELOPER</span><span className="seo-flow-scroll"><i aria-hidden="true"/>SCROLL</span></footer>
  </section>;

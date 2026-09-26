@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { projects } from '@/data/projects';
 import { DevicePresentation } from './DevicePresentation';
 import { RouteLink } from './SiteShell';
+import {projectDecisions} from '@/data/project-decisions';
 
 export function ProjectDeck() {
   const root = useRef<HTMLElement>(null);
@@ -45,22 +46,23 @@ export function ProjectDeck() {
     settle.current = gsap.to(fan.current, { x: 0, rotation: 0, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : .5, ease: 'power3.out' });
   }
   return <section id="work" className="work scene" ref={root} aria-labelledby="work-title">
-    <span className="scene-kicker">SELECTED WORK / 01—{String(projects.length).padStart(2, '0')}</span>
+    <span className="scene-kicker">ИЗБРАННЫЕ РАБОТЫ / 01—{String(projects.length).padStart(2, '0')}</span>
     <h2 id="work-title" className="work-title">PRODUCT<br />DESIGNER</h2>
     <div className="card-space"><div className="card-fan" ref={fan} data-cursor="DRAG"
       onPointerDown={e => { if (e.button !== 0) return; start.current = { x: e.clientX, y: e.clientY, time: performance.now(), dragging: false }; suppressClick.current = false; settle.current?.kill(); }}
       onPointerMove={move} onPointerUp={end} onPointerCancel={e => { if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId); start.current = null; suppressClick.current = false; gsap.set(fan.current, { x: 0, rotation: 0 }); }}>
       {projects.map((p, i) => {
         const order = (i - active + projects.length) % projects.length;
-        return <RouteLink key={p.slug} href={`/work/${p.slug}`} image={p.cover} className={`project-card position-${order}`} style={{ '--card-color': p.color, '--card-ink': p.ink, zIndex: projects.length - order } as CSSProperties} data-cursor={order === 0 ? 'VIEW' : 'DRAG'}
+        return <RouteLink key={p.slug} href={`/work/${p.slug}#decision`} image={p.cover} className={`project-card position-${order}`} style={{ '--card-color': p.color, '--card-ink': p.ink, zIndex: projects.length - order } as CSSProperties} data-cursor={order === 0 ? 'VIEW' : 'DRAG'}
           onFocus={() => setActive(i)} data-project={p.slug}
           onClick={e => { if (suppressClick.current) { e.preventDefault(); suppressClick.current = false; } else if (order !== 0) { e.preventDefault(); setActive(i); } }} onDragStart={e => e.preventDefault()}>
           <span className="card-number">{p.number} / {String(projects.length).padStart(2, '0')}</span><div className="card-art"><DevicePresentation slug={p.slug} src={p.cover} alt="" compact /></div>
           <span className="card-meta"><span className="card-name">{p.shortName}</span><span className="card-category">{p.category}</span><span className="card-arrow" aria-hidden="true">↗</span></span>
+          <span className="card-discovery" lang="ru"><small>{p.shortName} / ЧТО ЗДЕСЬ РЕШЕНО</small><span>{projectDecisions[p.slug].question}</span><span className="card-discovery-link">Открыть разбор ↗</span></span>
         </RouteLink>;
       })}
     </div></div>
-    <div className="scene-bottom"><span className="drag-caption"><span aria-hidden="true">⟷</span> DRAG<br />TO EXPLORE</span><div className="deck-controls"><button onClick={() => cycle(-1)} aria-label="Previous project">←</button><span aria-live="polite">0{active + 1}<span className="muted"> / {String(projects.length).padStart(2, '0')}</span></span><button onClick={() => cycle(1)} aria-label="Next project">→</button></div></div>
+    <div className="scene-bottom"><span className="drag-caption"><span aria-hidden="true">⟷</span> ЛИСТАЙТЕ<br />ПРОЕКТЫ</span><div className="deck-controls"><button onClick={() => cycle(-1)} aria-label="Предыдущий проект">←</button><span aria-live="polite">0{active + 1}<span className="muted"> / {String(projects.length).padStart(2, '0')}</span></span><button onClick={() => cycle(1)} aria-label="Следующий проект">→</button></div></div>
     <noscript><div className="nojs-work">{projects.map(p => <a key={p.slug} href={`/work/${p.slug}`}>{p.name} ↗</a>)}</div></noscript>
   </section>;
 }

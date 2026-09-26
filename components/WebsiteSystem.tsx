@@ -5,13 +5,13 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const nodes=[
- {name:'Offer',copy:'Clear value for the right audience.',x:120,y:90,w:190,h:145},
- {name:'Navigation',copy:'Simple structure that guides forward.',x:520,y:90,w:190,h:145},
- {name:'Content',copy:'Focused messages that build trust and clarity.',x:120,y:550,w:190,h:145},
- {name:'Performance',copy:'Fast, accessible, and built to convert.',x:520,y:550,w:190,h:145},
+ {name:'Offer',copy:'Понятная ценность для вашей аудитории.',x:120,y:90,w:190,h:145},
+ {name:'Navigation',copy:'Структура, в которой легко найти нужное.',x:520,y:90,w:190,h:145},
+ {name:'Content',copy:'Тексты, которые объясняют и вызывают доверие.',x:120,y:550,w:190,h:145},
+ {name:'Performance',copy:'Быстрая загрузка и удобное взаимодействие.',x:520,y:550,w:190,h:145},
  {name:'Audience',copy:'',x:80,y:320,w:120,h:40},
  {name:'Action',copy:'',x:560,y:320,w:120,h:40},
- {name:'Website system',copy:'Strategy. Structure. Results.',x:320,y:320,w:190,h:190},
+ {name:'Website system',copy:'Задача. Структура. Результат.',x:320,y:320,w:190,h:190},
 ];
 const pairs=[1,0,3,2,5,4];
 function curve(i:number,positions:{x:number;y:number}[]){

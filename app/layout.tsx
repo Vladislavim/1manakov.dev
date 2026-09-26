@@ -1,4 +1,7 @@
 import '@/styles/client-offers.css';
+import {ExitOffer} from '@/components/ExitOffer';
+import '@/styles/exit-offer.css';
+import '@/styles/discovery.css';
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import { defaultDescription, pageMetadata, personId, websiteId } from '@/lib/metadata';
@@ -19,6 +22,7 @@ import '@/styles/lab.css';
 import '@/styles/guide-workbench.css';
 import '@/styles/seo-evidence.css';
 import '@/styles/seo-services.css';
+import '@/styles/mobile-polish.css';
 
 const geist = localFont({ src: '../public/fonts/Geist.ttf', variable: '--font-geist', display: 'swap', weight: '100 900' });
 export const viewport: Viewport = { themeColor: '#f4f2ed', width: 'device-width', initialScale: 1 };
@@ -34,6 +38,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return <html lang="en" className={geist.variable}><body>
     <noscript><style>{'.readiness{display:none}'}</style></noscript>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': [{ '@type': 'Person', '@id': personId, name: contact.name, url: `${siteUrl}/about`, sameAs: [contact.telegram, contact.github] }, { '@type': 'WebSite', '@id': websiteId, name: 'IMANAKOV', url: siteUrl, publisher: { '@id': personId }, inLanguage: ['en', 'ru'] }] }).replace(/</g, '\\u003c') }} />
-    <SiteShell>{children}<SiteAnalytics hostname={new URL(siteUrl).hostname} production={!preventIndexing} /></SiteShell>
+    <SiteShell>{children}<ExitOffer/><SiteAnalytics hostname={new URL(siteUrl).hostname} production={!preventIndexing} /></SiteShell>
   </body></html>;
 }

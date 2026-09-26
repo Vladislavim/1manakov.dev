@@ -52,11 +52,15 @@ export function ClientOfferSystem({offers}:{offers:Offer[]}){
    };
    const sync=()=>{gsap.ticker.remove(tick);if(visible&&!document.hidden)gsap.ticker.add(tick);};
    const intro=gsap.timeline({scrollTrigger:{trigger:stage,start:'top 80%',once:true},onComplete:()=>{ready=true;time=0;}});
-   intro.fromTo(elements.slice(0,3),{opacity:0},{opacity:1,duration:.8,ease:'sine.out'})
-    .fromTo(paths.slice(0,3),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.4,ease:'none'},.3)
-    .fromTo(elements[6],{opacity:0},{opacity:1,duration:.8,ease:'sine.out'},1.2)
-    .fromTo(paths.slice(3),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.4,ease:'none'},1.7)
-    .fromTo(elements.slice(3,6),{opacity:0},{opacity:1,duration:.8,ease:'sine.out'},2.6);
+   gsap.set(elements,{autoAlpha:0});
+   gsap.set(paths,{strokeDasharray:'1 1',strokeDashoffset:1});
+   intro.to(elements[6],{autoAlpha:1,duration:1.1,ease:'sine.inOut'});
+   for(let i=0;i<3;i++){
+    intro.to(elements[i],{autoAlpha:1,duration:.85,ease:'sine.inOut'},'+=.12')
+     .to(elements[i+3],{autoAlpha:1,duration:.85,ease:'sine.inOut'})
+     .to(paths[i],{strokeDashoffset:0,autoRound:false,duration:1.25,ease:'none'})
+     .to(paths[i+3],{strokeDashoffset:0,autoRound:false,duration:1.25,ease:'none'});
+   }
    const visibility=ScrollTrigger.create({trigger:stage,start:'top bottom',end:'bottom top',onToggle:s=>{visible=s.isActive;sync();}});
    visible=visibility.isActive;sync();
    const move=(e:PointerEvent)=>{if(e.pointerType==='touch'||!matchMedia('(hover:hover) and (pointer:fine)').matches)return;const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*1200,y=(e.clientY-r.top)/r.height*500;states.forEach((s,i)=>{const dx=x-nodes[i].x,dy=y-nodes[i].y,k=Math.max(0,1-Math.hypot(dx,dy)/180)*.045;s.tx=dx*k;s.ty=dy*k;});};

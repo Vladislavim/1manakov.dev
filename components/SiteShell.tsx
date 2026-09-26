@@ -46,9 +46,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const revealFrame = useRef<number | undefined>(undefined);
   const timeline = useRef<gsap.core.Timeline | null>(null);
   const lenisRef = useRef<Lenis | null>(null);
+  const cancelCaseIntro = useRef<(() => void) | null>(null);
   const [progress, setProgress] = useState(0);
 
   const release = useCallback(() => {
+    const introduceCase = destination.current.startsWith('/work/') && hrefHash.current === 'decision';
     if (revealFrame.current !== undefined) cancelAnimationFrame(revealFrame.current);
     if (timeout.current) clearTimeout(timeout.current);
     if (portal.current) gsap.set(portal.current, { autoAlpha: 0 });
@@ -58,9 +60,43 @@ export function SiteShell({ children }: { children: ReactNode }) {
     locked.current = false;
     hrefHash.current = '';
     lenisRef.current?.start();
+    if (introduceCase && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      cancelCaseIntro.current?.();
+      const position = { y: window.scrollY };
+      const cancel = () => {
+        tween.kill();
+        window.removeEventListener('wheel', cancel);
+        window.removeEventListener('touchstart', cancel);
+        window.removeEventListener('keydown', cancel);
+        window.removeEventListener('pointerdown', cancel);
+        window.removeEventListener('popstate', cancel);
+        cancelCaseIntro.current = null;
+      };
+      const tween = gsap.to(position, {
+        y: 0, delay: .65, duration: 2.4, ease: 'power2.inOut',
+        onUpdate: () => {
+          if (document.querySelector('dialog[open]')) { cancel(); return; }
+          if (lenisRef.current) lenisRef.current.scrollTo(position.y, { immediate: true, force: true });
+          else window.scrollTo(0, position.y);
+        },
+        onComplete: () => {
+          window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+          cancel();
+        },
+      });
+      cancelCaseIntro.current = cancel;
+      window.addEventListener('wheel', cancel, { passive: true });
+      window.addEventListener('touchstart', cancel, { passive: true });
+      window.addEventListener('keydown', cancel);
+      window.addEventListener('pointerdown', cancel);
+      window.addEventListener('popstate', cancel);
+    }
   }, []);
+  useEffect(() => () => cancelCaseIntro.current?.(), []);
 
   const navigate = useCallback((href: string, image?: string, point?: {x:number;y:number}) => {
+    cancelCaseIntro.current?.();
+    if (path === '/' && href.startsWith('/work/') && !href.includes('#') && !matchMedia('(prefers-reduced-motion: reduce)').matches) href += '#decision';
     const targetPath = href.split('#')[0];
     const hash = href.split('#')[1] || '';
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -89,7 +125,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       lenisRef.current?.stop();
       gsap.set(layer, { autoAlpha: 1, opacity: 0 });
       timeline.current?.kill();
-      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .16, ease: 'power2.out' }).call(() => router.push(href, { scroll: !href.includes('#') }));
+      timeline.current = gsap.timeline().to(layer, { opacity: 1, duration: .42, ease: 'sine.inOut' }).call(() => router.push(href, { scroll: !href.includes('#') }));
       timeout.current = setTimeout(release, 5000);
       return;
     }
@@ -126,12 +162,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
           const {x,y}=origin.current;
           const mobile=matchMedia('(pointer:coarse)').matches;
           timeline.current = gsap.timeline({ onComplete: release })
-            .set(aperture.current,{attr:{d:portalPath(x,y,110,110)}})
-            .to(aperture.current,{attr:{d:portalPath(x,y,78,90)},duration:.12,ease:'power2.in'})
-            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:.2,ease:'power3.inOut'})
-            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?.46:.58,ease:'power3.inOut'});
+            .set(aperture.current,{attr:{d:portalPath(x,y,0,0)}})
+            .to(aperture.current,{attr:{d:portalPath(x,y,mobile?90:65,innerHeight*1.6)},duration:.55,ease:'sine.inOut'})
+            .to(aperture.current,{attr:{d:portalPath(innerWidth*.5,innerHeight*.5,innerWidth*4,innerHeight*4)},duration:mobile?1.05:1.25,ease:'sine.inOut'});
         } else {
-          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .18 });
+          timeline.current = gsap.timeline({ onComplete: release }).to(veil.current, { opacity: 0, duration: .65, ease: 'sine.inOut' });
         }
       });
     } else if (locked.current) { timeline.current?.kill(); release(); }
@@ -168,7 +203,18 @@ export function SiteShell({ children }: { children: ReactNode }) {
     mm.add('(prefers-reduced-motion: no-preference) and (pointer: fine)', () => {
       const lenis = new Lenis({ lerp: .09, smoothWheel: true, syncTouch: false, anchors: true });
       lenisRef.current = lenis;
-      const update = (time: number) => lenis.raf(time * 1000);
+      let offerPaused = false;
+      const update = (time: number) => {
+        const offerOpen = Boolean(document.querySelector('.exit-offer[open]'));
+        if (offerOpen && !offerPaused && !lenis.isStopped) {
+          lenis.stop();
+          offerPaused = true;
+        } else if (!offerOpen && offerPaused) {
+          lenis.start();
+          offerPaused = false;
+        }
+        lenis.raf(time * 1000);
+      };
       lenis.on('scroll', ScrollTrigger.update);
       gsap.ticker.add(update);
       const visibility = () => { if (document.hidden) gsap.ticker.remove(update); else gsap.ticker.add(update); };

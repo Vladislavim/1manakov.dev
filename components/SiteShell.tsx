@@ -272,7 +272,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <div className="readiness" ref={loader} aria-hidden="true"><span>IMANAKOV</span><span>{String(progress).padStart(2, '0')}</span></div>
     <div className="custom-cursor" ref={cursor} aria-hidden="true">
       <svg className="cursor-arrow-svg" width="36" height="36" viewBox="0 0 34 34" fill="none">
-        <path d="M4 3.5v25.2l7.1-7.1 4.9 8.1 2.7-1.6-4.9-8.1h10.1L4 3.5Z" fill="#0c0d0d" stroke="#f4f2ed" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M4 3.5v25.2l7.1-7.1 4.9 8.1 2.7-1.6-4.9-8.1h10.1L4 3.5Z" fill="#0c0d0d" stroke="#f4f2ed" strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round"/>
       </svg>
       <span />
     </div>

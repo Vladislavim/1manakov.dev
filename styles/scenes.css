@@ -22,7 +22,7 @@
 
 .project-card.position-4,.project-card.position-5{transform:translate(23%,8%) rotate(15deg) scale(.92);opacity:0;pointer-events:none}
 .project-card{transition:transform .65s var(--ease),box-shadow .4s,opacity .35s}
-.hero-underworld{background:transparent}
+.hero-underworld{background:#0d100e;pointer-events:none}
 .hero-type-inversion{position:absolute;inset:0;z-index:2;pointer-events:none;clip-path:circle(calc(var(--lens-size)/2) at var(--lx) var(--ly))}
 .hero-type-inversion .hero-wordmark{color:#fff}
 .hero-world .project-image{width:100%;height:100%}
@@ -31,10 +31,47 @@
 
 /* Full wordmark and a local, consistently framed window onto each case. */
 .hero-wordmark{font-size:19.3vw;padding-right:0;letter-spacing:-.085em}
-.hero-world .project-image{left:var(--lx);top:var(--ly);right:auto;width:calc(var(--lens-size)*1.6);height:calc(var(--lens-size)*1.08);transform:translate(-50%,-50%)}
-.hero-world img,.hero-world:first-child img{object-position:50% 35%}
-.hero-world[data-case=pdp] img{object-position:50% 20%}
-.hero-world[data-case=khasaut-tour] img{object-position:50% 25%}
+.hero-lens-brand{position:absolute;inset:0;z-index:3;pointer-events:none;clip-path:circle(calc(var(--lens-size)/2) at var(--lx) var(--ly))}
+.hero-brand-logo{position:absolute;left:var(--lx);top:var(--ly);transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:calc(var(--lens-size)*0.85);max-width:320px;pointer-events:none;user-select:none;z-index:3}
+.hero-brand-logo__backdrop{display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 3px 14px rgba(0,0,0,0.95)) drop-shadow(0 0 6px rgba(0,0,0,0.85))}
+.hero-brand-logo__inner{display:flex;align-items:center;justify-content:center;width:100%}
+.hero-brand-logo__flex{display:flex;align-items:center;justify-content:center;gap:16px;text-align:left}
+.hero-brand-logo__img{max-width:100%;height:auto;object-fit:contain}
+.hero-brand-logo__img--allnrg{width:290px;max-width:100%;height:auto}
+.hero-brand-logo__img--pdp{width:270px;max-width:100%;height:auto}
+.hero-brand-logo__vpn-badge{width:54px;height:54px;flex-shrink:0;border-radius:50%;background:linear-gradient(180deg,#e7e6dc 0%,#cfd4c8 100%);border:1.5px solid rgba(225,173,95,0.6);box-shadow:inset 0 1px 0 rgba(255,255,255,0.6),0 4px 16px rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;padding:7px}
+.hero-brand-logo__img--vpn-live{width:100%;height:100%;object-fit:contain}
+.hero-brand-logo__title--vpn{font-size:clamp(16px,1.7vw,22px);font-weight:900;color:#ffffff;letter-spacing:0.02em;text-transform:none}
+.hero-brand-logo__planet-wrap{width:64px;height:64px;flex-shrink:0;border-radius:50%;position:relative;display:flex;align-items:center;justify-content:center}
+.hero-brand-logo__img--planet{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.hero-brand-logo__icon{width:56px;height:68px;flex-shrink:0}
+.hero-brand-logo__icon--diamond{width:52px;height:52px}
+.hero-brand-logo__seal{width:52px;height:52px;border-radius:50%;border:2px solid #d4af37;display:flex;align-items:center;justify-content:center;font-family:serif;font-size:22px;font-weight:700;color:#f7f2ea;flex-shrink:0;letter-spacing:0.04em;background:rgba(23,55,46,0.85)}
+.hero-brand-logo__legacy-icon-wrap{width:56px;height:56px;flex-shrink:0;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 0 12px rgba(175,126,49,0.5))}
+.hero-brand-logo__img--legacy{width:56px;height:56px;object-fit:contain}
+.hero-brand-logo__img--seal{width:150px;height:150px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 4px 20px rgba(0,0,0,0.85))}
+.hero-brand-logo__text{display:flex;flex-direction:column;gap:4px}
+.hero-brand-logo__pdp-mark{width:54px;height:64px;flex-shrink:0}
+.hero-brand-logo__title{font-size:clamp(20px,2.2vw,30px);font-weight:900;color:#fff;letter-spacing:0.05em;line-height:1.05;text-transform:uppercase;white-space:nowrap;text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 16px rgba(0,0,0,0.9)}
+.hero-brand-logo__title--serif{font-family:serif;font-weight:700;text-transform:none;font-size:clamp(22px,2.4vw,32px);letter-spacing:0.02em}
+.hero-brand-logo__title--orange{color:#fc6019}
+.hero-brand-logo__title--gold{color:#e2b855}
+.hero-brand-logo__title--amber{color:#f5b358}
+.hero-brand-logo__title--green{color:#2ebd68}
+.hero-brand-logo__title--yellow-orange{color:#ff9d00}
+.hero-brand-logo__title--blue{color:#38bdf8}
+.hero-brand-logo__title--cream{color:#f7f2ea}
+.hero-brand-logo__subtitle{font-size:10px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:0.15em;line-height:1.2;text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 6px rgba(0,0,0,0.95)}
+.hero-brand-logo__subtitle--cream{color:#f7f2ea;font-size:9.5px;letter-spacing:0.12em;line-height:1.25}
+.hero-brand-logo__subtitle--orange{color:#fc6019;font-size:9px;line-height:1.3}
+.hero-brand-logo__subtitle--gold{color:#d4af37}
+.hero-brand-logo__subtitle--amber{color:#d89f4b}
+.hero-brand-logo__subtitle--green{color:#4ade80}
+.hero-brand-logo__subtitle--yellow-orange{color:#ffb833}
+.hero-brand-logo__subtitle--blue{color:#7dd3fc}
+
+
+
 .explore-type{font-size:20.2vw;top:49%;transform:translateY(-50%)}
 .image-letter{display:inline-block;background:none;color:var(--letter-color);-webkit-text-fill-color:currentColor;text-decoration:none;transition:filter .25s}
 .image-letter{padding-bottom:.2em;margin-bottom:-.2em}

@@ -1,3 +1,4 @@
+import { exportParams } from '@/lib/static-params';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -6,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { getArticles, topicNames, articleProblems } from '@/lib/editorial';
 import { siteUrl, contact } from '@/data/projects';
 export const dynamicParams = false;
-export function generateStaticParams() { return getArticles().filter(a => a.status !== 'draft').map(a => ({slug:a.slug})); }
+export function generateStaticParams() { return exportParams(getArticles().filter(a => a.status !== 'draft').map(a => ({slug:a.slug})), {slug:'__empty-export__'}); }
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata> {
   const {slug} = await params; const a = getArticles().find(a => a.slug === slug && a.status !== 'draft');
   if (!a) return {robots:{index:false,follow:false}};

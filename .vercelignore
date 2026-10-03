@@ -1,0 +1,19 @@
+node_modules
+.git
+.next
+.next-static
+out
+outputs
+qa
+test-results
+playwright-report
+.reference-cache
+*.zip
+web2*.zip
+Photo for about I
+case_before_after_sources
+old ver vs new for cases info
+seo/data
+seo/cache
+seo/reports
+data/seo

@@ -25,7 +25,11 @@
     "seo:verify": "node scripts/seo/verify.mjs",
     "seo:qa": "node scripts/seo/qa-pages.mjs",
     "lab:qa": "node scripts/qa-lab.mjs",
-    "seo:technical": "node scripts/seo/technical-qa.mjs"
+    "seo:technical": "node scripts/seo/technical-qa.mjs",
+    "build:hosting": "node scripts/hosting/build.mjs",
+    "preview:hosting": "node scripts/hosting/preview.mjs",
+    "package:hosting": "python scripts/hosting/package.py",
+    "check:hosting": "node scripts/hosting/check.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

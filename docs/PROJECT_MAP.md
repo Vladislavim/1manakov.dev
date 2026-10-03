@@ -1,5 +1,7 @@
 # Project map
 
+- `scripts/hosting/`, `docs/HOSTING.md`: static shared-hosting build, Apache/Nginx rules, browser checks and verified Linux-friendly ZIP. Run `build:hosting`, `check:hosting`, `package:hosting`; output `outputs/hosting/`.
+
 - `app/`: server-rendered routes, metadata, sitemap, robots and error states.
 - `data/projects.ts`: sole project/content source; roles, artifact captions, media and original URLs.
 - `components/SiteShell.tsx`: navigation, reduced motion, loading readiness, cursor, scrolling and portal lifecycle.

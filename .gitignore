@@ -1,5 +1,6 @@
 node_modules/
 .next/
+.next-static/
 out/
 .reference-cache/
 *.zip
@@ -22,3 +23,4 @@ old ver vs new for cases info/
 
 Photo for about I/
 outputs/
+.vercel

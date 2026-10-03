@@ -7,7 +7,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 import { projects as featuredProjects } from '@/data/projects';
-import { ProjectImage } from './ProjectImage';
+import { HeroProjectLogo } from './HeroProjectLogo';
 
 import { RouteLink } from './SiteShell';
 
@@ -29,7 +29,18 @@ export function Hero() {
 
   const project = featuredProjects[active];
 
-  function select(index: number) { current.current = index; setActive(index); }
+  function select(index: number, move = false) {
+    current.current = index;
+    setActive(index);
+    if (move && root.current && moveLens.current) {
+      const box = root.current.getBoundingClientRect();
+      const ratio = 0.80 - (index / Math.max(1, featuredProjects.length - 1)) * 0.60;
+      const x = box.width * ratio;
+      const y = box.height * 0.49;
+      if (root.current) root.current.dataset.edge = x / box.width > .72 ? 'right' : 'center';
+      moveLens.current(x, y);
+    }
+  }
 
 
 
@@ -110,7 +121,8 @@ export function Hero() {
 
       moveLens.current?.(x, y);
 
-      const next = Math.max(0, Math.min(featuredProjects.length - 1, Math.floor((e.clientX - box.left) / box.width * featuredProjects.length)));
+      const ratio = Math.max(0, Math.min(0.999, (e.clientX - box.left) / box.width));
+      const next = Math.floor((1 - ratio) * featuredProjects.length);
       if (current.current !== next) select(next);
 
     }
@@ -136,10 +148,11 @@ export function Hero() {
 
   return <section className="hero scene" ref={root} onPointerMove={pointerMove} aria-labelledby="hero-title">
 
-    <div className="hero-underworld" aria-hidden="true">{featuredProjects.map((p, i) => <div key={p.slug} data-case={p.slug} className={`hero-world ${i === active ? 'is-active' : ''}`}><ProjectImage src={p.cover} alt="" sizes="(max-width: 767px) 420px, 700px" priority={i === 0} eager unoptimized /></div>)}</div>
+    <div className="hero-underworld" aria-hidden="true" />
     <h1 id="hero-title" className="hero-wordmark">IMANAKOV</h1>
 
     <div className="hero-type-inversion" aria-hidden="true"><span className="hero-wordmark">IMANAKOV</span></div>
+    <div className="hero-lens-brand" aria-hidden="true">{featuredProjects.map((p, i) => <div key={p.slug} data-case={p.slug} className={`hero-world ${i === active ? 'is-active' : ''}`}><HeroProjectLogo slug={p.slug} /></div>)}</div>
     <RouteLink href={`/work/${project.slug}`} image={project.cover} className="lens-link" data-project={project.slug}
 
       onPointerDown={e => { gesture.current = { x: e.clientX, y: e.clientY, moved: false }; suppressClick.current = false; }} onPointerMove={touchMove}
@@ -157,7 +170,7 @@ export function Hero() {
 
     </RouteLink>
 
-    <div className="scene-bottom hero-caption"><p className="hero-service-note" lang="ru">Хирургия интерфейсов и тяжелый фронтенд.<br/>Срезаю лишние клики между рекламой и кассой.</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link home-scroll-cue-target">SCROLL</a></div>
+    <div className="scene-bottom hero-caption"><p className="hero-service-note" lang="ru">Хирургия интерфейсов и тяжелый фронтенд.<br/>Срезаю лишние клики между рекламой и кассой.</p><div className="hero-select" aria-label="Select a featured project">{featuredProjects.map((p, i) => <button key={p.slug} onClick={() => select(i, true)} aria-label={`0${i + 1} — Reveal ${p.name}`} aria-pressed={i === active}>0{i + 1}</button>)}</div><a href="#explore" className="line-link home-scroll-cue-target">SCROLL</a></div>
     <p className="touch-hint">SWIPE THE LENS · TAP TO EXPLORE</p>
 
   </section>;
